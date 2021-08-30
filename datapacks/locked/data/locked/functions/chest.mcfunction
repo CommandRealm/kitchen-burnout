@@ -1,0 +1,1 @@
+give @s chest{BlockEntityTag:{Lock:" "}}

@@ -1,0 +1,1 @@
+give @s lime_shulker_box{BlockEntityTag:{Lock:" "}}

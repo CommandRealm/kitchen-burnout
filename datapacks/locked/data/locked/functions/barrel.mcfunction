@@ -1,0 +1,1 @@
+give @s barrel{BlockEntityTag:{Lock:" "}}

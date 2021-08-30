@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"text\":\"Burnt \",\"color\":\"#492813\",\"italic\":false},{\"text\":\"Hamburger\",\"color\":\"#704b36\"}]'},CustomModelData:1,stovetop:1b,cooking_time:500,transform_point:800,timer_type:\"burger\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
