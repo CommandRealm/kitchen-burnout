@@ -1,7 +1,7 @@
 ##init function
 
 ##Gamerules
-#
+
 gamerule commandBlockOutput false
 gamerule doDaylightCycle false
 gamerule doFireTick false
