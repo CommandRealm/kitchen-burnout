@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/template_skull",
+  "display":{
+      "head":{
+        "scale":[0, 0, 0]
+      }
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 1},"model": "item/lettuce_head"},
+    {"predicate": {"custom_model_data": 2},"model": "item/tomato"}
+               ]
+}
