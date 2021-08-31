@@ -13,14 +13,12 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server-dir: Cook-Off 1.0/
-          server:  ${{ secrets.FTP_SERVER }}
-          username:  ${{ secrets.FTP_USERNAME }}
+          server:  crdev.spmc.co
+          username:  Calverin.9196
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
       - name: RCON Connection 🔌
         uses: Plagiatus/RCON-Action@v0.1
         with:
-          server: ${{ secrets.RCON_SERVER }}
-          port: ${{ secrets.RCON_PORT }}
+          server: crdev.spmc.co
           password: ${{ secrets.RCON_PASSWORD }}
           commands: '["reload", "say You just got RCONned B)"]'
