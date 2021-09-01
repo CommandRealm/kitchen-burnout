@@ -2,6 +2,7 @@
 
 # Gamerules
 
+gamerule maxCommandChainLength 20000000
 gamerule commandBlockOutput false
 gamerule doDaylightCycle false
 gamerule doFireTick false
