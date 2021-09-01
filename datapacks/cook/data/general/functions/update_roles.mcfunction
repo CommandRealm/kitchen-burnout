@@ -1,7 +1,7 @@
 
 
 
-##Removing tags
+# Removing tags
 tag @a remove has_test
 tag @a remove has_help
 tag @a remove has_bld
@@ -15,10 +15,10 @@ tag @a remove has_art
 tag @a remove has_cr
 
 
-##Those who have tester
+# Those who have tester
 
 
-##Those who are Command Realm members.
+# Those who are Command Realm members.
 tag FalconReign add has_cr
 tag Connop add has_cr
 tag TheRegularMex add has_cr

@@ -1,5 +1,5 @@
 
-##Setting the recipe bank
+# Setting the recipe bank
 
 data remove storage recipe:bank {}
 data merge storage recipe:bank {Recipe:[]}

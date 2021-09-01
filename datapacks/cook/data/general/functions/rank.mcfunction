@@ -1,11 +1,11 @@
-##Purpose of this function is to assign the player who runs it to their proper team
+# Purpose of this function is to assign the player who runs it to their proper team
 
 
 
 
 
 
-##Joining teams
+# Joining teams
 
 team join lobby @s[scores={prefix=-1}]
 team join test @s[scores={prefix=0}]
@@ -26,7 +26,7 @@ team join cr @s[scores={prefix=99}]
 
 
 
-##Prefixes
+# Prefixes
 team join title_0 @s[scores={prefix=200}]
 team join title_1 @s[scores={prefix=201}]
 team join title_2 @s[scores={prefix=202}]

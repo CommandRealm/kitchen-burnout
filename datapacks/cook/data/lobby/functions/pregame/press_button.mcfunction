@@ -1,6 +1,6 @@
-##Called when someone presses the start button.
+# Called when someone presses the start button.
 
-##Resetting the button and trapdor
+# Resetting the button and trapdor
 
 setblock -9 17 -10 air destroy
 setblock -10 18 -10 minecraft:iron_trapdoor[open=false,half=bottom,facing=south]
@@ -15,5 +15,5 @@ execute if score $ready_players pregame matches ..1 run function lobby:pregame/n
 
 tag @a remove temporary_tag
 
-##Setting up button delay
+# Setting up button delay
 scoreboard players set $button pregame 10

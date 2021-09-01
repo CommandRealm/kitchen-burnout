@@ -1,11 +1,11 @@
-##Called to generate the recipes for the default mode.
+# Called to generate the recipes for the default mode.
 
 
-##Updating the bank
+# Updating the bank
 execute if score $recipe game matches 1 run function game:recipes/burgers
 
 
-##Setting calculate
+# Setting calculate
 scoreboard players set $calculate calculate 75
 
 data remove storage orders1 {}

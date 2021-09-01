@@ -1,4 +1,4 @@
-##Called to give us our offhand detector
+# Called to give us our offhand detector
 
 clear @s carrot_on_a_stick
 kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}},distance=..5]

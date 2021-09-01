@@ -1,4 +1,4 @@
-##Called when we right click.
+# Called when we right click.
 scoreboard players reset @s click
 scoreboard players set @s click_cooldown 5
 scoreboard players set $calculate calculate 63

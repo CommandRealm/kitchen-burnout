@@ -1,6 +1,6 @@
-##init function
+# init function
 
-##Gamerules
+# Gamerules
 
 gamerule commandBlockOutput false
 gamerule doDaylightCycle false
@@ -18,36 +18,36 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule randomTickSpeed 0
-##gamerule reducedDebugInfo true
-##gamerule sendCommandFeedback false
+# gamerule reducedDebugInfo true
+# gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
 gamerule universalAnger false
 
-##Basic game objectives
+# Basic game objectives
 
-##Has joined will by default be null and with an unless statement it can teleport them.
+# Has joined will by default be null and with an unless statement it can teleport them.
 scoreboard objectives add has_joined dummy
 
 
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add state dummy
-##$game will be 1 while the game is running and 0 while it isn't running.
+# $game will be 1 while the game is running and 0 while it isn't running.
 scoreboard players add $game state 0
 
-##pregame will countain any information required for the countdown.
+# pregame will countain any information required for the countdown.
 scoreboard objectives add pregame dummy
 
 
-##Ready score
+# Ready score
 scoreboard objectives add ready dummy
 
-##Pregame right click detection
+# Pregame right click detection
 scoreboard objectives add pregame_click minecraft.used:minecraft.knowledge_book
 
 
-##Number objective
+# Number objective
 scoreboard objectives add number dummy
 
 scoreboard players set $60 number 60
@@ -69,13 +69,13 @@ scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
 scoreboard players set $75 number 75
 
-##Settings
+# Settings
 scoreboard objectives add settings dummy
 
-##Main objective just for game operations.
+# Main objective just for game operations.
 scoreboard objectives add game dummy
 
-##Lobby teams
+# Lobby teams
 team add lobby
 team add test
 team add help
@@ -131,13 +131,13 @@ team add collision
 team modify collision collisionRule never
 
 
-##Random objective
+# Random objective
 scoreboard objectives add random dummy
 
 
 scoreboard objectives add prefix dummy
 
-##Settings
+# Settings
 scoreboard players add $mode settings 0
 scoreboard players add $map settings 0
 execute if score $map settings matches 0 run scoreboard players set $map settings 1
@@ -154,6 +154,10 @@ scoreboard objectives add cosmetics_hat dummy
 scoreboard objectives add station dummy
 scoreboard objectives add station_timer dummy
 scoreboard objectives add station_state dummy
+scoreboard objectives add station_placer_x dummy
+scoreboard objectives add station_placer_y dummy
+scoreboard objectives add station_placer_z dummy
+scoreboard objectives add station_placer_d dummy
 
 team add game
 team modify game color gray

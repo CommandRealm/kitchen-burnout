@@ -1,4 +1,4 @@
-##called to transform the item.
+# called to transform the item.
 
 execute as @e[type=armor_stand,tag=stovetop_item,sort=nearest,limit=1] at @s if score @s ingredient matches 1 run scoreboard players set @s ingredient 11
 execute as @e[type=armor_stand,tag=stovetop_item,sort=nearest,limit=1] at @s if score @s ingredient matches 2 run scoreboard players set @s ingredient 11

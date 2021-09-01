@@ -1,19 +1,19 @@
-##called when the recipe cooldown is over.
+# called when the recipe cooldown is over.
 
-##Resetting nearby players' timer.
+# Resetting nearby players' timer.
 scoreboard players set @a[distance=..500,tag=playing,scores={recipe_cooldown=10}] recipe_cooldown 9
 
-##Giving us the new recipe.
+# Giving us the new recipe.
 execute if entity @s[tag=!team_2] run function game:recipe_cooldown/order_1
 
 
-##Reading the order
+# Reading the order
 
 #randomizing the way they ask
 scoreboard players set $mod random 10
 function random:random
 
-##Customer line
+# Customer line
 execute if score $rand random matches 0 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"text":"Customer","color":"gold"},{"text":"> "},{"text":"May I please have the "},{"nbt":"Recipe.Name","storage":"minecraft:current_order1","color":"gray","underlined":true},{"text":"?"}]
 execute if score $rand random matches 1 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"text":"Customer","color":"gold"},{"text":"> "},{"text":"I'd like the "},{"nbt":"Recipe.Name","storage":"minecraft:current_order1","color":"gray","underlined":true},{"text":"."}]
 execute if score $rand random matches 2 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"text":"Customer","color":"gold"},{"text":"> "},{"text":"I want the "},{"nbt":"Recipe.Name","storage":"minecraft:current_order1","color":"gray","underlined":true},{"text":"."}]
@@ -26,11 +26,11 @@ execute if score $rand random matches 8 run tellraw @a[distance=..500] [{"text":
 execute if score $rand random matches 9 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"text":"Customer","color":"gold"},{"text":"> "},{"text":"I think I'll get a "},{"nbt":"Recipe.Name","storage":"minecraft:current_order1","color":"gray","underlined":true},{"text":"."}]
 
 
-##Random sound pitch
+# Random sound pitch
 scoreboard players set $mod random 16
 function random:random
 
-##sound
+# sound
 execute if score $rand random matches 0 as @a[tag=playing,distance=..500] at @s run playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 1 0.5
 execute if score $rand random matches 1 as @a[tag=playing,distance=..500] at @s run playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 1 0.6
 execute if score $rand random matches 2 as @a[tag=playing,distance=..500] at @s run playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 1 0.7

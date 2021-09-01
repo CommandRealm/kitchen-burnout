@@ -1,6 +1,6 @@
-##called whenever a player joins the game
+# called whenever a player joins the game
 
-##Basic functions
+# Basic functions
 tp @s 0 66 0
 spawnpoint @s 0 66 0 
 scoreboard players set @s has_joined 1
@@ -9,18 +9,18 @@ gamemode adventure @s
 title @s times 0 25 5
 effect clear @s
 
-##Remove tags
+# Remove tags
 tag @s remove playing
 
-##effect
+# effect
 effect give @s instant_health 1 5 true
 
 
 
-##if we haven't been reset
+# if we haven't been reset
 execute unless entity @s[scores={resetting=1..}] run function general:reset
 
-##Rank
+# Rank
 function general:rank
 
 

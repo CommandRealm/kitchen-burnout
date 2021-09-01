@@ -1,9 +1,9 @@
-##Function that starts the countdown
+# Function that starts the countdown
 
-##Prepares scores for the countdown.
+# Prepares scores for the countdown.
 scoreboard players set $countdown pregame 100
 scoreboard players set $second pregame 20
-##Other
+# Other
 title @a times 0 25 5
 
 title @a[gamemode=adventure] title [{"text":"5","bold":true,"color":"gray"},{"text":" seconds . . .","color":"white","bold":false}]
@@ -15,7 +15,7 @@ execute as @a at @s run playsound minecraft:block.fire.extinguish master @s ~ ~ 
 
 
 
-##Sidebar obj
+# Sidebar obj
 scoreboard objectives remove readied_players
 scoreboard objectives add readied_players dummy [{"text":"-=-","color":"gray","bold":false},{"text":" Playing ","color":"white","bold":true},{"text":"-=-","color":"gray","bold":false}]
 scoreboard objectives setdisplay sidebar readied_players

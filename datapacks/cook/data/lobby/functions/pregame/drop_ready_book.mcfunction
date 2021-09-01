@@ -1,6 +1,6 @@
-##Called when we drop the ready book
+# Called when we drop the ready book
 
-##resetting score
+# resetting score
 scoreboard players reset @s drop_ready_book
 
 tp @s 7 91 22 45 0

@@ -1,4 +1,4 @@
-##Called to take the item from the cutting board.
+# Called to take the item from the cutting board.
 scoreboard players operation @s ingredient = @e[type=armor_stand,sort=nearest,limit=1,tag=display_item] ingredient
 item replace entity @e[type=armor_stand,sort=nearest,limit=1,tag=display_item] weapon.mainhand with air
 scoreboard players set @e[type=armor_stand,sort=nearest,limit=1,tag=display_item] ingredient 0

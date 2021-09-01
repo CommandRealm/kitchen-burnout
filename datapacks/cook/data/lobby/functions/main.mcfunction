@@ -1,4 +1,4 @@
-##Runs whenever someone is in the lobby
+# Runs whenever someone is in the lobby
 
-##Run pregame function when appropriate
+# Run pregame function when appropriate
 execute if score $game state matches 0 run function lobby:pregame/main

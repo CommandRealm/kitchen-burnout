@@ -1,4 +1,4 @@
-##Stations
+# Stations
 
 execute positioned 994 62 503 run function game:stations/cutting_board/create
 execute positioned 994 62 499 run function game:stations/cutting_board/create

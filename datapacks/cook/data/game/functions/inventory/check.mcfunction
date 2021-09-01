@@ -1,4 +1,4 @@
-##Called to check players inventories.
+# Called to check players inventories.
 
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] run function game:inventory/offhand_detector
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:iron_sword"}]}] run function game:inventory/get_knife
@@ -16,7 +16,7 @@ execute as @a[tag=playing,scores={ingredient=9}] unless entity @s[nbt={Inventory
 execute as @a[tag=playing,scores={ingredient=10}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:charcoal"}]}] run function game:inventory/get_burnt_hamburger
 execute as @a[tag=playing,scores={ingredient=11}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:charcoal"}]}] run function game:inventory/get_scorched_food
 
-##Hat
+# Hat
 execute as @a[tag=playing,scores={cosmetics_hat=0}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
 
 

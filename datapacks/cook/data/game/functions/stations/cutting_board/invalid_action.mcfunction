@@ -1,6 +1,6 @@
-##Called when we attempt an invalid action
+# Called when we attempt an invalid action
 
-##Title
+# Title
 title @s title [{"text":""}]
 title @s subtitle [{"text":"⚠ ","color":"yellow"},{"text":"You can't use this cutting board now.","color":"red"}]
 

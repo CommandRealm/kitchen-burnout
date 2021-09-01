@@ -1,13 +1,13 @@
-##Called to reset the players.
+# Called to reset the players.
 
-##so we don't reset again
+# so we don't reset again
 scoreboard players add @s resetting 1
 
 scoreboard players set @s prefix -1
 
 function general:update_roles
 
-##Setting our prefix score for if we have a tag.
+# Setting our prefix score for if we have a tag.
 execute if entity @s[tag=has_cr] run scoreboard players set @s prefix 99
 execute if entity @s[tag=has_test] run scoreboard players set @s prefix 0
 execute if entity @s[tag=has_help] run scoreboard players set @s prefix 1

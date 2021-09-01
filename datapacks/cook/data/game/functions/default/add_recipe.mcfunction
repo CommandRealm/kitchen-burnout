@@ -1,8 +1,8 @@
-##Called to add a recipe
+# Called to add a recipe
 
 function random:random
 
-##Creating the recipe queue
+# Creating the recipe queue
 execute if score $rand random matches 0 run data modify storage orders1 Recipe append from storage recipe:bank Recipe[0]
 execute if score $rand random matches 1 run data modify storage orders1 Recipe append from storage recipe:bank Recipe[1]
 execute if score $rand random matches 2 run data modify storage orders1 Recipe append from storage recipe:bank Recipe[2]
@@ -15,6 +15,6 @@ execute if score $rand random matches 8 run data modify storage orders1 Recipe a
 execute if score $rand random matches 9 run data modify storage orders1 Recipe append from storage recipe:bank Recipe[9]
 execute if score $rand random matches 10 run data modify storage orders1 Recipe append from storage recipe:bank Recipe[10]
 
-##Run this again if necessary.
+# Run this again if necessary.
 scoreboard players remove $calculate calculate 1
 execute if score $calculate calculate matches 1.. run function game:default/add_recipe
