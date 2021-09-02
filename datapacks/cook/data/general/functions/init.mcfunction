@@ -69,12 +69,22 @@ scoreboard players set $-1 number -1
 scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
 scoreboard players set $75 number 75
+scoreboard players set $1200 number 1200
 
 # Settings
 scoreboard objectives add settings dummy
 
 # Main objective just for game operations.
 scoreboard objectives add game dummy
+
+# Timer
+scoreboard objectives add game_ticks dummy
+scoreboard objectives add game_seconds dummy
+scoreboard objectives add game_minutes dummy
+bossbar add game:timer ["",{"text":"Time Left - 00:00"}]
+bossbar set game:timer visible false
+scoreboard players set $mode_0_time settings 3600
+
 
 # Lobby teams
 team add lobby

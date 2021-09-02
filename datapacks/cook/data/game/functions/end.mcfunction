@@ -7,6 +7,9 @@ execute as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_
 tp @e[tag=die_between_games] 0 0 0
 kill @e[tag=die_between_games]
 
+# Resets timer
+scoreboard players set $timer game_ticks 0
+
 # Sets game state to 0
 scoreboard players set $game state 0
 

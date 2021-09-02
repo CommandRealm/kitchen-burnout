@@ -1,7 +1,12 @@
 # The function that runs whenever the game is running.
 
 # General timer
-scoreboard players add $time game 1
+#scoreboard players add $time game 1
+execute if score $mode settings matches 0 run function game:timers/normal
+
+# Stop game, then end
+execute if score $timer game_ticks matches 18 run function game:stop_message
+execute if score $timer game_ticks matches ..-41 run function game:end
 
 # Mode
 # execute if score $mode settings matches 0 run function game:default/main
