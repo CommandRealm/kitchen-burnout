@@ -7,8 +7,8 @@ execute as @a[scores={pregame_click=1..}] at @s run function lobby:pregame/click
 execute as @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] at @s unless score $ready_players pregame matches 50.. unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:knowledge_book"}]}] run function lobby:pregame/get_book
 
 # Actionbar titles
-title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure,scores={ready=0},tag=!parkour,tag=!tutorial] actionbar [{"text":"You will ","color":"gray"},{"text":"not play.","color":"red"}]
-title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure,scores={ready=1},tag=!parkour,tag=!tutorial] actionbar [{"text":"You will ","color":"white"},{"text":"play.","color":"gray"}]
+title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure,scores={ready=0},tag=!parkour,tag=!tutorial] actionbar [{"translate":"You will ","color":"gray"},{"translate":"not play.","color":"red"}]
+title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure,scores={ready=1},tag=!parkour,tag=!tutorial] actionbar [{"translate":"You will ","color":"white"},{"translate":"play.","color":"gray"}]
 
 # Count readied players
 execute store result score $ready_players pregame if entity @a[scores={ready=1..}]

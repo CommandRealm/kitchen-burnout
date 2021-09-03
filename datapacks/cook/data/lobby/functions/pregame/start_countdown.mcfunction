@@ -6,7 +6,7 @@ scoreboard players set $second pregame 20
 # Other
 title @a times 0 25 5
 
-title @a[gamemode=adventure] title [{"text":"5","bold":true,"color":"gray"},{"text":" seconds . . .","color":"white","bold":false}]
+title @a[gamemode=adventure] title [{"text":"5","bold":true,"color":"gray"},{"translate":" seconds . . .","color":"white","bold":false}]
 
 execute as @a at @s run playsound minecraft:block.metal.place master @s ~ ~ ~ 0.5
 execute as @a at @s run playsound minecraft:block.wood.break master @s ~ ~ ~ 0.5
@@ -17,7 +17,7 @@ execute as @a at @s run playsound minecraft:block.fire.extinguish master @s ~ ~ 
 
 # Sidebar obj
 scoreboard objectives remove readied_players
-scoreboard objectives add readied_players dummy [{"text":"-=-","color":"gray","bold":false},{"text":" Playing ","color":"white","bold":true},{"text":"-=-","color":"gray","bold":false}]
+scoreboard objectives add readied_players dummy [{"text":"-=-","color":"gray","bold":false},{"translate":" Playing ","color":"white","bold":true},{"text":"-=-","color":"gray","bold":false}]
 scoreboard objectives setdisplay sidebar readied_players
 
 

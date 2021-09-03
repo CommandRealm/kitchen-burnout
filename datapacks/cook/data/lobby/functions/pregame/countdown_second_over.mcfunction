@@ -6,8 +6,8 @@ scoreboard players operation $display pregame /= $20 number
 
 
 # Titles. It's two commands to avoid "1 seconds"
-execute unless score $display pregame matches 1 run title @a[gamemode=adventure] title [{"score":{"objective":"pregame","name":"$display"},"color":"gray","bold":true},{"text":" seconds . . .","color":"white","bold":false}]
-execute if score $display pregame matches 1 run title @a[gamemode=adventure] title [{"score":{"objective":"pregame","name":"$display"},"color":"gray","bold":true},{"text":" second . . .","color":"white","bold":false}]
+execute unless score $display pregame matches 1 run title @a[gamemode=adventure] title [{"score":{"objective":"pregame","name":"$display"},"color":"gray","bold":true},{"translate":" seconds . . .","color":"white","bold":false}]
+execute if score $display pregame matches 1 run title @a[gamemode=adventure] title [{"score":{"objective":"pregame","name":"$display"},"color":"gray","bold":true},{"translate":" second . . .","color":"white","bold":false}]
 
 
 # Sounds

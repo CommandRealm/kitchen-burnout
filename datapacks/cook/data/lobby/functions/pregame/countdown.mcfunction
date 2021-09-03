@@ -32,7 +32,7 @@ execute if score $countdown pregame matches 0 run function lobby:pregame/countdo
 
 
 # has if statement to make sure it doesn't run if the countdown is cancelled.
-execute if score $countdown pregame matches 0.. run title @a[scores={ready=0},gamemode=adventure] subtitle [{"text":"to join the game . . .","color":"red"}]
-title @a[scores={ready=1},gamemode=adventure] subtitle [{"text":"till the game begins. ","color":"gray"},{"text":"(","color":"white","bold":true},{"score":{"objective":"pregame","name":"$ready_players"},"color":"gray","bold":false},{"text":"/","color":"white","bold":false},{"score":{"objective":"pregame","name":"$players_on"},"color":"gray","bold":false},{"text":")","color":"white","bold":true}]
+execute if score $countdown pregame matches 0.. run title @a[scores={ready=0},gamemode=adventure] subtitle [{"translate":"to join the game . . .","color":"red"}]
+title @a[scores={ready=1},gamemode=adventure] subtitle [{"translate":"till the game begins. ","color":"gray"},{"text":"(","color":"white","bold":true},{"score":{"objective":"pregame","name":"$ready_players"},"color":"gray","bold":false},{"text":"/","color":"white","bold":false},{"score":{"objective":"pregame","name":"$players_on"},"color":"gray","bold":false},{"text":")","color":"white","bold":true}]
 
 

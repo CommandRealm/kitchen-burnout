@@ -111,16 +111,16 @@ team modify lead color white
 team modify manager color white
 team modify pc_role color white
 team modify unlock color white
-team modify test prefix {"text":"(Tester) ","color":"white"}
-team modify help prefix {"text":"[Helper] ","color":"gray "}
-team modify bld prefix {"text":"{Builder} ","color":"blue"}
-team modify prg prefix {"text":"{Programmer} ","color":"red"}
-team modify srbld prefix {"text":"{Sr. Builder} ","color":"dark_blue"}
-team modify srprg prefix {"text":"{Sr. Programmer} ","color":"dark_red"}
-team modify art prefix {"text":"{Artist} ","color":"green"}
-team modify srart prefix {"text":"{Senior Artist} ","color":"dark_green"}
-team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":"Project Lead","bold":false},{"text":"} ","bold":true}]
-team modify manager prefix {"text":"{Manager} ","color":"yellow"}
+team modify test prefix {"translate":"(Tester) ","color":"white"}
+team modify help prefix {"translate":"[Helper] ","color":"gray "}
+team modify bld prefix {"translate":"{Builder} ","color":"blue"}
+team modify prg prefix {"translate":"{Programmer} ","color":"red"}
+team modify srbld prefix {"translate":"{Sr. Builder} ","color":"dark_blue"}
+team modify srprg prefix {"translate":"{Sr. Programmer} ","color":"dark_red"}
+team modify art prefix {"translate":"{Artist} ","color":"green"}
+team modify srart prefix {"translate":"{Sr. Artist} ","color":"dark_green"}
+team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"translate":"Project Lead","bold":false},{"text":"} ","bold":true}]
+team modify manager prefix {"translate":"{Manager} ","color":"yellow"}
 
 team add cr
 team modify cr color white
