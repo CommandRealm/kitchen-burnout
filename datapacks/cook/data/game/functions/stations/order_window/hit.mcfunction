@@ -1,7 +1,9 @@
-# called when our raycast hits the cutting board.
+# called when our raycast hits the order window.
 
-execute if entity @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=order_window,tag=!full_window] run function game:stations/cutting_board/no_cut
+# Placing an item on the board
+execute unless data entity @e[type=armor_stand,sort=nearest,limit=1,tag=ingredient_item] HandItems[0].id if data entity @s Inventory[{Slot:4b}].tag{ingredient:1b} run function game:stations/order_window/place_item
 
-execute unless entity @s[tag=temporary_tag] if entity @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=cutting_board,tag=cut_in_progress] run function game:stations/cutting_board/check_cut
+# If we have no acceptable item
+execute unless entity @s[tag=temporary_tag] unless data entity @e[type=armor_stand,sort=nearest,limit=1,tag=ingredient_item] HandItems[0].id unless data entity @s Inventory[{Slot:4b}].tag{ingredient:1b} run function game:stations/order_window/invalid_action
 
 tag @s remove temporary_tag

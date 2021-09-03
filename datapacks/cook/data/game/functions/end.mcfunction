@@ -9,6 +9,7 @@ kill @e[tag=die_between_games]
 
 # Resets timer
 scoreboard players set $timer game_ticks 0
+bossbar set game:timer visible false
 
 # Sets game state to 0
 scoreboard players set $game state 0

@@ -1,6 +1,7 @@
 # Place in core stations
 execute if block ~ ~ ~ heavy_weighted_pressure_plate run function game:stations/stovetop/create
 execute if block ~ ~ ~ spruce_pressure_plate run function game:stations/cutting_board/create
+execute if block ~ ~ ~ black_glazed_terracotta positioned ~ ~10 ~ run function game:stations/order_window/create
 
 # Place in ingredient boxes - map (category) dependent
 execute if entity @a[scores={map=1}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
