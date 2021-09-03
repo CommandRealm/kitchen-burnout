@@ -5,8 +5,8 @@
 # Making it go down if it's the second stage
 scoreboard players remove @e[type=marker,tag=cutting_board,scores={station=1..,station_state=2}] station_timer 2
 
-execute as @a[tag=playing] at @s if entity @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] unless entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run title @s subtitle [{"text":"Hold the knife","color":"gold"}]
-execute as @a[tag=playing] at @s if entity @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run title @s subtitle [{"text":"Click when the blue bar is near the center.","color":"gold"}]
+execute as @a[tag=playing] at @s if entity @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] unless entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run title @s subtitle [{"translate":"Hold the knife","color":"gold"}]
+execute as @a[tag=playing] at @s if entity @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run title @s subtitle [{"translate":"Click when the blue bar is near the center.","color":"gold"}]
 # [{"text":"|||||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||||","color":"white"}]
 execute as @a[tag=playing] at @s if score @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] station_timer matches -10 run title @s title ["",{"text":"|","color":"#0042ff","underlined":true},{"text":"|","color":"red"},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||","color":"white"},{"text":"||","color":"red"}]
 execute as @a[tag=playing] at @s if score @e[type=marker,tag=cutting_board,distance=..3,sort=nearest,limit=1] station_timer matches -8 run title @s title [{"text":"|","color":"red"},{"text":"|","color":"#0042ff","underlined":true},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||","color":"white"},{"text":"||","color":"red"}]

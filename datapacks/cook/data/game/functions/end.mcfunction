@@ -34,7 +34,7 @@ execute as @a[tag=playing] at @s run function general:rank
 
 # Removing tags
 
-tellraw @a[tag=!playing] [{"text":"- ","color":"gray"},{"text":"The game has ended.","color":"green"}]
+tellraw @a[tag=!playing] [{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
 tag @a[tag=playing] remove mechanics
 tag @a[tag=playing] remove playing
 
