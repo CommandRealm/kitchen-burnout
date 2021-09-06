@@ -1,0 +1,1 @@
+execute unless entity @e[type=armor_stand,tag=prep_slot] run function game:stations/prep/summon_existing

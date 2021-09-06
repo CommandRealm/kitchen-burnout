@@ -12,3 +12,5 @@ execute if entity @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=ne
 execute at @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=stovetop] run function game:stations/stovetop/hit
 
 execute at @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=order_window] run function game:stations/order_window/hit
+
+execute as @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=prep_display] run scoreboard players set @s prep_display 1

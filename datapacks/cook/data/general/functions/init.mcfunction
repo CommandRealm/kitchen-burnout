@@ -170,6 +170,8 @@ scoreboard objectives add station_placer_y dummy
 scoreboard objectives add station_placer_z dummy
 scoreboard objectives add station_placer_d dummy
 
+scoreboard objectives add prep_display dummy
+
 team add game
 team modify game color gray
 team modify game collisionRule always

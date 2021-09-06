@@ -1,4 +1,6 @@
 # Called to get bread
 clear @s yellow_dye
 execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:yellow_dye"}}]
-loot replace entity @s hotbar.4 loot game:food/cheese
+loot replace entity @s[type=player] hotbar.4 loot game:food/cheese
+loot replace entity @s[type=armor_stand] weapon.mainhand loot game:food/cheese
+scoreboard players set @s[type=armor_stand] ingredient 2
