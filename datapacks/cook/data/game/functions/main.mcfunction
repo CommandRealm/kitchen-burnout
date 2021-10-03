@@ -23,8 +23,15 @@ execute if entity @a[tag=playing,scores={click_cooldown=1..},limit=1] run functi
 # When we right-click
 execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={click_cooldown=1..}] run function game:click/start 
 
+# Prep display raycast (maybe add something that kills all the display entities to quick-start the display animation if you look at the marker while it's removing the ingredients)
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=0},distance=..1] run scoreboard players set @s prep_display 1
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=1},distance=1..] run scoreboard players set @s prep_display -1
+
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..}] run function game:stations/main
+
+# Prep Station
+execute as @e[type=marker,tag=prep_display] at @s run function game:stations/prep/main
 
 # If there is a recipe cooldown
 execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
