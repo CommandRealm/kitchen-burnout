@@ -25,7 +25,7 @@ execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={cli
 
 # Prep display raycast (maybe add something that kills all the display entities to quick-start the display animation if you look at the marker while it's removing the ingredients)
 execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=0},distance=..1] run scoreboard players set @s prep_display 1
-execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=1},distance=1..1.1] run scoreboard players set @s prep_display -1
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=1},distance=1..1.25] run scoreboard players set @s prep_display -1
 
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..}] run function game:stations/main
