@@ -1,6 +1,6 @@
 # Called to create a prep station
 setblock ~ ~1 ~ oak_pressure_plate[powered=true]
-summon marker ~ ~1 ~ {Tags:["prep_display","station","die_between_games"]}
+summon marker ~ ~1 ~ {Tags:["prep_display","prep_slot","station","die_between_games"]}
 scoreboard players set @e[type=marker,tag=prep_display,sort=nearest,limit=1] prep_display 0
 
 # Dish
