@@ -18,7 +18,6 @@ execute if score @s ingredient matches 9 as @e[type=marker,tag=prep_display,limi
 execute if score @s ingredient matches 10 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove burnt_hamburger
 execute if score @s ingredient matches 11 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove scorched_food
 
-tag @e[type=marker,tag=prep_display,limit=1,sort=nearest] add needs_prep_reset
 scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
 execute as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot] run scoreboard players set @s prep_display 0
 

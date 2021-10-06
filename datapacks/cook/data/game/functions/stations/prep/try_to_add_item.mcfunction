@@ -28,9 +28,8 @@ execute if score @s[tag=!temporary_place_tag] ingredient matches 11 as @e[type=m
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0
 playsound entity.item.pickup master @s[tag=!temporary_place_tag] ~ ~ ~ 1 1.1
 item replace entity @s[tag=!temporary_place_tag] hotbar.4 with air
-execute if entity @s[tag=!temporary_place_tag] run tag @e[type=marker,tag=prep_display,limit=1,sort=nearest] add needs_prep_reset
-execute if entity @s[tag=!temporary_place_tag] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
-execute as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot] run scoreboard players set @s prep_display 0
+execute if entity @s[tag=!temporary_place_tag] as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s run tag @s add reset_prep_ingredients
+#execute if entity @s[tag=!temporary_place_tag] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
 
 # Remove tags
 tag @s remove temporary_place_tag
