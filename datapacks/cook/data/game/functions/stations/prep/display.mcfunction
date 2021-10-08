@@ -4,10 +4,10 @@
 # Create ingredients and move them to proper positions
 # OR
 # Convert display armor stands to regular and use those for fancy-shmancy animation
-tag @e[type=armor_stand,tag=compact_display,distance=..10] add prep_slot
+#tag @e[type=armor_stand,tag=compact_display,distance=..10,tag=final_position] add prep_slot
 #execute as @e[type=armor_stand,tag=compact_display,distance=..10,tag=final_position] at @s run tp @s ~ ~-0.077 ~
-tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove final_position
-tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove compact_display
+#tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove final_position
+#tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove compact_display
 execute if entity @s[tag=reset_prep_ingredients] run function game:stations/prep/summon_existing
 execute as @e[type=armor_stand,tag=prep_slot,tag=!final_position] at @s run function game:stations/prep/tp/main
 # Hide display if not being looked at
