@@ -1,0 +1,4 @@
+execute as @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=..200,tag=!crmTdrawingline] at @s if entity @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=3..200,tag=!crmTdrawingline] run summon area_effect_cloud ~ ~ ~ {Tags:["crmTlinecast"],Duration:32000,NoGravity:1b}
+execute as @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=..200,tag=!crmTdrawingline] at @s if entity @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=3..200,tag=!crmTdrawingline] run tag @s add crmTdrawingline
+execute as @e[tag=crmTlinecast] at @s if entity @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=3..200,tag=!crmTdrawingline] run tp @s ~ ~ ~ facing entity @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=..200,tag=!crmTdrawingline]
+execute as @e[tag=crmTlinecast] at @s if entity @e[type=shulker,tag=crmTline,limit=1,sort=nearest,distance=3..200,tag=!crmTdrawingline] run function terra:line_cast

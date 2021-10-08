@@ -1,5 +1,5 @@
 # ignore everything...
-/*
+/session.lock
 # ...except these folders/files
 !/datapacks/
 !/resourcepack/
