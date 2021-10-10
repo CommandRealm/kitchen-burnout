@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"text\":\"Hamburger \",\"color\":\"#e6cb61\",\"italic\":false},{\"text\":\"Bun\",\"color\":\"#fff3c4\"}]'},CustomModelData:2,base:1b,primary:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

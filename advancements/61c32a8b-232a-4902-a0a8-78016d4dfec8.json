@@ -341,12 +341,6 @@
     },
     "done": true
   },
-  "game:inventory_changed": {
-    "criteria": {
-      "requirement": "2021-10-08 14:29:11 -0400"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/oak_wood": {
     "criteria": {
       "has_log": "2021-05-30 01:32:28 -0400"
