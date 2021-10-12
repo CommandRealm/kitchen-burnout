@@ -8,7 +8,7 @@ execute if block ~ ~ ~ chiseled_quartz_block if block ~ ~1 ~ oak_pressure_plate 
 execute if entity @a[scores={map=1}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
 
 
-particle barrier ~ ~ ~ 0 0 0 1 0 force
+#particle barrier ~ ~ ~ 0 0 0 1 0 force
 
 # Move
 scoreboard players set @s station_placer_d 0
