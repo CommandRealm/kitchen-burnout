@@ -1,4 +1,10 @@
 {
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2021-10-12 10:21:19 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
     "criteria": {
       "has_rose_red": "2021-10-08 10:47:39 -0400"
