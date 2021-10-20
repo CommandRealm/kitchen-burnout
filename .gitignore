@@ -8,3 +8,6 @@
 !.gitignore
 !/world_files/
 !/.github/workflows
+DIM-1/data/raids.dat
+*.dat
+DIM1/data/raids_end.dat
