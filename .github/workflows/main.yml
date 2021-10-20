@@ -18,26 +18,26 @@ jobs:
           username:  Calverin.9196
           password: ${{ secrets.FTP_PASSWORD }}
           exclude:
-          - */.git*
-          - */.git*/**
-          - */node_modules/**
-          - .dat
-          - */region*
-          - */data*
-          - */DIM1*
-          - */DIM-1*
-          - */entities*
-          - */playerdata*
-          - */poi*
-          - */region*/**
-          - */data*/**
-          - */DIM1*/**
-          - */DIM-1*/**
-          - */entities*/**
-          - */playerdata*/**
-          - */poi*/**
-          - session.lock
-          - uid.dat
+            - **/.git*
+            - **/.git*/**
+            - **/node_modules/**
+            - *.dat
+            - **/region*
+            - **/data*
+            - **/DIM1*
+            - **/DIM-1*
+            - **/entities*
+            - **/playerdata*
+            - **/poi*
+            - **/region*/**
+            - **/data*/**
+            - **/DIM1*/**
+            - **/DIM-1*/**
+            - **/entities*/**
+            - **/playerdata*/**
+            - **/poi*/**
+            - session.lock
+            - uid.dat
 
       - name: RCON Connection 🔌
         uses: Plagiatus/RCON-Action@v0.1
