@@ -17,6 +17,13 @@ jobs:
           server:  198.50.253.148
           username:  Calverin.9196
           password: ${{ secrets.FTP_PASSWORD }}
+
+      - name: RCON Connection 🔌
+        uses: Plagiatus/RCON-Action@v0.1
+        with:
+          server: 198.50.253.148
+          password: ${{ secrets.RCON_PASSWORD }}
+          commands: '["reload", "say You just got RCONned B)"]'
           exclude:
             - **/.git*
             - **/.git*/**
@@ -38,10 +45,3 @@ jobs:
             - **/poi*/**
             - session.lock
             - uid.dat
-
-      - name: RCON Connection 🔌
-        uses: Plagiatus/RCON-Action@v0.1
-        with:
-          server: 198.50.253.148
-          password: ${{ secrets.RCON_PASSWORD }}
-          commands: '["reload", "say You just got RCONned B)"]'
