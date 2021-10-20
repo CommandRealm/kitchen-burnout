@@ -1,0 +1,14 @@
+{
+    "block.wooden_button.click_on": {
+      "replace": true,
+      "sounds": [
+        "note/bell"
+      ]
+    },
+    "block.wooden_button.click_off": {
+        "replace": true,
+        "sounds": [
+          "note/bell"
+        ]
+    }
+}

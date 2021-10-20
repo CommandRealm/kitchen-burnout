@@ -1,0 +1,1 @@
+give @s green_shulker_box{BlockEntityTag:{Lock:" "}}

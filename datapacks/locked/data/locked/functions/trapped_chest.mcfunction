@@ -1,0 +1,1 @@
+give @s trapped_chest{BlockEntityTag:{Lock:" "}}

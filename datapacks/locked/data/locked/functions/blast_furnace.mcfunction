@@ -1,0 +1,1 @@
+give @s blast_furnace{BlockEntityTag:{Lock:" "}}

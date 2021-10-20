@@ -1,0 +1,9 @@
+
+# Setting the recipe bank
+
+data remove storage recipe:bank {}
+data merge storage recipe:bank {Recipe:[]}
+
+data modify storage recipe:bank Recipe set value [{Id:0,Name:"plain hamburger",Ingredients:["Hamburger","Hamburger Bun"],Display_Ingredients:["Hamburger",", Hamburger Bun"]},{Id:1,Name:"hamburger with lettuce",Ingredients:["Hamburger","Hamburger Bun","Lettuce Leaf"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Lettuce Leaf"]},{Id:2,Name:"hamburger with tomatoes",Ingredients:["Hamburger","Hamburger Bun","Tomato Slice"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Tomato Slice"]},{Id:3,Name:"hamburger with lettuce and tomatoes",Ingredients:["Hamburger","Hamburger Bun","Lettuce Leaf","Tomato Slice"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Lettuce Leaf",", Tomato Slice"]},{Id:4,Name:"plain cheeseburger",Ingredients:["Hamburger","Hamburger Bun","Cheese"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Cheese"]},{Id:5,Name:"cheeseburger with lettuce",Ingredients:["Hamburger","Hamburger Bun","Cheese","Lettuce Leaf"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Cheese",", Lettuce Leaf"]},{Id:6,Name:"cheeseburger with tomatoes",Ingredients:["Hamburger","Hamburger Bun","Cheese","Tomato Slice"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Cheese",", Tomato Slice"]},{Id:7,Name:"cheeseburger with lettuce and tomato",Ingredients:["Hamburger","Hamburger Bun","Cheese","Letuce Leaf","Tomato Slice"],Display_Ingredients:["Hamburger",", Hamburger Bun",", Cheese",", Lettuce Leaf",", Tomato Slice"]}]
+
+scoreboard players set $mod random 8
