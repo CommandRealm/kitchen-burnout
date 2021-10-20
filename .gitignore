@@ -1,5 +1,7 @@
 # ignore everything...
 /*
+*
+*/
 # ...except these folders/files
 !/datapacks/
 !/resourcepack/
@@ -8,6 +10,3 @@
 !.gitignore
 !/world_files/
 !/.github/workflows
-DIM-1/data/raids.dat
-*.dat
-DIM1/data/raids_end.dat

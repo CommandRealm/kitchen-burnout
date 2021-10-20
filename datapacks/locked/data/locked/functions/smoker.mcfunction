@@ -1,1 +1,0 @@
-give @s smoker{BlockEntityTag:{Lock:" "}}

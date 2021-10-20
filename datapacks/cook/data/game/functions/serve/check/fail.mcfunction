@@ -1,1 +1,0 @@
-playsound block.note_block.didgeridoo master @a ~ ~ ~ 1 0.25
