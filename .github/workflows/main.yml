@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Get latest code 👀
         uses: actions/checkout@v2
+
       - name: Sync files 📁
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
@@ -16,6 +17,28 @@ jobs:
           server:  198.50.253.148
           username:  Calverin.9196
           password: ${{ secrets.FTP_PASSWORD }}
+          exclude:
+          - **/.git*
+          - **/.git*/**
+          - **/node_modules/**
+          - *.dat
+          - **/region*
+          - **/data*
+          - **/DIM1*
+          - **/DIM-1*
+          - **/entities*
+          - **/playerdata*
+          - **/poi*
+          - **/region*/**
+          - **/data*/**
+          - **/DIM1*/**
+          - **/DIM-1*/**
+          - **/entities*/**
+          - **/playerdata*/**
+          - **/poi*/**
+          - session.lock
+          - uid.dat
+
       - name: RCON Connection 🔌
         uses: Plagiatus/RCON-Action@v0.1
         with:
