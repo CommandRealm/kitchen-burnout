@@ -1,6 +1,7 @@
 # ignore everything...
 /*
 # ...except these folders/files
+!/.github/
 !/datapacks/
 !/resourcepack/
 !/resourcepack.zip
