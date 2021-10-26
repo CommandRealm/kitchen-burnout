@@ -3,6 +3,11 @@ scoreboard players set $game state 1
 
 scoreboard players set $time game 0
 
+scoreboard players reset $finished_recipes game
+scoreboard players reset $score game
+
+execute if score $mode settings matches 0 run scoreboard players set $finished_recipes game 0
+execute if score $mode settings matches 0 run scoreboard players set $score game 0
 
 # Giving people the playing tag
 tag @a[scores={ready=1..}] add playing
@@ -49,13 +54,10 @@ execute if score $mode settings matches 0 run scoreboard players operation @a[ta
 # Setting up the map.
 kill @e[type=area_effect_cloud,tag=station_placer]
 execute if score $map settings matches 1 run function game:map/1/teleport
-
-
 schedule function game:map/setup_stations 20t
 
 # Recipe generation
 execute if score $mode settings matches 0 run function game:default/generate_recipes
-
 scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 65
 
 # Start timer

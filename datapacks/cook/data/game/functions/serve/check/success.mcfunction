@@ -1,3 +1,9 @@
+# Score
+## Classic Mode
+execute if score $mode settings matches 0 run function game:serve/score/classic
+scoreboard players reset @s recipe_timer
+
+# Reset marker
 tag @s remove hamburger_bun
 tag @s remove cheese
 tag @s remove lettuce_head

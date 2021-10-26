@@ -180,3 +180,4 @@ team modify game friendlyFire false
 scoreboard objectives add random dummy
 
 scoreboard objectives add recipe_cooldown dummy
+scoreboard objectives add recipe_timer dummy

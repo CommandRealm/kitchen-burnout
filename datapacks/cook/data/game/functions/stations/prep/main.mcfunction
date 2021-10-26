@@ -9,6 +9,7 @@ execute if score @s prep_display matches -1 as @e[type=armor_stand,distance=..15
 
 # Reset score so display can be opened again
 #execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=compact_display,tag=!final_compact_position,distance=..10] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display 0
+
 # Reset score so display can be opened again
 execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot,tag=final_position,distance=..10] run scoreboard players set @s prep_display 0
 
@@ -17,3 +18,5 @@ execute if score @s prep_display matches 1.. run function game:stations/prep/dis
 
 #execute if score @s prep_display matches -1 run function game:stations/prep/close_display
 #scoreboard players set @s prep_display 0
+
+scoreboard players add @s recipe_timer 1
