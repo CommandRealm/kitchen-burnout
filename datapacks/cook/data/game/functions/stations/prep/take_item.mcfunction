@@ -1,4 +1,5 @@
 # Take an item from the prep display
+scoreboard players set $calculate calculate 0
 
 # Match ingredient
 tag @e[type=armor_stand,sort=nearest,limit=1,tag=prep_slot] add selected_prep_slot
@@ -27,4 +28,4 @@ scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] pre
 
 tag @s add took_item_tag
 advancement grant @s only game:inventory_changed
-execute at @s run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 1
+execute at @s if entity @e[type=armor_stand,tag=prep_slot,distance=..15] run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 1

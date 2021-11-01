@@ -1,5 +1,4 @@
 # Called when our raycast hits a prep slot item
-scoreboard players set $calculate calculate 0
 
 # Taking an item from the prep display
 execute if score @s ingredient matches ..0 run function game:stations/prep/take_item

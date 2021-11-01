@@ -10,5 +10,11 @@
         "sounds": [
           "note/bell"
         ]
+    },
+    "block.chest.locked": {
+      "replace": true,
+      "sounds": [
+        ""
+      ]
     }
 }

@@ -1,3 +1,5 @@
+scoreboard players set $calculate calculate 0
+
 # If ingredient is already there, stop them from putting it there
 execute if score @s ingredient matches 1 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=hamburger_bun] run function game:stations/prep/cannot_place
 execute if score @s ingredient matches 2 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cheese] run function game:stations/prep/cannot_place

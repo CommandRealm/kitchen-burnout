@@ -1,3 +1,5 @@
+scoreboard players set $calculate calculate 0
+
 # called to asign our inventory slot to be bread
 scoreboard players operation @s ingredient = @e[type=marker,distance=..1,tag=raycast_target,limit=1,sort=nearest,tag=ingredient_box] ingredient
 execute at @s run playsound minecraft:entity.chicken.egg master @s ~ ~ ~ 1 0.67
