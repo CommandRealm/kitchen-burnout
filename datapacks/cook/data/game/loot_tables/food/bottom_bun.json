@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,display:{Name:'[{\"text\":\"Hamburger \",\"color\":\"#e6cb61\",\"italic\":false},{\"text\":\"Bun\",\"color\":\"#fff3c4\"}]'},CustomModelData:3,base:1b,primary:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Hamburger Bun\",\"color\":\"#e6cb61\",\"italic\":false}]'},CustomModelData:3,base:1b,primary:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
             }
           ]
         }

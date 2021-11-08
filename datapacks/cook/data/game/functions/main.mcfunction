@@ -46,3 +46,6 @@ execute as @e[type=armor_stand,tag=bell] at @s run function game:stations/bell/m
 
 # If there is a recipe cooldown
 execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
+
+# Recipe actionbar display
+execute if score $mode settings matches 0 as @e[tag=playing] at @s if data storage current_order1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,display:{Name:'[{\"text\":\"Burnt \",\"color\":\"#492813\",\"italic\":false},{\"text\":\"Hamburger\",\"color\":\"#704b36\"}]'},CustomModelData:1,primary:1b,stovetop:1b,cooking_time:500,transform_point:800,timer_type:\"burger\"}"
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Burnt Hamburger\",\"color\":\"#492813\",\"italic\":false}]'},CustomModelData:1,primary:1b,stovetop:1b,cooking_time:500,transform_point:800,timer_type:\"burger\"}"
             }
           ]
         }

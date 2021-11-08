@@ -1,0 +1,21 @@
+# Summon the recipe_ingredient markers for displaying the ingredients
+execute if data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Burnt Hamburger"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","burnt_hamburger"],CustomName:'["",{"translate":"Burnt Hamburger"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Cheese"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cheese"],CustomName:'["",{"translate":"Cheese"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Half-Cooked Hamburger"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","half_cooked_hamburger"],CustomName:'["",{"translate":"Half-Cooked Hamburger"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Hamburger"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger"],CustomName:'["",{"translate":"Hamburger"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Lettuce Head"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_head"],CustomName:'["",{"translate":"Lettuce Head"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Lettuce Leaf"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_leaf"],CustomName:'["",{"translate":"Lettuce Leaf"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Raw Hamburger"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","raw_hamburger"],CustomName:'["",{"translate":"Raw Hamburger"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Scorched Food"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","scorched_food"],CustomName:'["",{"translate":"Scorched Food"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Tomato Slice"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","tomato_slice"],CustomName:'["",{"translate":"Tomato Slice"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Tomato"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","tomato"],CustomName:'["",{"translate":"Tomato"}]'}
+
+execute if data storage minecraft:current_order1 Recipe{Name:"plain hamburger"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Plain Hamburger"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"hamburger with lettuce"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Hamburger with Lettuce"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"hamburger with tomato"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Hamburger with Tomato"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"hamburger with lettuce and tomato"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Hamburger with Lettuce and Tomato"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"plain cheeseburger"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Plain Cheeseburger"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"cheeseburger with lettuce"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Cheeseburger with Lettuce"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"cheeseburger with tomato"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Cheeseburger with Tomato"}]'}
+execute if data storage minecraft:current_order1 Recipe{Name:"cheeseburger with lettuce and tomato"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Cheeseburger with Lettuce and Tomato"}]'}

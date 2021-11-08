@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,display:{Name:'[{\"text\":\"Scorched \",\"color\":\"red\",\"italic\":false},{\"text\":\"Food\",\"color\":\"dark_gray\"}]'},CustomModelData:0,stovetop:1b,cooking_time:800,transform_point:1,timer_type:\"none\"}"
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Scorched Food\",\"color\":\"dark_gray\",\"italic\":false}]'},CustomModelData:0,stovetop:1b,cooking_time:800,transform_point:1,timer_type:\"none\"}"
             }
           ]
         }

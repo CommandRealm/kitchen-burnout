@@ -181,3 +181,12 @@ scoreboard objectives add random dummy
 
 scoreboard objectives add recipe_cooldown dummy
 scoreboard objectives add recipe_timer dummy
+
+# Recipe Ingredient Teams
+team add recipe_missing
+team modify recipe_missing color red
+
+team add recipe_filled
+team modify recipe_filled color green
+
+forceload add 0 0
