@@ -25,16 +25,6 @@
     "Hold your knife.": "Hold your knife.",
     "Click when the blue bar is near the center.": "Click when the blue bar is near the center.",
     "Time Left:":"Time Left:",
-    "(Tester) ": "(Tester) ",
-    "[Helper] ": "[Helper ",
-    "{Builder} ": "{Builder} ",
-    "{Programmer} ": "{Programmer} ",
-    "{Sr. Builder} ": "{Sr. Builder} ",
-    "{Sr. Programmer}": "{Sr. Programmer} ",
-    "{Artist} ": "{Artist} ",
-    "{Sr. Artist} ": "{Sr. Artist} ",
-    "Project Lead": "Project Lead",
-    "{Manager} ": "{Manager} ",
     " seconds . . .": " seconds . . .",
     "to join the game . . .": "to join the game . . .",
     "till the game begins. ": "till the game begins. ",
@@ -50,6 +40,22 @@
     "Game over!": "Game over!",
     "Score: ": "Score: ",
     "Completed Recipes: ": "Completed Recipes: ",
+
+
+
+    "(Tester) ": "(Tester) ",
+    "[Helper] ": "[Helper ",
+    "{Builder} ": "{Builder} ",
+    "{Programmer} ": "{Programmer} ",
+    "{Sr. Builder} ": "{Sr. Builder} ",
+    "{Sr. Programmer}": "{Sr. Programmer} ",
+    "{Artist} ": "{Artist} ",
+    "{Sr. Artist} ": "{Sr. Artist} ",
+    "Project Lead": "Project Lead",
+    "{Manager} ": "{Manager} ",
+
+
+
     "Hamburger Bun": "Hamburger Bun",
     "Cheese": "Cheese",
     "Lettuce Head": "Lettuce Head",
@@ -61,6 +67,19 @@
     "Hamburger": "Hamburger",
     "Burnt Hamburger": "Burnt Hamburger",
     "Scorched Food": "Scorched Food",
+
+    "Sushi Rice": "Sushi Rice",
+    "Fresh Salmon": "Fresh Salmon",
+    "Fresh Pufferfish": "Fresh Pufferfish",
+    "Cut Salmon": "Cut Salmon",
+    "Cut Pufferfish": "Cut Pufferfish",
+    "Poisonous Pufferfish": "Poisonous Pufferfish",
+    "Avocado": "Avocado",
+    "Avocado Slice": "Avocado Slice",
+    "Wasabi": "Wasabi",
+
+
+
     "Plain Hamburger": "Plain Hamburger",
     "Hamburger with Lettuce": "Hamburger with Lettuce",
     "Hamburger with Tomato": "Hamburger with Tomato",
@@ -68,5 +87,17 @@
     "Plain Cheeseburger": "Plain Cheeseburger",
     "Cheeseburger with Lettuce": "Cheeseburger with Lettuce",
     "Cheeseburger with Tomato": "Cheeseburger with Tomato",
-    "Cheeseburger with Lettuce and Tomato": "Cheeseburger with Lettuce and Tomato"
+    "Cheeseburger with Lettuce and Tomato": "Cheeseburger with Lettuce and Tomato",
+
+    "Salmon Sashimi": "Salmon Sashimi",
+    "Salmon Sashimi with Wasabi": "Salmon Sashimi with Wasabi",
+    "Salmon Nigiri": "Salmon Nigiri",
+    "Salmon Nigiri with Wasabi": "Salmon Nigiri with Wasabi",
+    "Pufferfish Sashimi": "Pufferfish Sashimi",
+    "Pufferfish Sashimi with Wasabi": "Pufferfish Sashimi with Wasabi",
+    "Pufferfish Nigiri": "Pufferfish Nigiri",
+    "Pufferfish Nigiri with Wasabi": "Pufferfish Nigiri with Wasabi",
+    "Avocado Nigiri": "Avocado Nigiri",
+    "Avocado Nigiri with Wasabi": "Avocado Nigiri with Wasabi"
+    
 }

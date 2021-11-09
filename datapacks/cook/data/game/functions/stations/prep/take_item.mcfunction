@@ -20,6 +20,16 @@ execute if score @s ingredient matches 9 as @e[type=marker,tag=prep_display,limi
 execute if score @s ingredient matches 10 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove burnt_hamburger
 execute if score @s ingredient matches 11 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove scorched_food
 
+execute if score @s ingredient matches 12 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove rice
+execute if score @s ingredient matches 13 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove salmon
+execute if score @s ingredient matches 14 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove pufferfish
+execute if score @s ingredient matches 15 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_salmon
+execute if score @s ingredient matches 16 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_pufferfish
+execute if score @s ingredient matches 17 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove poison_pufferfish
+execute if score @s ingredient matches 18 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove avocado
+execute if score @s ingredient matches 19 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove avocado_slice
+execute if score @s ingredient matches 20 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove wasabi
+
 # Mark ingredient as not being there
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=hamburger_bun] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=cheese] run team join recipe_missing @s
@@ -33,6 +43,16 @@ execute if score $mode settings matches 0 if score @s ingredient matches 9 as @e
 execute if score $mode settings matches 0 if score @s ingredient matches 10 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=burnt_hamburger] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches 11 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=scorched_food] run team join recipe_missing @s
 
+execute if score $mode settings matches 0 if score @s ingredient matches 12 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=rice] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 13 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=salmon] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 14 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=pufferfish] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 15 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=cut_salmon] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 16 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=cut_pufferfish] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 17 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=poison_pufferfish] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 18 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=avocado] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 19 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=avocado_slice] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 20 as @e[type=marker,tag=recipe_ingredient,limit=1,sort=nearest,tag=wasabi] run team join recipe_missing @s
+
 # Kill ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] unless data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] unless data storage current_order1 Recipe{Ingredients:["Cheese"]} run kill @s
@@ -45,6 +65,16 @@ execute if score $mode settings matches 0 if score @s ingredient matches 8 as @e
 execute if score $mode settings matches 0 if score @s ingredient matches 9 as @e[type=marker,tag=recipe_ingredient,tag=hamburger] unless data storage current_order1 Recipe{Ingredients:["Hamburger"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 10 as @e[type=marker,tag=recipe_ingredient,tag=burnt_hamburger] unless data storage current_order1 Recipe{Ingredients:["Burnt Hamburger"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 11 as @e[type=marker,tag=recipe_ingredient,tag=scorched_food] unless data storage current_order1 Recipe{Ingredients:["Scorched Food"]} run kill @s
+
+execute if score $mode settings matches 0 if score @s ingredient matches 12 as @e[type=marker,tag=recipe_ingredient,tag=rice] unless data storage current_order1 Recipe{Ingredients:["Sushi Rice"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 13 as @e[type=marker,tag=recipe_ingredient,tag=salmon] unless data storage current_order1 Recipe{Ingredients:["Fresh Salmon"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 14 as @e[type=marker,tag=recipe_ingredient,tag=pufferfish] unless data storage current_order1 Recipe{Ingredients:["Fresh Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 15 as @e[type=marker,tag=recipe_ingredient,tag=cut_salmon] unless data storage current_order1 Recipe{Ingredients:["Cut Salmon"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 16 as @e[type=marker,tag=recipe_ingredient,tag=cut_pufferfish] unless data storage current_order1 Recipe{Ingredients:["Cut Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 17 as @e[type=marker,tag=recipe_ingredient,tag=poison_pufferfish] unless data storage current_order1 Recipe{Ingredients:["Poison Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 18 as @e[type=marker,tag=recipe_ingredient,tag=avocado] unless data storage current_order1 Recipe{Ingredients:["Avocado"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 19 as @e[type=marker,tag=recipe_ingredient,tag=avocado_slice] unless data storage current_order1 Recipe{Ingredients:["Avocado Slice"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 20 as @e[type=marker,tag=recipe_ingredient,tag=wasabi] unless data storage current_order1 Recipe{Ingredients:["Wasabi"]} run kill @s
 
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display

@@ -17,6 +17,16 @@ execute if entity @s[tag=scorched_food] run summon minecraft:armor_stand ~0.3125
 execute if entity @s[tag=tomato_slice] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","tomato_slice"]}
 execute if entity @s[tag=tomato] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","tomato"]}
 
+execute if entity @s[tag=rice] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","rice"]}
+execute if entity @s[tag=salmon] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","salmon"]}
+execute if entity @s[tag=cut_salmon] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cut_salmon"]}
+execute if entity @s[tag=pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","pufferfish"]}
+execute if entity @s[tag=cut_pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cut_pufferfish"]}
+execute if entity @s[tag=poison_pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","poison_pufferfish"]}
+execute if entity @s[tag=avocado] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","avocado"]}
+execute if entity @s[tag=avocado_slice] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","avocado_slice"]}
+execute if entity @s[tag=wasabi] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","wasabi"]}
+
 # Using storage system
 #execute if data storage current_order1 Recipe{Prep:["Hamburger Bun"]} run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","hamburger_bun"]}
 ## Top bun
@@ -43,5 +53,15 @@ execute as @e[type=armor_stand,tag=half_cooked_hamburger] at @s run function gam
 execute as @e[type=armor_stand,tag=hamburger] at @s run function game:inventory/get_hamburger
 execute as @e[type=armor_stand,tag=burnt_hamburger] at @s run function game:inventory/get_burnt_hamburger
 execute as @e[type=armor_stand,tag=scorched_food] at @s run function game:inventory/get_scorched_food
+
+execute as @e[tag=rice] at @s run function game:inventory/get_rice
+execute as @e[tag=salmon] at @s run function game:inventory/get_salmon
+execute as @e[tag=cut_salmon] at @s run function game:inventory/get_cut_salmon
+execute as @e[tag=pufferfish] at @s run function game:inventory/get_pufferfish
+execute as @e[tag=cut_pufferfish] at @s run function game:inventory/get_cut_pufferfish
+execute as @e[tag=poison_pufferfish] at @s run function game:inventory/get_poison_pufferfish
+execute as @e[tag=avocado] at @s run function game:inventory/get_avocado
+execute as @e[tag=avocado_slice] at @s run function game:inventory/get_avocado_slice
+execute as @e[tag=wasabi] at @s run function game:inventory/get_wasabi
 
 tag @s remove reset_prep_ingredients

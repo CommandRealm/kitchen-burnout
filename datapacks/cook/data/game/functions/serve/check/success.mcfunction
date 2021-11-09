@@ -15,6 +15,15 @@ tag @s remove half_cooked_hamburger
 tag @s remove hamburger
 tag @s remove burnt_hamburger
 tag @s remove scorched_food
+tag @s remove rice
+tag @s remove salmon
+tag @s remove cut_salmon
+tag @s remove pufferfish
+tag @s remove cut_pufferfish
+tag @s remove poison_pufferfish
+tag @s remove avocado
+tag @s remove avocado_slice
+tag @s remove wasabi
 kill @e[type=armor_stand,tag=prep_slot,distance=..10]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
