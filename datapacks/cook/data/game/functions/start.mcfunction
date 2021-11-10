@@ -34,6 +34,7 @@ scoreboard players reset $end game
 title @a[tag=playing] times 0 25 5
 
 forceload remove all
+forceload add 0 0
 
 scoreboard players reset @a click
 scoreboard players reset @a click_cooldown
@@ -54,6 +55,7 @@ execute if score $mode settings matches 0 run scoreboard players operation @a[ta
 # Setting up the map.
 kill @e[type=area_effect_cloud,tag=station_placer]
 execute if score $map settings matches 1 run function game:map/1/teleport
+execute if score $map settings matches 11 run function game:map/11/teleport
 schedule function game:map/setup_stations 20t
 
 # Recipe generation

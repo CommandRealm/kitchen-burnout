@@ -8,3 +8,5 @@ data modify storage minecraft:current_order1 Recipe set from storage orders1 Rec
 kill @e[type=marker,tag=recipe_ingredient]
 kill @e[type=marker,tag=recipe_name]
 function game:recipe_cooldown/classic/ingredient_summon
+# Add ingredient markers to missing team
+team join recipe_missing @e[type=marker,tag=recipe_ingredient]

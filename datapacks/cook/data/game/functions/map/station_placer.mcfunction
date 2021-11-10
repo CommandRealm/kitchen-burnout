@@ -1,13 +1,15 @@
 # Place in core stations
 execute if block ~ ~ ~ heavy_weighted_pressure_plate run function game:stations/stovetop/create
 execute if block ~ ~ ~ spruce_pressure_plate run function game:stations/cutting_board/create
-execute if block ~ ~ ~ black_glazed_terracotta positioned ~ ~10 ~ run function game:stations/order_window/create
+#execute if block ~ ~ ~ black_glazed_terracotta positioned ~ ~10 ~ run function game:stations/order_window/create
 execute if block ~ ~ ~ chiseled_quartz_block if block ~ ~1 ~ oak_pressure_plate run function game:stations/prep/create
 execute if block ~ ~ ~ chiseled_quartz_block if block ~ ~1 ~ spruce_button run function game:stations/bell/create
+execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ oak_pressure_plate run function game:stations/prep/create
+execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ spruce_button run function game:stations/bell/create
 
 # Place in ingredient boxes - map (category) dependent
-execute if entity @a[scores={map=1}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
-
+execute if entity @a[scores={map=1..5}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
+execute if entity @a[scores={map=11..15}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/sushi
 
 #particle barrier ~ ~ ~ 0 0 0 1 0 force
 

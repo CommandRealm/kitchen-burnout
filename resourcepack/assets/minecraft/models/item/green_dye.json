@@ -4,7 +4,8 @@
     "layer0": "minecraft:item/green_dye"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/lettuce_leaf"}
-               ]
+    {"predicate": {"custom_model_data": 1},"model": "item/lettuce_leaf"},
+    {"predicate": {"custom_model_data": 2},"model": "item/wasabi"}
+  ]
 }
 

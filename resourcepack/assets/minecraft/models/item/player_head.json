@@ -9,6 +9,7 @@
     {"predicate": {"custom_model_data": 1},"model": "item/lettuce_head"},
     {"predicate": {"custom_model_data": 2},"model": "item/tomato"},
     {"predicate": {"custom_model_data": 3},"model": "item/bell_unpressed"},
-    {"predicate": {"custom_model_data": 4},"model": "item/bell_pressed"}
+    {"predicate": {"custom_model_data": 4},"model": "item/bell_pressed"},
+    {"predicate": {"custom_model_data": 5},"model": "item/avocado"}
   ]
 }

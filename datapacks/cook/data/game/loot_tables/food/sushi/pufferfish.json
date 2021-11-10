@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Fresh Pufferfish\",\"color\":\"#fcec38\",\"italic\":false}]'},CustomModelData:1,cutting_board:1b,set_cutting_value:20,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
