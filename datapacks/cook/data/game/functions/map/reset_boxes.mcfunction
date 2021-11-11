@@ -15,3 +15,8 @@ execute if score @s ingredient matches 12 run setblock ~ ~ ~ white_glazed_terrac
 execute if score @s ingredient matches 18 run setblock ~ ~ ~ green_glazed_terracotta
 # Wasabi
 execute if score @s ingredient matches 20 run setblock ~ ~ ~ lime_glazed_terracotta
+
+# Salmon Spawner
+execute if entity @s[tag=salmon_spawner] run setblock ~ ~ ~ orange_glazed_terracotta
+# Pufferfish Spawner
+execute if entity @s[tag=pufferfish_spawner] run setblock ~ ~ ~ yellow_glazed_terracotta

@@ -1,5 +1,8 @@
 # The function that runs whenever the game is running.
 
+# Effects
+effect give @a[tag=playing] resistance 1 255 true
+
 # General timer
 #scoreboard players add $time game 1
 execute if score $mode settings matches 0 run function game:timers/normal

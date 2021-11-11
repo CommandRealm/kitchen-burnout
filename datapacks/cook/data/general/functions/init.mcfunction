@@ -12,7 +12,7 @@ gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doTileDrops false
 gamerule doWeatherCycle false
-gamerule drowningDamage true
+gamerule drowningDamage false
 gamerule fallDamage false
 gamerule fireDamage false
 gamerule keepInventory true
@@ -171,6 +171,8 @@ scoreboard objectives add station_placer_z dummy
 scoreboard objectives add station_placer_d dummy
 
 scoreboard objectives add prep_display dummy
+
+scoreboard objectives add fish_count dummy
 
 team add game
 team modify game color gray

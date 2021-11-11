@@ -2,6 +2,7 @@
 
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] run function game:inventory/offhand_detector
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:iron_sword"}]}] run function game:inventory/get_knife
+execute as @a[tag=playing,scores={map=11..15}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:cobweb"}]}] run function game:inventory/get_fishing_net
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:structure_void"}]}] run function game:inventory/get_trash_can
 
 execute as @a[tag=playing,scores={ingredient=1}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:bread"}]}] run function game:inventory/get_bread

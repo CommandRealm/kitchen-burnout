@@ -2,6 +2,7 @@
 
 # Resets ingredient boxes back to their normal blocks
 execute as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
+execute as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
 
 # Removes all entities that should die between games (most of them)
 tp @e[tag=die_between_games] 0 0 0
