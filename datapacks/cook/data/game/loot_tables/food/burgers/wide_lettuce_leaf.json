@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Lettuce Leaf\",\"color\":\"#c8ec98\",\"italic\":false}]'},CustomModelData:3,ingredient:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
