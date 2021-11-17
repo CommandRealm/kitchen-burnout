@@ -6,5 +6,6 @@ scoreboard players operation @e[type=armor_stand,sort=nearest,limit=1,tag=displa
 scoreboard players set @s ingredient 0
 item replace entity @s hotbar.4 with air
 
+execute as @e[type=armor_stand,sort=nearest,limit=1,tag=display_item,scores={ingredient=4}] at @s run loot replace entity @s weapon.mainhand loot game:food/burgers/wide_lettuce_leaf
 
 execute at @s run playsound minecraft:block.dispenser.dispense master @s ~ ~ ~ 1 1.25
