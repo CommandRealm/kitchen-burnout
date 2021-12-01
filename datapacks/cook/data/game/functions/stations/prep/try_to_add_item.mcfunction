@@ -23,6 +23,26 @@ execute if score @s ingredient matches 18 if entity @e[type=marker,tag=prep_disp
 execute if score @s ingredient matches 19 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=avocado_slice] run function game:stations/prep/cannot_place
 execute if score @s ingredient matches 20 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=wasabi] run function game:stations/prep/cannot_place
 
+execute if score @s ingredient matches 21 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=dough] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 22 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=sauce] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 23 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=pizza_cheese] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 24 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=pepperoni] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 25 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=mushroom] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 26 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=pineapple] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 27 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=thick_crust] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 28 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=thin_crust] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 29 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_mushroom] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 30 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_pineapple] run function game:stations/prep/cannot_place
+
+execute if score @s ingredient matches 31 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=tortilla] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 32 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=raw_beef] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 33 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=taco_cheese] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 34 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=guac] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 35 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=salsa] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 36 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=sour_cream] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 37 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=beef] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 38 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_shreds] run function game:stations/prep/cannot_place
+
 # If ingredient is not there, add ingredient
 execute if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger_bun] run tag @s add hamburger_bun
 execute if score @s[tag=!temporary_place_tag] ingredient matches 2 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cheese] run tag @s add cheese
@@ -45,6 +65,25 @@ execute if score @s[tag=!temporary_place_tag] ingredient matches 17 as @e[type=m
 execute if score @s[tag=!temporary_place_tag] ingredient matches 18 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado] run tag @s add avocado
 execute if score @s[tag=!temporary_place_tag] ingredient matches 19 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado_slice] run tag @s add avocado_slice
 execute if score @s[tag=!temporary_place_tag] ingredient matches 20 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!wasabi] run tag @s add wasabi
+
+execute if score @s[tag=!temporary_place_tag] ingredient matches 21 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!dough] run tag @s add dough
+execute if score @s[tag=!temporary_place_tag] ingredient matches 22 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sauce] run tag @s add sauce
+execute if score @s[tag=!temporary_place_tag] ingredient matches 23 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pizza_cheese] run tag @s add pizza_cheese
+execute if score @s[tag=!temporary_place_tag] ingredient matches 24 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pepperoni] run tag @s add pepperoni
+execute if score @s[tag=!temporary_place_tag] ingredient matches 25 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mushroom] run tag @s add mushroom
+execute if score @s[tag=!temporary_place_tag] ingredient matches 26 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pineapple] run tag @s add pineapple
+execute if score @s[tag=!temporary_place_tag] ingredient matches 27 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thick_crust] run tag @s add thick_crust
+execute if score @s[tag=!temporary_place_tag] ingredient matches 28 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thin_crust] run tag @s add thin_crust
+execute if score @s[tag=!temporary_place_tag] ingredient matches 29 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_mushroom] run tag @s add cut_mushroom
+execute if score @s[tag=!temporary_place_tag] ingredient matches 30 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_pineapple] run tag @s add cut_pineapple
+execute if score @s[tag=!temporary_place_tag] ingredient matches 31 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tortilla] run tag @s add tortilla
+execute if score @s[tag=!temporary_place_tag] ingredient matches 32 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!raw_beef] run tag @s add raw_beef
+execute if score @s[tag=!temporary_place_tag] ingredient matches 33 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!taco_cheese] run tag @s add taco_cheese
+execute if score @s[tag=!temporary_place_tag] ingredient matches 34 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!guac] run tag @s add guac
+execute if score @s[tag=!temporary_place_tag] ingredient matches 35 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!salsa] run tag @s add salsa
+execute if score @s[tag=!temporary_place_tag] ingredient matches 36 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sour_cream] run tag @s add sour_cream
+execute if score @s[tag=!temporary_place_tag] ingredient matches 37 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!beef] run tag @s add beef
+execute if score @s[tag=!temporary_place_tag] ingredient matches 38 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_shreds] run tag @s add lettuce_shreds
 
 # Summon ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 unless entity @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
@@ -69,6 +108,26 @@ execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] 
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 19 unless entity @e[type=marker,tag=recipe_ingredient,tag=avocado_slice] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","avocado_slice"],CustomName:'["",{"translate":"Avocado Slice"}]'}
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 20 unless entity @e[type=marker,tag=recipe_ingredient,tag=wasabi] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","wasabi"],CustomName:'["",{"translate":"Wasabi"}]'}
 
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 21 unless entity @e[type=marker,tag=recipe_ingredient,tag=dough] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","dough"],CustomName:'["",{"translate":"Pizza Dough"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 22 unless entity @e[type=marker,tag=recipe_ingredient,tag=sauce] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","sauce"],CustomName:'["",{"translate":"Tomato Sauce"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 23 unless entity @e[type=marker,tag=recipe_ingredient,tag=pizza_cheese] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pizza_cheese"],CustomName:'["",{"translate":"Pizza Cheese"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 24 unless entity @e[type=marker,tag=recipe_ingredient,tag=pepperoni] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pepperoni"],CustomName:'["",{"translate":"Pepperoni"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 25 unless entity @e[type=marker,tag=recipe_ingredient,tag=mushroom] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","mushroom"],CustomName:'["",{"translate":"Mushroom"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 26 unless entity @e[type=marker,tag=recipe_ingredient,tag=pineapple] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pineapple"],CustomName:'["",{"translate":"Pineapple"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 27 unless entity @e[type=marker,tag=recipe_ingredient,tag=thick_crust] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","thick_crust"],CustomName:'["",{"translate":"Deep-Dish Crust"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 28 unless entity @e[type=marker,tag=recipe_ingredient,tag=thin_crust] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","thin_crust"],CustomName:'["",{"translate":"Thin Crust"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 29 unless entity @e[type=marker,tag=recipe_ingredient,tag=cut_mushroom] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cut_mushroom"],CustomName:'["",{"translate":"Mushroom Slices"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 30 unless entity @e[type=marker,tag=recipe_ingredient,tag=cut_pineapple] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cut_pineapple"],CustomName:'["",{"translate":"Pineapple Chunks"}]'}
+
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 31 unless entity @e[type=marker,tag=recipe_ingredient,tag=tortilla] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","tortilla"],CustomName:'["",{"translate":"Tortilla"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 32 unless entity @e[type=marker,tag=recipe_ingredient,tag=raw_beef] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","raw_beef"],CustomName:'["",{"translate":"Raw Ground Beef"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 33 unless entity @e[type=marker,tag=recipe_ingredient,tag=taco_cheese] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","taco_cheese"],CustomName:'["",{"translate":"Taco Cheese"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 34 unless entity @e[type=marker,tag=recipe_ingredient,tag=guac] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","guac"],CustomName:'["",{"translate":"Guacamole"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 35 unless entity @e[type=marker,tag=recipe_ingredient,tag=salsa] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","salsa"],CustomName:'["",{"translate":"Salsa"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 36 unless entity @e[type=marker,tag=recipe_ingredient,tag=sour_cream] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","sour_cream"],CustomName:'["",{"translate":"Sour Cream"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 37 unless entity @e[type=marker,tag=recipe_ingredient,tag=beef] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","beef"],CustomName:'["",{"translate":"Ground Beef"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 38 unless entity @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_shreds"],CustomName:'["",{"translate":"Shredded Lettuce"}]'}
+
 # Mark ingredient as being there
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] if data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] if data storage current_order1 Recipe{Ingredients:["Cheese"]} run team join recipe_filled @s
@@ -91,6 +150,26 @@ execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] 
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 18 as @e[type=marker,tag=recipe_ingredient,tag=avocado] if data storage current_order1 Recipe{Ingredients:["Avocado"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 19 as @e[type=marker,tag=recipe_ingredient,tag=avocado_slice] if data storage current_order1 Recipe{Ingredients:["Avocado Slice"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 20 as @e[type=marker,tag=recipe_ingredient,tag=wasabi] if data storage current_order1 Recipe{Ingredients:["Wasabi"]} run team join recipe_filled @s
+
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 21 as @e[type=marker,tag=recipe_ingredient,tag=dough] if data storage current_order1 Recipe{Ingredients:["Pizza Dough"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 22 as @e[type=marker,tag=recipe_ingredient,tag=sauce] if data storage current_order1 Recipe{Ingredients:["Tomato Sauce"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 23 as @e[type=marker,tag=recipe_ingredient,tag=pizza_cheese] if data storage current_order1 Recipe{Ingredients:["Pizza Cheese"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 24 as @e[type=marker,tag=recipe_ingredient,tag=pepperoni] if data storage current_order1 Recipe{Ingredients:["Pepperoni"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 25 as @e[type=marker,tag=recipe_ingredient,tag=mushroom] if data storage current_order1 Recipe{Ingredients:["Mushroom"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 26 as @e[type=marker,tag=recipe_ingredient,tag=pineapple] if data storage current_order1 Recipe{Ingredients:["Pineapple"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 27 as @e[type=marker,tag=recipe_ingredient,tag=thick_crust] if data storage current_order1 Recipe{Ingredients:["Deep-Dish Crust"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 28 as @e[type=marker,tag=recipe_ingredient,tag=thin_crust] if data storage current_order1 Recipe{Ingredients:["Thin Crust"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 29 as @e[type=marker,tag=recipe_ingredient,tag=cut_mushroom] if data storage current_order1 Recipe{Ingredients:["Mushroom Slices"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 30 as @e[type=marker,tag=recipe_ingredient,tag=cut_pineapple] if data storage current_order1 Recipe{Ingredients:["Pineapple Chunks"]} run team join recipe_filled @s
+
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 31 as @e[type=marker,tag=recipe_ingredient,tag=tortilla] if data storage current_order1 Recipe{Ingredients:["Tortilla"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 32 as @e[type=marker,tag=recipe_ingredient,tag=raw_beef] if data storage current_order1 Recipe{Ingredients:["Raw Ground Beef"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 33 as @e[type=marker,tag=recipe_ingredient,tag=taco_cheese] if data storage current_order1 Recipe{Ingredients:["Taco Cheese"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 34 as @e[type=marker,tag=recipe_ingredient,tag=guac] if data storage current_order1 Recipe{Ingredients:["Guacamole"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 35 as @e[type=marker,tag=recipe_ingredient,tag=salsa] if data storage current_order1 Recipe{Ingredients:["Salsa"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 36 as @e[type=marker,tag=recipe_ingredient,tag=sour_cream] if data storage current_order1 Recipe{Ingredients:["Sour Cream"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 37 as @e[type=marker,tag=recipe_ingredient,tag=beef] if data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] if data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run team join recipe_filled @s
 
 # If ingredient was added, play sounds and get rid of armor stands
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0

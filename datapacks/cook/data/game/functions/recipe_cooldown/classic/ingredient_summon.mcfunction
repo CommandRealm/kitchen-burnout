@@ -21,6 +21,26 @@ execute if data storage current_order1 Recipe{Ingredients:["Avocado"]} run summo
 execute if data storage current_order1 Recipe{Ingredients:["Avocado Slice"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","avocado_slice"],CustomName:'["",{"translate":"Avocado Slice"}]'}
 execute if data storage current_order1 Recipe{Ingredients:["Wasabi"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","wasabi"],CustomName:'["",{"translate":"Wasabi"}]'}
 
+execute if data storage current_order1 Recipe{Ingredients:["Pizza Dough"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","dough"],CustomName:'["",{"translate":"Pizza Dough"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Tomato Sauce"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","sauce"],CustomName:'["",{"translate":"Tomato Sauce"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Pizza Cheese"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pizza_cheese"],CustomName:'["",{"translate":"Pizza Cheese"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Pepperoni"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pepperoni"],CustomName:'["",{"translate":"Pepperoni"}]'} 
+execute if data storage current_order1 Recipe{Ingredients:["Mushroom"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","mushroom"],CustomName:'["",{"translate":"Mushroom"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Pineapple"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","pineapple"],CustomName:'["",{"translate":"Pineapple"}]'} 
+execute if data storage current_order1 Recipe{Ingredients:["Deep-Dish Crust"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","thick_crust"],CustomName:'["",{"translate":"Deep-Dish Crust"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Thin Crust"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","thin_crust"],CustomName:'["",{"translate":"Thin Crust"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Mushroom Slices"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cut_mushroom"],CustomName:'["",{"translate":"Mushroom Slices"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Pineapple Chunks"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cut_pineapple"],CustomName:'["",{"translate":"Pineapple Chunks"}]'}
+
+execute if data storage current_order1 Recipe{Ingredients:["Tortilla"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","tortilla"],CustomName:'["",{"translate":"Tortilla"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Raw Ground Beef"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","raw_beef"],CustomName:'["",{"translate":"Raw Ground Beef"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Taco Cheese"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","taco_cheese"],CustomName:'["",{"translate":"Taco Cheese"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Guacamole"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","guac"],CustomName:'["",{"translate":"Guacamole"}]'} 
+execute if data storage current_order1 Recipe{Ingredients:["Salsa"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","salsa"],CustomName:'["",{"translate":"Salsa"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Sour Cream"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","sour_cream"],CustomName:'["",{"translate":"Sour Cream"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","beef"],CustomName:'["",{"translate":"Ground Beef"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_shreds"],CustomName:'["",{"translate":"Shredded Lettuce"}]'}
+
 # Summon the recipe_name markers for displaying the recipes
 execute if data storage minecraft:current_order1 Recipe{Name:"plain hamburger"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Plain Hamburger"}]'}
 execute if data storage minecraft:current_order1 Recipe{Name:"hamburger with lettuce"} run summon marker 0 0 0 {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Hamburger with Lettuce"}]'}
