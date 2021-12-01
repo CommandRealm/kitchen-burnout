@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_wart",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Raw Ground Beef\",\"color\":\"#f23a48\",\"italic\":false}]'},CustomModelData:2,stovetop:1b,cooking_time:1,transform_point:200,timer_type:\"beef\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

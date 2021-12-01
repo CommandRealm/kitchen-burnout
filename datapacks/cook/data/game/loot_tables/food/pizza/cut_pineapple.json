@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Pineapple Chunks\",\"color\":\"#f2f21b\",\"italic\":false}]'},CustomModelData:3,cutting_board:1b,set_cutting_value:20,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

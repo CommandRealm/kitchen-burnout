@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brown_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Ground Beef\",\"color\":\"#7d492c\",\"italic\":false}]'},CustomModelData:1,primary:1b,stovetop:1b,cooking_time:200,transform_point:350,timer_type:\"beef\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
