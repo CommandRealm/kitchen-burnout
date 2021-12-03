@@ -70,6 +70,9 @@ scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
 scoreboard players set $75 number 75
 scoreboard players set $1200 number 1200
+scoreboard players set $353 number 353
+scoreboard players set $1807 number 1807
+scoreboard players set $13879 number 13879
 
 # Settings
 scoreboard objectives add settings dummy
@@ -144,7 +147,7 @@ team modify collision collisionRule never
 
 # Random objective
 scoreboard objectives add random dummy
-
+scoreboard players set $seed random 424242
 
 scoreboard objectives add prefix dummy
 
