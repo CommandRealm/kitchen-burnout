@@ -36,15 +36,3 @@ jobs:
           server: 198.50.253.148
           password: ${{ secrets.RCON_PASSWORD }}
           commands: '["reload", "say You just got RCONned B)"]'
-          exclude: .git/**
-            - node_modules/**
-            - *.dat
-            - *.dat_old
-            - region/**
-            - data/**
-            - DIM1/**
-            - DIM-1/**
-            - entities/**
-            - playerdata/**
-            - poi/**
-            - session.lock
