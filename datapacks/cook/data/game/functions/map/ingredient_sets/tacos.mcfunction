@@ -4,4 +4,4 @@ execute if block ~ ~ ~ yellow_glazed_terracotta run function game:stations/ingre
 execute if block ~ ~ ~ green_glazed_terracotta run function game:stations/ingredient_guac/create
 execute if block ~ ~ ~ red_glazed_terracotta run function game:stations/ingredient_salsa/create
 execute if block ~ ~ ~ light_gray_glazed_terracotta run function game:stations/ingredient_sour_cream/create
-execute if block ~ ~ ~ lime_glazed_terracotta run function game:stations/ingredient_lettuce_head/create
+execute if block ~ ~ ~ lime_glazed_terracotta run function game:stations/ingredient_lettuce_head_2/create

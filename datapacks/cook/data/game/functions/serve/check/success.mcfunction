@@ -7,6 +7,7 @@ scoreboard players reset @s recipe_timer
 tag @s remove hamburger_bun
 tag @s remove cheese
 tag @s remove lettuce_head
+tag @s remove lettuce_head_2
 tag @s remove lettuce_leaf
 tag @s remove tomato
 tag @s remove tomato_slice

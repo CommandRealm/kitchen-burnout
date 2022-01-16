@@ -8,6 +8,7 @@ execute if score @s ingredient matches 7 run setblock ~ ~ ~ pink_glazed_terracot
 execute if score @s ingredient matches 5 run setblock ~ ~ ~ red_glazed_terracotta
 # Lettuce Head
 execute if score @s ingredient matches 3 run setblock ~ ~ ~ lime_glazed_terracotta
+execute if score @s ingredient matches -3 run setblock ~ ~ ~ lime_glazed_terracotta
 
 # Sushi Rice
 execute if score @s ingredient matches 12 run setblock ~ ~ ~ white_glazed_terracotta
