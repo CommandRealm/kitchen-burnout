@@ -17,18 +17,6 @@ jobs:
           server:  198.50.253.148
           username:  Calverin.9196
           password: ${{ secrets.FTP_PASSWORD }}
-          exclude: .git/**
-            - node_modules/**
-            - *.dat
-            - *.dat_old
-            - region/**
-            - data/**
-            - DIM1/**
-            - DIM-1/**
-            - entities/**
-            - playerdata/**
-            - poi/**
-            - session.lock
 
       - name: RCON Connection 🔌
         uses: Plagiatus/RCON-Action@v0.1
