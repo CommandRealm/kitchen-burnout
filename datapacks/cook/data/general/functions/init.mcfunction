@@ -171,6 +171,9 @@ scoreboard objectives add station_state dummy
 scoreboard objectives add station_placer_x dummy
 scoreboard objectives add station_placer_y dummy
 scoreboard objectives add station_placer_z dummy
+scoreboard objectives add max_placer_x dummy
+scoreboard objectives add max_placer_y dummy
+scoreboard objectives add max_placer_z dummy
 scoreboard objectives add station_placer_d dummy
 
 scoreboard objectives add prep_display dummy

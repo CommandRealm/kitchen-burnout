@@ -5,6 +5,8 @@
 execute if score $recipe game matches 1 run function game:recipes/burgers
 execute if score $recipe game matches 2 run function game:recipes/soup
 execute if score $recipe game matches 3 run function game:recipes/sushi
+execute if score $recipe game matches 4 run function game:recipes/pizza
+execute if score $recipe game matches 5 run function game:recipes/tacos
 
 # Setting calculate
 scoreboard players set $calculate calculate 75

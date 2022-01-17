@@ -2,7 +2,7 @@
 scoreboard players set $calculate calculate 0
 
 # Removing an item on the stovetop and having no item
-execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=stovetop_item] HandItems[0].id if score @s ingredient matches ..0 run function game:stations/stovetop/take_item
+execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=stovetop_item] HandItems[0].id if score @s ingredient matches 0 run function game:stations/stovetop/take_item
 # Removing an item on the stovetop and having an item
 execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=stovetop_item] HandItems[0].id if score @s ingredient matches 1.. run function game:stations/stovetop/invalid_action
 
