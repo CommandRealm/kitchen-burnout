@@ -8,6 +8,7 @@ clear @s
 gamemode adventure @s
 title @s times 0 25 5
 effect clear @s
+scoreboard players set @s ready 1
 
 # Remove tags
 tag @s remove playing
