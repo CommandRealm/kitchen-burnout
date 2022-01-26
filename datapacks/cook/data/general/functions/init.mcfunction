@@ -180,6 +180,10 @@ scoreboard objectives add prep_display dummy
 
 scoreboard objectives add fish_count dummy
 
+scoreboard objectives add laser_slide_dir dummy
+scoreboard objectives add laser_pos dummy
+scoreboard objectives add laser_z dummy
+
 team add game
 team modify game color gray
 team modify game collisionRule always

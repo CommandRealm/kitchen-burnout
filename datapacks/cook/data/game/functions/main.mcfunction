@@ -17,6 +17,9 @@ execute if score $timer game_ticks matches ..-41 run function game:end
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
 
+# Call map main functions
+function game:map/mains
+
 # Check inventory
 execute if entity @a[advancements={game:inventory_changed=true}] run function game:inventory/check
 

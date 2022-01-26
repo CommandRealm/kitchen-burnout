@@ -7,3 +7,6 @@ summon minecraft:area_effect_cloud 2958 64 1984 {Age: -2147483648, Duration: -1,
 
 # Recipe set
 scoreboard players set $recipe game 5
+
+# Setup function
+schedule function game:map/25/setup 5s
