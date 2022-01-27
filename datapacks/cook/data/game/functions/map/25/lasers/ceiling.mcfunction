@@ -14,4 +14,4 @@ execute if entity @s[tag=active_laser] if score @s laser_pos matches 30 run play
 
 # Hitting player
 execute as @a[tag=playing,gamemode=adventure,distance=..5] store result score @s laser_z run data get entity @s Pos[2] 100
-execute if entity @s[tag=active_laser] positioned ~ 66.25 ~ as @a[distance=..0.75] at @s if score @s laser_z matches 200410..200490 run function game:map/25/burn
+execute if entity @s[tag=active_laser] positioned ~ 66.7 ~ as @a[tag=playing,gamemode=adventure,distance=..0.9] at @s if score @s laser_z matches 200410..200490 run function game:map/25/burn

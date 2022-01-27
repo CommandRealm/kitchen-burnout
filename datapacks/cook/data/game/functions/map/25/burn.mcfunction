@@ -1,5 +1,5 @@
 effect give @s blindness 2 1 true
-effect give @s slowness 2 7 true
+effect give @s slowness 2 3 true
 playsound minecraft:block.fire.extinguish master @a ~ ~ ~ .2 0
 title @s times 0 25 5
 title @s title ["",{"translate":"ZAP!","color":"red","bold":true}]

@@ -12,7 +12,7 @@ execute if score $timer game_ticks matches 18 run function game:stop_message
 execute if score $timer game_ticks matches ..-41 run function game:end
 
 # Mode
-# execute if score $mode settings matches 0 run function game:default/main
+# execute if score $mode settings matches 0 run function game:classic/main
 
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote

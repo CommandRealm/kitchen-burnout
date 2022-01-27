@@ -58,7 +58,7 @@ function game:map/teleports
 schedule function game:map/setup_stations 20t
 
 # Recipe generation
-execute if score $mode settings matches 0 run function game:default/generate_recipes
+execute if score $mode settings matches 0 run function game:classic/generate_recipes
 scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 65
 
 # Start timer
