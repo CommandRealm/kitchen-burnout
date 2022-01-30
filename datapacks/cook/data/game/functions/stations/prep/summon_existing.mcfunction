@@ -19,8 +19,8 @@ execute if entity @s[tag=tomato] run summon minecraft:armor_stand ~0.3125 ~-0.77
 
 execute if entity @s[tag=rice] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","rice"]}
 execute if entity @s[tag=salmon] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","salmon"]}
-execute if entity @s[tag=cut_salmon] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cut_salmon"]}
 execute if entity @s[tag=pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","pufferfish"]}
+execute if entity @s[tag=cut_salmon] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cut_salmon"]}
 execute if entity @s[tag=cut_pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cut_pufferfish"]}
 execute if entity @s[tag=poison_pufferfish] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","poison_pufferfish"]}
 execute if entity @s[tag=avocado] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","avocado"]}
@@ -77,8 +77,8 @@ execute as @e[type=armor_stand,tag=scorched_food] at @s run function game:invent
 
 execute as @e[type=armor_stand,tag=rice] at @s run function game:inventory/get_rice
 execute as @e[type=armor_stand,tag=salmon] at @s run function game:inventory/get_salmon
-execute as @e[type=armor_stand,tag=cut_salmon] at @s run function game:inventory/get_cut_salmon
 execute as @e[type=armor_stand,tag=pufferfish] at @s run function game:inventory/get_pufferfish
+execute as @e[type=armor_stand,tag=cut_salmon] at @s run function game:inventory/get_cut_salmon
 execute as @e[type=armor_stand,tag=cut_pufferfish] at @s run function game:inventory/get_cut_pufferfish
 execute as @e[type=armor_stand,tag=poison_pufferfish] at @s run function game:inventory/get_poison_pufferfish
 execute as @e[type=armor_stand,tag=avocado] at @s run function game:inventory/get_avocado

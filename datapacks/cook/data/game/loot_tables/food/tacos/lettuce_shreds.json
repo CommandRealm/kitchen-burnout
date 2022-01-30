@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Shredded Lettuce\",\"color\":\"#71e647\",\"italic\":false}]'},CustomModelData:1,cutting_board:1b,set_cutting_value:20,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Shredded Lettuce\",\"color\":\"#71e647\",\"italic\":false}]'},CustomModelData:1,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
             }
           ]
         }
