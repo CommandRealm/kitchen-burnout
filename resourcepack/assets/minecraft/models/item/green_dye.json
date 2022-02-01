@@ -6,7 +6,8 @@
   "overrides": [
     {"predicate": {"custom_model_data": 1},"model": "item/lettuce_leaf"},
     {"predicate": {"custom_model_data": 2},"model": "item/wasabi"},
-    {"predicate": {"custom_model_data": 3},"model": "item/wide_lettuce_leaf"}
+    {"predicate": {"custom_model_data": 3},"model": "item/wasabi_modeled"},
+    {"predicate": {"custom_model_data": 4},"model": "item/wide_lettuce_leaf"}
   ]
 }
 

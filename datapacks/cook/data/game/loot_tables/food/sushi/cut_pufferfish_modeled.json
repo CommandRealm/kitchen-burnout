@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Taco Cheese\",\"color\":\"#ffd155\",\"italic\":false}]'},CustomModelData:5,ingredient:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Cut Pufferfish\",\"color\":\"#fff78a\",\"italic\":false}]'},CustomModelData:3,ingredient:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
             }
           ]
         }

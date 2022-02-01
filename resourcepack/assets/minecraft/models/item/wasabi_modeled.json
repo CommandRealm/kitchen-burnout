@@ -1,0 +1,65 @@
+{
+	"credit": "Made by Pinkessi",
+	"textures": {
+		"0": "minecraft:item/wasabi",
+		"particle": "minecraft:item/wasabi"
+	},
+	"elements": [
+		{
+			"from": [10, 0, 6],
+			"to": [13, 1, 7],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [8, 11, 11, 12], "texture": "#0"},
+				"east": {"uv": [7, 11, 8, 12], "texture": "#0"},
+				"south": {"uv": [8, 11, 11, 12], "texture": "#0"},
+				"west": {"uv": [11, 11, 12, 12], "texture": "#0"},
+				"up": {"uv": [11, 11, 8, 12], "texture": "#0"},
+				"down": {"uv": [11, 11, 8, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 0, 2],
+			"to": [11, 1, 3],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [8, 11, 11, 12], "texture": "#0"},
+				"east": {"uv": [7, 11, 8, 12], "texture": "#0"},
+				"south": {"uv": [8, 11, 11, 12], "texture": "#0"},
+				"west": {"uv": [11, 11, 12, 12], "texture": "#0"},
+				"up": {"uv": [11, 11, 8, 12], "texture": "#0"},
+				"down": {"uv": [11, 11, 8, 12], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 4, 4.75],
+			"rotation": [90, 90, 0],
+			"scale": [1, 0.5, 1]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 8, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 9.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 9.25, 0]
+		},
+		"ground": {
+			"translation": [0, 5, 0]
+		},
+		"gui": {
+			"rotation": [44.75, 0, 0],
+			"translation": [0, 5, 0]
+		},
+		"head": {
+			"translation": [0, 14.5, 0]
+		},
+		"fixed": {
+			"rotation": [-88.75, 0, 0],
+			"translation": [0, 2, -9.75]
+		}
+	}
+}

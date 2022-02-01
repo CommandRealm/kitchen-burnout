@@ -5,7 +5,10 @@
   },
   "overrides": [
     {"predicate": {"custom_model_data": 1},"model": "item/cheese"},
-    {"predicate": {"custom_model_data": 2},"model": "item/cut_pufferfish"}
+    {"predicate": {"custom_model_data": 2},"model": "item/cut_pufferfish"},
+    {"predicate": {"custom_model_data": 3},"model": "item/cut_pufferfish_modeled"},
+    {"predicate": {"custom_model_data": 4},"model": "item/cut_pineapple"},
+    {"predicate": {"custom_model_data": 5},"model": "item/taco_cheese"}
   ]
 }
 
