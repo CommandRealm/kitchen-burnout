@@ -48,6 +48,19 @@ execute as @a[tag=playing,scores={ingredient=36}] unless entity @s[nbt={Inventor
 execute as @a[tag=playing,scores={ingredient=37}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:cocoa_beans"}]}] run function game:inventory/get_beef
 execute as @a[tag=playing,scores={ingredient=38}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:seagrass"}]}] run function game:inventory/get_lettuce_shreds
 
+execute as @a[tag=playing,scores={ingredient=39}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:pointed_dripstone"}]}] run function game:inventory/get_cone
+execute as @a[tag=playing,scores={ingredient=40}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:bowl"}]}] run function game:inventory/get_bowl
+execute as @a[tag=playing,scores={ingredient=41}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:white_dye"}]}] run function game:inventory/get_vanilla
+execute as @a[tag=playing,scores={ingredient=42}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:brown_dye"}]}] run function game:inventory/get_chocolate
+execute as @a[tag=playing,scores={ingredient=43}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:pink_dye"}]}] run function game:inventory/get_strawberry
+execute as @a[tag=playing,scores={ingredient=44}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:light_gray_dye"}]}] run function game:inventory/get_cookies
+execute as @a[tag=playing,scores={ingredient=45}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:lime_dye"}]}] run function game:inventory/get_mint
+execute as @a[tag=playing,scores={ingredient=46}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:orange_dye"}]}] run function game:inventory/get_mango
+execute as @a[tag=playing,scores={ingredient=47}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:brain_coral"}]}] run function game:inventory/get_sprinkles
+execute as @a[tag=playing,scores={ingredient=48}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:melon_seeds"}]}] run function game:inventory/get_chips
+execute as @a[tag=playing,scores={ingredient=49}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:poppy"}]}] run function game:inventory/get_cherry
+execute as @a[tag=playing,scores={ingredient=50}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:beetroot_seeds"}]}] run function game:inventory/get_cookie_dough
+
 # Hat
 execute as @a[tag=playing,scores={cosmetics_hat=0}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
 

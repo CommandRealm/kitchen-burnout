@@ -33,10 +33,10 @@ execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ oak_pressure_plat
 execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ spruce_button run function game:stations/bell/create
 
 # Place in ingredient boxes - map (category) dependent
-execute if entity @a[scores={map=1..5}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
-execute if entity @a[scores={map=11..15}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/sushi
-execute if entity @a[scores={map=16..20}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/pizza
-execute if entity @a[scores={map=21..25}] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/tacos
+execute if entity @a[scores={map=1..5},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
+execute if entity @a[scores={map=11..15},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/sushi
+execute if entity @a[scores={map=16..20},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/pizza
+execute if entity @a[scores={map=21..25},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/tacos
 
 #particle block_marker barrier ~ ~ ~
 
