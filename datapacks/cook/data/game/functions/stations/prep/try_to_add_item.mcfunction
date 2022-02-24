@@ -44,6 +44,19 @@ execute if score @s ingredient matches 37 if entity @e[type=marker,tag=prep_disp
 execute if score @s ingredient matches 38 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_shreds] run function game:stations/prep/cannot_place
 execute if score @s ingredient matches -3 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_head_2] run function game:stations/prep/cannot_place
 
+execute if score @s ingredient matches 39 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cone] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 40 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=bowl] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 41 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=vanilla] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 42 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=chocolate] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 43 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=strawberry] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 44 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookies] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 45 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=mint] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 46 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=mango] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 47 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=sprinkles] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 48 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=chips] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 49 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cherry] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 50 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookie_dough] run function game:stations/prep/cannot_place
+
 # If ingredient is not there, add ingredient
 execute if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger_bun] run tag @s add hamburger_bun
 execute if score @s[tag=!temporary_place_tag] ingredient matches 2 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cheese] run tag @s add cheese
@@ -86,6 +99,19 @@ execute if score @s[tag=!temporary_place_tag] ingredient matches 36 as @e[type=m
 execute if score @s[tag=!temporary_place_tag] ingredient matches 37 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!beef] run tag @s add beef
 execute if score @s[tag=!temporary_place_tag] ingredient matches 38 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_shreds] run tag @s add lettuce_shreds
 execute if score @s[tag=!temporary_place_tag] ingredient matches -3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_head_2] run tag @s add lettuce_head_2
+
+execute if score @s[tag=!temporary_place_tag] ingredient matches 39 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cone] run tag @s add cone
+execute if score @s[tag=!temporary_place_tag] ingredient matches 40 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!bowl] run tag @s add bowl
+execute if score @s[tag=!temporary_place_tag] ingredient matches 41 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!vanilla] run tag @s add vanilla
+execute if score @s[tag=!temporary_place_tag] ingredient matches 42 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chocolate] run tag @s add chocolate
+execute if score @s[tag=!temporary_place_tag] ingredient matches 43 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!strawberry] run tag @s add strawberry
+execute if score @s[tag=!temporary_place_tag] ingredient matches 44 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookies] run tag @s add cookies
+execute if score @s[tag=!temporary_place_tag] ingredient matches 45 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mint] run tag @s add mint
+execute if score @s[tag=!temporary_place_tag] ingredient matches 46 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mango] run tag @s add mango
+execute if score @s[tag=!temporary_place_tag] ingredient matches 47 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sprinkles] run tag @s add sprinkles
+execute if score @s[tag=!temporary_place_tag] ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chips] run tag @s add chips
+execute if score @s[tag=!temporary_place_tag] ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cherry] run tag @s add cherry
+execute if score @s[tag=!temporary_place_tag] ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookie_dough] run tag @s add cookie_dough
 
 # Summon ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 unless entity @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
@@ -131,6 +157,19 @@ execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] 
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 38 unless entity @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_shreds"],CustomName:'["",{"translate":"Shredded Lettuce"}]'}
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches -3 unless entity @e[type=marker,tag=recipe_ingredient,tag=lettuce_head_2] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_head_2"],CustomName:'["",{"translate":"Lettuce Head"}]'}
 
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 39 unless entity @e[type=marker,tag=recipe_ingredient,tag=cone] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cone"],CustomName:'["",{"translate":"cone"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 40 unless entity @e[type=marker,tag=recipe_ingredient,tag=bowl] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","bowl"],CustomName:'["",{"translate":"bowl"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 41 unless entity @e[type=marker,tag=recipe_ingredient,tag=vanilla] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","vanilla"],CustomName:'["",{"translate":"vanilla"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 42 unless entity @e[type=marker,tag=recipe_ingredient,tag=chocolate] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","chocolate"],CustomName:'["",{"translate":"chocolate"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 43 unless entity @e[type=marker,tag=recipe_ingredient,tag=strawberry] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","strawberry"],CustomName:'["",{"translate":"strawberry"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 44 unless entity @e[type=marker,tag=recipe_ingredient,tag=cookies] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cookies"],CustomName:'["",{"translate":"cookies"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 45 unless entity @e[type=marker,tag=recipe_ingredient,tag=mint] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","mint"],CustomName:'["",{"translate":"mint"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 46 unless entity @e[type=marker,tag=recipe_ingredient,tag=mango] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","mango"],CustomName:'["",{"translate":"mango"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 47 unless entity @e[type=marker,tag=recipe_ingredient,tag=sprinkles] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","sprinkles"],CustomName:'["",{"translate":"sprinkles"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 48 unless entity @e[type=marker,tag=recipe_ingredient,tag=chips] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","chips"],CustomName:'["",{"translate":"chips"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 49 unless entity @e[type=marker,tag=recipe_ingredient,tag=cherry] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cherry"],CustomName:'["",{"translate":"cherry"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 50 unless entity @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cookie_dough"],CustomName:'["",{"translate":"cookie_dough"}]'}
+
 # Mark ingredient as being there
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] if data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] if data storage current_order1 Recipe{Ingredients:["Cheese"]} run team join recipe_filled @s
@@ -173,6 +212,19 @@ execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] 
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 36 as @e[type=marker,tag=recipe_ingredient,tag=sour_cream] if data storage current_order1 Recipe{Ingredients:["Sour Cream"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 37 as @e[type=marker,tag=recipe_ingredient,tag=beef] if data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run team join recipe_filled @s
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] if data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run team join recipe_filled @s
+
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 39 as @e[type=marker,tag=recipe_ingredient,tag=cone] if data storage current_order1 Recipe{Ingredients:["cone"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 40 as @e[type=marker,tag=recipe_ingredient,tag=bowl] if data storage current_order1 Recipe{Ingredients:["bowl"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 41 as @e[type=marker,tag=recipe_ingredient,tag=vanilla] if data storage current_order1 Recipe{Ingredients:["vanilla"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 42 as @e[type=marker,tag=recipe_ingredient,tag=chocolate] if data storage current_order1 Recipe{Ingredients:["chocolate"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 43 as @e[type=marker,tag=recipe_ingredient,tag=strawberry] if data storage current_order1 Recipe{Ingredients:["strawberry"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 44 as @e[type=marker,tag=recipe_ingredient,tag=cookies] if data storage current_order1 Recipe{Ingredients:["cookies"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 45 as @e[type=marker,tag=recipe_ingredient,tag=mint] if data storage current_order1 Recipe{Ingredients:["mint"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 46 as @e[type=marker,tag=recipe_ingredient,tag=mango] if data storage current_order1 Recipe{Ingredients:["mango"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 47 as @e[type=marker,tag=recipe_ingredient,tag=sprinkles] if data storage current_order1 Recipe{Ingredients:["sprinkles"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] if data storage current_order1 Recipe{Ingredients:["chips"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] if data storage current_order1 Recipe{Ingredients:["cherry"]} run team join recipe_filled @s
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] if data storage current_order1 Recipe{Ingredients:["cookie_dough"]} run team join recipe_filled @s
 
 # If ingredient was added, play sounds and get rid of armor stands
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0

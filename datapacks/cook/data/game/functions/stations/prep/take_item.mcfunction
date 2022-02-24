@@ -51,6 +51,19 @@ execute if score @s ingredient matches 37 as @e[type=marker,tag=prep_display,lim
 execute if score @s ingredient matches 38 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_shreds
 execute if score @s ingredient matches -3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_head_2
 
+execute if score @s ingredient matches 39 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cone
+execute if score @s ingredient matches 40 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove bowl
+execute if score @s ingredient matches 41 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove vanilla
+execute if score @s ingredient matches 42 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove chocolate
+execute if score @s ingredient matches 43 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove strawberry
+execute if score @s ingredient matches 44 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cookies
+execute if score @s ingredient matches 45 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove mint
+execute if score @s ingredient matches 46 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove mango
+execute if score @s ingredient matches 47 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove sprinkles
+execute if score @s ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove chips
+execute if score @s ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cherry
+execute if score @s ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cookie_dough
+
 # Mark ingredient as not being there
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] run team join recipe_missing @s
@@ -95,6 +108,19 @@ execute if score $mode settings matches 0 if score @s ingredient matches 37 as @
 execute if score $mode settings matches 0 if score @s ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches -3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head_2] run team join recipe_missing @s
 
+execute if score $mode settings matches 0 if score @s ingredient matches 39 as @e[type=marker,tag=recipe_ingredient,tag=cone] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 40 as @e[type=marker,tag=recipe_ingredient,tag=bowl] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 41 as @e[type=marker,tag=recipe_ingredient,tag=vanilla] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 42 as @e[type=marker,tag=recipe_ingredient,tag=chocolate] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 43 as @e[type=marker,tag=recipe_ingredient,tag=strawberry] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 44 as @e[type=marker,tag=recipe_ingredient,tag=cookies] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 45 as @e[type=marker,tag=recipe_ingredient,tag=mint] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 46 as @e[type=marker,tag=recipe_ingredient,tag=mango] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 47 as @e[type=marker,tag=recipe_ingredient,tag=sprinkles] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] run team join recipe_missing @s
+
 # Kill ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] unless data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] unless data storage current_order1 Recipe{Ingredients:["Cheese"]} run kill @s
@@ -138,6 +164,19 @@ execute if score $mode settings matches 0 if score @s ingredient matches 36 as @
 execute if score $mode settings matches 0 if score @s ingredient matches 37 as @e[type=marker,tag=recipe_ingredient,tag=beef] unless data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] unless data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches -3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head_2] unless data storage current_order1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
+
+execute if score $mode settings matches 0 if score @s ingredient matches 39 as @e[type=marker,tag=recipe_ingredient,tag=cone] unless data storage current_order1 Recipe{Ingredients:["cone"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 40 as @e[type=marker,tag=recipe_ingredient,tag=bowl] unless data storage current_order1 Recipe{Ingredients:["bowl"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 41 as @e[type=marker,tag=recipe_ingredient,tag=vanilla] unless data storage current_order1 Recipe{Ingredients:["vanilla"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 42 as @e[type=marker,tag=recipe_ingredient,tag=chocolate] unless data storage current_order1 Recipe{Ingredients:["chocolate"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 43 as @e[type=marker,tag=recipe_ingredient,tag=strawberry] unless data storage current_order1 Recipe{Ingredients:["strawberry"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 44 as @e[type=marker,tag=recipe_ingredient,tag=cookies] unless data storage current_order1 Recipe{Ingredients:["cookies"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 45 as @e[type=marker,tag=recipe_ingredient,tag=mint] unless data storage current_order1 Recipe{Ingredients:["mint"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 46 as @e[type=marker,tag=recipe_ingredient,tag=mango] unless data storage current_order1 Recipe{Ingredients:["mango"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 47 as @e[type=marker,tag=recipe_ingredient,tag=sprinkles] unless data storage current_order1 Recipe{Ingredients:["sprinkles"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] unless data storage current_order1 Recipe{Ingredients:["chips"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] unless data storage current_order1 Recipe{Ingredients:["cherry"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] unless data storage current_order1 Recipe{Ingredients:["cookie_dough"]} run kill @s
 
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display

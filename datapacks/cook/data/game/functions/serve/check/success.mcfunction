@@ -43,6 +43,18 @@ tag @s remove salsa
 tag @s remove sour_cream
 tag @s remove beef
 tag @s remove lettuce_shreds
+tag @s remove cone
+tag @s remove bowl
+tag @s remove vanilla
+tag @s remove chocolate
+tag @s remove strawberry
+tag @s remove cookies
+tag @s remove mint
+tag @s remove mango
+tag @s remove sprinkles
+tag @s remove chips
+tag @s remove cherry
+tag @s remove cookie_dough
 kill @e[type=armor_stand,tag=prep_slot,distance=..10]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force

@@ -48,6 +48,20 @@ execute if entity @s[tag=beef] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~
 execute if entity @s[tag=lettuce_shreds] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","lettuce_shreds"]}
 execute if entity @s[tag=lettuce_head_2] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","lettuce_head_2"]}
 
+execute if entity @s[tag=cone] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","cone"]}
+execute if entity @s[tag=bowl] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","bowl"]}
+execute if entity @s[tag=vanilla] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","vanilla"]}
+execute if entity @s[tag=chocolate] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","chocolate"]}
+execute if entity @s[tag=strawberry] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","strawberry"]}
+execute if entity @s[tag=cookies] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","cookies"]}
+execute if entity @s[tag=mint] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","mint"]}
+execute if entity @s[tag=mango] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","primary_ingredient","mango"]}
+execute if entity @s[tag=sprinkles] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","sprinkles"]}
+execute if entity @s[tag=chips] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","chips"]}
+execute if entity @s[tag=cherry] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cherry"]}
+execute if entity @s[tag=cookie_dough] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cookie_dough"]}
+
+
 # Using storage system
 #execute if data storage current_order1 Recipe{Prep:["Hamburger Bun"]} run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","hamburger_bun"]}
 ## Top bun
@@ -105,5 +119,18 @@ execute as @e[type=armor_stand,tag=sour_cream] at @s run function game:inventory
 execute as @e[type=armor_stand,tag=beef] at @s run function game:inventory/get_beef
 execute as @e[type=armor_stand,tag=lettuce_shreds] at @s run function game:inventory/get_lettuce_shreds
 execute as @e[type=armor_stand,tag=lettuce_head_2] at @s run function game:inventory/get_lettuce_head_2
+
+execute as @e[type=armor_stand,tag=cone] at @s run function game:inventory/get_cone
+execute as @e[type=armor_stand,tag=bowl] at @s run function game:inventory/get_bowl
+execute as @e[type=armor_stand,tag=vanilla] at @s run function game:inventory/get_vanilla
+execute as @e[type=armor_stand,tag=chocolate] at @s run function game:inventory/get_chocolate
+execute as @e[type=armor_stand,tag=strawberry] at @s run function game:inventory/get_strawberry
+execute as @e[type=armor_stand,tag=cookies] at @s run function game:inventory/get_cookies
+execute as @e[type=armor_stand,tag=mint] at @s run function game:inventory/get_mint
+execute as @e[type=armor_stand,tag=mango] at @s run function game:inventory/get_mango
+execute as @e[type=armor_stand,tag=sprinkles] at @s run function game:inventory/get_sprinkles
+execute as @e[type=armor_stand,tag=chips] at @s run function game:inventory/get_chips
+execute as @e[type=armor_stand,tag=cherry] at @s run function game:inventory/get_cherry
+execute as @e[type=armor_stand,tag=cookie_dough] at @s run function game:inventory/get_cookie_dough
 
 tag @s remove reset_prep_ingredients
