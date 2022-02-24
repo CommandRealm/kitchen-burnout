@@ -42,7 +42,7 @@ execute if data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run s
 execute if data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_shreds"],CustomName:'["",{"translate":"Shredded Lettuce"}]'}
 
 execute if data storage current_order1 Recipe{Ingredients:["cone"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cone"],CustomName:'["",{"translate":"Waffle Cone"}]'}
-execute if data storage current_order1 Recipe{Ingredients:["bowl"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","bowl"],CustomName:'["",{"translate":"Ice Cream Bowl"}]'}
+execute if data storage current_order1 Recipe{Ingredients:["bowl"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","bowl"],CustomName:'["",{"translate":"Bowl"}]'}
 execute if data storage current_order1 Recipe{Ingredients:["vanilla"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","vanilla"],CustomName:'["",{"translate":"Vanilla Ice Cream"}]'}
 execute if data storage current_order1 Recipe{Ingredients:["chocolate"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","chocolate"],CustomName:'["",{"translate":"Chocolate Ice Cream"}]'}
 execute if data storage current_order1 Recipe{Ingredients:["strawberry"]} run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","strawberry"],CustomName:'["",{"translate":"Strawberry Ice Cream"}]'}

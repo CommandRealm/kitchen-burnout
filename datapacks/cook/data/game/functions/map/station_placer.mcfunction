@@ -1,4 +1,5 @@
 # Set limits
+scoreboard players set @s[tag=x_20,tag=!scores_set] max_placer_x 20
 scoreboard players set @s[tag=x_30,tag=!scores_set] max_placer_x 30
 scoreboard players set @s[tag=x_40,tag=!scores_set] max_placer_x 40
 scoreboard players set @s[tag=x_50,tag=!scores_set] max_placer_x 50
@@ -33,10 +34,12 @@ execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ oak_pressure_plat
 execute if block ~ ~ ~ dark_oak_slab[type=top] if block ~ ~1 ~ spruce_button run function game:stations/bell/create
 
 # Place in ingredient boxes - map (category) dependent
+### NEED TO CHANGE THIS SYSTEM WHEN CODING MULTIPLAYER
 execute if entity @a[scores={map=1..5},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/burger
 execute if entity @a[scores={map=11..15},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/sushi
 execute if entity @a[scores={map=16..20},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/pizza
 execute if entity @a[scores={map=21..25},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/tacos
+execute if entity @a[scores={map=26..30},tag=playing] if block ~ ~ ~ #game:ingredient_boxes run function game:map/ingredient_sets/ice_cream
 
 #particle block_marker barrier ~ ~ ~
 
@@ -63,6 +66,8 @@ execute if score @s station_placer_y > @s max_placer_y run kill @s
 # Run function in new position
 execute if score @s station_placer_d matches 0 positioned ~1 ~ ~ run function game:map/station_placer
 
+execute if score @s[tag=x_20] station_placer_d matches 1 positioned ~-20 ~ ~1 run function game:map/station_placer
+execute if score @s[tag=x_20] station_placer_d matches 2 positioned ~-20 ~1 ~-20 run function game:map/station_placer
 execute if score @s[tag=x_30] station_placer_d matches 1 positioned ~-30 ~ ~1 run function game:map/station_placer
 execute if score @s[tag=x_30] station_placer_d matches 2 positioned ~-30 ~1 ~-30 run function game:map/station_placer
 execute if score @s[tag=x_40] station_placer_d matches 1 positioned ~-40 ~ ~1 run function game:map/station_placer

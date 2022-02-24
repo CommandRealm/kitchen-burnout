@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ yellow_glazed_terracotta run function game:stations/ingredient_cone/create
+execute if block ~ ~ ~ cyan_glazed_terracotta run function game:stations/ingredient_bowl/create
+execute if block ~ ~ ~ white_glazed_terracotta run function game:stations/ingredient_vanilla/create
+execute if block ~ ~ ~ brown_glazed_terracotta run function game:stations/ingredient_chocolate/create
+execute if block ~ ~ ~ pink_glazed_terracotta run function game:stations/ingredient_strawberry/create
+execute if block ~ ~ ~ light_gray_glazed_terracotta run function game:stations/ingredient_cookies/create
+execute if block ~ ~ ~ lime_glazed_terracotta run function game:stations/ingredient_mint/create
+execute if block ~ ~ ~ orange_glazed_terracotta run function game:stations/ingredient_mango/create
+execute if block ~ ~ ~ magenta_glazed_terracotta run function game:stations/ingredient_sprinkles/create
+execute if block ~ ~ ~ black_glazed_terracotta run function game:stations/ingredient_chips/create
+execute if block ~ ~ ~ red_glazed_terracotta run function game:stations/ingredient_cherry/create
+execute if block ~ ~ ~ gray_glazed_terracotta run function game:stations/ingredient_cookie_dough/create

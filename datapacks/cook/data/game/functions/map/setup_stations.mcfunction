@@ -6,6 +6,7 @@ kill @e[tag=die_between_games,tag=!station_placer]
 #scoreboard players set $max station_placer_z 60
 
 # Set limits
+scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_20] max_placer_x 20
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_30] max_placer_x 30
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_40] max_placer_x 40
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_50] max_placer_x 50
@@ -22,6 +23,7 @@ scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=y_60] ma
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=y_70] max_placer_y 70
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=y_80] max_placer_y 80
 
+scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_20] max_placer_z 20
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_30] max_placer_z 30
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_40] max_placer_z 40
 scoreboard players set @e[type=area_effect_cloud,tag=station_placer,tag=x_50] max_placer_z 50
