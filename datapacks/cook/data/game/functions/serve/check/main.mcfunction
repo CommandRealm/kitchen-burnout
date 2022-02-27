@@ -4,6 +4,7 @@ execute if score $recipe game matches 2 run function game:serve/check/soups
 execute if score $recipe game matches 3 run function game:serve/check/sushi
 execute if score $recipe game matches 4 run function game:serve/check/pizza
 execute if score $recipe game matches 5 run function game:serve/check/tacos
+execute if score $recipe game matches 6 run function game:serve/check/ice_cream
 
 # Failed Recipe
 execute unless entity @s[tag=add_new_recipe] run function game:serve/check/fail
