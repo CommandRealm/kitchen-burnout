@@ -45,6 +45,19 @@ execute if data storage current_order1 Recipe{Ingredients:["Sour Cream"]} run fu
 execute if data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run function game:serve/score/1_point
 execute if data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run function game:serve/score/1_point
 
+execute if data storage current_order1 Recipe{Ingredients:["cone"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["bowl"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["vanilla"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["chocolate"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["strawberry"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["cookies"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["mint"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["mango"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["sprinkles"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["chips"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["cherry"]} run function game:serve/score/1_point
+execute if data storage current_order1 Recipe{Ingredients:["cookie_dough"]} run function game:serve/score/1_point
+
 tellraw @a[tag=playing,gamemode=adventure] ["",{"text":"+","color":"green"},{"color":"green","score":{"objective":"game","name":"$recipe_score"}},{"text":" Points!","color":"gold"}]
 #function game:serve/score/floating_3
 ## Add bonus points for completing recipe in time
