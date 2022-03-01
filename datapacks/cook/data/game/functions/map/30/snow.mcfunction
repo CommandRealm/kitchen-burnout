@@ -389,5 +389,5 @@ summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 
-spreadplayers 3473 1993 1 30 false @e[type=snowball,tag=snowfall,tag=!snowfall_local]
-execute as @e[type=snowball,tag=snowfall] at @s run tp @s ~ 100 ~
+spreadplayers 3473 1993 1 40 false @e[type=snowball,tag=snowfall,tag=!snowfall_local]
+execute as @e[type=snowball,tag=snowfall] at @s run tp @s ~ 120 ~
