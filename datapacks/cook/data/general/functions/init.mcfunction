@@ -186,6 +186,9 @@ scoreboard objectives add laser_pos dummy
 scoreboard objectives add laser_z dummy
 
 scoreboard objectives add freeze_time dummy
+scoreboard objectives add freeze_pos_x dummy
+scoreboard objectives add freeze_pos_y dummy
+scoreboard objectives add freeze_pos_z dummy
 
 team add game
 team modify game color gray
