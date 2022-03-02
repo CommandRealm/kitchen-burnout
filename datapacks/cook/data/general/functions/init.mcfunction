@@ -65,6 +65,7 @@ scoreboard players set $2 number 2
 scoreboard players set $7 number 7
 scoreboard players set $100 number 100
 scoreboard players set $200 number 200
+scoreboard players set $500 number 500
 scoreboard players set $-1 number -1
 scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
@@ -189,6 +190,9 @@ scoreboard objectives add freeze_time dummy
 scoreboard objectives add freeze_pos_x dummy
 scoreboard objectives add freeze_pos_y dummy
 scoreboard objectives add freeze_pos_z dummy
+scoreboard objectives add freeze_rot_x dummy
+scoreboard objectives add freeze_rot_y dummy
+
 
 team add game
 team modify game color gray

@@ -6,8 +6,10 @@ effect give @s blindness 3 1 true
 # Move snow
 execute as @e[tag=frozen_blocks,distance=..3] at @s run tp @s ~ ~-.02 ~
 
-# Lock position
+# Lock position and rotation
 summon marker ~ ~ ~ {Tags:["die_between_games","lock_frozen_pos"]}
+execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Rotation[0] float 0.001 run scoreboard players get @s freeze_rot_x
+execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Rotation[1] float 0.001 run scoreboard players get @s freeze_rot_y
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[0] double 0.01 run scoreboard players get @s freeze_pos_x
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[1] double 1 run scoreboard players get @s freeze_pos_y
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[2] double 0.01 run scoreboard players get @s freeze_pos_z

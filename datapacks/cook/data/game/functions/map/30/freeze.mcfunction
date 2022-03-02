@@ -9,6 +9,8 @@ summon armor_stand ~ ~-.5 ~ {Invisible:1b,Invulnerable:1b, Tags: ["die_between_g
 execute store result score @s freeze_pos_x run data get entity @s Pos[0] 100
 execute store result score @s freeze_pos_y run data get entity @s Pos[1] 1
 execute store result score @s freeze_pos_z run data get entity @s Pos[2] 100
+execute store result score @s freeze_rot_x run data get entity @s Rotation[0] 1000
+execute store result score @s freeze_rot_y run data get entity @s Rotation[1] 1000
 
 # Freeze ingredient
 execute unless score @s ingredient matches 0 run scoreboard players set @s ingredient 51
