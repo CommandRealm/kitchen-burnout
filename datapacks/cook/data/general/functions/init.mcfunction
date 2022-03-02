@@ -185,6 +185,8 @@ scoreboard objectives add laser_slide_dir dummy
 scoreboard objectives add laser_pos dummy
 scoreboard objectives add laser_z dummy
 
+scoreboard objectives add freeze_time dummy
+
 team add game
 team modify game color gray
 team modify game collisionRule always

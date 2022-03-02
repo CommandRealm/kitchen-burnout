@@ -1,0 +1,3 @@
+scoreboard players set @s freeze_time 100
+summon armor_stand ~ ~-1.5 ~ {Invisible:1b,Invulnerable:1b, Tags: ["die_between_games","frozen_blocks"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:powder_snow"},DropItem:0b,Tags:["die_between_games","frozen_blocks"],NoGravity:1b,Time:1}]}
+summon armor_stand ~ ~-.5 ~ {Invisible:1b,Invulnerable:1b, Tags: ["die_between_games","frozen_blocks"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:powder_snow"},DropItem:0b,Tags:["die_between_games","frozen_blocks"],NoGravity:1b,Time:1}]}

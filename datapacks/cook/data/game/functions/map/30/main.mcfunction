@@ -11,8 +11,9 @@ execute as @e[type=snowball,tag=snowfall] at @s unless block ~ ~-1 ~ air run pla
 execute if score $snowfall game_ticks matches ..80 if score $flashing game_ticks matches 4..8 as @a[tag=playing,gamemode=adventure,scores={map=30}] at @s run function game:map/30/alert_low
 execute if score $snowfall game_ticks matches ..80 if score $flashing game_ticks matches ..3 as @a[tag=playing,gamemode=adventure,scores={map=30}] at @s run function game:map/30/alert_high
 
-# Kill players
-execute as @a[tag=playing,gamemode=adventure,scores={map=30}] at @s if blocks ~ ~2 ~ ~ 100 ~ ~ 319 ~ masked if entity @e[type=snowball,distance=..4] run say rip
+# Player hit by snow
+execute as @a[tag=playing,gamemode=adventure,scores={map=30}] at @s unless score @s freeze_time matches 1.. if blocks ~ ~2 ~ ~ 100 ~ ~ 319 ~ masked if entity @e[type=snowball,distance=..4] run function game:map/30/freeze
+execute as @a[tag=playing,gamemode=adventure,scores={map=30,freeze_time=1..}] at @s run function game:map/30/frozen
 
 # Particles
 particle snowflake 3473 110 1993 25 15 25 .5 10 force
