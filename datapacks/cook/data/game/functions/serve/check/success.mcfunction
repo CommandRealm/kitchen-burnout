@@ -55,6 +55,7 @@ tag @s remove sprinkles
 tag @s remove chips
 tag @s remove cherry
 tag @s remove cookie_dough
+tag @s remove frozen_food
 kill @e[type=armor_stand,tag=prep_slot,distance=..10]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force

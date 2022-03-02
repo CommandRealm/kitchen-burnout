@@ -60,6 +60,7 @@ execute as @a[tag=playing,scores={ingredient=47}] unless entity @s[nbt={Inventor
 execute as @a[tag=playing,scores={ingredient=48}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:melon_seeds"}]}] run function game:inventory/get_chips
 execute as @a[tag=playing,scores={ingredient=49}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:poppy"}]}] run function game:inventory/get_cherry
 execute as @a[tag=playing,scores={ingredient=50}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:beetroot_seeds"}]}] run function game:inventory/get_cookie_dough
+execute as @a[tag=playing,scores={ingredient=51}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:packed_ice"}]}] run function game:inventory/get_frozen_food
 
 # Hat
 execute as @a[tag=playing,scores={cosmetics_hat=0}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef

@@ -56,6 +56,7 @@ execute if score @s ingredient matches 47 if entity @e[type=marker,tag=prep_disp
 execute if score @s ingredient matches 48 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=chips] run function game:stations/prep/cannot_place
 execute if score @s ingredient matches 49 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cherry] run function game:stations/prep/cannot_place
 execute if score @s ingredient matches 50 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookie_dough] run function game:stations/prep/cannot_place
+execute if score @s ingredient matches 51 if entity @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=frozen_food] run function game:stations/prep/cannot_place
 
 # If ingredient is not there, add ingredient
 execute if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger_bun] run tag @s add hamburger_bun
@@ -112,6 +113,7 @@ execute if score @s[tag=!temporary_place_tag] ingredient matches 47 as @e[type=m
 execute if score @s[tag=!temporary_place_tag] ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chips] run tag @s add chips
 execute if score @s[tag=!temporary_place_tag] ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cherry] run tag @s add cherry
 execute if score @s[tag=!temporary_place_tag] ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookie_dough] run tag @s add cookie_dough
+execute if score @s[tag=!temporary_place_tag] ingredient matches 51 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,tag=!frozen_food] run tag @s add frozen_food
 
 # Summon ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 unless entity @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
@@ -169,6 +171,7 @@ execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] 
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 48 unless entity @e[type=marker,tag=recipe_ingredient,tag=chips] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","chips"],CustomName:'["",{"translate":"Chocolate Chips"}]'}
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 49 unless entity @e[type=marker,tag=recipe_ingredient,tag=cherry] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cherry"],CustomName:'["",{"translate":"Maraschino Cherry"}]'}
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 50 unless entity @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cookie_dough"],CustomName:'["",{"translate":"Cookie Dough"}]'}
+execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 51 unless entity @e[type=marker,tag=recipe_ingredient,tag=frozen_Food] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","frozen_food"],CustomName:'["",{"translate":"Frozen Food"}]'}
 
 # Mark ingredient as being there
 execute if score $mode settings matches 0 if score @s[tag=!temporary_place_tag] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] if data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s

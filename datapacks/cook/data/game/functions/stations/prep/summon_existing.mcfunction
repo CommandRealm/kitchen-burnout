@@ -60,7 +60,7 @@ execute if entity @s[tag=sprinkles] run summon minecraft:armor_stand ~0.3125 ~-0
 execute if entity @s[tag=chips] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","chips"]}
 execute if entity @s[tag=cherry] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cherry"]}
 execute if entity @s[tag=cookie_dough] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","cookie_dough"]}
-
+execute if entity @s[tag=frozen_food] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","frozen_food"]}
 
 # Using storage system
 #execute if data storage current_order1 Recipe{Prep:["Hamburger Bun"]} run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","hamburger_bun"]}
@@ -132,5 +132,6 @@ execute as @e[type=armor_stand,tag=sprinkles] at @s run function game:inventory/
 execute as @e[type=armor_stand,tag=chips] at @s run function game:inventory/get_chips
 execute as @e[type=armor_stand,tag=cherry] at @s run function game:inventory/get_cherry
 execute as @e[type=armor_stand,tag=cookie_dough] at @s run function game:inventory/get_cookie_dough
+execute as @e[type=armor_stand,tag=frozen_food] at @s run function game:inventory/get_frozen_food
 
 tag @s remove reset_prep_ingredients

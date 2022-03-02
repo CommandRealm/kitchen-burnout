@@ -63,6 +63,7 @@ execute if score @s ingredient matches 47 as @e[type=marker,tag=prep_display,lim
 execute if score @s ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove chips
 execute if score @s ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cherry
 execute if score @s ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cookie_dough
+execute if score @s ingredient matches 51 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove frozen_food
 
 # Mark ingredient as not being there
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] run team join recipe_missing @s
@@ -120,6 +121,7 @@ execute if score $mode settings matches 0 if score @s ingredient matches 47 as @
 execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] run team join recipe_missing @s
 execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] run team join recipe_missing @s
+execute if score $mode settings matches 0 if score @s ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=frozen_food] run team join recipe_missing @s
 
 # Kill ingredient marker for display if necessary
 execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] unless data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
@@ -177,6 +179,7 @@ execute if score $mode settings matches 0 if score @s ingredient matches 47 as @
 execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] unless data storage current_order1 Recipe{Ingredients:["chips"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] unless data storage current_order1 Recipe{Ingredients:["cherry"]} run kill @s
 execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] unless data storage current_order1 Recipe{Ingredients:["cookie_dough"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=frozen_food] unless data storage current_order1 Recipe{Ingredients:["frozen_food"]} run kill @s
 
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display
