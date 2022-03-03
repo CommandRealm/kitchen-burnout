@@ -30,8 +30,8 @@ execute if entity @a[tag=playing,scores={click_cooldown=1..},limit=1] run functi
 execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={click_cooldown=1..}] run function game:click/start 
 
 # Prep display activator
-execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=0..20},distance=..1.25,sort=nearest,limit=1] unless entity @e[type=armor_stand,tag=bell,distance=..5,tag=bell_pressed] run scoreboard players add @s prep_display 20
-execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 positioned ~0.3125 ~-0.77 ~0.375 if entity @e[type=armor_stand,tag=prep_slot,distance=..1] positioned ~0.3125 ~-0.77 ~0.375 as @e[type=marker,tag=prep_display,scores={prep_display=0..20},sort=nearest,limit=1] unless entity @e[type=armor_stand,tag=bell,distance=..5,tag=bell_pressed] run scoreboard players add @s prep_display 20
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 as @e[type=marker,tag=prep_display,scores={prep_display=0..10},distance=..1.25,sort=nearest,limit=1,tag=!start_closing] unless entity @e[type=armor_stand,tag=bell,distance=..5,tag=bell_pressed] run scoreboard players add @s prep_display 20
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:8}] anchored eyes positioned ^ ^ ^1.75 positioned ~0.3125 ~-0.77 ~0.375 if entity @e[type=armor_stand,tag=prep_slot,distance=..1] positioned ~0.3125 ~-0.77 ~0.375 as @e[type=marker,tag=prep_display,scores={prep_display=0..10},sort=nearest,limit=1,tag=!start_closing] unless entity @e[type=armor_stand,tag=bell,distance=..5,tag=bell_pressed] run scoreboard players add @s prep_display 20
 
 # Cutting board display activator
 execute as @a[tag=playing,nbt={SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,scores={station_timer=-10..10},distance=..0.75] run tag @s add using_cutting_board

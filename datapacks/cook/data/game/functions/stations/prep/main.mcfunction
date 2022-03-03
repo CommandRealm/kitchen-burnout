@@ -20,3 +20,5 @@ execute if score @s prep_display matches 1.. run function game:stations/prep/dis
 #scoreboard players set @s prep_display 0
 
 scoreboard players add @s recipe_timer 1
+
+execute if score @s prep_display matches 0 run tag @s remove start_closing

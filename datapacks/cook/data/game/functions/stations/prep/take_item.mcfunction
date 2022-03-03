@@ -184,7 +184,7 @@ execute if score $mode settings matches 0 if score @s ingredient matches 51 as @
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] remove prep_slot
-scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
+tag @e[type=marker,tag=prep_display,limit=1,sort=nearest] add start_closing
 #execute as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot,distance=..15] run scoreboard players set @s prep_display 0
 
 tag @s add took_item_tag
