@@ -18,11 +18,13 @@ scoreboard players set $game state 0
 tag @a[team=spectator] add playing
 
 title @a[tag=playing] times 0 25 5
+
 # Resets players
 effect clear @a[tag=playing]
 gamemode adventure @a[tag=playing]
 clear @a[tag=playing]
 tp @a[tag=playing] 0 66 0
+scoreboard players reset @a freeze_time
 
 # Resetting the dropped knowledge book objective.
 scoreboard players reset @a[tag=playing] drop_ready_book
