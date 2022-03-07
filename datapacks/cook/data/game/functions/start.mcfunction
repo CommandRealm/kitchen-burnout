@@ -54,8 +54,8 @@ execute if score $mode settings matches 0 run scoreboard players operation @a[ta
 
 # Setting up the map.
 kill @e[type=area_effect_cloud,tag=station_placer]
-function game:map/teleports
-schedule function game:map/setup_stations 20t
+function game:map/setups
+#schedule function game:map/setup_stations 20t
 
 # Recipe generation
 execute if score $mode settings matches 0 run function game:classic/generate_recipes

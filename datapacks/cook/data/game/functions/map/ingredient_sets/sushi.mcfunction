@@ -4,3 +4,9 @@ execute if block ~ ~ ~ lime_glazed_terracotta run function game:stations/ingredi
 
 execute if block ~ ~ ~ orange_glazed_terracotta run function game:stations/salmon_spawner/create
 execute if block ~ ~ ~ yellow_glazed_terracotta run function game:stations/pufferfish_spawner/create
+
+execute if block ~ ~ ~ spruce_pressure_plate run function game:stations/cutting_board/create
+execute if block ~ ~ ~ heavy_weighted_pressure_plate run function game:stations/stovetop/create
+
+execute if block ~ ~ ~ oak_pressure_plate run function game:stations/prep/create
+execute if block ~ ~ ~ spruce_button run function game:stations/bell/create

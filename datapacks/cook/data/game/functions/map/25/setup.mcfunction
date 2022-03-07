@@ -1,3 +1,5 @@
+function game:map/25/teleport
+
 # Spinning laser
 summon minecraft:area_effect_cloud 3019 67 2012 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["spinning_laser", "die_between_games"]}
 # Stationary floor laser
@@ -10,3 +12,20 @@ summon marker 3004 69 2004 {Tags: ["ceiling_laser", "ceiling_laser_outer", "die_
 summon marker 3001 69 2004 {Tags: ["ceiling_laser", "ceiling_laser_outer", "die_between_games"]}
 summon marker 3003 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_between_games"]}
 summon marker 3002 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_between_games"]}
+
+# Spinning laser room ingredients
+execute positioned 3019 67 2026 run function game:map/ingredient_sets/tacos
+execute positioned 3033 67 2012 run function game:map/ingredient_sets/tacos
+execute positioned 3019 67 1998 run function game:map/ingredient_sets/tacos
+# Other ingredients
+execute positioned 2986 67 2000 run function game:map/ingredient_sets/tacos
+execute positioned 2994 67 2001 run function game:map/ingredient_sets/tacos
+execute positioned 2994 67 1991 run function game:map/ingredient_sets/tacos
+execute positioned 2986 67 1991 run function game:map/ingredient_sets/tacos
+# Stations
+execute positioned 2990 67 1993 run function game:map/ingredient_sets/tacos
+execute positioned 2987 67 1993 run function game:map/ingredient_sets/tacos
+execute positioned 2994 67 1992 run function game:map/ingredient_sets/tacos
+# Prep
+execute positioned 2968 70 2000 run function game:map/ingredient_sets/tacos
+execute positioned 2967 70 2000 run function game:map/ingredient_sets/tacos
