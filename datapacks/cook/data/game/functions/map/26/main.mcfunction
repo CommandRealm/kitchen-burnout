@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=ice_bridge_button] at @s run function game:map/26/main

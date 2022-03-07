@@ -193,6 +193,7 @@ scoreboard objectives add freeze_pos_z dummy
 scoreboard objectives add freeze_rot_x dummy
 scoreboard objectives add freeze_rot_y dummy
 
+scoreboard objectives add ice_bridge dummy
 
 team add game
 team modify game color gray
