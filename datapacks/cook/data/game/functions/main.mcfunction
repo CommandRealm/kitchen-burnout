@@ -9,6 +9,9 @@ execute if score $mode settings matches 0 run function game:timers/normal
 
 # Stop game, then end
 execute if score $timer game_ticks matches 18 run function game:stop_message
+# Resets ingredient boxes back to their normal blocks
+execute if score $timer game_ticks matches -38 as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
+execute if score $timer game_ticks matches -38 as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
 execute if score $timer game_ticks matches ..-41 run function game:end
 
 # Mode
