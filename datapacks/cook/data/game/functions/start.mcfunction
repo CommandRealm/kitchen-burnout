@@ -18,9 +18,9 @@ gamemode adventure @a[tag=playing]
 
 # Give players temporary effects
 effect give @a[tag=playing] instant_health 1 9 true
-effect give @a[tag=playing] blindness 6 255 true
-effect give @a[tag=playing] slowness 5 255 true
-effect give @a[tag=playing] jump_boost 5 128 true
+effect give @a[tag=playing] blindness 1 255 true
+effect give @a[tag=playing] slowness 1 255 true
+effect give @a[tag=playing] jump_boost 1 128 true
 
 # joining game team
 team join game @a[tag=playing]
