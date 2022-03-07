@@ -1,1 +1,2 @@
 execute as @e[type=marker,tag=ice_bridge_button] at @s unless blocks ~ ~ ~ ~ ~ ~ ~ -63 ~ all run function game:map/26/button/push
+execute as @a[gamemode=adventure,tag=playing,scores={map=26,ingredient=1..50}] at @s if block ~ ~ ~ water run function game:map/26/in_water
