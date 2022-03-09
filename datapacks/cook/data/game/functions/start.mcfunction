@@ -6,8 +6,14 @@ scoreboard players set $time game 0
 scoreboard players reset $finished_recipes game
 scoreboard players reset $score game
 
+# Classic mode
 execute if score $mode settings matches 0 run scoreboard players set $finished_recipes game 0
 execute if score $mode settings matches 0 run scoreboard players set $score game 0
+# Versus mode
+execute if score $mode settings matches 1 run scoreboard players set $finished_recipes_1 game 0
+execute if score $mode settings matches 1 run scoreboard players set $finished_recipes_2 game 0
+execute if score $mode settings matches 1 run scoreboard players set $score_1 game 0
+execute if score $mode settings matches 1 run scoreboard players set $score_2 game 0
 
 # Giving people the playing tag
 tag @a[scores={ready=1..}] add playing
@@ -50,10 +56,10 @@ advancement grant @a[tag=playing] only game:inventory_changed
 # scoreboard players set $id id 0
 # execute as @a[tag=playing,sort=random] at @s run function game:generate_id
 
-execute if score $mode settings matches 0 run scoreboard players operation @a[tag=playing] map = $map settings
+execute if score $mode settings matches 0..1 run scoreboard players operation @a[tag=playing] map = $map settings
 
 # Setting up the map.
-kill @e[type=area_effect_cloud,tag=station_placer]
+#kill @e[type=area_effect_cloud,tag=station_placer]
 function game:map/setups
 #schedule function game:map/setup_stations 20t
 
