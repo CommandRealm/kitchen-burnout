@@ -5,7 +5,7 @@ effect give @a[tag=playing] resistance 1 255 true
 
 # General timer
 #scoreboard players add $time game 1
-execute if score $mode settings matches 0 run function game:timers/normal
+execute if score $mode settings matches 0..1 run function game:timers/normal
 
 # Stop game, then end
 execute if score $timer game_ticks matches 18 run function game:stop_message
@@ -15,7 +15,7 @@ execute if score $timer game_ticks matches -38 as @e[type=marker,tag=fish_spawne
 execute if score $timer game_ticks matches ..-41 run function game:end
 
 # Mode
-# execute if score $mode settings matches 0 run function game:classic/main
+# execute if score $mode settings matches 0 run function game:mode_classic/main
 
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
@@ -57,4 +57,6 @@ execute as @e[type=armor_stand,tag=bell] at @s run function game:stations/bell/m
 execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
 
 # Recipe actionbar display
-execute if score $mode settings matches 0 as @e[tag=playing] at @s if data storage current_order1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
+execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
+execute if score $mode settings matches 1 as @a[tag=playing,team=!2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
+execute if score $mode settings matches 1 as @a[tag=playing,team=2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]

@@ -40,6 +40,10 @@ execute as @a[tag=playing] at @s run function general:rank
 tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Game over!","color":"red","bold":true}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_1"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
 tellraw @a[tag=!playing] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
 tag @a[tag=playing] remove mechanics
 tag @a[tag=playing] remove playing

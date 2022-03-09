@@ -1,5 +1,5 @@
 # Check for a successful ice cream recipe
-execute store result score $recipe_id game run data get storage orders1 Recipe[0].Id
+execute store result score $recipe_id game run data get storage orders_1 Recipe[0].Id
 
 execute if score $recipe_id game matches 0 if entity @s[tag=cone,tag=vanilla,tag=!bowl,tag=!chocolate,tag=!strawberry,tag=!cookies,tag=!mint,tag=!mango,tag=!sprinkles,tag=!chips,tag=!cherry,tag=!cookie_dough,tag=!frozen_food] run function game:serve/check/success
 execute if score $recipe_id game matches 1 if entity @s[tag=cone,tag=chocolate,tag=!bowl,tag=!vanilla,tag=!strawberry,tag=!cookies,tag=!mint,tag=!mango,tag=!sprinkles,tag=!chips,tag=!cherry,tag=!cookie_dough,tag=!frozen_food] run function game:serve/check/success

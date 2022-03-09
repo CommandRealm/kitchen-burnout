@@ -12,6 +12,6 @@ execute if score $recipe game matches 6 run function game:recipes/ice_cream
 # Setting how many recipes should be generated
 scoreboard players set $calculate calculate 75
 
-data remove storage orders1 {}
-data merge storage orders1 {Recipe:[]}
-function game:classic/add_recipe
+data remove storage orders_1 {}
+data merge storage orders_1 {Recipe:[]}
+function game:mode_classic/add_recipe

@@ -1,5 +1,5 @@
 # Check for a successful burger recipe
-execute store result score $recipe_id game run data get storage orders1 Recipe[0].Id
+execute store result score $recipe_id game run data get storage orders_1 Recipe[0].Id
 execute if score $recipe_id game matches 0 if entity @s[tag=hamburger_bun,tag=hamburger,tag=!half_cooked_hamburger,tag=!raw_hamburger,tag=!burnt_hamburger,tag=!scorched_food,tag=!lettuce_leaf,tag=!lettuce_head,tag=!tomato_slice,tag=!tomato,tag=!cheese] run function game:serve/check/success
 execute if score $recipe_id game matches 1 if entity @s[tag=hamburger_bun,tag=hamburger,tag=lettuce_leaf,tag=!half_cooked_hamburger,tag=!raw_hamburger,tag=!burnt_hamburger,tag=!scorched_food,tag=!lettuce_head,tag=!tomato_slice,tag=!tomato,tag=!cheese] run function game:serve/check/success
 execute if score $recipe_id game matches 2 if entity @s[tag=hamburger_bun,tag=hamburger,tag=tomato_slice,tag=!half_cooked_hamburger,tag=!raw_hamburger,tag=!burnt_hamburger,tag=!scorched_food,tag=!lettuce_leaf,tag=!lettuce_head,tag=!tomato,tag=!cheese] run function game:serve/check/success

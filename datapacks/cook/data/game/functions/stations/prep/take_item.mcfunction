@@ -124,62 +124,62 @@ execute if score $mode settings matches 0 if score @s ingredient matches 50 as @
 execute if score $mode settings matches 0 if score @s ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=frozen_food] run team join recipe_missing @s
 
 # Kill ingredient marker for display if necessary
-execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] unless data storage current_order1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] unless data storage current_order1 Recipe{Ingredients:["Cheese"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head] unless data storage current_order1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 4 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_leaf] unless data storage current_order1 Recipe{Ingredients:["Lettuce Leaf"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 5 as @e[type=marker,tag=recipe_ingredient,tag=tomato] unless data storage current_order1 Recipe{Ingredients:["Tomato"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 6 as @e[type=marker,tag=recipe_ingredient,tag=tomato_slice] unless data storage current_order1 Recipe{Ingredients:["Tomato Slice"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 7 as @e[type=marker,tag=recipe_ingredient,tag=raw_hamburger] unless data storage current_order1 Recipe{Ingredients:["Raw Hamburger"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 8 as @e[type=marker,tag=recipe_ingredient,tag=half_cooked_hamburger] unless data storage current_order1 Recipe{Ingredients:["Half-Cooked Hamburger"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 9 as @e[type=marker,tag=recipe_ingredient,tag=hamburger] unless data storage current_order1 Recipe{Ingredients:["Hamburger"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 10 as @e[type=marker,tag=recipe_ingredient,tag=burnt_hamburger] unless data storage current_order1 Recipe{Ingredients:["Burnt Hamburger"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 11 as @e[type=marker,tag=recipe_ingredient,tag=scorched_food] unless data storage current_order1 Recipe{Ingredients:["Scorched Food"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=hamburger_bun] unless data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=cheese] unless data storage current_order_1 Recipe{Ingredients:["Cheese"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head] unless data storage current_order_1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 4 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_leaf] unless data storage current_order_1 Recipe{Ingredients:["Lettuce Leaf"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 5 as @e[type=marker,tag=recipe_ingredient,tag=tomato] unless data storage current_order_1 Recipe{Ingredients:["Tomato"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 6 as @e[type=marker,tag=recipe_ingredient,tag=tomato_slice] unless data storage current_order_1 Recipe{Ingredients:["Tomato Slice"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 7 as @e[type=marker,tag=recipe_ingredient,tag=raw_hamburger] unless data storage current_order_1 Recipe{Ingredients:["Raw Hamburger"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 8 as @e[type=marker,tag=recipe_ingredient,tag=half_cooked_hamburger] unless data storage current_order_1 Recipe{Ingredients:["Half-Cooked Hamburger"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 9 as @e[type=marker,tag=recipe_ingredient,tag=hamburger] unless data storage current_order_1 Recipe{Ingredients:["Hamburger"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 10 as @e[type=marker,tag=recipe_ingredient,tag=burnt_hamburger] unless data storage current_order_1 Recipe{Ingredients:["Burnt Hamburger"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 11 as @e[type=marker,tag=recipe_ingredient,tag=scorched_food] unless data storage current_order_1 Recipe{Ingredients:["Scorched Food"]} run kill @s
 
-execute if score $mode settings matches 0 if score @s ingredient matches 12 as @e[type=marker,tag=recipe_ingredient,tag=rice] unless data storage current_order1 Recipe{Ingredients:["Sushi Rice"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 13 as @e[type=marker,tag=recipe_ingredient,tag=salmon] unless data storage current_order1 Recipe{Ingredients:["Fresh Salmon"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 14 as @e[type=marker,tag=recipe_ingredient,tag=pufferfish] unless data storage current_order1 Recipe{Ingredients:["Fresh Pufferfish"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 15 as @e[type=marker,tag=recipe_ingredient,tag=cut_salmon] unless data storage current_order1 Recipe{Ingredients:["Cut Salmon"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 16 as @e[type=marker,tag=recipe_ingredient,tag=cut_pufferfish] unless data storage current_order1 Recipe{Ingredients:["Cut Pufferfish"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 17 as @e[type=marker,tag=recipe_ingredient,tag=poison_pufferfish] unless data storage current_order1 Recipe{Ingredients:["Poisonous Pufferfish"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 18 as @e[type=marker,tag=recipe_ingredient,tag=avocado] unless data storage current_order1 Recipe{Ingredients:["Avocado"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 19 as @e[type=marker,tag=recipe_ingredient,tag=avocado_slice] unless data storage current_order1 Recipe{Ingredients:["Avocado Slice"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 20 as @e[type=marker,tag=recipe_ingredient,tag=wasabi] unless data storage current_order1 Recipe{Ingredients:["Wasabi"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 12 as @e[type=marker,tag=recipe_ingredient,tag=rice] unless data storage current_order_1 Recipe{Ingredients:["Sushi Rice"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 13 as @e[type=marker,tag=recipe_ingredient,tag=salmon] unless data storage current_order_1 Recipe{Ingredients:["Fresh Salmon"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 14 as @e[type=marker,tag=recipe_ingredient,tag=pufferfish] unless data storage current_order_1 Recipe{Ingredients:["Fresh Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 15 as @e[type=marker,tag=recipe_ingredient,tag=cut_salmon] unless data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 16 as @e[type=marker,tag=recipe_ingredient,tag=cut_pufferfish] unless data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 17 as @e[type=marker,tag=recipe_ingredient,tag=poison_pufferfish] unless data storage current_order_1 Recipe{Ingredients:["Poisonous Pufferfish"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 18 as @e[type=marker,tag=recipe_ingredient,tag=avocado] unless data storage current_order_1 Recipe{Ingredients:["Avocado"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 19 as @e[type=marker,tag=recipe_ingredient,tag=avocado_slice] unless data storage current_order_1 Recipe{Ingredients:["Avocado Slice"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 20 as @e[type=marker,tag=recipe_ingredient,tag=wasabi] unless data storage current_order_1 Recipe{Ingredients:["Wasabi"]} run kill @s
 
-execute if score $mode settings matches 0 if score @s ingredient matches 21 as @e[type=marker,tag=recipe_ingredient,tag=dough] unless data storage current_order1 Recipe{Ingredients:["Pizza Dough"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 22 as @e[type=marker,tag=recipe_ingredient,tag=sauce] unless data storage current_order1 Recipe{Ingredients:["Tomato Sauce"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 23 as @e[type=marker,tag=recipe_ingredient,tag=pizza_cheese] unless data storage current_order1 Recipe{Ingredients:["Pizza Cheese"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 24 as @e[type=marker,tag=recipe_ingredient,tag=pepperoni] unless data storage current_order1 Recipe{Ingredients:["Pepperoni"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 25 as @e[type=marker,tag=recipe_ingredient,tag=mushroom] unless data storage current_order1 Recipe{Ingredients:["Mushroom"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 26 as @e[type=marker,tag=recipe_ingredient,tag=pineapple] unless data storage current_order1 Recipe{Ingredients:["Pineapple"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 27 as @e[type=marker,tag=recipe_ingredient,tag=thick_crust] unless data storage current_order1 Recipe{Ingredients:["Deep-Dish Crust"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 28 as @e[type=marker,tag=recipe_ingredient,tag=thin_crust] unless data storage current_order1 Recipe{Ingredients:["Thin Crust"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 29 as @e[type=marker,tag=recipe_ingredient,tag=cut_mushroom] unless data storage current_order1 Recipe{Ingredients:["Mushroom Slices"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 30 as @e[type=marker,tag=recipe_ingredient,tag=cut_pineapple] unless data storage current_order1 Recipe{Ingredients:["Pineapple Chunks"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 21 as @e[type=marker,tag=recipe_ingredient,tag=dough] unless data storage current_order_1 Recipe{Ingredients:["Pizza Dough"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 22 as @e[type=marker,tag=recipe_ingredient,tag=sauce] unless data storage current_order_1 Recipe{Ingredients:["Tomato Sauce"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 23 as @e[type=marker,tag=recipe_ingredient,tag=pizza_cheese] unless data storage current_order_1 Recipe{Ingredients:["Pizza Cheese"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 24 as @e[type=marker,tag=recipe_ingredient,tag=pepperoni] unless data storage current_order_1 Recipe{Ingredients:["Pepperoni"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 25 as @e[type=marker,tag=recipe_ingredient,tag=mushroom] unless data storage current_order_1 Recipe{Ingredients:["Mushroom"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 26 as @e[type=marker,tag=recipe_ingredient,tag=pineapple] unless data storage current_order_1 Recipe{Ingredients:["Pineapple"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 27 as @e[type=marker,tag=recipe_ingredient,tag=thick_crust] unless data storage current_order_1 Recipe{Ingredients:["Deep-Dish Crust"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 28 as @e[type=marker,tag=recipe_ingredient,tag=thin_crust] unless data storage current_order_1 Recipe{Ingredients:["Thin Crust"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 29 as @e[type=marker,tag=recipe_ingredient,tag=cut_mushroom] unless data storage current_order_1 Recipe{Ingredients:["Mushroom Slices"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 30 as @e[type=marker,tag=recipe_ingredient,tag=cut_pineapple] unless data storage current_order_1 Recipe{Ingredients:["Pineapple Chunks"]} run kill @s
 
-execute if score $mode settings matches 0 if score @s ingredient matches 31 as @e[type=marker,tag=recipe_ingredient,tag=tortilla] unless data storage current_order1 Recipe{Ingredients:["Tortilla"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 32 as @e[type=marker,tag=recipe_ingredient,tag=raw_beef] unless data storage current_order1 Recipe{Ingredients:["Raw Ground Beef"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 33 as @e[type=marker,tag=recipe_ingredient,tag=taco_cheese] unless data storage current_order1 Recipe{Ingredients:["Taco Cheese"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 34 as @e[type=marker,tag=recipe_ingredient,tag=guac] unless data storage current_order1 Recipe{Ingredients:["Guacamole"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 35 as @e[type=marker,tag=recipe_ingredient,tag=salsa] unless data storage current_order1 Recipe{Ingredients:["Salsa"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 36 as @e[type=marker,tag=recipe_ingredient,tag=sour_cream] unless data storage current_order1 Recipe{Ingredients:["Sour Cream"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 37 as @e[type=marker,tag=recipe_ingredient,tag=beef] unless data storage current_order1 Recipe{Ingredients:["Ground Beef"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] unless data storage current_order1 Recipe{Ingredients:["Shredded Lettuce"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches -3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head_2] unless data storage current_order1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 31 as @e[type=marker,tag=recipe_ingredient,tag=tortilla] unless data storage current_order_1 Recipe{Ingredients:["Tortilla"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 32 as @e[type=marker,tag=recipe_ingredient,tag=raw_beef] unless data storage current_order_1 Recipe{Ingredients:["Raw Ground Beef"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 33 as @e[type=marker,tag=recipe_ingredient,tag=taco_cheese] unless data storage current_order_1 Recipe{Ingredients:["Taco Cheese"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 34 as @e[type=marker,tag=recipe_ingredient,tag=guac] unless data storage current_order_1 Recipe{Ingredients:["Guacamole"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 35 as @e[type=marker,tag=recipe_ingredient,tag=salsa] unless data storage current_order_1 Recipe{Ingredients:["Salsa"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 36 as @e[type=marker,tag=recipe_ingredient,tag=sour_cream] unless data storage current_order_1 Recipe{Ingredients:["Sour Cream"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 37 as @e[type=marker,tag=recipe_ingredient,tag=beef] unless data storage current_order_1 Recipe{Ingredients:["Ground Beef"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 38 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_shreds] unless data storage current_order_1 Recipe{Ingredients:["Shredded Lettuce"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches -3 as @e[type=marker,tag=recipe_ingredient,tag=lettuce_head_2] unless data storage current_order_1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
 
-execute if score $mode settings matches 0 if score @s ingredient matches 39 as @e[type=marker,tag=recipe_ingredient,tag=cone] unless data storage current_order1 Recipe{Ingredients:["cone"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 40 as @e[type=marker,tag=recipe_ingredient,tag=bowl] unless data storage current_order1 Recipe{Ingredients:["bowl"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 41 as @e[type=marker,tag=recipe_ingredient,tag=vanilla] unless data storage current_order1 Recipe{Ingredients:["vanilla"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 42 as @e[type=marker,tag=recipe_ingredient,tag=chocolate] unless data storage current_order1 Recipe{Ingredients:["chocolate"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 43 as @e[type=marker,tag=recipe_ingredient,tag=strawberry] unless data storage current_order1 Recipe{Ingredients:["strawberry"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 44 as @e[type=marker,tag=recipe_ingredient,tag=cookies] unless data storage current_order1 Recipe{Ingredients:["cookies"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 45 as @e[type=marker,tag=recipe_ingredient,tag=mint] unless data storage current_order1 Recipe{Ingredients:["mint"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 46 as @e[type=marker,tag=recipe_ingredient,tag=mango] unless data storage current_order1 Recipe{Ingredients:["mango"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 47 as @e[type=marker,tag=recipe_ingredient,tag=sprinkles] unless data storage current_order1 Recipe{Ingredients:["sprinkles"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] unless data storage current_order1 Recipe{Ingredients:["chips"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] unless data storage current_order1 Recipe{Ingredients:["cherry"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] unless data storage current_order1 Recipe{Ingredients:["cookie_dough"]} run kill @s
-execute if score $mode settings matches 0 if score @s ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=frozen_food] unless data storage current_order1 Recipe{Ingredients:["frozen_food"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 39 as @e[type=marker,tag=recipe_ingredient,tag=cone] unless data storage current_order_1 Recipe{Ingredients:["cone"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 40 as @e[type=marker,tag=recipe_ingredient,tag=bowl] unless data storage current_order_1 Recipe{Ingredients:["bowl"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 41 as @e[type=marker,tag=recipe_ingredient,tag=vanilla] unless data storage current_order_1 Recipe{Ingredients:["vanilla"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 42 as @e[type=marker,tag=recipe_ingredient,tag=chocolate] unless data storage current_order_1 Recipe{Ingredients:["chocolate"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 43 as @e[type=marker,tag=recipe_ingredient,tag=strawberry] unless data storage current_order_1 Recipe{Ingredients:["strawberry"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 44 as @e[type=marker,tag=recipe_ingredient,tag=cookies] unless data storage current_order_1 Recipe{Ingredients:["cookies"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 45 as @e[type=marker,tag=recipe_ingredient,tag=mint] unless data storage current_order_1 Recipe{Ingredients:["mint"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 46 as @e[type=marker,tag=recipe_ingredient,tag=mango] unless data storage current_order_1 Recipe{Ingredients:["mango"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 47 as @e[type=marker,tag=recipe_ingredient,tag=sprinkles] unless data storage current_order_1 Recipe{Ingredients:["sprinkles"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 48 as @e[type=marker,tag=recipe_ingredient,tag=chips] unless data storage current_order_1 Recipe{Ingredients:["chips"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 49 as @e[type=marker,tag=recipe_ingredient,tag=cherry] unless data storage current_order_1 Recipe{Ingredients:["cherry"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 50 as @e[type=marker,tag=recipe_ingredient,tag=cookie_dough] unless data storage current_order_1 Recipe{Ingredients:["cookie_dough"]} run kill @s
+execute if score $mode settings matches 0 if score @s ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=frozen_food] unless data storage current_order_1 Recipe{Ingredients:["frozen_food"]} run kill @s
 
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display

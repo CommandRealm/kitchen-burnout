@@ -64,11 +64,12 @@ function game:map/setups
 #schedule function game:map/setup_stations 20t
 
 # Recipe generation
-execute if score $mode settings matches 0 run function game:classic/generate_recipes
+execute if score $mode settings matches 0 run function game:mode_classic/generate_recipes
+execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
 scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 65
 
 # Start timer
-execute if score $mode settings matches 0 run function game:timers/normal_setup
+execute if score $mode settings matches 0..1 run function game:timers/normal_setup
 
 # Setting the button
 setblock -9 17 -10 air
