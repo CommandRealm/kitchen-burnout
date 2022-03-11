@@ -1,3 +1,4 @@
+## UNUSED
 scoreboard players add @s ticks 1
 scoreboard players operation @s minutes = @s ticks
 scoreboard players operation @s seconds = @s ticks

@@ -9,7 +9,7 @@
 #tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove final_position
 #tag @e[type=armor_stand,tag=compact_display,tag=prep_slot,distance=..10] remove compact_display
 execute if entity @s[tag=reset_prep_ingredients] run function game:stations/prep/summon_existing
-execute as @e[type=armor_stand,tag=prep_slot,tag=!final_position] at @s run function game:stations/prep/tp/main
+execute as @e[type=armor_stand,tag=prep_slot,tag=!final_position,distance=..15] at @s run function game:stations/prep/tp/main
 # Hide display if not being looked at
 execute if score @s prep_display matches 1 run scoreboard players set @s prep_display -1
 execute if score @s prep_display matches 2.. run scoreboard players remove @s prep_display 1

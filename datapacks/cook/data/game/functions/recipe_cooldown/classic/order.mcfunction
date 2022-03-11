@@ -4,7 +4,7 @@
 scoreboard players set @a[distance=..500,tag=playing,scores={recipe_cooldown=10}] recipe_cooldown 9
 
 # Giving us the new recipe.
-execute if entity @s[tag=!team_2] run function game:recipe_cooldown/classic/order_1
+function game:recipe_cooldown/classic/order_1
 
 
 # Reading the order

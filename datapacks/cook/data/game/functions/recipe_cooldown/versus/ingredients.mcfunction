@@ -4,7 +4,8 @@
 scoreboard players reset @a[distance=..500,tag=playing] recipe_cooldown
 
 # Giving us the new recipe.
-function game:recipe_cooldown/classic/ingredients_1
+execute if entity @s[team=!2] run function game:recipe_cooldown/versus/ingredients_1
+execute if entity @s[team=2] run function game:recipe_cooldown/versus/ingredients_2
 
 # Sound
 execute as @a[distance=..500] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0.707107

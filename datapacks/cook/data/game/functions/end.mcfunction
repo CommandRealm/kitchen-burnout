@@ -15,7 +15,7 @@ bossbar set game:timer visible false
 # Sets game state to 0
 scoreboard players set $game state 0
 
-tag @a[team=spectator] add playing
+#tag @a[team=spectator] add playing
 
 title @a[tag=playing] times 0 25 5
 

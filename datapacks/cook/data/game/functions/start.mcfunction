@@ -28,8 +28,10 @@ effect give @a[tag=playing] blindness 1 255 true
 effect give @a[tag=playing] slowness 1 255 true
 effect give @a[tag=playing] jump_boost 1 128 true
 
-# joining game team
-team join game @a[tag=playing]
+# Joining game teams
+execute if score $mode settings matches 0 run team join game @a[tag=playing]
+execute if score $mode settings matches 1 run team join 1 @a[tag=playing,tag=!team_2]
+execute if score $mode settings matches 1 run team join 2 @a[tag=playing,tag=team_2]
 
 tag @a[tag=playing] remove tutorial
 
@@ -66,7 +68,8 @@ function game:map/setups
 # Recipe generation
 execute if score $mode settings matches 0 run function game:mode_classic/generate_recipes
 execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
-scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 65
+scoreboard players set @a[gamemode=adventure,tag=playing,team=!2,limit=1] recipe_cooldown 65
+scoreboard players set @a[gamemode=adventure,tag=playing,team=2,limit=1] recipe_cooldown 65
 
 # Start timer
 execute if score $mode settings matches 0..1 run function game:timers/normal_setup

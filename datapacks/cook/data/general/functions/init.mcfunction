@@ -200,6 +200,18 @@ team modify game color gray
 team modify game collisionRule always
 team modify game friendlyFire false
 
+team add 1
+team modify 1 color blue
+team modify 1 collisionRule always
+team modify 1 friendlyFire false
+team modify 1 prefix ["",{"translate":"[DOER]","color":"dark_blue"}]
+
+team add 2
+team modify 2 color red
+team modify 2 collisionRule always
+team modify 2 friendlyFire false
+team modify 2 prefix ["",{"translate":"[DINER]","color":"dark_red"}]
+
 scoreboard objectives add random dummy
 
 scoreboard objectives add recipe_cooldown dummy
