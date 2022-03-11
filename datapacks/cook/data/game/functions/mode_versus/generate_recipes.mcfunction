@@ -16,4 +16,4 @@ data remove storage orders_1 {}
 data merge storage orders_1 {Recipe:[]}
 function game:mode_classic/add_recipe
 data remove storage orders_2 {}
-data modify storage orders_2 {} set from storage orders_1 {}
+data modify storage orders_2 Recipe set from storage orders_1 Recipe
