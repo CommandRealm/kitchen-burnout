@@ -7,6 +7,6 @@ data modify storage current_order_1 Recipe set from storage orders_1 Recipe[0]
 
 kill @e[type=marker,tag=recipe_ingredient,tag=!2]
 kill @e[type=marker,tag=recipe_name,tag=!2]
-function game:recipe_cooldown/versus/ingredient_summon
+function game:recipe_cooldown/versus/ingredient_summon_1
 # Add ingredient markers to missing team
 team join recipe_missing @e[type=marker,tag=recipe_ingredient,tag=!2]
