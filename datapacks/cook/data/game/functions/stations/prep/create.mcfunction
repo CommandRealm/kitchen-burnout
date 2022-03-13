@@ -2,7 +2,8 @@
 setblock ~ ~ ~ oak_pressure_plate[powered=true]
 execute unless entity @e[type=marker,tag=prep_display] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games"]}
 execute if entity @e[type=marker,tag=prep_display] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games","2"]}
-scoreboard players set @e[type=marker,tag=prep_display,sort=nearest,limit=1] prep_display 0
+scoreboard players set @e[type=marker,tag=prep_display,tag=!2,sort=nearest,limit=1] prep_display 0
+scoreboard players set @e[type=marker,tag=prep_display,tag=2,sort=nearest,limit=1] prep_display 0
 
 # Dish
 #summon marker ~ ~ ~ {Tags:["prep_dish","station","die_between_games","raycast_target"]}

@@ -2,68 +2,68 @@
 scoreboard players set $calculate calculate 0
 
 # Match ingredient
-tag @e[type=armor_stand,sort=nearest,limit=1,tag=prep_slot] add selected_prep_slot
+tag @e[type=armor_stand,sort=nearest,limit=1,distance=..500,tag=prep_slot] add selected_prep_slot
 scoreboard players operation @s ingredient = @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] ingredient
 execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=!hamburger_bun] run kill @s
-execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=hamburger_bun] run kill @e[type=armor_stand,tag=prep_slot,tag=hamburger_bun,sort=nearest,distance=..10]
+execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=hamburger_bun] run kill @e[type=armor_stand,tag=prep_slot,tag=hamburger_bun,sort=nearest,distance=..15]
 
 # Remove ingredient from array
-execute if score @s ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove hamburger_bun
-execute if score @s ingredient matches 2 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cheese
-execute if score @s ingredient matches 3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_head
-execute if score @s ingredient matches 4 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_leaf
-execute if score @s ingredient matches 5 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove tomato
-execute if score @s ingredient matches 6 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove tomato_slice
-execute if score @s ingredient matches 7 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove raw_hamburger
-execute if score @s ingredient matches 8 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove half_cooked_hamburger
-execute if score @s ingredient matches 9 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove hamburger
-execute if score @s ingredient matches 10 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove burnt_hamburger
-execute if score @s ingredient matches 11 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove scorched_food
+execute if score @s ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove hamburger_bun
+execute if score @s ingredient matches 2 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cheese
+execute if score @s ingredient matches 3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_head
+execute if score @s ingredient matches 4 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_leaf
+execute if score @s ingredient matches 5 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove tomato
+execute if score @s ingredient matches 6 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove tomato_slice
+execute if score @s ingredient matches 7 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove raw_hamburger
+execute if score @s ingredient matches 8 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove half_cooked_hamburger
+execute if score @s ingredient matches 9 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove hamburger
+execute if score @s ingredient matches 10 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove burnt_hamburger
+execute if score @s ingredient matches 11 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove scorched_food
 
-execute if score @s ingredient matches 12 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove rice
-execute if score @s ingredient matches 13 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove salmon
-execute if score @s ingredient matches 14 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove pufferfish
-execute if score @s ingredient matches 15 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_salmon
-execute if score @s ingredient matches 16 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_pufferfish
-execute if score @s ingredient matches 17 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove poison_pufferfish
-execute if score @s ingredient matches 18 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove avocado
-execute if score @s ingredient matches 19 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove avocado_slice
-execute if score @s ingredient matches 20 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove wasabi
+execute if score @s ingredient matches 12 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove rice
+execute if score @s ingredient matches 13 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove salmon
+execute if score @s ingredient matches 14 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove pufferfish
+execute if score @s ingredient matches 15 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cut_salmon
+execute if score @s ingredient matches 16 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cut_pufferfish
+execute if score @s ingredient matches 17 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove poison_pufferfish
+execute if score @s ingredient matches 18 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove avocado
+execute if score @s ingredient matches 19 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove avocado_slice
+execute if score @s ingredient matches 20 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove wasabi
 
-execute if score @s ingredient matches 21 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove dough
-execute if score @s ingredient matches 22 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove sauce
-execute if score @s ingredient matches 23 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove pizza_cheese
-execute if score @s ingredient matches 24 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove pepperoni
-execute if score @s ingredient matches 25 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove mushroom
-execute if score @s ingredient matches 26 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove pineapple
-execute if score @s ingredient matches 27 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove thick_crust
-execute if score @s ingredient matches 28 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove thin_crust
-execute if score @s ingredient matches 29 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_mushroom
-execute if score @s ingredient matches 30 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cut_pineapple
+execute if score @s ingredient matches 21 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove dough
+execute if score @s ingredient matches 22 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove sauce
+execute if score @s ingredient matches 23 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove pizza_cheese
+execute if score @s ingredient matches 24 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove pepperoni
+execute if score @s ingredient matches 25 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove mushroom
+execute if score @s ingredient matches 26 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove pineapple
+execute if score @s ingredient matches 27 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove thick_crust
+execute if score @s ingredient matches 28 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove thin_crust
+execute if score @s ingredient matches 29 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cut_mushroom
+execute if score @s ingredient matches 30 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cut_pineapple
 
-execute if score @s ingredient matches 31 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove tortilla
-execute if score @s ingredient matches 32 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove raw_beef
-execute if score @s ingredient matches 33 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove taco_cheese
-execute if score @s ingredient matches 34 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove guac
-execute if score @s ingredient matches 35 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove salsa
-execute if score @s ingredient matches 36 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove sour_cream
-execute if score @s ingredient matches 37 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove beef
-execute if score @s ingredient matches 38 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_shreds
-execute if score @s ingredient matches -3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove lettuce_head_2
+execute if score @s ingredient matches 31 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove tortilla
+execute if score @s ingredient matches 32 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove raw_beef
+execute if score @s ingredient matches 33 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove taco_cheese
+execute if score @s ingredient matches 34 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove guac
+execute if score @s ingredient matches 35 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove salsa
+execute if score @s ingredient matches 36 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove sour_cream
+execute if score @s ingredient matches 37 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove beef
+execute if score @s ingredient matches 38 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_shreds
+execute if score @s ingredient matches -3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_head_2
 
-execute if score @s ingredient matches 39 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cone
-execute if score @s ingredient matches 40 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove bowl
-execute if score @s ingredient matches 41 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove vanilla
-execute if score @s ingredient matches 42 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove chocolate
-execute if score @s ingredient matches 43 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove strawberry
-execute if score @s ingredient matches 44 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cookies
-execute if score @s ingredient matches 45 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove mint
-execute if score @s ingredient matches 46 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove mango
-execute if score @s ingredient matches 47 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove sprinkles
-execute if score @s ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove chips
-execute if score @s ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cherry
-execute if score @s ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove cookie_dough
-execute if score @s ingredient matches 51 as @e[type=marker,tag=prep_display,limit=1,sort=nearest] run tag @s remove frozen_food
+execute if score @s ingredient matches 39 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cone
+execute if score @s ingredient matches 40 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove bowl
+execute if score @s ingredient matches 41 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove vanilla
+execute if score @s ingredient matches 42 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove chocolate
+execute if score @s ingredient matches 43 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove strawberry
+execute if score @s ingredient matches 44 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cookies
+execute if score @s ingredient matches 45 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove mint
+execute if score @s ingredient matches 46 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove mango
+execute if score @s ingredient matches 47 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove sprinkles
+execute if score @s ingredient matches 48 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove chips
+execute if score @s ingredient matches 49 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cherry
+execute if score @s ingredient matches 50 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cookie_dough
+execute if score @s ingredient matches 51 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove frozen_food
 
 # Mark ingredient as not being there
 execute if score @s[team=!2] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=!2,tag=hamburger_bun] run team join recipe_missing @s
@@ -300,8 +300,8 @@ execute if score @s[team=2] ingredient matches 51 as @e[type=marker,tag=recipe_i
 #execute positioned ~ ~-2 ~ as @e[type=armor_stand,tag=prep_slot,distance=..12,sort=nearest] at @s run function game:stations/prep/tp/slide_down
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] add compact_display
 #tag @e[type=armor_stand,tag=prep_slot,distance=..15] remove prep_slot
-tag @e[type=marker,tag=prep_display,limit=1,sort=nearest] add start_closing
-#execute as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot,distance=..15] run scoreboard players set @s prep_display 0
+tag @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] add start_closing
+#execute as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] at @s if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot,distance=..15] run scoreboard players set @s prep_display 0
 
 tag @s add took_item_tag
 advancement grant @s only game:inventory_changed

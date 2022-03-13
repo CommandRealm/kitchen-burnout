@@ -1,234 +1,234 @@
 scoreboard players set $calculate calculate 0
 
 # If ingredient is already there, stop them from putting it there
-execute if score @s[team=!2] ingredient matches 1 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=hamburger_bun] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 2 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 3 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_head] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 4 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_leaf] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 5 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tomato] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 6 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tomato_slice] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 7 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=raw_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 8 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=half_cooked_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 9 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 10 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=burnt_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 11 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=scorched_food] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 1 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger_bun] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 2 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 3 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 4 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_leaf] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 5 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tomato] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 6 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tomato_slice] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 7 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=raw_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 8 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=half_cooked_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 9 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 10 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=burnt_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 11 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=scorched_food] run function game:stations/prep/cannot_place
 
-execute if score @s[team=!2] ingredient matches 12 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=rice] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 13 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=salmon] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 14 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 15 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_salmon] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 16 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 17 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=poison_pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 18 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=avocado] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 19 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=avocado_slice] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 20 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=wasabi] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 12 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=rice] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 13 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=salmon] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 14 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 15 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_salmon] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 16 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 17 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=poison_pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 18 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=avocado] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 19 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=avocado_slice] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 20 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=wasabi] run function game:stations/prep/cannot_place
 
-execute if score @s[team=!2] ingredient matches 21 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=dough] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 22 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sauce] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 23 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pizza_cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 24 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pepperoni] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 25 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mushroom] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 26 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pineapple] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 27 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=thick_crust] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 28 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=thin_crust] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 29 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_mushroom] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 30 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_pineapple] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 21 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=dough] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 22 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sauce] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 23 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pizza_cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 24 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pepperoni] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 25 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mushroom] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 26 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pineapple] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 27 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=thick_crust] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 28 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=thin_crust] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 29 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_mushroom] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 30 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_pineapple] run function game:stations/prep/cannot_place
 
-execute if score @s[team=!2] ingredient matches 31 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tortilla] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 32 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=raw_beef] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 33 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=taco_cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 34 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=guac] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 35 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=salsa] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 36 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sour_cream] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 37 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=beef] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 38 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_shreds] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches -3 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_head_2] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 31 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tortilla] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 32 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=raw_beef] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 33 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=taco_cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 34 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=guac] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 35 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=salsa] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 36 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sour_cream] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 37 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=beef] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 38 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_shreds] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches -3 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head_2] run function game:stations/prep/cannot_place
 
-execute if score @s[team=!2] ingredient matches 39 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cone] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 40 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=bowl] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 41 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=vanilla] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 42 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=chocolate] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 43 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=strawberry] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 44 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookies] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 45 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mint] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 46 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mango] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 47 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sprinkles] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 48 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=chips] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 49 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cherry] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 50 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookie_dough] run function game:stations/prep/cannot_place
-execute if score @s[team=!2] ingredient matches 51 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=frozen_food] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 39 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cone] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 40 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=bowl] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 41 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=vanilla] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 42 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=chocolate] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 43 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=strawberry] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 44 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cookies] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 45 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mint] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 46 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mango] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 47 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sprinkles] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 48 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=chips] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 49 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cherry] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 50 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cookie_dough] run function game:stations/prep/cannot_place
+execute if score @s[team=!2] ingredient matches 51 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=frozen_food] run function game:stations/prep/cannot_place
 
 # If ingredient is already there, stop them from putting it there for team 2
-execute if score @s[team=2] ingredient matches 1 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=hamburger_bun] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 2 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 3 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_head] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 4 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_leaf] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 5 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tomato] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 6 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tomato_slice] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 7 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=raw_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 8 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=half_cooked_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 9 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 10 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=burnt_hamburger] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 11 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=scorched_food] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 1 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger_bun] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 2 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 3 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 4 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_leaf] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 5 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tomato] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 6 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tomato_slice] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 7 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=raw_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 8 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=half_cooked_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 9 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 10 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=burnt_hamburger] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 11 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=scorched_food] run function game:stations/prep/cannot_place
 
-execute if score @s[team=2] ingredient matches 12 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=rice] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 13 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=salmon] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 14 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 15 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_salmon] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 16 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 17 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=poison_pufferfish] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 18 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=avocado] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 19 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=avocado_slice] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 20 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=wasabi] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 12 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=rice] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 13 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=salmon] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 14 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 15 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_salmon] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 16 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 17 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=poison_pufferfish] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 18 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=avocado] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 19 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=avocado_slice] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 20 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=wasabi] run function game:stations/prep/cannot_place
 
-execute if score @s[team=2] ingredient matches 21 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=dough] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 22 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sauce] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 23 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pizza_cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 24 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pepperoni] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 25 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mushroom] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 26 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=pineapple] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 27 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=thick_crust] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 28 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=thin_crust] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 29 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_mushroom] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 30 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cut_pineapple] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 21 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=dough] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 22 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sauce] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 23 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pizza_cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 24 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pepperoni] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 25 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mushroom] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 26 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=pineapple] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 27 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=thick_crust] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 28 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=thin_crust] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 29 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_mushroom] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 30 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cut_pineapple] run function game:stations/prep/cannot_place
 
-execute if score @s[team=2] ingredient matches 31 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=tortilla] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 32 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=raw_beef] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 33 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=taco_cheese] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 34 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=guac] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 35 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=salsa] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 36 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sour_cream] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 37 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=beef] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 38 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_shreds] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches -3 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=lettuce_head_2] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 31 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=tortilla] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 32 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=raw_beef] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 33 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=taco_cheese] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 34 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=guac] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 35 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=salsa] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 36 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sour_cream] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 37 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=beef] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 38 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_shreds] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches -3 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head_2] run function game:stations/prep/cannot_place
 
-execute if score @s[team=2] ingredient matches 39 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cone] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 40 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=bowl] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 41 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=vanilla] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 42 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=chocolate] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 43 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=strawberry] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 44 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookies] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 45 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mint] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 46 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=mango] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 47 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=sprinkles] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 48 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=chips] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 49 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cherry] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 50 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=cookie_dough] run function game:stations/prep/cannot_place
-execute if score @s[team=2] ingredient matches 51 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=frozen_food] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 39 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cone] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 40 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=bowl] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 41 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=vanilla] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 42 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=chocolate] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 43 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=strawberry] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 44 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cookies] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 45 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mint] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 46 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=mango] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 47 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=sprinkles] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 48 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=chips] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 49 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cherry] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 50 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cookie_dough] run function game:stations/prep/cannot_place
+execute if score @s[team=2] ingredient matches 51 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=frozen_food] run function game:stations/prep/cannot_place
 
 # If ingredient is not there, add ingredient for team 1
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 1 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger_bun] run tag @s add hamburger_bun
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 2 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cheese] run tag @s add cheese
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_head] run tag @s add lettuce_head
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 4 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_leaf] run tag @s add lettuce_leaf
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 5 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tomato] run tag @s add tomato
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 6 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tomato_slice] run tag @s add tomato_slice
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 7 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!raw_hamburger] run tag @s add raw_hamburger
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 8 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!half_cooked_hamburger] run tag @s add half_cooked_hamburger
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 9 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger] run tag @s add hamburger
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 10 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!burnt_hamburger] run tag @s add burnt_hamburger
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 11 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!scorched_food] run tag @s add scorched_food
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 1 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 2 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 4 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_leaf] run tag @s add lettuce_leaf
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 5 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tomato] run tag @s add tomato
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 6 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tomato_slice] run tag @s add tomato_slice
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 7 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_hamburger] run tag @s add raw_hamburger
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 8 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!half_cooked_hamburger] run tag @s add half_cooked_hamburger
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 9 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger] run tag @s add hamburger
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 10 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!burnt_hamburger] run tag @s add burnt_hamburger
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 11 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!scorched_food] run tag @s add scorched_food
 
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 12 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!rice] run tag @s add rice
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 13 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!salmon] run tag @s add salmon
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 14 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pufferfish] run tag @s add pufferfish
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 15 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_salmon] run tag @s add cut_salmon
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 16 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_pufferfish] run tag @s add cut_pufferfish
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 17 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!poison_pufferfish] run tag @s add poison_pufferfish
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 18 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado] run tag @s add avocado
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 19 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado_slice] run tag @s add avocado_slice
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 20 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!wasabi] run tag @s add wasabi
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 12 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!rice] run tag @s add rice
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 13 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salmon] run tag @s add salmon
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 14 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pufferfish] run tag @s add pufferfish
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 15 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_salmon] run tag @s add cut_salmon
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 16 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pufferfish] run tag @s add cut_pufferfish
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 17 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!poison_pufferfish] run tag @s add poison_pufferfish
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 18 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!avocado] run tag @s add avocado
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 19 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!avocado_slice] run tag @s add avocado_slice
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 20 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!wasabi] run tag @s add wasabi
 
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 21 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!dough] run tag @s add dough
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 22 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sauce] run tag @s add sauce
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 23 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pizza_cheese] run tag @s add pizza_cheese
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 24 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pepperoni] run tag @s add pepperoni
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 25 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mushroom] run tag @s add mushroom
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 26 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pineapple] run tag @s add pineapple
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 27 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thick_crust] run tag @s add thick_crust
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 28 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thin_crust] run tag @s add thin_crust
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 29 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_mushroom] run tag @s add cut_mushroom
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 30 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_pineapple] run tag @s add cut_pineapple
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 31 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tortilla] run tag @s add tortilla
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 32 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!raw_beef] run tag @s add raw_beef
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 33 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!taco_cheese] run tag @s add taco_cheese
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 34 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!guac] run tag @s add guac
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 35 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!salsa] run tag @s add salsa
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 36 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sour_cream] run tag @s add sour_cream
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 37 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!beef] run tag @s add beef
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 38 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_shreds] run tag @s add lettuce_shreds
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches -3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_head_2] run tag @s add lettuce_head_2
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 21 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!dough] run tag @s add dough
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 22 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sauce] run tag @s add sauce
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 23 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run tag @s add pizza_cheese
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 24 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pepperoni] run tag @s add pepperoni
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 25 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mushroom] run tag @s add mushroom
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 26 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pineapple] run tag @s add pineapple
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 27 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thick_crust] run tag @s add thick_crust
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 28 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thin_crust] run tag @s add thin_crust
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 29 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_mushroom] run tag @s add cut_mushroom
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 30 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pineapple] run tag @s add cut_pineapple
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 31 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tortilla] run tag @s add tortilla
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 32 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_beef] run tag @s add raw_beef
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 33 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run tag @s add taco_cheese
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 34 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!guac] run tag @s add guac
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 35 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salsa] run tag @s add salsa
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 36 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sour_cream] run tag @s add sour_cream
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 37 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!beef] run tag @s add beef
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 38 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_shreds] run tag @s add lettuce_shreds
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches -3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head_2] run tag @s add lettuce_head_2
 
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 39 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cone] run tag @s add cone
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 40 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!bowl] run tag @s add bowl
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 41 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!vanilla] run tag @s add vanilla
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 42 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chocolate] run tag @s add chocolate
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 43 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!strawberry] run tag @s add strawberry
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 44 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookies] run tag @s add cookies
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 45 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mint] run tag @s add mint
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 46 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mango] run tag @s add mango
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 47 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sprinkles] run tag @s add sprinkles
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 48 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chips] run tag @s add chips
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 49 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cherry] run tag @s add cherry
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 50 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookie_dough] run tag @s add cookie_dough
-execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 51 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!frozen_food] run tag @s add frozen_food
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 39 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cone] run tag @s add cone
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 40 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!bowl] run tag @s add bowl
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 41 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!vanilla] run tag @s add vanilla
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 42 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!chocolate] run tag @s add chocolate
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 43 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!strawberry] run tag @s add strawberry
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 44 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cookies] run tag @s add cookies
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 45 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mint] run tag @s add mint
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 46 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mango] run tag @s add mango
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 47 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sprinkles] run tag @s add sprinkles
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 48 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!chips] run tag @s add chips
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 49 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cherry] run tag @s add cherry
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 50 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cookie_dough] run tag @s add cookie_dough
+execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 51 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!frozen_food] run tag @s add frozen_food
 
 # If ingredient is not there, add ingredient for team 2
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 1 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger_bun] run tag @s add hamburger_bun
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 2 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cheese] run tag @s add cheese
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_head] run tag @s add lettuce_head
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 4 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_leaf] run tag @s add lettuce_leaf
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 5 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tomato] run tag @s add tomato
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 6 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tomato_slice] run tag @s add tomato_slice
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 7 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!raw_hamburger] run tag @s add raw_hamburger
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 8 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!half_cooked_hamburger] run tag @s add half_cooked_hamburger
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 9 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!hamburger] run tag @s add hamburger
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 10 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!burnt_hamburger] run tag @s add burnt_hamburger
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 11 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!scorched_food] run tag @s add scorched_food
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 1 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 2 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 4 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_leaf] run tag @s add lettuce_leaf
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 5 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tomato] run tag @s add tomato
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 6 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tomato_slice] run tag @s add tomato_slice
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 7 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_hamburger] run tag @s add raw_hamburger
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 8 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!half_cooked_hamburger] run tag @s add half_cooked_hamburger
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 9 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger] run tag @s add hamburger
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 10 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!burnt_hamburger] run tag @s add burnt_hamburger
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 11 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!scorched_food] run tag @s add scorched_food
 
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 12 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!rice] run tag @s add rice
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 13 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!salmon] run tag @s add salmon
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 14 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pufferfish] run tag @s add pufferfish
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 15 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_salmon] run tag @s add cut_salmon
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 16 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_pufferfish] run tag @s add cut_pufferfish
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 17 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!poison_pufferfish] run tag @s add poison_pufferfish
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 18 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado] run tag @s add avocado
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 19 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!avocado_slice] run tag @s add avocado_slice
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 20 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!wasabi] run tag @s add wasabi
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 12 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!rice] run tag @s add rice
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 13 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salmon] run tag @s add salmon
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 14 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pufferfish] run tag @s add pufferfish
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 15 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_salmon] run tag @s add cut_salmon
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 16 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pufferfish] run tag @s add cut_pufferfish
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 17 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!poison_pufferfish] run tag @s add poison_pufferfish
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 18 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!avocado] run tag @s add avocado
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 19 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!avocado_slice] run tag @s add avocado_slice
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 20 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!wasabi] run tag @s add wasabi
 
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 21 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!dough] run tag @s add dough
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 22 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sauce] run tag @s add sauce
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 23 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pizza_cheese] run tag @s add pizza_cheese
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 24 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pepperoni] run tag @s add pepperoni
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 25 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mushroom] run tag @s add mushroom
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 26 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!pineapple] run tag @s add pineapple
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 27 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thick_crust] run tag @s add thick_crust
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 28 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!thin_crust] run tag @s add thin_crust
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 29 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_mushroom] run tag @s add cut_mushroom
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 30 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cut_pineapple] run tag @s add cut_pineapple
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 31 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!tortilla] run tag @s add tortilla
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 32 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!raw_beef] run tag @s add raw_beef
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 33 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!taco_cheese] run tag @s add taco_cheese
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 34 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!guac] run tag @s add guac
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 35 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!salsa] run tag @s add salsa
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 36 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sour_cream] run tag @s add sour_cream
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 37 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!beef] run tag @s add beef
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 38 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_shreds] run tag @s add lettuce_shreds
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches -3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!lettuce_head_2] run tag @s add lettuce_head_2
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 21 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!dough] run tag @s add dough
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 22 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sauce] run tag @s add sauce
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 23 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run tag @s add pizza_cheese
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 24 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pepperoni] run tag @s add pepperoni
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 25 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mushroom] run tag @s add mushroom
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 26 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pineapple] run tag @s add pineapple
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 27 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thick_crust] run tag @s add thick_crust
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 28 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thin_crust] run tag @s add thin_crust
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 29 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_mushroom] run tag @s add cut_mushroom
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 30 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pineapple] run tag @s add cut_pineapple
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 31 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tortilla] run tag @s add tortilla
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 32 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_beef] run tag @s add raw_beef
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 33 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run tag @s add taco_cheese
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 34 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!guac] run tag @s add guac
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 35 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salsa] run tag @s add salsa
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 36 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sour_cream] run tag @s add sour_cream
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 37 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!beef] run tag @s add beef
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 38 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_shreds] run tag @s add lettuce_shreds
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches -3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head_2] run tag @s add lettuce_head_2
 
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 39 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cone] run tag @s add cone
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 40 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!bowl] run tag @s add bowl
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 41 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!vanilla] run tag @s add vanilla
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 42 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chocolate] run tag @s add chocolate
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 43 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!strawberry] run tag @s add strawberry
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 44 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookies] run tag @s add cookies
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 45 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mint] run tag @s add mint
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 46 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!mango] run tag @s add mango
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 47 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!sprinkles] run tag @s add sprinkles
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 48 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!chips] run tag @s add chips
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 49 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cherry] run tag @s add cherry
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 50 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!cookie_dough] run tag @s add cookie_dough
-execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 51 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,tag=!frozen_food] run tag @s add frozen_food
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 39 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cone] run tag @s add cone
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 40 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!bowl] run tag @s add bowl
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 41 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!vanilla] run tag @s add vanilla
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 42 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!chocolate] run tag @s add chocolate
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 43 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!strawberry] run tag @s add strawberry
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 44 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cookies] run tag @s add cookies
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 45 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mint] run tag @s add mint
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 46 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mango] run tag @s add mango
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 47 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sprinkles] run tag @s add sprinkles
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 48 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!chips] run tag @s add chips
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 49 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cherry] run tag @s add cherry
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 50 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cookie_dough] run tag @s add cookie_dough
+execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 51 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!frozen_food] run tag @s add frozen_food
 
 # Summon ingredient marker for display if necessary for team one
 execute if score @s[tag=!temporary_place_tag,team=!2] ingredient matches 1 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
@@ -462,7 +462,7 @@ execute if score @s[tag=!temporary_place_tag,team=2] ingredient matches 50 as @e
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0
 playsound entity.item.pickup master @s[tag=!temporary_place_tag] ~ ~ ~ 1 1.1
 item replace entity @s[tag=!temporary_place_tag] hotbar.4 with air
-execute if entity @s[tag=!temporary_place_tag] as @e[type=marker,tag=prep_display,limit=1,sort=nearest] at @s run tag @s add reset_prep_ingredients
+execute if entity @s[tag=!temporary_place_tag] as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] at @s run tag @s add reset_prep_ingredients
 #execute if entity @s[tag=!temporary_place_tag] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
 
 # Remove tags
