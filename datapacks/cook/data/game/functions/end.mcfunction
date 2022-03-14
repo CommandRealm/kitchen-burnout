@@ -32,19 +32,23 @@ scoreboard players reset @a[tag=playing] drop_ready_book
 # healing players
 effect give @a[tag=playing] regeneration 1 255 true
 
-
-execute as @a[tag=playing] at @s run function general:rank
-
-# Removing tags
-
-tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Game over!","color":"red","bold":true}]
+# Scores
+tellraw @a[tag=!playing] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
+tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Game over!","color":"green","bold":true}]
+execute if score $mode settings matches 1 if score $score_1 game > $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Doers","color":"aqua","bold":true},{"translate":" won!","color":"gold"}]
+execute if score $mode settings matches 1 if score $score_1 game < $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Diners","color":"light_purple","bold":true},{"translate":" won!","color":"gold"}]
+execute if score $mode settings matches 1 if score $score_1 game = $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"It's a tie!","color":"gold"}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes"},"color":"gold","bold":true}]
 execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_1"},"color":"gold","bold":true}]
 execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
 execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true}]
 execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
-tellraw @a[tag=!playing] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
+
+# Reset teams
+execute as @a[tag=playing] at @s run function general:rank
+
+# Removing tags
 tag @a[tag=playing] remove mechanics
 tag @a[tag=playing] remove playing
 

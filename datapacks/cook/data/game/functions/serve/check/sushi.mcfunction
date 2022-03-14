@@ -1,5 +1,7 @@
 # Check for a successful sushi recipe
-execute store result score $recipe_id game run data get storage orders_1 Recipe[0].Id
+execute if entity @s[tag=!2] store result score $recipe_id game run data get storage orders_1 Recipe[0].Id
+execute if entity @s[tag=2] store result score $recipe_id game run data get storage orders_2 Recipe[0].Id
+
 execute if score $recipe_id game matches 0 if entity @s[tag=!rice,tag=!salmon,tag=cut_salmon,tag=!pufferfish,tag=!cut_pufferfish,tag=!poison_pufferfish,tag=!avocado_slice,tag=!avocado,tag=!wasabi] run function game:serve/check/success
 execute if score $recipe_id game matches 1 if entity @s[tag=!rice,tag=!salmon,tag=cut_salmon,tag=!pufferfish,tag=!cut_pufferfish,tag=!poison_pufferfish,tag=!avocado_slice,tag=!avocado,tag=wasabi] run function game:serve/check/success
 execute if score $recipe_id game matches 2 if entity @s[tag=rice,tag=!salmon,tag=cut_salmon,tag=!pufferfish,tag=!cut_pufferfish,tag=!poison_pufferfish,tag=!avocado_slice,tag=!avocado,tag=!wasabi] run function game:serve/check/success
