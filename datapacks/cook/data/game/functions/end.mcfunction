@@ -51,6 +51,7 @@ execute as @a[tag=playing] at @s run function general:rank
 # Removing tags
 tag @a[tag=playing] remove mechanics
 tag @a[tag=playing] remove playing
+tag @a[tag=playing] remove team_2
 
 scoreboard objectives setdisplay sidebar
 

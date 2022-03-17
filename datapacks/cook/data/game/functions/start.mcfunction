@@ -30,6 +30,7 @@ effect give @a[tag=playing] jump_boost 1 128 true
 
 # Joining game teams
 execute if score $mode settings matches 0 run team join game_0 @a[tag=playing]
+execute if score $mode settings matches 1 run tag @a[tag=playing,tag=lobby_team_2] add team_2
 execute if score $mode settings matches 1 run team join 1_0 @a[tag=playing,tag=!team_2]
 execute if score $mode settings matches 1 run team join 2_0 @a[tag=playing,tag=team_2]
 
