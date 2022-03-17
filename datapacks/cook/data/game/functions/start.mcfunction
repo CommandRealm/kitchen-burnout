@@ -20,6 +20,7 @@ tag @a[scores={ready=1..}] add playing
 clear @a[tag=playing]
 effect clear @a[tag=playing]
 gamemode adventure @a[tag=playing]
+tag @a[tag=playing] remove team_2
 
 
 # Give players temporary effects
