@@ -1,0 +1,185 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/bun.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cheese.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/lettuce_head.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/lettuce_leaf.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/tomato.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF4"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/tomato_slice.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF5"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/raw_hamburger.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF6"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/half_cooked_hamburger.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF7"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/hamburger.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF8"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/burnt_hamburger.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFF9"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/charcoal.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFA"
+            ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/rice.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFB"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/salmon.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFC"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/pufferfish.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFD"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cut_salmon.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFE"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cut_pufferfish.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uEFFF"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/poison_pufferfish.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/avocado.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/avocado_slice.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF002"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/wasabi.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF003"
+            ]
+        }
+    ]
+}

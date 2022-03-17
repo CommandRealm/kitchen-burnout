@@ -40,10 +40,10 @@ execute if score $mode settings matches 1 if score $score_1 game < $score_2 game
 execute if score $mode settings matches 1 if score $score_1 game = $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"It's a tie!","color":"gold"}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
 execute if score $mode settings matches 0 run tellraw @a[tag=playing] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_1"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=!2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 run tellraw @a[tag=playing,team=2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_1"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 run tellraw @a[tag=playing,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
 
 # Reset teams
 execute as @a[tag=playing] at @s run function general:rank
@@ -52,6 +52,7 @@ execute as @a[tag=playing] at @s run function general:rank
 tag @a[tag=playing] remove mechanics
 tag @a[tag=playing] remove playing
 
+scoreboard objectives setdisplay sidebar
 
 forceload remove all
 

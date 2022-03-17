@@ -7,4 +7,4 @@ execute if entity @a[gamemode=adventure,tag=playing,scores={map=28}] run functio
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=30}] run function game:map/30/setup
 
 # Team 2 for versus mode
-execute if entity @a[gamemode=adventure,tag=playing,scores={map=1},team=2] run function game:map/1/setup_2
+execute if entity @a[gamemode=adventure,tag=playing,scores={map=1},tag=team_2] run function game:map/1/setup_2

@@ -66,5 +66,5 @@ execute if score $mode settings matches 0 run data remove storage orders_1 Recip
 execute if score $mode settings matches 1 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
 execute if score $mode settings matches 1 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]
 execute if score $mode settings matches 0 run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 25
-execute if score $mode settings matches 1 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,team=!2] recipe_cooldown 25
-execute if score $mode settings matches 1 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,team=2] recipe_cooldown 25
+execute if score $mode settings matches 1 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=!team_2] recipe_cooldown 25
+execute if score $mode settings matches 1 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=team_2] recipe_cooldown 25

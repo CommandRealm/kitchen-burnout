@@ -29,9 +29,20 @@ effect give @a[tag=playing] slowness 1 255 true
 effect give @a[tag=playing] jump_boost 1 128 true
 
 # Joining game teams
-execute if score $mode settings matches 0 run team join game @a[tag=playing]
-execute if score $mode settings matches 1 run team join 1 @a[tag=playing,tag=!team_2]
-execute if score $mode settings matches 1 run team join 2 @a[tag=playing,tag=team_2]
+execute if score $mode settings matches 0 run team join game_0 @a[tag=playing]
+execute if score $mode settings matches 1 run team join 1_0 @a[tag=playing,tag=!team_2]
+execute if score $mode settings matches 1 run team join 2_0 @a[tag=playing,tag=team_2]
+
+# Show held ingredient scoreboard
+execute if score $mode settings matches 0 run scoreboard objectives setdisplay sidebar sidebar_disp
+execute if score $mode settings matches 0 run scoreboard players reset * sidebar_disp
+execute if score $mode settings matches 0 run scoreboard players set @a[tag=playing] sidebar_disp 0
+execute if score $mode settings matches 1 run scoreboard objectives setdisplay sidebar.team.blue sidebar_disp_1
+execute if score $mode settings matches 1 run scoreboard players reset * sidebar_disp_1
+execute if score $mode settings matches 1 run scoreboard players set @a[tag=playing,tag=!team_2] sidebar_disp_1 0
+execute if score $mode settings matches 1 run scoreboard objectives setdisplay sidebar.team.red sidebar_disp_2
+execute if score $mode settings matches 1 run scoreboard players reset * sidebar_disp_2
+execute if score $mode settings matches 1 run scoreboard players set @a[tag=playing,tag=team_2] sidebar_disp_2 0
 
 tag @a[tag=playing] remove tutorial
 
@@ -68,8 +79,8 @@ function game:map/setups
 # Recipe generation
 execute if score $mode settings matches 0 run function game:mode_classic/generate_recipes
 execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
-scoreboard players set @a[gamemode=adventure,tag=playing,team=!2,limit=1] recipe_cooldown 65
-scoreboard players set @a[gamemode=adventure,tag=playing,team=2,limit=1] recipe_cooldown 65
+scoreboard players set @a[gamemode=adventure,tag=playing,tag=!team_2,limit=1] recipe_cooldown 65
+scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1] recipe_cooldown 65
 
 # Start timer
 execute if score $mode settings matches 0..1 run function game:timers/normal_setup

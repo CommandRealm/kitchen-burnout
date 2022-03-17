@@ -195,22 +195,11 @@ scoreboard objectives add freeze_rot_y dummy
 
 scoreboard objectives add ice_bridge dummy
 
-team add game
-team modify game color gray
-team modify game collisionRule always
-team modify game friendlyFire false
-
-team add 1
-team modify 1 color blue
-team modify 1 collisionRule always
-team modify 1 friendlyFire false
-team modify 1 prefix ["",{"translate":"[DOER] ","color":"dark_blue"}]
-
-team add 2
-team modify 2 color red
-team modify 2 collisionRule always
-team modify 2 friendlyFire false
-team modify 2 prefix ["",{"translate":"[DINER] ","color":"dark_red"}]
+# Ingredient specific teams
+function general:ingredient_teams
+scoreboard objectives add sidebar_disp dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":true},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":true},{"text":"]","color":"white","bold":true}]
+scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":true},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":false},{"text":"]","color":"white","bold":true}]
+scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":false},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":true},{"text":"]","color":"white","bold":true}]
 
 scoreboard objectives add random dummy
 

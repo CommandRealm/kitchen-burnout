@@ -58,5 +58,5 @@ execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cool
 
 # Recipe actionbar display
 execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
-execute if score $mode settings matches 1 as @a[tag=playing,team=!2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
-execute if score $mode settings matches 1 as @a[tag=playing,team=2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]
+execute if score $mode settings matches 1 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
+execute if score $mode settings matches 1 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]
