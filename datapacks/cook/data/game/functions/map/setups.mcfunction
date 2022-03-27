@@ -3,6 +3,7 @@ execute if entity @a[gamemode=adventure,tag=playing,scores={map=11}] run functio
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=14}] run function game:map/14/setup
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=25}] run function game:map/25/setup
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=26}] run function game:map/26/setup
+execute if entity @a[gamemode=adventure,tag=playing,scores={map=27}] run function game:map/27/setup
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=28}] run function game:map/28/setup
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=30}] run function game:map/30/setup
 

@@ -1,0 +1,26 @@
+scoreboard players add @s campfire_heat 1
+execute if score @s campfire_heat matches 150.. run scoreboard players add @s campfire_heat 1
+execute if score @s campfire_heat matches 250.. run scoreboard players add @s campfire_heat 1
+execute if score @s campfire_heat matches 300.. run scoreboard players add @s campfire_heat 1
+
+execute if score @s campfire_heat matches 501.. run scoreboard players set @s campfire_heat 500
+
+execute if score @s campfire_heat matches 1..49 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 50..99 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 100..149 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 150..199 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 200..249 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 250..299 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 300..349 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 350..399 run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"gray"}]
+execute if score @s campfire_heat matches 400.. run title @s subtitle ["",{"translate":"Warming Up","color":"#ff6e26","underlined":true},{"text":": ","color":"#ff6e26"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"},{"text":"☀","color":"#d4500f"}]
+title @s title ""
+
+execute if score @s campfire_heat matches 405 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 2 1
+execute if score @s campfire_heat matches 353 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 1.7 1
+execute if score @s campfire_heat matches 301 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 1.4 1
+execute if score @s campfire_heat matches 252 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 1.1 1
+execute if score @s campfire_heat matches 201 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 0.8 1
+execute if score @s campfire_heat matches 151 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 0.5 1
+execute if score @s campfire_heat matches 100 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 0.2 1
+execute if score @s campfire_heat matches 50 run playsound minecraft:entity.ender_dragon.shoot master @s ~ ~ ~ 100 0 1

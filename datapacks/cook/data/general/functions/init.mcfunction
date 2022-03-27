@@ -195,6 +195,8 @@ scoreboard objectives add freeze_rot_y dummy
 
 scoreboard objectives add ice_bridge dummy
 
+scoreboard objectives add campfire_heat dummy
+
 # Ingredient specific teams
 function general:ingredient_teams
 scoreboard objectives add sidebar_disp dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":true},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":true},{"text":"]","color":"white","bold":true}]

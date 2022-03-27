@@ -1,8 +1,8 @@
 # called whenever a player joins the game
 
 # Basic functions
-tp @s 0 66 0
-spawnpoint @s 0 66 0 
+tp @s -9 65 -23 0 -5
+spawnpoint @s -9 65 -23 0
 scoreboard players set @s has_joined 1
 clear @s
 gamemode adventure @s
