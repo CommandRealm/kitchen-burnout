@@ -4,6 +4,10 @@
 execute as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
 execute as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
 
+# Reset ice blocks
+execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
+execute as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
+
 # Removes all entities that should die between games (most of them)
 tp @e[tag=die_between_games] 0 0 0
 kill @e[tag=die_between_games]

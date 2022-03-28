@@ -1,4 +1,4 @@
-# Campfire warmth3 kitchen
+# Campfire warmth kitchen
 tp @a[tag=playing,tag=!team_2,scores={map=27}] 3501 68 499 0 -5
 execute at @a[tag=playing,tag=!team_2,scores={map=27}] run forceload add ~75 ~75 ~-50 ~-50
 

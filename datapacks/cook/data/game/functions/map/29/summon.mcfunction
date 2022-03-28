@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ ice unless entity @e[type=marker,tag=thin_ice,distance=..0.5] run summon marker ~ ~ ~ {Tags:["die_between_games","thin_ice","ice"]}
+execute if block ~ ~ ~ packed_ice unless entity @e[type=marker,tag=thin_ice,distance=..0.5] run summon marker ~ ~ ~ {Tags:["die_between_games","thin_ice","packed_ice"]}
+execute if block ~ ~ ~ blue_ice unless entity @e[type=marker,tag=thin_ice,distance=..0.5] run summon marker ~ ~ ~ {Tags:["die_between_games","thin_ice","blue_ice"]}
