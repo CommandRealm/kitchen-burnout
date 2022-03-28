@@ -6,7 +6,8 @@ execute positioned 3491 67 497 run function game:map/ingredient_sets/ice_cream
 # Ice Creams
 execute positioned 3474 70 530 run function game:map/ingredient_sets/ice_cream
 execute positioned 3472 70 530 run function game:map/ingredient_sets/ice_cream
-execute positioned 3470 70 528 run function game:map/ingredient_sets/ice_cream
+execute positioned 3470 70 530 run function game:map/ingredient_sets/ice_cream
+execute positioned 3468 70 528 run function game:map/ingredient_sets/ice_cream
 execute positioned 3468 70 526 run function game:map/ingredient_sets/ice_cream
 execute positioned 3468 70 524 run function game:map/ingredient_sets/ice_cream
 # Toppings
