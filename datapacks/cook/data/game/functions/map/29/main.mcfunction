@@ -6,6 +6,6 @@ execute as @a[gamemode=adventure,tag=playing,scores={map=29}] at @s if block ~ ~
 
 # Falling ice
 execute as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
-execute as @e[type=armor_stand,tag=thin_ice] at @s if block ~ ~ ~ water run tp @s ~ ~-.1 ~
+execute as @e[type=armor_stand,tag=thin_ice] at @s if block ~ ~ ~ water run tp @s ~ ~-.07 ~
 execute as @e[type=armor_stand,tag=thin_ice] at @s unless block ~ ~ ~ water run kill @e[tag=thin_ice,type=falling_block,distance=..1.5]
 execute as @e[type=armor_stand,tag=thin_ice] at @s unless block ~ ~ ~ water run kill @s
