@@ -1,5 +1,6 @@
 function game:map/8/teleport
 
+advancement revoke @a only game:arrow_hit_player
 scoreboard players set $timer arrow_cycle 0
 
 # Hallway ingredients

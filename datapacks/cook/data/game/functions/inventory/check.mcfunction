@@ -2,7 +2,6 @@
 
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] run function game:inventory/offhand_detector
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:iron_sword"}]}] unless score @s map matches 26..30 run function game:inventory/get_knife
-execute as @a[tag=playing,scores={map=11..15}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:cobweb"}]}] run function game:inventory/get_fishing_net
 execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:structure_void"}]}] run function game:inventory/get_trash_can
 
 execute as @a[tag=playing,scores={ingredient=1}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:bread"}]}] run function game:inventory/get_bread
@@ -64,6 +63,10 @@ execute as @a[tag=playing,scores={ingredient=51}] unless entity @s[nbt={Inventor
 
 # Hat
 execute as @a[tag=playing,scores={cosmetics_hat=0}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
+
+# Map specific
+execute as @a[tag=playing,scores={map=11..15}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:cobweb"}]}] run function game:inventory/get_fishing_net
+execute as @a[tag=playing,scores={map=8}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:shield"}]}] run function game:inventory/get_shield
 
 # Update ingredient icon for classic mode
 execute as @a[tag=playing] if score $mode settings matches 0 run function game:inventory/join_team
