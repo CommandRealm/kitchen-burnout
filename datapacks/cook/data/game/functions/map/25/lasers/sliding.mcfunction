@@ -16,4 +16,5 @@ execute as @a[tag=playing,gamemode=adventure,distance=..5] store result score @s
 execute as @a[tag=playing,gamemode=adventure,distance=..5] store result score @s laser_z run data get entity @s Pos[2] 100
 #execute as @a[tag=playing,gamemode=adventure,distance=..5] run scoreboard players remove @s laser_pos 65
 execute as @a[tag=playing,gamemode=adventure,distance=..5] at @s run scoreboard players operation @s laser_pos -= @e[type=armor_stand,tag=sliding_laser_primary,distance=..5,limit=1] laser_pos
-execute as @a[tag=playing,gamemode=adventure,distance=..5] at @s if score @s laser_z matches 200020..200080 if score @s[x=3001.00,dx=4] laser_pos matches -800..1100 run function game:map/25/burn 
+execute as @a[tag=playing,gamemode=adventure,distance=..5] at @s if score @s laser_z matches 200020..200080 if score @s[tag=!team_2,x=3001.00,dx=4] laser_pos matches -800..1100 run function game:map/25/burn 
+execute as @a[tag=playing,gamemode=adventure,distance=..5] at @s if score @s laser_z matches 200020..200080 if score @s[tag=team_2,x=13001.00,dx=4] laser_pos matches -800..1100 run function game:map/25/burn 
