@@ -17,4 +17,4 @@ execute if score @s in_pipe_time matches 39 run playsound minecraft:entity.ender
 title @s subtitle ["",{"translate":"*Metallic clangs and bonks*","color":"light_gray"}]
 title @s title ""
 # Leave Pipe
-execute if score @s in_pipe_time matches 40.. run function game:map/14/leave_pipe
+execute if score @s in_pipe_time matches 45.. run function game:map/14/leave_pipe
