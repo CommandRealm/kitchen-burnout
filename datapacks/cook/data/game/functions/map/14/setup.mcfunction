@@ -1,5 +1,8 @@
 function game:map/14/teleport
 
+tag @a remove in_pipe
+scoreboard players reset @a in_pipe_time
+
 # Parkour endings
 execute positioned 1965 53 1447 run function game:map/ingredient_sets/sushi
 execute positioned 1957 41 1494 run function game:map/ingredient_sets/sushi
