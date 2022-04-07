@@ -1,8 +1,9 @@
 # Timer
 scoreboard players add @s in_pipe_time 1
 # Lock
-tp @s 1962 -58 1507
+execute if score @s in_pipe_time matches ..43 run tp @s 1962 -58 1507
 effect give @s blindness 2 255 true
+effect give @s invisibility 1 255 true
 # Bonk
 execute if score @s in_pipe_time matches 5 run playsound minecraft:block.iron_door.close master @s ~ ~ ~ 10 0.1 1
 execute if score @s in_pipe_time matches 5 run playsound minecraft:entity.iron_golem.damage master @s ~ ~ ~ 10 .5 1
@@ -17,4 +18,5 @@ execute if score @s in_pipe_time matches 39 run playsound minecraft:entity.ender
 title @s subtitle ["",{"translate":"*Metallic clangs and bonks*","color":"light_gray"}]
 title @s title ""
 # Leave Pipe
+execute if score @s in_pipe_time matches 44 run tp @s 1972.71 61 1494.0
 execute if score @s in_pipe_time matches 45.. run function game:map/14/leave_pipe
