@@ -15,7 +15,7 @@ execute if score @s in_pipe_time matches 24 run playsound minecraft:block.anvil.
 execute if score @s in_pipe_time matches 29 run playsound minecraft:entity.ender_dragon.hurt master @s ~ ~ ~ 10 1.4 1
 execute if score @s in_pipe_time matches 35 run playsound minecraft:entity.ender_dragon.hurt master @s ~ ~ ~ 10 1.2 1
 execute if score @s in_pipe_time matches 39 run playsound minecraft:entity.ender_dragon.hurt master @s ~ ~ ~ 10 1.8 1
-title @s subtitle ["",{"translate":"*Metallic clangs and bonks*","color":"light_gray"}]
+title @s subtitle ["",{"translate":"*metallic clangs and bonks*","color":"light_gray"}]
 title @s title ""
 # Leave Pipe
 execute if score @s in_pipe_time matches 44 run tp @s 1972.71 61 1494.0

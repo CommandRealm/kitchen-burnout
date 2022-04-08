@@ -329,7 +329,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/beef_(tacos).png",
+            "file": "minecraft:item/beef_(taco).png",
             "ascent": 7,
             "height": 8,
             "chars": [
