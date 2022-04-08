@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/moss_carpet",
+  "overrides": [
+    {"predicate": {"custom_model_data": 1},"model": "item/guac"}
+  ]
+}
+
