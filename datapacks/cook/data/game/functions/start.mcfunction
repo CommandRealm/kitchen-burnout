@@ -53,6 +53,7 @@ scoreboard players reset $end game
 
 # Title times
 title @a[tag=playing] times 0 25 5
+title @a[tag=playing] subtitle ""
 
 forceload remove all
 forceload add 0 0
