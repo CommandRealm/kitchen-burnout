@@ -1,5 +1,8 @@
 # The function that runs whenever the game is running.
 
+# Constant increase
+scoreboard players add $const game_ticks 1
+
 # Effects
 effect give @a[tag=playing] resistance 1 255 true
 
@@ -48,8 +51,9 @@ execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s an
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..}] run function game:stations/main
 
-# Spinning ingredient boxes (should make bob)
-execute as @e[type=armor_stand,tag=ingredient_box_display] at @s run tp @s ~ ~ ~ ~3 ~
+# Moving ingredients in boxes
+execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function game:stations/ingredient_boxes
+
 
 # Prep Station
 execute as @e[type=marker,tag=prep_display] at @s run function game:stations/prep/main

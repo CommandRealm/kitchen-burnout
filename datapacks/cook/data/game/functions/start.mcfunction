@@ -2,6 +2,7 @@
 scoreboard players set $game state 1
 
 scoreboard players set $time game 0
+scoreboard players set $const game_ticks 0
 
 scoreboard players reset $finished_recipes game
 scoreboard players reset $score game
