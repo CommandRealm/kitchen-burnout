@@ -81,6 +81,9 @@ scoreboard objectives add settings dummy
 # Main objective just for game operations.
 scoreboard objectives add game dummy
 
+# Scoreboard for the shuffle mode
+scoreboard objectives add shuffle dummy
+
 # Timer
 scoreboard objectives add game_ticks dummy
 scoreboard objectives add game_seconds dummy
@@ -169,13 +172,13 @@ scoreboard objectives add cosmetics_hat dummy
 scoreboard objectives add station dummy
 scoreboard objectives add station_timer dummy
 scoreboard objectives add station_state dummy
-scoreboard objectives add station_placer_x dummy
-scoreboard objectives add station_placer_y dummy
-scoreboard objectives add station_placer_z dummy
-scoreboard objectives add max_placer_x dummy
-scoreboard objectives add max_placer_y dummy
-scoreboard objectives add max_placer_z dummy
-scoreboard objectives add station_placer_d dummy
+#scoreboard objectives add station_placer_x dummy
+#scoreboard objectives add station_placer_y dummy
+#scoreboard objectives add station_placer_z dummy
+#scoreboard objectives add max_placer_x dummy
+#scoreboard objectives add max_placer_y dummy
+#scoreboard objectives add max_placer_z dummy
+#scoreboard objectives add station_placer_d dummy
 
 scoreboard objectives add prep_display dummy
 scoreboard objectives add floating_text dummy

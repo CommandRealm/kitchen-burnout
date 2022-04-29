@@ -78,11 +78,13 @@ execute if score $mode settings matches 0..1 run scoreboard players operation @a
 # Setting up the map.
 #kill @e[type=area_effect_cloud,tag=station_placer]
 function game:map/setups
+execute if score $mode settings matches 1..2 run function game:map/setups_2
 #schedule function game:map/setup_stations 20t
 
 # Recipe generation
 execute if score $mode settings matches 0 run function game:mode_classic/generate_recipes
 execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
+execute if score $mode settings matches 2 run function game:mode_shuffle/generate_recipes
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=!team_2,limit=1] recipe_cooldown 65
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1] recipe_cooldown 65
 
