@@ -88,10 +88,15 @@ scoreboard objectives add shuffle dummy
 scoreboard objectives add game_ticks dummy
 scoreboard objectives add game_seconds dummy
 scoreboard objectives add game_minutes dummy
-bossbar add game:timer ["",{"text":"Time Left - 00:00"}]
+bossbar add game:timer ["",{"text":"Time Left: 00:00"}]
 bossbar set game:timer visible false
 scoreboard players set $mode_0_time settings 3600
 
+# Other bossbars
+bossbar add game:progress_1 ["",{"text":"Current Kitchen: 1/4"}]
+bossbar add game:progress_2 ["",{"text":"Current Kitchen: 1/4"}]
+bossbar set game:progress_1 visible false
+bossbar set game:progress_2 visible false
 
 # Lobby teams
 team add lobby
