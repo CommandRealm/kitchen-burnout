@@ -8,4 +8,4 @@ execute at @a[tag=playing,tag=!team_2,scores={map=14}] run forceload add ~100 ~1
 #execute positioned 1965 53 1447 run function game:stations/ingredient_wasabi/create
 
 # Recipe set
-scoreboard players set $recipe game 3
+scoreboard players set $food_type game 3

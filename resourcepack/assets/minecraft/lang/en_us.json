@@ -1,6 +1,7 @@
 {
     "The game has ended.": "The game has ended.",
     "Times Up!": "Times Up!",
+    "Time!": "Time!",
     "Knife": "Knife",
     "Fishing Net": "Fishing Net",
     "Shield": "Shield",
@@ -48,7 +49,8 @@
     " won!": " won!",
     "It's a tie!": "It's a tie!",
     " Points!": " Points!",
-
+    "Time: ": "Time: ",
+    
     "*metallic clangs and bonks*": "*metallic clangs and bonks*",
     "ZAP!": "ZAP!",
     "Snowfall Warning": "Snowfall Warning",

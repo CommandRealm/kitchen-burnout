@@ -7,4 +7,4 @@ execute at @a[tag=playing,tag=!team_2,scores={map=5}] run forceload add ~100 ~10
 
 
 # Recipe set
-scoreboard players set $recipe game 1
+scoreboard players set $food_type game 1

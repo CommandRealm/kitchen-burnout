@@ -11,10 +11,10 @@ scoreboard players reset $score game
 execute if score $mode settings matches 0 run scoreboard players set $finished_recipes game 0
 execute if score $mode settings matches 0 run scoreboard players set $score game 0
 # Versus mode
-execute if score $mode settings matches 1 run scoreboard players set $finished_recipes_1 game 0
-execute if score $mode settings matches 1 run scoreboard players set $finished_recipes_2 game 0
-execute if score $mode settings matches 1 run scoreboard players set $score_1 game 0
-execute if score $mode settings matches 1 run scoreboard players set $score_2 game 0
+execute if score $mode settings matches 1..2 run scoreboard players set $finished_recipes_1 game 0
+execute if score $mode settings matches 1..2 run scoreboard players set $finished_recipes_2 game 0
+execute if score $mode settings matches 1..2 run scoreboard players set $score_1 game 0
+execute if score $mode settings matches 1..2 run scoreboard players set $score_2 game 0
 
 # Giving people the playing tag
 tag @a[scores={ready=1..}] add playing
@@ -32,20 +32,20 @@ effect give @a[tag=playing] jump_boost 1 128 true
 
 # Joining game teams
 execute if score $mode settings matches 0 run team join game_0 @a[tag=playing]
-execute if score $mode settings matches 1 run tag @a[tag=playing,tag=lobby_team_2] add team_2
-execute if score $mode settings matches 1 run team join 1_0 @a[tag=playing,tag=!team_2]
-execute if score $mode settings matches 1 run team join 2_0 @a[tag=playing,tag=team_2]
+execute if score $mode settings matches 1..2 run tag @a[tag=playing,tag=lobby_team_2] add team_2
+execute if score $mode settings matches 1..2 run team join 1_0 @a[tag=playing,tag=!team_2]
+execute if score $mode settings matches 1..2 run team join 2_0 @a[tag=playing,tag=team_2]
 
 # Show held ingredient scoreboard
 execute if score $mode settings matches 0 run scoreboard objectives setdisplay sidebar sidebar_disp
 execute if score $mode settings matches 0 run scoreboard players reset * sidebar_disp
 execute if score $mode settings matches 0 run scoreboard players set @a[tag=playing] sidebar_disp 0
-execute if score $mode settings matches 1 run scoreboard objectives setdisplay sidebar.team.blue sidebar_disp_1
-execute if score $mode settings matches 1 run scoreboard players reset * sidebar_disp_1
-execute if score $mode settings matches 1 run scoreboard players set @a[tag=playing,tag=!team_2] sidebar_disp_1 0
-execute if score $mode settings matches 1 run scoreboard objectives setdisplay sidebar.team.red sidebar_disp_2
-execute if score $mode settings matches 1 run scoreboard players reset * sidebar_disp_2
-execute if score $mode settings matches 1 run scoreboard players set @a[tag=playing,tag=team_2] sidebar_disp_2 0
+execute if score $mode settings matches 1..2 run scoreboard objectives setdisplay sidebar.team.blue sidebar_disp_1
+execute if score $mode settings matches 1..2 run scoreboard players reset * sidebar_disp_1
+execute if score $mode settings matches 1..2 run scoreboard players set @a[tag=playing,tag=!team_2] sidebar_disp_1 0
+execute if score $mode settings matches 1..2 run scoreboard objectives setdisplay sidebar.team.red sidebar_disp_2
+execute if score $mode settings matches 1..2 run scoreboard players reset * sidebar_disp_2
+execute if score $mode settings matches 1..2 run scoreboard players set @a[tag=playing,tag=team_2] sidebar_disp_2 0
 
 tag @a[tag=playing] remove tutorial
 
@@ -73,7 +73,9 @@ advancement grant @a[tag=playing] only game:inventory_changed
 # scoreboard players set $id id 0
 # execute as @a[tag=playing,sort=random] at @s run function game:generate_id
 
+# Pick kitchens
 execute if score $mode settings matches 0..1 run scoreboard players operation @a[tag=playing] map = $map settings
+execute if score $mode settings matches 2 run function game:mode_shuffle/pick_kitchens
 
 # Setting up the map.
 #kill @e[type=area_effect_cloud,tag=station_placer]
@@ -90,6 +92,7 @@ scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1] rec
 
 # Start timer
 execute if score $mode settings matches 0..1 run function game:timers/normal_setup
+execute if score $mode settings matches 2 run function game:timers/shuffle_setup
 
 # Setting the button
 setblock -9 17 -10 air

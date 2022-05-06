@@ -71,8 +71,8 @@ execute as @a[tag=playing,scores={map=8}] at @s unless entity @s[nbt={Inventory:
 # Update ingredient icon for classic mode
 execute as @a[tag=playing] if score $mode settings matches 0 run function game:inventory/join_team
 # Update ingredient icon for versus mode team 1
-execute as @a[tag=playing,tag=!team_2] if score $mode settings matches 1 run function game:inventory/join_team_1
+execute as @a[tag=playing,tag=!team_2] if score $mode settings matches 1..2 run function game:inventory/join_team_1
 # Update ingredient icon for versus mode team 2
-execute as @a[tag=playing,tag=team_2] if score $mode settings matches 1 run function game:inventory/join_team_2
+execute as @a[tag=playing,tag=team_2] if score $mode settings matches 1..2 run function game:inventory/join_team_2
 
 advancement revoke @a only game:inventory_changed

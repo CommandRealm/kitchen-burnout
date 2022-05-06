@@ -13,35 +13,62 @@ tag @a remove has_cr
 
 
 # Testers
-
+tag KirbyThings add has_test
+tag JaxF2008 add has_test
+tag Blaxter22 add has_test
+tag Noglow add has_test
 
 
 # Helpers
-
+tag Bagee add has_help
+tag Connop add has_help
+tag Beybwug add has_help
+tag Focii_ add has_help
+tag knad add has_help
+tag joelzoboyo add has_help
+tag CheckMC add has_help
+tag Shullker add has_help
+tag bluepower add has_help
+tag BobaFate add has_help
+tag ChipChase add has_help
+tag Pinkessi add has_help
+tag FalconReign add has_help
+tag oPando add has_help
+tag rgbyy add has_help
+tag EdLePug add has_help
 
 
 # Builders
-
-
+tag knad add has_bld
+tag joelzoboyo add has_bld
+tag CheckMC add has_bld
+tag Shullker add has_bld
+tag bluepower add has_bld
+tag Bagee add has_bld
+tag BobaFate add has_bld
+tag ChipChase add has_bld
+tag Pinkessi add has_bld
+tag FalconReign add has_bld
+tag oPando add has_bld
+tag rgbyy add has_bld
 
 # Programmers
-
-
+tag FalconReign add has_prg
 
 # Artists
-
+tag Pinkessi add has_art
+tag EdLePug add has_art
 
 
 # Senior Builders
-
-
+tag knad add has_srbld
+tag joelzoboyo add has_srbld
 
 # Senior Programmers
-
-
+tag Calverin add has_srprg
 
 # Senior Artists
-
+tag Pinkessi add has_srart
 
 
 # Managers
@@ -56,7 +83,7 @@ tag Calverin add has_lead
 tag FalconReign add has_cr
 tag Connop add has_cr
 tag TheRegularMex add has_cr
-tag Captain_Deadpool add has_cr
+tag Captonium add has_cr
 tag TheRangerMark add has_cr
 tag TheTypicalMex add has_cr
 tag Calverin add has_cr
@@ -73,3 +100,11 @@ tag knad add has_cr
 tag Mezimo add has_cr
 tag Shullker add has_cr
 tag Pinkessi add has_cr
+tag joelzoboyo add has_cr
+tag Beybwug add has_cr
+tag Coraze add has_cr
+tag oPando add has_cr
+tag rgbyy add has_cr
+tag pogglin add has_cr
+tag Urgle add has_cr
+tag Icy_Craby add has_cr

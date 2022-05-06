@@ -11,14 +11,19 @@ effect give @a[tag=playing] resistance 1 255 true
 execute if score $mode settings matches 0..1 run function game:timers/normal
 
 # Stop game, then end
-execute if score $timer game_ticks matches 18 run function game:stop_message
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches 18 run function game:stop_message
 # Resets ingredient boxes back to their normal blocks
-execute if score $timer game_ticks matches -38 as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
-execute if score $timer game_ticks matches -38 as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
-execute if score $timer game_ticks matches ..-41 run function game:end
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches ..-41 run function game:end
 
 # Mode
 # execute if score $mode settings matches 0 run function game:mode_classic/main
+
+# Ending the game in shuffle mode
+execute if score $mode settings matches 2 unless score $winner shuffle matches 0 run function game:mode_shuffle/ending
 
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
@@ -66,5 +71,5 @@ execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cool
 
 # Recipe actionbar display
 execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
-execute if score $mode settings matches 1 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
-execute if score $mode settings matches 1 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]

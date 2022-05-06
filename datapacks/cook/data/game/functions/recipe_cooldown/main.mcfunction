@@ -4,3 +4,5 @@ execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 
 execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 0 run function game:recipe_cooldown/classic/ingredients
 execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 1 run function game:recipe_cooldown/versus/order
 execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 1 run function game:recipe_cooldown/versus/ingredients
+execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 2 run function game:recipe_cooldown/shuffle/order
+execute as @a[scores={recipe_cooldown=0}] at @s if score $mode settings matches 2 run function game:recipe_cooldown/shuffle/ingredients
