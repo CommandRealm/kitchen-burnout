@@ -6,9 +6,10 @@ scoreboard players add $const game_ticks 1
 # Effects
 effect give @a[tag=playing] resistance 1 255 true
 
-# General timer
+# Timers
 #scoreboard players add $time game 1
 execute if score $mode settings matches 0..1 run function game:timers/normal
+execute if score $mode settings matches 2 run function game:timers/shuffle
 
 # Stop game, then end
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches 18 run function game:stop_message
