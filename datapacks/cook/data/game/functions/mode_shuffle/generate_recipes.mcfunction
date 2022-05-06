@@ -7,6 +7,7 @@ data merge storage orders_1 {Recipe:[]}
 # Updating the bank
 function game:recipes/burgers
 function game:mode_shuffle/add_recipe
+function game:mode_shuffle/add_recipe
 
 #function game:recipes/soup
 
