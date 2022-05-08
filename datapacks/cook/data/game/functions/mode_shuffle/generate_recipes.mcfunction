@@ -6,8 +6,7 @@ data merge storage orders_1 {Recipe:[]}
 
 # Updating the bank
 function game:recipes/burgers
-function game:mode_shuffle/add_recipe
-# Adding in two burgers because it seems like the first recipe gets removed for some reason
+#scoreboard players set $calculate calculate 2
 function game:mode_shuffle/add_recipe
 
 #function game:recipes/soup

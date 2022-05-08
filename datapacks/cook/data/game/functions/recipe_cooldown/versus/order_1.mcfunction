@@ -1,7 +1,7 @@
 # Called to create a new recipe (for orders_1)
 
 # Setting up minecraft:current_order_1
-data remove storage orders_1 Recipe[0]
+#data remove storage orders_1 Recipe[0]
 data merge storage current_order_1 {Recipe:[]}
 data modify storage current_order_1 Recipe set from storage orders_1 Recipe[0]
 

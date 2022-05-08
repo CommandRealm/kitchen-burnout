@@ -62,9 +62,9 @@ kill @e[type=armor_stand,tag=prep_slot,distance=..15]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
 tag @s add add_new_recipe
-#execute if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
-#execute if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
-#execute if score $mode settings matches 1..2 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]
+execute if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
+execute if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
+execute if score $mode settings matches 1..2 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]
 execute if score $mode settings matches 0 run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 25
 execute if score $mode settings matches 1..2 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=!team_2] recipe_cooldown 25
 execute if score $mode settings matches 1..2 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=team_2] recipe_cooldown 25
