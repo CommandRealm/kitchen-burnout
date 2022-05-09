@@ -1,0 +1,7 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:emerald_block",
+        "minecraft:sea_lantern"
+    ]
+  }

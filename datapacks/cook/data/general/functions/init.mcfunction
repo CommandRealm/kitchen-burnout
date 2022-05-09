@@ -169,6 +169,8 @@ scoreboard objectives add map dummy
 
 scoreboard objectives add click minecraft.used:carrot_on_a_stick
 scoreboard objectives add click_cooldown dummy
+# Reset after main functions
+scoreboard objectives add is_sneaking minecraft.custom:sneak_time
 
 scoreboard objectives add calculate dummy
 scoreboard objectives add ingredient dummy
@@ -187,6 +189,8 @@ scoreboard objectives add station_state dummy
 
 scoreboard objectives add prep_display dummy
 scoreboard objectives add floating_text dummy
+
+scoreboard objectives add tnt_launchpad dummy
 
 scoreboard objectives add fish_count dummy
 

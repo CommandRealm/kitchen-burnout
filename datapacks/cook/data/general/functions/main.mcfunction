@@ -24,3 +24,10 @@ execute as @e[type=area_effect_cloud,tag=spin,limit=1] at @s run tp @s ~ ~ ~ ~15
 
 # Killing tnt
 kill @e[type=tnt,nbt={Fuse:1s}]
+
+# Globals
+scoreboard players operation $flashing game_ticks = $timer game_ticks
+scoreboard players operation $flashing game_ticks %= $8 number
+scoreboard players operation $even game_ticks = $timer game_ticks
+scoreboard players operation $even game_ticks %= $2 number
+scoreboard players reset @a[scores={is_sneaking=1..}] is_sneaking
