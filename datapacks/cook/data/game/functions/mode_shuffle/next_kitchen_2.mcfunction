@@ -11,7 +11,7 @@ execute unless score $food_type_2 shuffle matches 5.. run playsound minecraft:en
 
 # Reset ingredient
 execute unless score $food_type_2 shuffle matches 5.. run scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2] ingredient 0
-execute unless score $food_type_1 shuffle matches 5.. run clear @a[gamemode=adventure,tag=playing,tag=team_2]
+execute unless score $food_type_2 shuffle matches 5.. run clear @a[gamemode=adventure,tag=playing,tag=team_2]
 execute unless score $food_type_2 shuffle matches 5.. run advancement grant @a[gamemode=adventure,tag=playing,tag=team_2] only game:inventory_changed
 
 # Reset current kitchen

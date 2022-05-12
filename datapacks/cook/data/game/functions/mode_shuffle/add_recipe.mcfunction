@@ -154,4 +154,4 @@ execute if score $output random matches 167 run data modify storage orders_1 Rec
 
 # Run this again if necessary.
 scoreboard players remove $calculate calculate 1
-execute if score $calculate calculate matches 1.. run function game:mode_classic/add_recipe
+execute if score $calculate calculate matches 1.. run function game:mode_shuffle/add_recipe
