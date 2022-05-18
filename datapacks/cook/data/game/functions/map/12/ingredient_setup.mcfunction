@@ -11,3 +11,6 @@ execute positioned 2000 94 642 run function game:map/ingredient_sets/sushi
 # Cutting boards
 execute positioned 1998 94 642 run function game:map/ingredient_sets/sushi
 execute positioned 2000 94 643 run function game:map/ingredient_sets/sushi
+# Prep
+execute positioned 2001 95 647 run function game:map/ingredient_sets/sushi
+execute positioned 2002 95 647 run function game:map/ingredient_sets/sushi
