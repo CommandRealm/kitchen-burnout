@@ -1,2 +1,2 @@
 execute store result score @s fish_count if entity @e[type=salmon,distance=..30]
-execute unless score @s fish_count matches 3.. run summon salmon ~ ~ ~ {Tags:["die_between_games","can_catch"]}
+execute unless score @s fish_count matches 3.. run summon salmon ~ ~ ~ {Tags:["die_between_games","can_catch"],Invulnerable:1b,Glowing:1b,ActiveEffects:[{Id:11b,Amplifier:127b,Duration:1000000,ShowParticles:0b}]}

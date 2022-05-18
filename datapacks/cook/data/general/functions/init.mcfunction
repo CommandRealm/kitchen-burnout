@@ -189,10 +189,12 @@ scoreboard objectives add station_state dummy
 
 scoreboard objectives add prep_display dummy
 scoreboard objectives add floating_text dummy
+scoreboard objectives add fish_count dummy
+
 
 scoreboard objectives add tnt_launchpad dummy
 
-scoreboard objectives add fish_count dummy
+scoreboard objectives add warp_fish dummy
 
 scoreboard objectives add arrow_cycle dummy
 
