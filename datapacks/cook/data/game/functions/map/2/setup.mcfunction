@@ -1,4 +1,4 @@
-function game:map/2/teleport
+schedule function game:map/2/teleport 2s
 
 # Prep
 execute positioned 989 68 2 run function game:map/ingredient_sets/burger
