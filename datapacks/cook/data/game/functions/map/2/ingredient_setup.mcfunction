@@ -4,7 +4,7 @@ execute positioned 989 68 3 run function game:map/ingredient_sets/burger
 
 # Ingredient Boxes
 execute positioned 973 75 -4 run function game:map/ingredient_sets/burger
-execute positioned 973 75 -4 run function game:map/ingredient_sets/burger
+execute positioned 973 75 16 run function game:map/ingredient_sets/burger
 execute positioned 1003 72 -8 run function game:map/ingredient_sets/burger
 execute positioned 1028 71 -4 run function game:map/ingredient_sets/burger
 execute positioned 1021 72 10 run function game:map/ingredient_sets/burger
