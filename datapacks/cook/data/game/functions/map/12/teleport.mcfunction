@@ -1,6 +1,6 @@
 # Riptide fishing sushi map
 tp @a[tag=playing,tag=!team_2,scores={map=12}] 1971 88 653 90 5
-execute at @a[tag=playing,tag=!team_2,scores={map=12}] run forceload add ~100 ~50 ~-50 ~-50
+execute at @a[tag=playing,tag=!team_2,scores={map=12}] run forceload add ~150 ~150 ~-150 ~-150
 
 advancement revoke @a only game:player_hit_trident
 

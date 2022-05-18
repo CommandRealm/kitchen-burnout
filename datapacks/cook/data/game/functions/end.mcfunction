@@ -9,7 +9,7 @@ execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin
 execute as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
 
 # Removes all entities that should die between games (most of them)
-tp @e[tag=die_between_games] 0 0 0
+tp @e[tag=die_between_games] 0 -10000 0
 kill @e[tag=die_between_games]
 
 # Resets timer
