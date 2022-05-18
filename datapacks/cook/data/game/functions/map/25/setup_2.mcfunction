@@ -13,17 +13,5 @@ summon marker 13001 69 2004 {Tags: ["ceiling_laser", "ceiling_laser_outer", "die
 summon marker 13003 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_between_games"]}
 summon marker 13002 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_between_games"]}
 
-# Spinning laser room ingredients
-schedule function game:map/25/salsa_setup_2 2s append
-# Other ingredients
-execute positioned 12986 67 2000 run function game:map/ingredient_sets/tacos
-execute positioned 12994 67 2001 run function game:map/ingredient_sets/tacos
-execute positioned 12994 67 1991 run function game:map/ingredient_sets/tacos
-execute positioned 12986 67 1991 run function game:map/ingredient_sets/tacos
-# Stations
-execute positioned 12990 67 1993 run function game:map/ingredient_sets/tacos
-execute positioned 12987 67 1993 run function game:map/ingredient_sets/tacos
-execute positioned 12994 67 1992 run function game:map/ingredient_sets/tacos
-# Prep
-execute positioned 12968 70 2000 run function game:map/ingredient_sets/tacos
-execute positioned 12967 70 2000 run function game:map/ingredient_sets/tacos
+# Ingredients
+schedule function game:map/25/ingredient_setup_2 2s
