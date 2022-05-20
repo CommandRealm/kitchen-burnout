@@ -200,6 +200,9 @@ scoreboard objectives add arrow_cycle dummy
 
 scoreboard objectives add in_pipe_time dummy
 
+scoreboard objectives add sliding_platform dummy
+scoreboard objectives add sliding_dir dummy
+
 scoreboard objectives add laser_slide_dir dummy
 scoreboard objectives add laser_pos dummy
 scoreboard objectives add laser_z dummy

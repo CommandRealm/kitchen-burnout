@@ -6,5 +6,5 @@ execute as @a[gamemode=adventure,tag=playing,scores={map=5,tnt_launchpad=1..}] a
 execute as @a[gamemode=adventure,tag=playing,scores={map=5,tnt_launchpad=1..}] at @s unless score @s is_sneaking matches 1.. run function game:map/5/launch
 # Void
 execute as @a[gamemode=adventure,tag=playing,scores={map=5}] at @s if entity @s[y=55,dy=5] run effect give @s blindness 3 1 true
-execute as @a[gamemode=adventure,tag=playing,scores={map=5}] at @s if entity @s[y=55,dy=5] run effect give @s slowness 4 4 true
+execute as @a[gamemode=adventure,tag=playing,scores={map=5}] at @s if entity @s[y=55,dy=5] run effect give @s slowness 3 3 true
 execute as @a[gamemode=adventure,tag=playing,scores={map=5}] at @s if entity @s[y=-50,dy=90] run function game:map/5/void
