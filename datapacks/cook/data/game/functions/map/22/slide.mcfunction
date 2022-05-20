@@ -8,7 +8,7 @@ execute unless score @s sliding_platform matches -19..19 run playsound minecraft
 execute if score @s sliding_platform matches -19..19 run playsound minecraft:block.beacon.ambient master @a ~ ~ ~ 0.75 0.5
 
 # Change dir
-execute if score @s[tag=!short_platform] sliding_platform matches 84.. if score @s sliding_dir matches 1 run function game:map/22/change_dir
-execute if score @s[tag=!short_platform] sliding_platform matches ..-84 if score @s sliding_dir matches -1 run function game:map/22/change_dir
-execute if score @s[tag=short_platform] sliding_platform matches 64.. if score @s sliding_dir matches 1 run function game:map/22/change_dir
-execute if score @s[tag=short_platform] sliding_platform matches ..-64 if score @s sliding_dir matches -1 run function game:map/22/change_dir
+execute if score @s[tag=!short_platform] sliding_platform matches 83.. if score @s sliding_dir matches 1 run function game:map/22/change_dir
+execute if score @s[tag=!short_platform] sliding_platform matches ..-83 if score @s sliding_dir matches -1 run function game:map/22/change_dir
+execute if score @s[tag=short_platform] sliding_platform matches 63.. if score @s sliding_dir matches 1 run function game:map/22/change_dir
+execute if score @s[tag=short_platform] sliding_platform matches ..-63 if score @s sliding_dir matches -1 run function game:map/22/change_dir
