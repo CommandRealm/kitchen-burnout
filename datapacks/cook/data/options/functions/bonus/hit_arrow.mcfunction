@@ -1,0 +1,2 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_bonus] run scoreboard players remove $bonus settings 2
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_bonus] run function options:bonus/add_bonus

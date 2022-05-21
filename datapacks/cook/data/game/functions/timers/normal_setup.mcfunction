@@ -1,4 +1,4 @@
-scoreboard players operation $timer game_ticks = $mode_0_time settings
+scoreboard players operation $timer game_ticks = $time settings
 bossbar set game:timer players @a[tag=playing]
 bossbar set game:timer color red
 bossbar set game:timer visible true

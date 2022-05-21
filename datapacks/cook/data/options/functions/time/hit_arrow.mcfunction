@@ -1,0 +1,2 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_time] run scoreboard players remove $time settings 2400
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_time] run function options:time/add_time
