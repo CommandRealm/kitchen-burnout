@@ -90,7 +90,7 @@ scoreboard objectives add game_seconds dummy
 scoreboard objectives add game_minutes dummy
 bossbar add game:timer ["",{"text":"Time Left: 00:00"}]
 bossbar set game:timer visible false
-scoreboard players set $mode_0_time settings 3600
+scoreboard players set $time settings 4800
 
 # Other bossbars
 bossbar add game:progress_1 ["",{"text":"Current Kitchen: 1/4"}]
