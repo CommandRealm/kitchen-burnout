@@ -4,6 +4,7 @@
 data remove storage orders_1 {}
 data merge storage orders_1 {Recipe:[]}
 
+scoreboard players set $calculate calculate 0
 # Updating the bank
 function game:recipes/burgers
 #scoreboard players set $calculate calculate 2
