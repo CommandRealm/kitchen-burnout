@@ -4,4 +4,4 @@ scoreboard players set @s ingredient 0
 clear @s
 advancement grant @s only game:inventory_changed
 tp @s 2503.0 67 521.0 90 2
-playsound block.fire.extinguish master @s ~ ~ ~ 1 1.5
+playsound block.fire.extinguish master @s ~ ~ ~ 10 1.5
