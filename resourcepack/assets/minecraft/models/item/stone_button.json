@@ -6,6 +6,6 @@
     {"predicate": {"custom_model_data": 3},"model": "item/chocolate_hat"},
     {"predicate": {"custom_model_data": 4},"model": "item/sombrero"},
     {"predicate": {"custom_model_data": 5},"model": "item/ice_cream_hat"}
-               ]
+    ]
 }
 

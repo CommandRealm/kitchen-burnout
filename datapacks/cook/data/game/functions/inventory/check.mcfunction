@@ -6,10 +6,10 @@ execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:8b,id:"m
 
 execute as @a[tag=playing,scores={ingredient=1}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:bread"}]}] run function game:inventory/get_bread
 execute as @a[tag=playing,scores={ingredient=2}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:yellow_dye"}]}] run function game:inventory/get_cheese
-execute as @a[tag=playing,scores={ingredient=3}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:player_head"}]}] run function game:inventory/get_lettuce_head
-execute as @a[tag=playing,scores={ingredient=-3}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:player_head"}]}] run function game:inventory/get_lettuce_head_2
+execute as @a[tag=playing,scores={ingredient=3}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:cactus"}]}] run function game:inventory/get_lettuce_head
+execute as @a[tag=playing,scores={ingredient=-3}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:cactus"}]}] run function game:inventory/get_lettuce_head_2
 execute as @a[tag=playing,scores={ingredient=4}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:green_dye"}]}] run function game:inventory/get_lettuce_leaf
-execute as @a[tag=playing,scores={ingredient=5}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:player_head"}]}] run function game:inventory/get_tomato
+execute as @a[tag=playing,scores={ingredient=5}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:apple"}]}] run function game:inventory/get_tomato
 execute as @a[tag=playing,scores={ingredient=6}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:red_dye"}]}] run function game:inventory/get_tomato_slice
 execute as @a[tag=playing,scores={ingredient=7}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:beef"}]}] run function game:inventory/get_raw_hamburger
 execute as @a[tag=playing,scores={ingredient=8}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:beef"}]}] run function game:inventory/get_half_cooked_hamburger
@@ -23,7 +23,7 @@ execute as @a[tag=playing,scores={ingredient=14}] unless entity @s[nbt={Inventor
 execute as @a[tag=playing,scores={ingredient=15}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:orange_dye"}]}] run function game:inventory/get_cut_salmon
 execute as @a[tag=playing,scores={ingredient=16}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:yellow_dye"}]}] run function game:inventory/get_cut_pufferfish
 execute as @a[tag=playing,scores={ingredient=17}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:kelp"}]}] run function game:inventory/get_poison_pufferfish
-execute as @a[tag=playing,scores={ingredient=18}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:player_head"}]}] run function game:inventory/get_avocado
+execute as @a[tag=playing,scores={ingredient=18}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:charcoal"}]}] run function game:inventory/get_avocado
 execute as @a[tag=playing,scores={ingredient=19}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:lime_dye"}]}] run function game:inventory/get_avocado_slice
 execute as @a[tag=playing,scores={ingredient=20}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:green_dye"}]}] run function game:inventory/get_wasabi
 
@@ -69,6 +69,7 @@ execute as @a[tag=playing,scores={map=11..15}] at @s unless entity @s[nbt={Inven
 execute as @a[tag=playing,scores={map=8}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:shield"}]}] run function game:inventory/get_shield
 execute as @a[tag=playing,scores={map=12}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_warping_trident
 execute as @a[tag=playing,scores={map=13}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_riptide_trident
+execute as @a[tag=playing,scores={map=17}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:fishing_rod"}]}] run function game:inventory/get_fishing_rod
 
 # Update ingredient icon for classic mode
 execute as @a[tag=playing] if score $mode settings matches 0 run function game:inventory/join_team
