@@ -12,3 +12,4 @@ execute if score $output random matches 2 run tp @s ~ ~ ~-2
 execute if score $output random matches 1 run tp @s ~ ~ ~-1
 
 tag @s remove needs_shift
+tag @s remove needs_shift_2
