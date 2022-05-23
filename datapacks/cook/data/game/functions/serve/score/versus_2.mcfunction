@@ -58,10 +58,10 @@ execute if data storage current_order_2 Recipe{Ingredients:["chips"]} run functi
 execute if data storage current_order_2 Recipe{Ingredients:["cherry"]} run function game:serve/score/1_point_t_2
 execute if data storage current_order_2 Recipe{Ingredients:["cookie_dough"]} run function game:serve/score/1_point_t_2
 
-tellraw @a[tag=playing,gamemode=adventure,tag=team_2] ["",{"text":"+","color":"green"},{"color":"green","score":{"objective":"game","name":"$recipe_score"}},{"text":" Points!","color":"gold"}]
-#function game:serve/score/floating_3
-## Add bonus points for completing recipe in time
+# Time Bonus Points
 scoreboard players operation @s recipe_timer /= $20 number
+execute if score $mode settings matches 1 if score $bonus settings matches 1 run function game:serve/score/time_bonus_2
+execute if score $mode settings matches 1 unless score $bonus settings matches 1 run tellraw @a[tag=playing,gamemode=adventure,tag=team_2] ["",{"text":"\uFF0B","color":"green"},{"color":"green","score":{"objective":"game","name":"$recipe_score"}},{"translate":" Points!","color":"gold"}]
 #function game:serve/score/time_bonus
 #scoreboard players operation $recipe_timer game = @s recipe_timer
 #execute if score @s recipe_timer <= $time_bonus game run scoreboard players add $score game 1

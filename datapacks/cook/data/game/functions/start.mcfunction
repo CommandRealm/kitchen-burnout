@@ -13,7 +13,7 @@ execute if score $mode settings matches 0 run scoreboard players set $score game
 # Versus mode
 execute if score $mode settings matches 1..2 run scoreboard players set $finished_recipes_1 game 0
 execute if score $mode settings matches 1..2 run scoreboard players set $finished_recipes_2 game 0
-execute if score $mode settings matches 1..2 run scoreboard players set $score_1 game 0
+execute if score $mode settings matches 1..2 run scoreboard players set $score game 0
 execute if score $mode settings matches 1..2 run scoreboard players set $score_2 game 0
 
 # Giving people the playing tag
