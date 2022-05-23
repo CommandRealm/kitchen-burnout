@@ -5,7 +5,8 @@
   },
   "overrides": [
     {"predicate": {"custom_model_data": 1},"model": "item/cut_salmon"},
-    {"predicate": {"custom_model_data": 2},"model": "item/cut_salmon_modeled"}
+    {"predicate": {"custom_model_data": 2},"model": "item/cut_salmon_modeled"},
+    {"predicate": {"custom_model_data": 3},"model": "item/mango"}
   ]
 }
 

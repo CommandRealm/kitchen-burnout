@@ -344,6 +344,124 @@
             "chars": [
                 "\uF015"
             ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cone.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF016"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/ice_cream_bowl.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF017"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/vanilla.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF018"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/chocolate.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF019"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/strawberry.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cookies.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/mint.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01C"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/mango.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01D"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/sprinkles.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/chips.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF01F"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cherry.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF020"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cookie_dough.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF021"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:block/blue_ice.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "\uF022"
+            ]
         }
     ]
 }

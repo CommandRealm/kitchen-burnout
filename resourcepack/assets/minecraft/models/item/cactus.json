@@ -1,8 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:block/cactus"
-  },
+  "parent": "minecraft:block/cactus",
   "overrides": [
     {"predicate": {"custom_model_data": 1},"model": "item/lettuce_head"}
   ]
