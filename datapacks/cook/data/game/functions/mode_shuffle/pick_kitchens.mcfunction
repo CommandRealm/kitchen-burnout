@@ -5,14 +5,20 @@ execute if score $output random matches 0 run scoreboard players set $burgers_ma
 execute if score $output random matches 1 run scoreboard players set $burgers_map shuffle 2
 execute if score $output random matches 2 run scoreboard players set $burgers_map shuffle 17
 
-scoreboard players set $sushi_map shuffle 14
+scoreboard players set $mod random 2
+function random:random
+execute if score $output random matches 0 run scoreboard players set $sushi_map shuffle 13
+execute if score $output random matches 1 run scoreboard players set $sushi_map shuffle 14
 
 scoreboard players set $mod random 2
 function random:random
 execute if score $output random matches 0 run scoreboard players set $tacos_map shuffle 8
 execute if score $output random matches 1 run scoreboard players set $tacos_map shuffle 25
 
-scoreboard players set $ice_cream_map shuffle 26
+scoreboard players set $mod random 2
+function random:random
+execute if score $output random matches 0 run scoreboard players set $ice_cream_map shuffle 26
+execute if score $output random matches 1 run scoreboard players set $ice_cream_map shuffle 28
 
 # Set starting food categories
 scoreboard players set $food_type_1 shuffle 1
