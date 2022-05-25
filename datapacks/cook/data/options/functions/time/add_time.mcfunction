@@ -11,7 +11,7 @@ execute if score $time settings matches 1200 run setblock -3 66 41 oak_wall_sign
 execute if score $time settings matches 1200.. run setblock -3 66 41 oak_wall_sign[facing=north]{Text1:'{"text":"","color":"gray","bold":false,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}',Text2:'{"text":"Time:","color":"gray","bold":false}',Text3:'[{"score":{"objective":"calculate","name":"$calculate"},"color":"white"},{"text":" minutes","color":"blue"}]',Text4:'{"text":"<<<         >>>","color":"#d4d4d4","bold":true,"clickEvent":{"action":"run_command","value":"/execute as @s at @s anchored eyes if score $game state matches 0 run function options:time/click_time"}}'}
 
 
-particle minecraft:cloud -3 65.825 42 0 0 0 0.05 10
+particle minecraft:cloud -3 67.825 42 0 0 0 0.05 10
 
 kill @e[tag=display_time,type=armor_stand]
 execute if score $calculate calculate matches 1 run summon armor_stand -3 65.825 42 {DisabledSlots:2039583,Tags:["display_time","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:black_wool",Count:1b}]}
