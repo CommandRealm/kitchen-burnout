@@ -17,3 +17,6 @@ execute positioned 1104 72 1990 run function game:map/ingredient_sets/burger
 # Stovetops
 execute positioned 1105 72 1993 run function game:map/ingredient_sets/burger
 execute positioned 1105 72 1995 run function game:map/ingredient_sets/burger
+
+# Customers
+execute positioned 1097 71 1995 run function game:map/ingredient_sets/burger

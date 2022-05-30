@@ -17,3 +17,5 @@ execute positioned 3482 81 1503 run function game:map/ingredient_sets/ice_cream
 execute positioned 3492 78 1502 run function game:map/ingredient_sets/ice_cream
 execute positioned 3488 79 1497 run function game:map/ingredient_sets/ice_cream
 execute positioned 3484 79 1491 run function game:map/ingredient_sets/ice_cream
+# Customers
+execute positioned 3516 85 1497 run function game:map/ingredient_sets/ice_cream

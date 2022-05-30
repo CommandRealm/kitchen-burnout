@@ -8,3 +8,4 @@ execute positioned 2000 64 -1 run function game:map/ingredient_sets/sushi
 execute positioned 1986 60 -1 run function game:map/ingredient_sets/sushi
 execute positioned 2001 61 -12 run function game:map/ingredient_sets/sushi
 execute positioned 2014 60 11 run function game:map/ingredient_sets/sushi
+execute positioned 1999 63 0 run function game:map/ingredient_sets/sushi

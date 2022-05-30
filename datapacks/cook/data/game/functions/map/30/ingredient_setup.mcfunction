@@ -1,6 +1,6 @@
 # Prep
-execute positioned 3513 74 1995 run function game:map/ingredient_sets/ice_cream
-execute positioned 3513 74 1994 run function game:map/ingredient_sets/ice_cream
+execute positioned 3512 74 1995 run function game:map/ingredient_sets/ice_cream
+execute positioned 3512 74 1996 run function game:map/ingredient_sets/ice_cream
 # Holders
 execute positioned 3513 74 1992 run function game:map/ingredient_sets/ice_cream
 execute positioned 3513 74 1998 run function game:map/ingredient_sets/ice_cream
@@ -16,3 +16,5 @@ execute positioned 3454 68 1967 run function game:map/ingredient_sets/ice_cream
 execute positioned 3450 68 1965 run function game:map/ingredient_sets/ice_cream
 execute positioned 3461 68 1962 run function game:map/ingredient_sets/ice_cream
 execute positioned 3464 68 1965 run function game:map/ingredient_sets/ice_cream
+# Customers
+execute positioned 3513 73 1995 run function game:map/ingredient_sets/ice_cream

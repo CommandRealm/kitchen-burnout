@@ -27,3 +27,6 @@ execute positioned 1027 71 -6 run function game:map/ingredient_sets/burger
 execute positioned 983 68 3 run function game:map/ingredient_sets/burger
 execute positioned 983 68 2 run function game:map/ingredient_sets/burger
 execute positioned 983 68 1 run function game:map/ingredient_sets/burger
+
+# Customers
+execute positioned 990 67 3 run function game:map/ingredient_sets/burger

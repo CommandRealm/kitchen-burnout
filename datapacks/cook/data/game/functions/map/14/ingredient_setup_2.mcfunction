@@ -13,3 +13,5 @@ execute positioned 11973 71 1494 run function game:map/ingredient_sets/sushi
 # Prep
 execute positioned 11969 71 1489 run function game:map/ingredient_sets/sushi
 execute positioned 11970 71 1489 run function game:map/ingredient_sets/sushi
+# Customers
+execute positioned 11969 70 1488 run function game:map/ingredient_sets/sushi

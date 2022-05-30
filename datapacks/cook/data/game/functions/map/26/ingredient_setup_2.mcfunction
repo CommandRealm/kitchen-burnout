@@ -1,6 +1,6 @@
 # Prep
+execute positioned 13476 72 1 run function game:map/ingredient_sets/ice_cream
 execute positioned 13476 72 0 run function game:map/ingredient_sets/ice_cream
-execute positioned 13477 72 0 run function game:map/ingredient_sets/ice_cream
 # Holders
 execute positioned 13475 72 -19 run function game:map/ingredient_sets/ice_cream
 execute positioned 13477 72 -19 run function game:map/ingredient_sets/ice_cream
@@ -16,6 +16,8 @@ execute positioned 13456 72 1 run function game:map/ingredient_sets/ice_cream
 execute positioned 13456 72 -1 run function game:map/ingredient_sets/ice_cream
 execute positioned 13457 72 -3 run function game:map/ingredient_sets/ice_cream
 execute positioned 13459 72 -2 run function game:map/ingredient_sets/ice_cream
+# Customers
+execute positioned 13477 71 0 run function game:map/ingredient_sets/ice_cream
 
 # Inner Buttons
 execute positioned 13480 72 0 run function game:map/26/button/new

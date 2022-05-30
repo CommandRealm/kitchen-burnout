@@ -21,5 +21,8 @@ execute positioned 3500 67 495 run function game:map/ingredient_sets/ice_cream
 # Cutting board ig
 execute positioned 3503 67 497 run function game:map/ingredient_sets/ice_cream
 
+# Customers
+execute positioned 3499 66 494 run function game:map/ingredient_sets/ice_cream
+
 # Campfire
 execute positioned 3501 66 501 run summon marker ~ ~ ~ {Tags:["die_between_games","campfire"]}

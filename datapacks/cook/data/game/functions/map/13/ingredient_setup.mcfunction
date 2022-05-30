@@ -13,3 +13,5 @@ execute positioned 1999 79 964 run function game:map/ingredient_sets/sushi
 # Cutting boards
 execute positioned 1989 85 981 run function game:map/ingredient_sets/sushi
 execute positioned 1987 85 980 run function game:map/ingredient_sets/sushi
+# Customers
+execute positioned 2010 84 975 run function game:map/ingredient_sets/sushi

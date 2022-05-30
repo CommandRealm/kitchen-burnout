@@ -14,3 +14,5 @@ execute positioned 2994 67 1992 run function game:map/ingredient_sets/tacos
 # Prep
 execute positioned 2968 70 2000 run function game:map/ingredient_sets/tacos
 execute positioned 2967 70 2000 run function game:map/ingredient_sets/tacos
+# Customers
+execute positioned 2968 69 2001 run function game:map/ingredient_sets/tacos

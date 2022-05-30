@@ -18,3 +18,6 @@ execute positioned 3392 64 948 run function game:map/ingredient_sets/ice_cream
 # Prep
 execute positioned 3433 69 955 run function game:map/ingredient_sets/ice_cream
 execute positioned 3433 69 956 run function game:map/ingredient_sets/ice_cream
+
+# Customers
+execute positioned 3434 68 955 run function game:map/ingredient_sets/ice_cream
