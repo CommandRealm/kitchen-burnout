@@ -14,3 +14,5 @@ execute positioned 998 62 501 positioned ~10000 ~ ~ run function game:map/ingred
 
 execute positioned 994 62 503 positioned ~10000 ~ ~ run function game:map/ingredient_sets/burger
 execute positioned 994 62 499 positioned ~10000 ~ ~ run function game:map/ingredient_sets/burger
+
+execute positioned 1002 61 498 positioned ~10000 ~ ~ run function game:map/ingredient_sets/burger

@@ -72,3 +72,9 @@ execute if score @s ingredient matches 50 run setblock ~ ~ ~ gray_glazed_terraco
 execute if entity @s[tag=salmon_spawner] run setblock ~ ~ ~ orange_glazed_terracotta
 # Pufferfish Spawner
 execute if entity @s[tag=pufferfish_spawner] run setblock ~ ~ ~ yellow_glazed_terracotta
+
+# Customer lines
+execute if entity @s[tag=customer_line_north] run setblock ~ ~ ~ purpur_stairs[facing=south]
+execute if entity @s[tag=customer_line_east] run setblock ~ ~ ~ purpur_stairs[facing=west]
+execute if entity @s[tag=customer_line_south] run setblock ~ ~ ~ purpur_stairs[facing=north]
+execute if entity @s[tag=customer_line_west] run setblock ~ ~ ~ purpur_stairs[facing=east]

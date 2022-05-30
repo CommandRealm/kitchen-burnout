@@ -10,3 +10,5 @@ execute if block ~ ~ ~ heavy_weighted_pressure_plate run function game:stations/
 
 execute if block ~ ~ ~ oak_pressure_plate run function game:stations/prep/create
 execute if block ~ ~ ~ spruce_button run function game:stations/bell/create
+
+execute if block ~ ~ ~ purpur_stairs run function game:stations/customer_line/create

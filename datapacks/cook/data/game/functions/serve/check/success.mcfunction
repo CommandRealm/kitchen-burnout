@@ -62,6 +62,12 @@ kill @e[type=armor_stand,tag=prep_slot,distance=..15]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
 tag @s add add_new_recipe
+
+# Get rid of the closest customer
+execute as @e[type=marker,tag=customer_line,sort=nearest,limit=1,distance=..100] at @s run function game:serve/customers/remove_first
+setblock ~ ~ ~ air
+
+# Next order
 execute if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
 execute if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
 execute if score $mode settings matches 1..2 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]

@@ -81,6 +81,9 @@ scoreboard objectives add settings dummy
 # Main objective just for game operations.
 scoreboard objectives add game dummy
 
+# Customer stuff
+scoreboard objectives add customers dummy
+
 # Scoreboard for the shuffle mode
 scoreboard objectives add shuffle dummy
 

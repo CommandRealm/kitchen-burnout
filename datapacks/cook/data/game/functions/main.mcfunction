@@ -16,6 +16,7 @@ execute if score $mode settings matches 0..1 if score $timer game_ticks matches 
 # Resets ingredient boxes back to their normal blocks
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
+execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=customer_line] at @s run function game:map/reset_boxes
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches ..-41 run function game:end
@@ -28,6 +29,9 @@ execute if score $mode settings matches 2 unless score $winner shuffle matches 0
 
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
+
+# Customers
+execute as @e[type=marker,tag=customer_line] at @s run function game:serve/customers/main
 
 # Call map main functions
 function game:map/mains
