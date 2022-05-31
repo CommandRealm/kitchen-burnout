@@ -64,6 +64,10 @@ execute if entity @e[type=marker,scores={station=1..}] run function game:station
 # Moving ingredients in boxes
 execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function game:stations/ingredient_boxes
 
+# Recipe actionbar display
+execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]
 
 # Prep Station
 execute as @e[type=marker,tag=prep_display] at @s run function game:stations/prep/main
@@ -74,7 +78,9 @@ execute as @e[type=armor_stand,tag=bell] at @s run function game:stations/bell/m
 # If there is a recipe cooldown
 execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
 
-# Recipe actionbar display
-execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient]","color":"gray"}]
-execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]","color":"gray"}]
-execute if score $mode settings matches 1..2 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar ["",{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]","color":"gray"}]
+# Globals
+scoreboard players operation $flashing game_ticks = $timer game_ticks
+scoreboard players operation $flashing game_ticks %= $8 number
+scoreboard players operation $even game_ticks = $timer game_ticks
+scoreboard players operation $even game_ticks %= $2 number
+scoreboard players reset @a[scores={is_sneaking=1..}] is_sneaking
