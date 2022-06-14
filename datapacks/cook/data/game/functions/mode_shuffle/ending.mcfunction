@@ -1,5 +1,5 @@
 scoreboard players add $end_timer shuffle 1
-execute if score $end_timer shuffle matches 8 run function game:stop_message_shuffle
+execute if score $end_timer shuffle matches 8 run function game:stop_message_alt
 execute if score $end_timer shuffle matches 28 as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
 execute if score $end_timer shuffle matches 28 as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
 execute if score $end_timer shuffle matches 28 as @e[type=marker,tag=customer_line] at @s run function game:map/reset_boxes

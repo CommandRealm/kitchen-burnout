@@ -51,6 +51,8 @@ tag Pinkessi add has_bld
 tag FalconReign add has_bld
 tag oPando add has_bld
 tag rgbyy add has_bld
+tag EdLePug add has_bld
+tag Connop add has_bld
 
 # Programmers
 tag FalconReign add has_prg
@@ -63,6 +65,7 @@ tag EdLePug add has_art
 # Senior Builders
 tag knad add has_srbld
 tag joelzoboyo add has_srbld
+tag EdLePug add has_srbld
 
 # Senior Programmers
 tag Calverin add has_srprg

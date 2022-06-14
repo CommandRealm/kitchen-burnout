@@ -66,6 +66,7 @@ scoreboard players set $7 number 7
 scoreboard players set $100 number 100
 scoreboard players set $200 number 200
 scoreboard players set $500 number 500
+scoreboard players set $6000 number 6000
 scoreboard players set $-1 number -1
 scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
@@ -74,6 +75,7 @@ scoreboard players set $1200 number 1200
 scoreboard players set $353 number 353
 scoreboard players set $1807 number 1807
 scoreboard players set $13879 number 13879
+scoreboard players set $58000000 number 58000000
 
 # Settings
 scoreboard objectives add settings dummy

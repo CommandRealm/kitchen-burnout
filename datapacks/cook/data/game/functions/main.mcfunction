@@ -10,6 +10,7 @@ effect give @a[tag=playing] resistance 1 255 true
 #scoreboard players add $time game 1
 execute if score $mode settings matches 0..1 run function game:timers/normal
 execute if score $mode settings matches 2 run function game:timers/shuffle
+execute if score $mode settings matches 3 run function game:timers/competitive
 
 # Stop game, then end
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches 18 run function game:stop_message
@@ -21,11 +22,9 @@ execute if score $mode settings matches 0..1 if score $timer game_ticks matches 
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches -38 as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
 execute if score $mode settings matches 0..1 if score $timer game_ticks matches ..-41 run function game:end
 
-# Mode
-# execute if score $mode settings matches 0 run function game:mode_classic/main
-
-# Ending the game in shuffle mode
+# Ending the game in shuffle and competitive modes
 execute if score $mode settings matches 2 unless score $winner shuffle matches 0 run function game:mode_shuffle/ending
+execute if score $mode settings matches 3 unless score $winner shuffle matches 0 run function game:mode_competitive/ending
 
 # If someone votes to end the game
 # execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
@@ -66,6 +65,7 @@ execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function g
 
 # Recipe actionbar display
 execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
+execute if score $mode settings matches 3 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
 execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]"}]
 execute if score $mode settings matches 1..2 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]"}]
 

@@ -2,11 +2,11 @@
 
 # Resetting the button and trapdor
 
-setblock -9 17 -10 air destroy
-setblock -10 18 -10 minecraft:iron_trapdoor[open=false,half=bottom,facing=south]
-setblock -10 16 -10 minecraft:iron_trapdoor[facing=west,half=top,open=false,powered=false,waterlogged=false]
-setblock -10 17 -11 minecraft:iron_trapdoor[open=true,half=top,facing=north]
-setblock -10 17 -9 minecraft:iron_trapdoor[facing=south,half=top,open=true,powered=false,waterlogged=false]
+setblock -4 68 38 air destroy
+setblock -3 68 37 minecraft:iron_trapdoor[facing=east,half=top,open=true,powered=false,waterlogged=false]
+setblock -4 69 37 minecraft:iron_trapdoor[facing=south,half=bottom,open=false,powered=false,waterlogged=false]
+setblock -5 68 37 minecraft:iron_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]
+setblock -4 67 37 minecraft:iron_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=false]
 
 execute if score $countdown pregame matches 0.. run tag @p add temporary_tag
 execute if score $countdown pregame matches 0.. run function lobby:pregame/countdown_end

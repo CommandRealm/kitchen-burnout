@@ -22,6 +22,9 @@ bossbar set game:progress_2 visible false
 # Sets game state to 0
 scoreboard players set $game state 0
 
+# Reset worldborder
+worldborder set 59999968
+
 #tag @a[team=spectator] add playing
 
 title @a[tag=playing] times 0 25 5
@@ -30,7 +33,8 @@ title @a[tag=playing] times 0 25 5
 effect clear @a[tag=playing]
 gamemode adventure @a[tag=playing]
 clear @a[tag=playing]
-tp @a[tag=playing] 0 66 0
+tp @a[tag=playing] -11.0 68 46.0 -148 -18
+spawnpoint @a[tag=playing] -11 68 46 -148
 scoreboard players reset @a freeze_time
 
 # Resetting the dropped knowledge book objective.
@@ -58,6 +62,12 @@ execute if score $mode settings matches 2 if score $winner shuffle matches 1 run
 execute if score $mode settings matches 2 if score $winner shuffle matches 2 run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Diners","color":"light_purple","bold":true},{"translate":" won!","color":"gold"}]
 execute if score $mode settings matches 2 run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"Time: ","color":"green"},{"score":{"objective":"game_minutes","name":"$timer"},"color":"gold","bold":true},{"text":":","color":"gold","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"gold","bold":true}]
 
+execute if score $mode settings matches 3 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+# Temp
+execute if score $mode settings matches 3 run tellraw @a ["",{"translate":"Map: ","color":"blue"},{"score":{"objective":"settings","name":"$map"},"color":"blue"}]
 
 # Reset teams
 execute as @a[tag=playing] at @s run function general:rank

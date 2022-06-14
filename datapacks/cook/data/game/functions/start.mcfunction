@@ -15,6 +15,10 @@ execute if score $mode settings matches 1..2 run scoreboard players set $finishe
 execute if score $mode settings matches 1..2 run scoreboard players set $finished_recipes_2 game 0
 execute if score $mode settings matches 1..2 run scoreboard players set $score game 0
 execute if score $mode settings matches 1..2 run scoreboard players set $score_2 game 0
+# Competitive mode
+scoreboard players set $competitive customers 0
+scoreboard players set $winner shuffle 0
+scoreboard players set $end_timer shuffle 0
 
 # Giving people the playing tag
 tag @a[scores={ready=1..}] add playing
@@ -74,7 +78,7 @@ advancement grant @a[tag=playing] only game:inventory_changed
 # execute as @a[tag=playing,sort=random] at @s run function game:generate_id
 
 # Pick kitchens
-execute if score $mode settings matches 0..1 run scoreboard players operation @a[tag=playing] map = $map settings
+execute unless score $mode settings matches 2 run scoreboard players operation @a[tag=playing] map = $map settings
 execute if score $mode settings matches 2 run function game:mode_shuffle/pick_kitchens
 
 # Setting up the map.
@@ -87,12 +91,14 @@ execute if score $mode settings matches 1..2 run function game:map/setups_2
 execute if score $mode settings matches 0 run function game:mode_classic/generate_recipes
 execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
 execute if score $mode settings matches 2 run function game:mode_shuffle/generate_recipes
+execute if score $mode settings matches 3 run function game:mode_competitive/generate_recipes
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=!team_2,limit=1] recipe_cooldown 65
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1] recipe_cooldown 65
 
 # Start timer
 execute if score $mode settings matches 0..1 run function game:timers/normal_setup
 execute if score $mode settings matches 2 run function game:timers/shuffle_setup
+execute if score $mode settings matches 3 run function game:timers/competitive_setup
 
 # Setting the button
 setblock -9 17 -10 air
