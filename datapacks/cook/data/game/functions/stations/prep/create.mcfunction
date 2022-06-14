@@ -1,10 +1,10 @@
 # Called to create a prep station
 setblock ~ ~ ~ air
 #setblock ~ ~ ~ oak_pressure_plate[powered=true]
-execute if entity @e[type=marker,tag=prep_display,tag=!2] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games","2"]}
-execute unless entity @e[type=marker,tag=prep_display,tag=!2] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games"]}
-scoreboard players set @e[type=marker,tag=prep_display,tag=!2,sort=nearest,limit=1] prep_display 0
-scoreboard players set @e[type=marker,tag=prep_display,tag=2,sort=nearest,limit=1] prep_display 0
+execute if entity @e[type=marker,tag=prep_display,tag=!2,distance=500..] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games","2"]}
+execute unless entity @e[type=marker,tag=prep_display,tag=!2,distance=500..] run summon marker ~ ~ ~ {Tags:["prep_display","prep_slot","station","die_between_games"]}
+scoreboard players set @e[type=marker,tag=prep_display,tag=!2,sort=nearest,limit=1,distance=..500] prep_display 0
+scoreboard players set @e[type=marker,tag=prep_display,tag=2,sort=nearest,limit=1,distance=..500] prep_display 0
 
 # Dish
 #summon marker ~ ~ ~ {Tags:["prep_dish","station","die_between_games","raycast_target"]}

@@ -77,5 +77,5 @@ execute if score $mode settings matches 0 run scoreboard players set @a[gamemode
 execute if score $mode settings matches 3 unless score $finished_recipes game matches 4.. run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1] recipe_cooldown 25
 execute if score $mode settings matches 1 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=!team_2] recipe_cooldown 25
 execute if score $mode settings matches 1 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=team_2] recipe_cooldown 25
-execute if score $mode settings matches 2 unless score $food_type_1 shuffle matches 5.. unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=!team_2] recipe_cooldown 25
-execute if score $mode settings matches 2 unless score $food_type_2 shuffle matches 5.. if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=team_2] recipe_cooldown 25
+execute if score $mode settings matches 2 unless score $food_type_1 shuffle matches 4.. unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=!team_2] recipe_cooldown 25
+execute if score $mode settings matches 2 unless score $food_type_2 shuffle matches 4.. if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,limit=1,tag=team_2] recipe_cooldown 25
