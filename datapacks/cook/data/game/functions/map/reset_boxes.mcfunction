@@ -79,4 +79,5 @@ execute if entity @s[tag=customer_line_east] run setblock ~ ~ ~ purpur_stairs[fa
 execute if entity @s[tag=customer_line_south] run setblock ~ ~ ~ purpur_stairs[facing=north]
 execute if entity @s[tag=customer_line_west] run setblock ~ ~ ~ purpur_stairs[facing=east]
 
-execute as @e[type=marker,tag=prep_display,sort=nearest,limit=1,distance=..500] at @s run setblock ~ ~ ~ oak_pressure_plate[powered=true]
+execute as @e[type=marker,tag=prep_display,tag=!2,sort=nearest,limit=1,distance=..500] at @s run setblock ~ ~ ~ oak_pressure_plate[powered=true]
+execute as @e[type=marker,tag=prep_display,tag=2,sort=nearest,limit=1,distance=..500] at @s run setblock ~ ~ ~ jungle_pressure_plate[powered=true]
