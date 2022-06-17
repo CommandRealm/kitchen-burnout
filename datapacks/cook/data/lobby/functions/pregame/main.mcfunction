@@ -4,8 +4,7 @@
 execute as @a[scores={pregame_click=1..}] at @s run function lobby:pregame/click
 
 # Check if player needs book
-execute as @a[x=0,y=66,z=0,distance=..1000,gamemode=adventure] at @s unless score $mode settings matches 3 unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:knowledge_book"}]}] run function lobby:pregame/get_book
-execute as @a[x=0,y=66,z=0,distance=..1000,gamemode=adventure] at @s if score $mode settings matches 3 unless score $ready_players pregame matches 1.. unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:knowledge_book"}]}] run function lobby:pregame/get_book
+execute as @a[x=0,y=66,z=0,distance=..1000,gamemode=adventure] at @s unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:knowledge_book"}]}] run function lobby:pregame/get_book
 
 # Actionbar titles
 title @a[x=0,y=66,z=0,distance=..1000,gamemode=adventure,scores={ready=0},tag=!parkour,tag=!tutorial] actionbar [{"translate":"You will ","color":"gray"},{"translate":"not play.","color":"red"}]

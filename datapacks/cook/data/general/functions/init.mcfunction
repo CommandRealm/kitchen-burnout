@@ -44,9 +44,9 @@ scoreboard objectives add pregame dummy
 # Ready score
 scoreboard objectives add ready dummy
 
-# Pregame right click detection
+# Pregame book stuff
 scoreboard objectives add pregame_click minecraft.used:minecraft.knowledge_book
-
+scoreboard objectives add drop_ready_book minecraft.dropped:minecraft.knowledge_book
 
 # Number objective
 scoreboard objectives add number dummy

@@ -8,8 +8,9 @@ scoreboard players set @s[scores={ready=2..}] ready 0
 scoreboard players reset @s pregame_click
 
 # clear books if it's at fifty
-execute if score $mode settings matches 3 if score $ready_players pregame matches 0 if entity @s[scores={ready=1}] run clear @a[scores={ready=0}] knowledge_book
-
+tag @s add dont_unready
+execute if score $mode settings matches 3 if entity @s[scores={ready=1}] run scoreboard players set @a[tag=!dont_unready] ready 0
+tag @a remove dont_unready
 # Clearing the book makes the function called quickly after it update the book.
 clear @s knowledge_book
 
