@@ -1,0 +1,9 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:marker",
+        "minecraft:magma_cube",
+        "minecraft:salmon",
+        "minecraft:pufferfish"
+    ]
+  }

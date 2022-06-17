@@ -6,7 +6,11 @@ data merge storage minecraft:current_order_1 {Recipe:[]}
 data modify storage minecraft:current_order_1 Recipe set from storage orders_1 Recipe[0]
 
 kill @e[type=marker,tag=recipe_ingredient]
+tag @e[type=magma_cube,tag=ingredient_box_outline] remove recipe_ingredient
+team leave @e[type=magma_cube,tag=ingredient_box_outline]
+tag @e[type=#game:fish,tag=can_catch] remove recipe_ingredient
+team leave @e[type=#game:fish,tag=can_catch]
 kill @e[type=marker,tag=recipe_name]
 function game:recipe_cooldown/classic/ingredient_summon
 # Add ingredient markers to missing team
-team join recipe_missing @e[type=marker,tag=recipe_ingredient]
+team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient]
