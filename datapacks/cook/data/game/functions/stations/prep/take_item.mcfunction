@@ -305,4 +305,4 @@ tag @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] add sta
 
 tag @s add took_item_tag
 advancement grant @s only game:inventory_changed
-execute at @s if entity @e[type=armor_stand,tag=prep_slot,distance=..15] run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 1
+execute at @s if entity @e[type=armor_stand,tag=prep_slot,distance=..100] run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 1

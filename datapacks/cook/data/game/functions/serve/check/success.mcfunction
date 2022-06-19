@@ -59,7 +59,7 @@ tag @s remove chips
 tag @s remove cherry
 tag @s remove cookie_dough
 tag @s remove frozen_food
-kill @e[type=armor_stand,tag=prep_slot,distance=..15]
+kill @e[type=armor_stand,tag=prep_slot,distance=..100]
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
 tag @s add add_new_recipe

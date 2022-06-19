@@ -1,6 +1,6 @@
 # Kill compact display armor stands
-kill @e[type=armor_stand,tag=prep_slot,distance=..15]
-kill @e[type=armor_stand,tag=compact_display,distance=..15]
+kill @e[type=armor_stand,tag=prep_slot,distance=..100]
+kill @e[type=armor_stand,tag=compact_display,distance=..100]
 
 # Create item armor stands for team 1
 execute if entity @s[tag=!2,tag=hamburger_bun] run summon minecraft:armor_stand ~0.3125 ~-0.77 ~0.375 {ShowArms:1b,Pose:{RightArm:[0.0f,0.0f,0.0f]},Rotation:[90f,0f],NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["prep_slot","die_between_games","display_item","base_ingredient","primary_ingredient","hamburger_bun"]}
