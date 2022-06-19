@@ -64,6 +64,9 @@ playsound entity.player.levelup master @a ~ ~ ~ 1 1.1
 particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
 tag @s add add_new_recipe
 
+# Unpress bell
+execute as @e[type=armor_stand,tag=bell,tag=bell_pressed,limit=1,sort=nearest,distance=..500] at @s run function game:stations/bell/unpress
+
 # Get rid of the closest customer
 execute as @e[type=marker,tag=customer_line,sort=nearest,limit=1,distance=..100] at @s run function game:serve/customers/remove_first
 setblock ~ ~ ~ air

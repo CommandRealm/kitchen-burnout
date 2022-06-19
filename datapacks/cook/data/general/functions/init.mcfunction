@@ -155,8 +155,9 @@ team modify manager collisionRule never
 team modify pc_role collisionRule never
 team modify cr collisionRule never
 
-team add collision
-team modify collision collisionRule never
+team add no_collision
+team modify no_collision collisionRule never
+team modify no_collision color gray
 
 
 # Random objective
@@ -239,8 +240,10 @@ scoreboard objectives add recipe_timer dummy
 # Recipe Ingredient Teams
 team add recipe_missing
 team modify recipe_missing color red
+team modify recipe_missing collisionRule never
 
 team add recipe_filled
 team modify recipe_filled color green
+team modify recipe_filled collisionRule never
 
 forceload add 0 0

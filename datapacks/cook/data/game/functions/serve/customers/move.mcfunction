@@ -1,5 +1,10 @@
+execute positioned ^ ^ ^.1 unless entity @e[type=villager,tag=customer,tag=!update_line_pos,distance=..1] positioned ^ ^ ^-1 unless entity @e[type=marker,tag=customer_line,distance=..1] positioned ^ ^ ^1 run tp @e[type=magma_cube,tag=customer,tag=update_line_pos,limit=1,sort=nearest] ~ ~.9 ~
 execute positioned ^ ^ ^.1 unless entity @e[type=villager,tag=customer,tag=!update_line_pos,distance=..1] positioned ^ ^ ^-1 unless entity @e[type=marker,tag=customer_line,distance=..1] positioned ^ ^ ^1 run tp @s ~ ~ ~
+execute positioned ^ ^ ^.1 if entity @e[type=villager,tag=customer,tag=!update_line_pos,distance=..1] run tag @e[type=magma_cube,tag=customer,tag=update_line_pos,limit=1,sort=nearest] remove update_line_pos
 execute positioned ^ ^ ^.1 if entity @e[type=villager,tag=customer,tag=!update_line_pos,distance=..1] run tag @s remove update_line_pos
+execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] run tag @e[type=magma_cube,tag=customer,tag=update_line_pos,limit=1,sort=nearest] remove update_line_pos
 execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] run tag @s remove update_line_pos
+execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] if entity @s[tag=update_line_first] run tag @e[type=magma_cube,tag=customer,tag=!update_line_first,tag=!kill_customer,sort=nearest,limit=1,distance=..100] add update_line_pos
 execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] if entity @s[tag=update_line_first] run tag @e[type=villager,tag=customer,tag=!update_line_first,tag=!kill_customer,sort=nearest,limit=1,distance=..100] add update_line_pos
+execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] run tag @e[type=magma_cube,tag=customer,tag=update_line_pos,limit=1,sort=nearest] remove update_line_first
 execute positioned ^ ^ ^-.9 if entity @e[type=marker,tag=customer_line,distance=..1] run tag @s remove update_line_first
