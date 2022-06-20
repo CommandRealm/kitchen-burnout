@@ -4,7 +4,8 @@
     "layer0": "minecraft:item/beetroot_seeds"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/cookie_dough"}
+    {"predicate": {"custom_model_data": 1},"model": "item/cookie_dough"},
+    {"predicate": {"custom_model_data": 2},"model": "item/cookie_dough_m"}
   ]
 }
 

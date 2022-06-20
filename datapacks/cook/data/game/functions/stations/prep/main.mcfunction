@@ -16,6 +16,10 @@ execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,ta
 # Show spread out ingredients for interactions
 execute if score @s prep_display matches 1.. run function game:stations/prep/display
 
+execute if entity @s[tag=reset_prep_ingredients] run function game:stations/prep/summon_existing
+execute if entity @s[tag=reset_prep_ingredients] run scoreboard players set @s prep_display 0
+
+
 #execute if score @s prep_display matches -1 run function game:stations/prep/close_display
 #scoreboard players set @s prep_display 0
 

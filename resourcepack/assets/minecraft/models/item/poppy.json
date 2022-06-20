@@ -4,7 +4,8 @@
     "layer0": "minecraft:block/poppy"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/cherry"}
+    {"predicate": {"custom_model_data": 1},"model": "item/cherry"},
+    {"predicate": {"custom_model_data": 2},"model": "item/cherry_m"}
   ]
 }
 

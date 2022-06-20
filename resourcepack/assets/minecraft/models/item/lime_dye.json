@@ -6,7 +6,8 @@
   "overrides": [
     {"predicate": {"custom_model_data": 1},"model": "item/avocado_slice"},
     {"predicate": {"custom_model_data": 2},"model": "item/avocado_slice_modeled"},
-    {"predicate": {"custom_model_data": 3},"model": "item/mint"}
+    {"predicate": {"custom_model_data": 3},"model": "item/mint"},
+    {"predicate": {"custom_model_data": 4},"model": "item/mint_m"}
   ]
 }
 

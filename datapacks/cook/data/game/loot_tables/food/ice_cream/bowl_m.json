@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,display:{Name:'[{\"translate\":\"Ice Cream Bowl\",\"color\":\"#bf6b17\",\"italic\":false}]'},CustomModelData:2,ingredient:1b,stovetop:1b,cooking_time:0,transform_point:200,timer_type:\"charcoal\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

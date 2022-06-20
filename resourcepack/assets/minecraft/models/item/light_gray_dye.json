@@ -4,7 +4,8 @@
     "layer0": "minecraft:item/light_gray_dye"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/cookies"}
+    {"predicate": {"custom_model_data": 1},"model": "item/cookies"},
+    {"predicate": {"custom_model_data": 2},"model": "item/cookies_m"}
   ]
 }
 

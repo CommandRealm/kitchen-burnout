@@ -4,7 +4,8 @@
     "layer0": "minecraft:item/bowl"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/ice_cream_bowl"}
+    {"predicate": {"custom_model_data": 1},"model": "item/ice_cream_bowl"},
+    {"predicate": {"custom_model_data": 2},"model": "item/ice_cream_bowl_m"}
   ]
 }
 

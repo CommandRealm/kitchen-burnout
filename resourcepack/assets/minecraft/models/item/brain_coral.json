@@ -4,6 +4,7 @@
     "layer0": "minecraft:block/brain_coral"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/sprinkles"}
+    {"predicate": {"custom_model_data": 1},"model": "item/sprinkles"},
+    {"predicate": {"custom_model_data": 2},"model": "item/sprinkles_m"}
   ]
 }

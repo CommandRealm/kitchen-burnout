@@ -4,7 +4,8 @@
     "layer0": "minecraft:item/white_dye"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/vanilla"}
+    {"predicate": {"custom_model_data": 1},"model": "item/vanilla"},
+    {"predicate": {"custom_model_data": 2},"model": "item/vanilla_m"}
   ]
 }
 
