@@ -1,6 +1,6 @@
 # Replace item
-loot replace entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1] weapon.mainhand loot game:food/sushi/poison_pufferfish
-scoreboard players set @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1] ingredient 17
+loot replace entity @e[type=armor_stand,distance=..1.25,tag=cutting_board_item,sort=nearest,limit=1] weapon.mainhand loot game:food/sushi/poison_pufferfish
+scoreboard players set @e[type=armor_stand,distance=..1.25,tag=cutting_board_item,sort=nearest,limit=1] ingredient 17
 
 # Effects
 playsound entity.squid.death master @a ~ ~ ~ 1 1.7

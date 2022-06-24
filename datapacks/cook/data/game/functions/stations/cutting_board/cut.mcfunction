@@ -1,8 +1,8 @@
 # Called when we try to cut an item on the cutting board
 
 # Make pufferfish poison on failed cut
-execute as @e[type=marker,tag=cutting_board,sort=nearest,limit=1] at @s if score @s station_timer matches -11..-7 if entity @e[type=armor_stand,sort=nearest,limit=1,tag=display_item,scores={ingredient=14}] run function game:stations/cutting_board/poison_pufferfish
-execute as @e[type=marker,tag=cutting_board,sort=nearest,limit=1] at @s if score @s station_timer matches 7..11 if entity @e[type=armor_stand,sort=nearest,limit=1,tag=display_item,scores={ingredient=14}] run function game:stations/cutting_board/poison_pufferfish
+execute as @e[type=marker,tag=cutting_board,sort=nearest,limit=1] at @s if score @s station_timer matches -11..-7 if entity @e[type=armor_stand,distance=..1.25,sort=nearest,limit=1,tag=display_item,scores={ingredient=14}] run function game:stations/cutting_board/poison_pufferfish
+execute as @e[type=marker,tag=cutting_board,sort=nearest,limit=1] at @s if score @s station_timer matches 7..11 if entity @e[type=armor_stand,distance=..1.25,sort=nearest,limit=1,tag=display_item,scores={ingredient=14}] run function game:stations/cutting_board/poison_pufferfish
 
 # Normal cutting
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -10..-7 run scoreboard players add @s click_cooldown 3
