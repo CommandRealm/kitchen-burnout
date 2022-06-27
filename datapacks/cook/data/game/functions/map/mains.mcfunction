@@ -1,5 +1,6 @@
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=5}] run function game:map/5/main
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=8}] run function game:map/8/main
+execute if entity @a[gamemode=adventure,tag=playing,scores={map=9}] run function game:map/9/main
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=12}] run function game:map/12/main
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=14}] run function game:map/14/main
 execute if entity @a[gamemode=adventure,tag=playing,scores={map=17}] run function game:map/17/main

@@ -4,6 +4,7 @@
         "minecraft:marker",
         "minecraft:magma_cube",
         "minecraft:salmon",
-        "minecraft:pufferfish"
+        "minecraft:pufferfish",
+        "minecraft:glow_item_frame"
     ]
   }
