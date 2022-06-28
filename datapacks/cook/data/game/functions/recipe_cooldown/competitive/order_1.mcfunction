@@ -8,12 +8,10 @@ data modify storage minecraft:current_order_1 Recipe set from storage orders_1 R
 # Glowing stuff
 kill @e[type=marker,tag=recipe_ingredient]
 kill @e[type=marker,tag=recipe_name]
-tag @e[type=magma_cube,tag=ingredient_box_outline] remove recipe_ingredient
-team join no_collision @e[type=magma_cube,tag=ingredient_box_outline]
+tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline] remove recipe_ingredient
+team join no_collision @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline]
 tag @e[type=#game:fish,tag=can_catch] remove recipe_ingredient
 team join no_collision @e[type=#game:fish,tag=can_catch]
-tag @e[type=glow_item_frame,tag=archery_ingredient] remove recipe_ingredient
-team join no_collision @e[type=glow_item_frame,tag=archery_ingredient]
 function game:recipe_cooldown/competitive/ingredient_summon
 # Add ingredient markers to missing team
 team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient]

@@ -204,6 +204,8 @@ scoreboard objectives add warp_fish dummy
 
 scoreboard objectives add arrow_cycle dummy
 
+scoreboard objectives add archery dummy
+
 scoreboard objectives add in_pipe_time dummy
 
 scoreboard objectives add sliding_platform dummy

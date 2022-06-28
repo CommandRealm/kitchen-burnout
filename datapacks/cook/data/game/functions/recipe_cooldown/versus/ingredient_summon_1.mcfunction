@@ -276,39 +276,39 @@ execute if data storage minecraft:current_order_1 Recipe{Name:"the whole shebang
 execute if data storage minecraft:current_order_1 Recipe{Name:"everything but the ice cream in a bowl"} run summon marker ~ 0 ~ {Tags:["recipe_name","die_between_games"],CustomName:'["",{"translate":"Everything but the Ice Cream"},{"translate":" in a Bowl"}]'}
 
 # Give tags to proper ingredient boxes
-execute if data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=hamburger_bun,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Cheese"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=cheese,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Lettuce Leaf"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=lettuce_leaf,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Hamburger"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=hamburger,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Tomato Slice"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=tomato_slice,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Sushi Rice"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=rice,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=hamburger_bun,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Cheese"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cheese,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Lettuce Leaf"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=lettuce_leaf,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Hamburger"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=hamburger,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Tomato Slice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=tomato_slice,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Sushi Rice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=rice,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run tag @e[type=salmon,tag=can_catch,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run tag @e[type=pufferfish,tag=can_catch,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Avocado Slice"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=avocado_slice,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Wasabi"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=wasabi,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Tomato Sauce"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=sauce,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Pizza Cheese"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=pizza_cheese,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Pepperoni"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=pepperoni,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Deep-Dish Crust"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=dough,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Thin Crust"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=dough,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Mushroom Slices"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=mushroom,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Pineapple Chunks"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=pineapple,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Tortilla"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=tortilla,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Ground Beef"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=beef,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Taco Cheese"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=taco_cheese,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Guacamole"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=guac,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Salsa"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=salsa,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Sour Cream"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=sour_cream,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["Shredded Lettuce"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=lettuce_shreds,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["cone"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=cone,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["bowl"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=bowl,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["vanilla"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=vanilla,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["chocolate"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=chocolate,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["strawberry"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=strawberry,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["cookies"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=cookies,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["mint"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=mint,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["mango"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=mango,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["sprinkles"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=sprinkles,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["chips"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=chips,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["cherry"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=cherry,distance=..500] add recipe_ingredient
-execute if data storage current_order_1 Recipe{Ingredients:["cookie_dough"]} run tag @e[type=magma_cube,tag=ingredient_box_outline,tag=cookie_dough,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Avocado Slice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=avocado_slice,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Wasabi"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=wasabi,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Tomato Sauce"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=sauce,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Pizza Cheese"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=pizza_cheese,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Pepperoni"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=pepperoni,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Deep-Dish Crust"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=dough,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Thin Crust"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=dough,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Mushroom Slices"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=mushroom,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Pineapple Chunks"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=pineapple,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Tortilla"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=tortilla,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Ground Beef"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=beef,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Taco Cheese"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=taco_cheese,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Guacamole"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=guac,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Salsa"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=salsa,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Sour Cream"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=sour_cream,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Shredded Lettuce"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=lettuce_shreds,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["cone"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cone,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["bowl"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=bowl,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["vanilla"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=vanilla,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["chocolate"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=chocolate,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["strawberry"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=strawberry,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["cookies"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cookies,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["mint"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=mint,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["mango"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=mango,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["sprinkles"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=sprinkles,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["chips"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=chips,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["cherry"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cherry,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["cookie_dough"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cookie_dough,distance=..500] add recipe_ingredient

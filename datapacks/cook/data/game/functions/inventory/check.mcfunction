@@ -67,6 +67,8 @@ execute as @a[tag=playing,scores={cosmetics_hat=0}] unless entity @s[nbt={Invent
 # Map specific
 execute as @a[tag=playing,scores={map=11..15}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:cobweb"}]}] run function game:inventory/get_fishing_net
 execute as @a[tag=playing,scores={map=8}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:shield"}]}] run function game:inventory/get_shield
+execute as @a[tag=playing,scores={map=9}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:bow"}]}] run function game:inventory/get_bow
+execute as @a[tag=playing,scores={map=9}] at @s unless entity @s[nbt={Inventory:[{Slot:35b,id:"minecraft:arrow"}]}] run function game:inventory/get_arrow
 execute as @a[tag=playing,scores={map=12}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_warping_trident
 execute as @a[tag=playing,scores={map=13}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_riptide_trident
 execute as @a[tag=playing,scores={map=17}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:fishing_rod"}]}] run function game:inventory/get_fishing_rod
