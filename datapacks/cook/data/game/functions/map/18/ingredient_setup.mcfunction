@@ -26,14 +26,10 @@ execute positioned 2670 66 1000 run function game:map/ingredient_sets/tacos
 execute positioned 2670 66 1001 run function game:map/ingredient_sets/tacos
 
 # Stovetops
-execute positioned 2660 78 999 run function game:map/ingredient_sets/tacos
-execute positioned 2659 78 1000 run function game:map/ingredient_sets/tacos
-execute positioned 2653 78 1000 run function game:map/ingredient_sets/tacos
-execute positioned 2652 78 999 run function game:map/ingredient_sets/tacos
-execute positioned 2652 78 993 run function game:map/ingredient_sets/tacos
-execute positioned 2653 78 992 run function game:map/ingredient_sets/tacos
-execute positioned 2659 78 992 run function game:map/ingredient_sets/tacos
-execute positioned 2660 78 993 run function game:map/ingredient_sets/tacos
+execute positioned 2663 75 989 run function game:map/ingredient_sets/tacos
+execute positioned 2663 75 1003 run function game:map/ingredient_sets/tacos
+execute positioned 2649 75 1003 run function game:map/ingredient_sets/tacos
+execute positioned 2649 75 989 run function game:map/ingredient_sets/tacos
 
 # Prep
 execute positioned 2656 74 996 run function game:map/ingredient_sets/tacos
