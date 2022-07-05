@@ -59,12 +59,16 @@ scoreboard players reset $end game
 # Title times
 title @a[tag=playing] times 0 25 5
 title @a[tag=playing] subtitle ""
+title @a[tag=playing] title ""
 
 forceload remove all
 forceload add 0 0
 
+# Click stuff
 scoreboard players reset @a click
 scoreboard players reset @a click_cooldown
+
+# Reset ingredient
 scoreboard players set @a[tag=playing] ingredient 0
 
 # Advancements
@@ -99,6 +103,14 @@ scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1] rec
 execute if score $mode settings matches 0..1 run function game:timers/normal_setup
 execute if score $mode settings matches 2 run function game:timers/shuffle_setup
 execute if score $mode settings matches 3 run function game:timers/competitive_setup
+
+# End early stuff
+scoreboard players reset * end
+scoreboard players enable @a[gamemode=adventure,tag=playing] end
+scoreboard players reset $no_contest game
+scoreboard players reset $players end
+scoreboard players set $old_players end 1
+tellraw @a[gamemode=adventure,tag=playing] ["",{"text":"\n\n- ","color":"gray"},{"translate":"If you'd like to end the game early, click this message or run","color":"green","clickEvent":{"action":"run_command","value":"/trigger end"}},{"text":"\n- ","color":"gray"},{"text":"/trigger end","clickEvent":{"action":"run_command","value":"/trigger end"},"color":"dark_green","underlined":true},{"text":"\n\n"}]
 
 # Setting the button
 setblock -9 17 -10 air

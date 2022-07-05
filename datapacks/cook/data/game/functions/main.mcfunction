@@ -26,8 +26,8 @@ execute if score $mode settings matches 0..1 if score $timer game_ticks matches 
 execute if score $mode settings matches 2 unless score $winner shuffle matches 0 run function game:mode_shuffle/ending
 execute if score $mode settings matches 3 unless score $winner shuffle matches 0 run function game:mode_competitive/ending
 
-# If someone votes to end the game
-# execute as @a[tag=playing,scores={end=1..},team=game] at @s run function game:vote_end/vote
+# Ending the game early
+function game:stop_early
 
 # Customers
 execute as @e[type=marker,tag=customer_line] at @s run function game:serve/customers/main
