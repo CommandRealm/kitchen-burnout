@@ -24,7 +24,7 @@ execute if score $mode settings matches 2 unless score $winner shuffle matches 0
 execute if score $mode settings matches 3 unless score $winner shuffle matches 0 run function game:mode_competitive/ending
 
 # Ending the game early
-function game:stop_early
+execute if entity @a[gamemode=adventure,tag=playing,scores={end=1..}] run function game:stop_early
 # Restarting early in Competitive Mode
 execute if entity @a[gamemode=adventure,tag=playing,scores={restart=1..}] if score $mode settings matches 3 run function game:restart_early
 
