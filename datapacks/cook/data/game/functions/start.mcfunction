@@ -1,4 +1,4 @@
-# Function for the when the game first starts.
+#> game:start Function for the when the game first starts.
 scoreboard players set $game state 1
 
 scoreboard players set $time game 0
@@ -106,11 +106,14 @@ execute if score $mode settings matches 3 run function game:timers/competitive_s
 
 # End early stuff
 scoreboard players reset * end
+scoreboard players reset * restart
 scoreboard players enable @a[gamemode=adventure,tag=playing] end
+execute if score $mode settings matches 3 run scoreboard players enable @a[gamemode=adventure,tag=playing] restart
 scoreboard players reset $no_contest game
 scoreboard players reset $players end
 scoreboard players set $old_players end 1
-tellraw @a[gamemode=adventure,tag=playing] ["",{"text":"\n\n- ","color":"gray"},{"translate":"If you'd like to end the game early, click this message or run","color":"green","clickEvent":{"action":"run_command","value":"/trigger end"}},{"text":"\n- ","color":"gray"},{"text":"/trigger end","clickEvent":{"action":"run_command","value":"/trigger end"},"color":"dark_green","underlined":true},{"text":"\n\n"}]
+execute unless score $mode settings matches 3 run tellraw @a[gamemode=adventure,tag=playing] ["",{"text":"\n\n- ","color":"gray"},{"translate":"If you'd like to end the game early, click this message or run","color":"green","clickEvent":{"action":"run_command","value":"/trigger end"}},{"text":"\n- ","color":"gray"},{"text":"/trigger end","clickEvent":{"action":"run_command","value":"/trigger end"},"color":"dark_green","underlined":true},{"text":"\n\n"}]
+execute if score $mode settings matches 3 run tellraw @a[gamemode=adventure,tag=playing] ["",{"text":"\n- ","color":"gray"},{"translate":"To immediately restart the game, click this message or run","color":"green","clickEvent":{"action":"run_command","value":"/trigger restart"}},{"text":"\n- ","color":"gray"},{"text":"/trigger restart","clickEvent":{"action":"run_command","value":"/trigger restart"},"color":"dark_green","underlined":true},{"text":"\n\n- ","color":"gray"},{"translate":"If you'd like to end the game early, click this message or run","color":"gray","clickEvent":{"action":"run_command","value":"/trigger end"}},{"text":"\n- ","color":"gray"},{"text":"/trigger end","clickEvent":{"action":"run_command","value":"/trigger end"},"color":"dark_gray","underlined":true},{"text":"\n"}]
 
 # Setting the button
 setblock -9 17 -10 air

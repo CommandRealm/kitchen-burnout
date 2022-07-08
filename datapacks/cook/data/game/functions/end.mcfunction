@@ -1,4 +1,4 @@
-# Ending function of the game
+#> game:end Ending function of the game. Some things here are also used in game:restart_early
 
 # Resets ingredient boxes back to their normal blocks
 execute as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
@@ -87,4 +87,5 @@ xp set @a 0 levels
 xp set @a 0 points
 
 scoreboard players reset * end
+scoreboard players reset * restart
 scoreboard players reset $no_contest game

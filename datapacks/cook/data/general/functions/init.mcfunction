@@ -83,8 +83,9 @@ scoreboard objectives add settings dummy
 # Main objective just for game operations.
 scoreboard objectives add game dummy
 
-# For ending the game early
+# For ending/restarting the game early
 scoreboard objectives add end trigger
+scoreboard objectives add restart trigger
 
 # Customer stuff
 scoreboard objectives add customers dummy
