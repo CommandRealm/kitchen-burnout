@@ -1,8 +1,5 @@
 # The function that runs whenever the game is running.
 
-# Constant increase
-scoreboard players add $const game_ticks 1
-
 # Effects
 effect give @a[tag=playing] resistance 1 255 true
 
@@ -80,8 +77,9 @@ execute as @e[type=armor_stand,tag=bell] at @s run function game:stations/bell/m
 execute if entity @a[scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
 
 # Globals
-scoreboard players operation $flashing game_ticks = $timer game_ticks
+scoreboard players add $const game_ticks 1
+scoreboard players operation $flashing game_ticks = $const game_ticks
 scoreboard players operation $flashing game_ticks %= $8 number
-scoreboard players operation $even game_ticks = $timer game_ticks
+scoreboard players operation $even game_ticks = $const game_ticks
 scoreboard players operation $even game_ticks %= $2 number
 scoreboard players reset @a[scores={is_sneaking=1..}] is_sneaking

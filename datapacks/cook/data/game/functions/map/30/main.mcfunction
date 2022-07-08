@@ -1,5 +1,5 @@
 # Drop snow based on time left
-scoreboard players operation $snowfall game_ticks = $timer game_ticks
+scoreboard players operation $snowfall game_ticks = $const game_ticks
 scoreboard players operation $snowfall game_ticks %= $200 number
 execute if score $snowfall game_ticks matches 40 run function game:map/30/snow
 
