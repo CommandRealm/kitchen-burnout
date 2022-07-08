@@ -234,9 +234,9 @@ scoreboard objectives add thin_ice dummy
 
 # Ingredient specific teams
 function general:ingredient_teams
-scoreboard objectives add sidebar_disp dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":true},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":true},{"text":"]","color":"white","bold":true}]
-scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":true},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":false},{"text":"]","color":"white","bold":true}]
-scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"[","color":"white","bold":true},{"translate":"DO","color":"blue","bold":false},{"translate":" or ","color":"dark_purple","bold":false},{"translate":"DINE","color":"red","bold":true},{"text":"]","color":"white","bold":true}]
+scoreboard objectives add sidebar_disp dummy ["",{"text":"🔥 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" 🔥","color":"red"}]
+scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Spoons","color":"blue","bold":true},{"text":" 🔥","color":"gold"}]
+scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Forks","color":"red","bold":true},{"text":" 🔥","color":"gold"}]
 
 scoreboard objectives add random dummy
 

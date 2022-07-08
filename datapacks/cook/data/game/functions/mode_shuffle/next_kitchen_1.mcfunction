@@ -6,7 +6,7 @@ execute if score $food_type_1 shuffle matches 3 run scoreboard players operation
 execute if score $food_type_1 shuffle matches 4 run scoreboard players operation $map_1 shuffle = $ice_cream_map shuffle
 
 # Announce
-execute unless score $food_type_1 shuffle matches 5.. run tellraw @a ["",{"text":"\u2010 ","color":"gold","bold":true},{"translate":"The Doers are in kitchen ","color":"gray"},{"score":{"name":"$food_type_1","objective":"shuffle"},"color":"red","bold":false},{"text":"/4","color":"red","bold":false}]
+execute unless score $food_type_1 shuffle matches 5.. run tellraw @a ["",{"text":"\u2010 ","color":"gold","bold":true},{"translate":"The Spoons are in kitchen ","color":"gray"},{"score":{"name":"$food_type_1","objective":"shuffle"},"color":"red","bold":false},{"text":"/4","color":"red","bold":false}]
 execute unless score $food_type_1 shuffle matches 5.. run playsound minecraft:entity.blaze.hurt master @a ~ ~ ~ 100000000 .5 1
 
 # Reset ingredient
