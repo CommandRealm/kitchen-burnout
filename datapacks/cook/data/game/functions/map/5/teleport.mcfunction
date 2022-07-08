@@ -1,5 +1,6 @@
 # TNT launchpads burger kitchen
 tp @a[tag=playing,tag=!team_2,scores={map=5}] 1100 72 1990 -15 5
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=5}] 1100 72 1990 -15
 execute at @a[tag=playing,tag=!team_2,scores={map=5}] run forceload add ~100 ~100 ~-100 ~-50
 
 scoreboard players set @a[tag=playing,tag=!team_2,scores={map=5}] tnt_launchpad 0

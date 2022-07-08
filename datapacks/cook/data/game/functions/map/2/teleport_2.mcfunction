@@ -1,5 +1,6 @@
 # Simple Parkour burger map
 tp @a[tag=playing,tag=team_2,scores={map=2}] 10993 68 6 150 -5
+spawnpoint @a[tag=playing,tag=team_2,scores={map=2}] 10993 68 6 150
 execute at @a[tag=playing,tag=team_2,scores={map=2}] run forceload add ~150 ~150 ~-150 ~-150
 
 # Station placer

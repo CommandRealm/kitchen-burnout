@@ -1,5 +1,6 @@
 # Riptide sewer sushi map
 tp @a[tag=playing,tag=!team_2,scores={map=13}] 2010 85 979 125 -15
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=13}] 2010 85 979 125
 execute at @a[tag=playing,tag=!team_2,scores={map=13}] run forceload add ~50 ~50 ~-150 ~-50
 
 # Station placer

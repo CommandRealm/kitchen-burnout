@@ -1,5 +1,6 @@
 # Sliding platforms taco map
 tp @a[tag=playing,tag=!team_2,scores={map=18}] 2654 74 996 -90 5
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=18}] 2654 74 996 -90
 execute at @a[tag=playing,tag=!team_2,scores={map=18}] run forceload add ~180 ~180 ~-180 ~-180
 
 # Station placer

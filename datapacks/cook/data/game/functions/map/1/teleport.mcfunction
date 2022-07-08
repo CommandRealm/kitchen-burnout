@@ -1,5 +1,6 @@
 # Default burger map
 tp @a[tag=playing,tag=!team_2,scores={map=1}] 991 62 505 225 5
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=1}] 991 62 505 225
 execute at @a[tag=playing,tag=!team_2,scores={map=1}] run forceload add ~50 ~50 ~-50 ~-50
 
 # Station placer

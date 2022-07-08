@@ -1,5 +1,6 @@
 # Taco Factory map
 tp @a[tag=playing,tag=!team_2,scores={map=8}] 1450 111 1002 -45 5
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=8}] 1450 111 1002 -45
 execute at @a[tag=playing,tag=!team_2,scores={map=8}] run forceload add ~50 ~70 ~-10 ~-10
 
 # Station placer

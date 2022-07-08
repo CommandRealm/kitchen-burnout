@@ -1,5 +1,6 @@
 # Slime jump sushi map
 tp @a[tag=playing,tag=!team_2,scores={map=30}] 3488 69 1985 -90 -5
+spawnpoint @a[tag=playing,tag=!team_2,scores={map=30}] 3488 69 1985 -90
 execute at @a[tag=playing,tag=!team_2,scores={map=30}] run forceload add ~50 ~50 ~-50 ~-50
 
 # Station placer

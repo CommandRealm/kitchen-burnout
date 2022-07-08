@@ -1,5 +1,6 @@
 # Honey Wall Burger Kitchen for team 2
 tp @a[tag=playing,tag=team_2,scores={map=17}] 12503.0 67 521.0 90 2
+spawnpoint @a[tag=playing,tag=team_2,scores={map=17}] 12503 67 521 90
 execute at @a[tag=playing,tag=team_2,scores={map=17}] run forceload add ~50 ~50 ~-50 ~-50
 
 # Station placer
