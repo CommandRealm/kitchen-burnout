@@ -21,4 +21,4 @@ execute if entity @s[tag=has_srart] run scoreboard players set @s prefix 9
 execute if entity @s[tag=has_manager] run scoreboard players set @s prefix 6
 execute if entity @s[tag=has_lead] run scoreboard players set @s prefix 7
 
-scoreboard players set @s cosmetics_hat 0
+scoreboard players set @s hat 1

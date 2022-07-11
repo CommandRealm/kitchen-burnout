@@ -182,9 +182,18 @@ scoreboard objectives add click_cooldown dummy
 # Reset after main functions
 scoreboard objectives add is_sneaking minecraft.custom:sneak_time
 
+# Enderchest stuff
+scoreboard objectives add open_echest minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add click_ec dummy
+scoreboard objectives add screen dummy
+
+scoreboard objectives add hat dummy
+scoreboard objectives add knife dummy
+scoreboard objectives add bell_sound dummy
+
+# Game stuff
 scoreboard objectives add calculate dummy
 scoreboard objectives add ingredient dummy
-scoreboard objectives add cosmetics_hat dummy
 
 scoreboard objectives add station dummy
 scoreboard objectives add station_timer dummy
