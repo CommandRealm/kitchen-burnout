@@ -2,8 +2,9 @@
 
 # Removing an item on the board and having no item
 execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=cutting_board_item] HandItems[0].id if score @s ingredient matches 0 run function game:stations/take_item
-# Removing an item on the board and having an item
-execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=cutting_board_item] HandItems[0].id unless score @s ingredient matches 0 run function game:stations/cutting_board/invalid_action
+
+# Swapping an item on the stovetop
+execute if data entity @e[type=armor_stand,sort=nearest,limit=1,tag=cutting_board_item] HandItems[0].id unless score @s ingredient matches 0 run function game:stations/cutting_board/swap_item
 
 # Placing an item on the board
 execute if entity @s[tag=!temporary_tag] unless data entity @e[type=armor_stand,sort=nearest,limit=1,tag=cutting_board_item] HandItems[0].id unless score @s ingredient matches 0 run function game:stations/cutting_board/place_item

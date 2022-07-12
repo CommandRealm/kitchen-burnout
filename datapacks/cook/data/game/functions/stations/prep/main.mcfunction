@@ -5,7 +5,8 @@
 #execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=compact_display,tag=!final_compact_position,distance=..10] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display 0
 
 # Bring ingredients closer together
-execute if score @s prep_display matches -1 as @e[type=armor_stand,distance=..100,tag=final_position,tag=prep_slot] at @s run function game:stations/prep/tp/compact_close
+execute if score @s prep_display matches -1 as @e[type=armor_stand,tag=prep_slot,tag=!final_position,tag=going_up,distance=..100] at @s run function game:stations/prep/tp/main
+execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=prep_slot,tag=going_up,distance=..100] as @e[type=armor_stand,distance=..100,tag=final_position,tag=prep_slot] at @s run function game:stations/prep/tp/compact_close
 
 # Reset score so display can be opened again
 #execute if score @s prep_display matches -1 unless entity @e[type=armor_stand,tag=compact_display,tag=!final_compact_position,distance=..10] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display 0

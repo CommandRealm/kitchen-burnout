@@ -21,3 +21,4 @@ execute positioned ~-0.3125 ~0.77 ~-0.375 if entity @e[type=marker,tag=prep_disp
 
 # Remove tag
 tag @s remove temporary_tag
+tag @s remove going_up
