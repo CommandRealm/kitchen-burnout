@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace"
+            },
+        "title": {
+            "text": "World Tour",
+            "color": "red",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Visit every kitchen.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:milestone_shuffle",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

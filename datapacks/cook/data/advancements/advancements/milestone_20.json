@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint_and_steel"
+            },
+        "title": {
+            "text": "You're on fire.",
+            "color": "red",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Burn 20 items.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:milestone_trash",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

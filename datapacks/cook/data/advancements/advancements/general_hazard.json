@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:campfire"
+            },
+        "title": {
+            "text": "Hazardous Mechanics",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Lose an item to a kitchen's hazard.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:general_poison",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

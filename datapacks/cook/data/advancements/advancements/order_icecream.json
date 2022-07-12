@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pointed_dripstone",
+            "nbt":"{CustomModelData:1}"
+            },
+        "title": {
+            "text": "Cool!",
+            "color": "yellow",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete an ice cream order.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_taco",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

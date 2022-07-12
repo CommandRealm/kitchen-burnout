@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass"
+            },
+        "title": {
+            "text": "Self Checkout",
+            "color": "red",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Pick up 300 ingredients from ingredient boxes.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:milestone_every",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

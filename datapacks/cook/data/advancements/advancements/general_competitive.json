@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword"
+            },
+        "title": {
+            "text": "Simmering Competition!",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Play a game of competitive mode.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:general_classic",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

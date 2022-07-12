@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tnt"
+            },
+        "title": {
+            "text": "Spoons vs Forks",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Play a game of versus mode.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:general_competitive",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

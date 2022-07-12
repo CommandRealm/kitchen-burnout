@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spruce_pressure_plate"
+            },
+        "title": {
+            "text": "On the Chopping Block",
+            "color": "red",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Cut 125 items.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:milestone_boxes",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

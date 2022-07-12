@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chest"
+            },
+        "title": {
+            "text": "Complicated Cooking",
+            "color": "yellow",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete an order with six or more items.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_icecream",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -36,6 +36,7 @@ tag FalconReign add has_help
 tag oPando add has_help
 tag rgbyy add has_help
 tag EdLePug add has_help
+tag Calverin add has_help
 
 
 # Builders
@@ -56,6 +57,7 @@ tag Connop add has_bld
 
 # Programmers
 tag FalconReign add has_prg
+tag CheckMC add has_prg
 
 # Artists
 tag Pinkessi add has_art

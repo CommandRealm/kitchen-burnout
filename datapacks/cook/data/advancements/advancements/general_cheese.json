@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:yellow_dye",
+            "nbt":"{CustomModelData:1}"
+            },
+        "title": {
+            "text": "Who moved my cheese?!",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Put cheese in an order.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:general_green",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

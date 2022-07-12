@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:furnace"
+    },
+    "title": [
+      {
+        "color": "white",
+        "bold": true,
+        "text": "Kitchen"
+      },
+      {
+        "color": "red",
+        "bold": true,
+        "text": " Burnout"
+      }
+    ],
+    "description": {
+      "text": "By the ",
+      "color": "white",
+      "underlined": false,
+      "extra": [
+        {
+          "text": "Command",
+          "color": "aqua",
+          "bold": true,
+          "extra": [
+            {
+              "text": " Realm",
+              "color": "dark_aqua",
+              "extra": [
+                {
+                  "text": " Team",
+                  "bold": false,
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "background": "minecraft:textures/block/white_concrete.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

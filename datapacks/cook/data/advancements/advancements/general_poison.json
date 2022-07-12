@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pufferfish"
+            },
+        "title": {
+            "text": "Inedible",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Hold a poisonous pufferfish.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:general_burn",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

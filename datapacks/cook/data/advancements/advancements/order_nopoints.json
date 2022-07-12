@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:barrier"
+            },
+        "title": {
+            "text": "Bad Service",
+            "color": "yellow",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete an order of each type of food.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_bonus",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

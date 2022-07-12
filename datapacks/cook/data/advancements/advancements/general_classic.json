@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass_block"
+            },
+        "title": {
+            "text": "Classic!",
+            "color": "green",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Play a game of classic mode.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:root",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

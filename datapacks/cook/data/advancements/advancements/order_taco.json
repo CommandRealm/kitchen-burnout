@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:birch_pressure_plate",
+            "nbt":"{CustomModelData:1}"
+            },
+        "title": {
+            "text": "Taco time!",
+            "color": "yellow",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete a taco order.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_sushi",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

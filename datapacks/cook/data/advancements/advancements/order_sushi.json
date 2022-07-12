@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:orange_dye",
+            "nbt":"{CustomModelData:1}"
+            },
+        "title": {
+            "text": "Something's fishy...",
+            "color": "yellow",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete a sushi order.",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_burger",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
