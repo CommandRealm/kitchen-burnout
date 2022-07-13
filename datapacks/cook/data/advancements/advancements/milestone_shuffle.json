@@ -4,7 +4,7 @@
             "item": "minecraft:totem_of_undying"
             },
         "title": {
-            "text": "Successful Shuffle",
+            "text": "Full House",
             "color": "red",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Win a game of Shuffle.",
+            "text": "Win a game of Shuffle",
             "color": "#fac84b",
             "bold": false
         }

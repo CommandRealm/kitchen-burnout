@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Go inside the airplane in the lobby.",
+            "text": "Enter the airplane in the lobby",
             "color": "#fac84b",
             "bold": false
         }

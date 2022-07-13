@@ -4,7 +4,7 @@
             "item": "minecraft:minecart"
             },
         "title": {
-            "text": "Fueled up!",
+            "text": "Fueled Up!",
             "color": "blue",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Vist the gas station in the lobby.",
+            "text": "Visit the gas station in the lobby",
             "color": "#fac84b",
             "bold": false
         }

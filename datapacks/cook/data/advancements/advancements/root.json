@@ -5,14 +5,14 @@
     },
     "title": [
       {
-        "color": "white",
+        "color": "gray",
         "bold": true,
         "text": "Kitchen"
       },
       {
-        "color": "red",
+        "color": "gold",
         "bold": true,
-        "text": " Burnout"
+        "text": " BURNOUT"
       }
     ],
     "description": {

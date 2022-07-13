@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Trash 50 items.",
+            "text": "Trash 50 ingredients",
             "color": "#fac84b",
             "bold": false
         }

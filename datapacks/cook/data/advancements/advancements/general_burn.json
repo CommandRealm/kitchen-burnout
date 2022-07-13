@@ -4,7 +4,7 @@
             "item": "minecraft:magma_block"
             },
         "title": {
-            "text": "Do you smell that?",
+            "text": "Can You Smell That?",
             "color": "green",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Burn an item.",
+            "text": "Burn an item",
             "color": "#fac84b",
             "bold": false
         }

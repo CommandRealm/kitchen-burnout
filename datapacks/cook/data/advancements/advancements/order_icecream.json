@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Complete an ice cream order.",
+            "text": "Complete an Ice Cream order",
             "color": "#fac84b",
             "bold": false
         }

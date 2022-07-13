@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "View the tutorial in the lobby.",
+            "text": "View the tutorial in the lobby",
             "color": "#fac84b",
             "bold": false
         }

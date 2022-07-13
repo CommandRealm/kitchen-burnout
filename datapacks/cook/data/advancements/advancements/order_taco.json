@@ -2,10 +2,10 @@
     "display": {
         "icon": {
             "item": "minecraft:birch_pressure_plate",
-            "nbt":"{CustomModelData:1}"
+            "nbt":"{CustomModelData:2}"
             },
         "title": {
-            "text": "Taco time!",
+            "text": "Taco Time!",
             "color": "yellow",
             "bold": true
         },
@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Complete a taco order.",
+            "text": "Complete a Taco order",
             "color": "#fac84b",
             "bold": false
         }
