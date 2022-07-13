@@ -1,8 +1,6 @@
 #> game:restart_early Quick Restart for Competitive Mode
 # Resets ingredient boxes back to their normal blocks
-execute as @e[type=marker,tag=ingredient_box] at @s run function game:map/reset_boxes
-execute as @e[type=marker,tag=fish_spawner] at @s run function game:map/reset_boxes
-execute as @e[type=marker,tag=customer_line] at @s run function game:map/reset_boxes
+execute as @e[type=marker,tag=reset_boxes] at @s run function game:map/reset_boxes
 
 # Reset ice blocks
 execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295

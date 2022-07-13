@@ -1,6 +1,6 @@
 # Called to create the alt lettuce head ingredient box.
-summon marker ~ ~ ~ {Tags:["ingredient_box","die_between_games","raycast_target"]}
 setblock ~ ~ ~ glass
+summon marker ~ ~ ~ {Tags:["ingredient_box","reset_boxes","die_between_games","raycast_target","-3"]}
 scoreboard players set @e[type=marker,sort=nearest,limit=1,tag=ingredient_box,distance=..1] ingredient -3
 # Glowing outline
 execute if score $glowing settings matches 1 run summon magma_cube ~ ~ ~ {Silent:1b,Invulnerable:1b,Glowing:1b,NoAI:1b,Size:1,Tags:["die_between_games","ingredient_box_outline","lettuce_shreds"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}]}
