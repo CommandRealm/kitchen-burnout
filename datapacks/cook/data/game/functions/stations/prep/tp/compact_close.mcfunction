@@ -17,6 +17,7 @@ execute as @s[tag=!primary_ingredient,tag=final_position] at @s positioned ~-0.3
 
 # Finalize position
 execute if entity @e[type=armor_stand,tag=prep_slot,tag=primary_ingredient,tag=!temporary_tag,distance=..0.04] run tag @s remove final_position
+execute if entity @e[type=armor_stand,tag=prep_slot,tag=base_ingredient,tag=!temporary_tag,distance=..0.20] run tag @s[scores={ingredient=39..51}] remove final_position
 execute positioned ~-0.3125 ~0.77 ~-0.375 if entity @e[type=marker,tag=prep_display,distance=..0.04] positioned ~0.3125 ~-0.77 ~0.375 run tag @s remove final_position
 
 # Remove tag
