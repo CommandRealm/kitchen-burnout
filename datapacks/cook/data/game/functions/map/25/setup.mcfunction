@@ -14,4 +14,4 @@ summon marker 3003 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_
 summon marker 3002 70 2004 {Tags: ["ceiling_laser", "ceiling_laser_inner", "die_between_games"]}
 
 # Ingredients
-function game:map/25/ingredient_setup
+schedule function game:map/25/ingredient_setup 1s

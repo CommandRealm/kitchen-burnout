@@ -1,3 +1,3 @@
 function game:map/9/teleport
 
-function game:map/9/ingredient_setup
+schedule function game:map/9/ingredient_setup 1s

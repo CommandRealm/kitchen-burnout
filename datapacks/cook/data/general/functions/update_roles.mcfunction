@@ -17,7 +17,11 @@ tag KirbyThings add has_test
 tag JaxF2008 add has_test
 tag Blaxter22 add has_test
 tag Noglow add has_test
-
+tag oNudli add has_test
+tag TripOnaka add has_test
+tag GameGenMC add has_test
+tag 3letters_ add has_test
+tag Quackleb add has_test
 
 # Helpers
 tag Bagee add has_help

@@ -1,7 +1,7 @@
 # Summon
 execute store result score @s fish_count if entity @e[type=pufferfish,distance=..30]
-execute unless score @s fish_count matches 3.. unless score $glowing settings matches 1 run summon pufferfish ~ ~ ~ {Tags:["die_between_games","can_catch","cut_pufferfish"],PuffState:2,ActiveEffects:[{Id:11b,Amplifier:127b,Duration:1000000,ShowParticles:0b}]}
-execute unless score @s fish_count matches 3.. if score $glowing settings matches 1 run summon pufferfish ~ ~ ~ {Tags:["die_between_games","can_catch","cut_pufferfish"],PuffState:2,Glowing:1b,ActiveEffects:[{Id:11b,Amplifier:127b,Duration:1000000,ShowParticles:0b}]}
+execute unless score @s fish_count matches 3.. unless score $glowing settings matches 1 run summon pufferfish ~ ~ ~ {Tags:["die_between_games","can_catch","cut_pufferfish"],PuffState:2,ActiveEffects:[{Id:11,Amplifier:127b,Duration:1000000,ShowParticles:0b}]}
+execute unless score @s fish_count matches 3.. if score $glowing settings matches 1 run summon pufferfish ~ ~ ~ {Tags:["die_between_games","can_catch","cut_pufferfish"],PuffState:2,Glowing:1b,ActiveEffects:[{Id:11,Amplifier:127b,Duration:1000000,ShowParticles:0b}]}
 
 # Proper glowing colors
 execute unless score @s fish_count matches 3.. run team join no_collision @e[type=pufferfish,tag=can_catch,limit=1,sort=nearest,distance=..500]

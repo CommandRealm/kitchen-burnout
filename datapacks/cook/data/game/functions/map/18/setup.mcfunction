@@ -1,4 +1,4 @@
 function game:map/18/teleport
 
 # Ingredients
-function game:map/18/ingredient_setup
+schedule function game:map/18/ingredient_setup 1s
