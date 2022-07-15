@@ -1,10 +1,13 @@
-# Runs whenever someone is in the lobby
+#> lobby:main Runs whenever someone is in the lobby
 
 # Run pregame function when appropriate
 execute if score $game state matches 0 run function lobby:pregame/main
 
 # Ender chest stuff
 execute as @a[gamemode=adventure,tag=!playing,x=0,y=66,z=0,distance=..500] at @s run function lobby:chest_menu/main
+
+# Advancements
+execute as @a[gamemode=adventure,tag=!playing,x=0,y=66,z=0,distance=..500] at @s run function lobby:check_advancements
 
 # Hats
 execute as @a[gamemode=adventure,tag=!playing,x=0,y=66,z=0,distance=..500,scores={hat=1..9}] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
