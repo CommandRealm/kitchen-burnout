@@ -27,7 +27,7 @@ scoreboard players set $food_type_2 shuffle 1
 # Assign map values
 scoreboard players operation $map_1 shuffle = $burgers_map shuffle
 scoreboard players operation $map_2 shuffle = $burgers_map shuffle
-scoreboard players operation @a[tag=playing] map = $burgers_map shuffle
+scoreboard players operation @a[tag=playing,tag=!tutorial] map = $burgers_map shuffle
 
 # Reset winning stuff
 scoreboard players set $winner shuffle 0

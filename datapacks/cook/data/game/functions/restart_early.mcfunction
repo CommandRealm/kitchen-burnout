@@ -21,7 +21,7 @@ worldborder set 59999968
 
 # Scores 'n stuff
 effect clear @a[gamemode=adventure,tag=playing]
-clear @a[gamemode=adventure,tag=playing]
+clear @a[gamemode=adventure,tag=playing,tag=!tutorial]
 scoreboard players reset @a[gamemode=adventure,tag=playing] freeze_time
 scoreboard players reset * end
 scoreboard players reset * restart

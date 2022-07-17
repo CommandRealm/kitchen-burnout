@@ -22,9 +22,9 @@ execute if score $mode settings matches 2 unless score $winner shuffle matches 0
 execute if score $mode settings matches 3 unless score $winner shuffle matches 0 run function game:mode_competitive/ending
 
 # Ending the game early
-execute if entity @a[gamemode=adventure,tag=playing,scores={end=1..}] run function game:stop_early
+execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={end=1..}] run function game:stop_early
 # Restarting early in Competitive Mode
-execute if entity @a[gamemode=adventure,tag=playing,scores={restart=1..}] if score $mode settings matches 3 run function game:restart_early
+execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={restart=1..}] if score $mode settings matches 3 run function game:restart_early
 
 # Customers
 execute as @e[type=marker,tag=customer_line] at @s run function game:serve/customers/main
@@ -60,10 +60,10 @@ execute if entity @e[type=marker,scores={station=1..}] run function game:station
 execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function game:stations/ingredient_boxes
 
 # Recipe actionbar display
-execute if score $mode settings matches 0 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
-execute if score $mode settings matches 3 as @a[tag=playing] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
-execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]"}]
-execute if score $mode settings matches 1..2 as @a[tag=playing,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]"}]
+execute if score $mode settings matches 0 as @a[tag=playing,tag=!tutorial] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
+execute if score $mode settings matches 3 as @a[tag=playing,tag=!tutorial] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient]"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!tutorial,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2]"}]
+execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!tutorial,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2]"}]
 
 # Prep Station
 execute as @e[type=marker,tag=prep_display] at @s run function game:stations/prep/main
