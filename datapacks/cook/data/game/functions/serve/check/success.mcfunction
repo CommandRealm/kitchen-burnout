@@ -1,9 +1,8 @@
 # Score
-## Classic Mode
-execute if score $mode settings matches 0 run function game:serve/score/classic
-execute if score $mode settings matches 3 run function game:serve/score/competitive
-execute if score $mode settings matches 1..2 unless entity @s[tag=2] run function game:serve/score/versus_1
-execute if score $mode settings matches 1..2 if entity @s[tag=2] run function game:serve/score/versus_2
+execute unless entity @s[tag=tutorial] if score $mode settings matches 0 run function game:serve/score/classic
+execute unless entity @s[tag=tutorial] if score $mode settings matches 3 run function game:serve/score/competitive
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 unless entity @s[tag=2] run function game:serve/score/versus_1
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 if entity @s[tag=2] run function game:serve/score/versus_2
 scoreboard players reset @s recipe_timer
 
 # Reset marker
@@ -72,13 +71,14 @@ execute as @e[type=marker,tag=customer_line,sort=nearest,limit=1,distance=..100]
 setblock ~ ~ ~ air
 
 # Next order
-execute if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
-execute if score $mode settings matches 3 run data remove storage orders_1 Recipe[0]
-execute if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
-execute if score $mode settings matches 1..2 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]
-execute if score $mode settings matches 0 run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1] recipe_cooldown 25
-execute if score $mode settings matches 3 unless score $finished_recipes game matches 4.. run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1] recipe_cooldown 25
-execute if score $mode settings matches 1 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=!team_2] recipe_cooldown 25
-execute if score $mode settings matches 1 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=team_2] recipe_cooldown 25
-execute if score $mode settings matches 2 unless score $food_type_1 shuffle matches 4.. unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=!team_2] recipe_cooldown 25
-execute if score $mode settings matches 2 unless score $food_type_2 shuffle matches 4.. if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=team_2] recipe_cooldown 25
+execute if entity @s[tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
+execute unless entity @s[tag=tutorial] if score $mode settings matches 3 run data remove storage orders_1 Recipe[0]
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 if entity @s[tag=2] run data remove storage orders_2 Recipe[0]
+execute unless entity @s[tag=tutorial] if score $mode settings matches 0 run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 3 unless score $finished_recipes game matches 4.. run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1 unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=!team_2] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1 if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=team_2] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 2 unless score $food_type_1 shuffle matches 4.. unless entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=!team_2] recipe_cooldown 25
+execute unless entity @s[tag=tutorial] if score $mode settings matches 2 unless score $food_type_2 shuffle matches 4.. if entity @s[tag=2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,tag=team_2] recipe_cooldown 25

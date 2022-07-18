@@ -1,4 +1,4 @@
-# Called to create the bread ingredient box.
+# Called to create the hamburger bun ingredient box.
 setblock ~ ~ ~ glass
 summon marker ~ ~ ~ {Tags:["ingredient_box","reset_boxes","die_between_games","raycast_target","1"]}
 scoreboard players set @e[type=marker,sort=nearest,limit=1,tag=ingredient_box,distance=..1] ingredient 1

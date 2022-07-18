@@ -261,4 +261,8 @@ team add recipe_filled
 team modify recipe_filled color green
 team modify recipe_filled collisionRule never
 
+# Tutorial setup
+function lobby:tutorial/setup
+
+# Forceload that chunk, I believe in you!
 forceload add 0 0
