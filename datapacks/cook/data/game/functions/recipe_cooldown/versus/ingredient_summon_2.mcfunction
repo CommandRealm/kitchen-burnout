@@ -43,12 +43,12 @@ execute if data storage current_order_2 Recipe{Ingredients:["Shredded Lettuce"]}
 
 execute if data storage current_order_2 Recipe{Ingredients:["cone"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","cone"],CustomName:'["",{"translate":"Cone"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["bowl"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","bowl"],CustomName:'["",{"translate":"Bowl"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["vanilla"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","vanilla"],CustomName:'["",{"translate":"Vanilla"},{"text":" ❄"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["chocolate"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","chocolate"],CustomName:'["",{"translate":"Chocolate"},{"text":" ❄"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["strawberry"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","strawberry"],CustomName:'["",{"translate":"Strawberry"},{"text":" ❄"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["cookies"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","cookies"],CustomName:'["",{"translate":"Cookies \'n Cream"},{"text":" ❄"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["mint"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","mint"],CustomName:'["",{"translate":"Mint"},{"text":" ❄"}]'}
-execute if data storage current_order_2 Recipe{Ingredients:["mango"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","mango"],CustomName:'["",{"translate":"Mango"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["vanilla"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","vanilla"],CustomName:'["",{"translate":"Vanilla"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["chocolate"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","chocolate"],CustomName:'["",{"translate":"Chocolate"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["strawberry"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","strawberry"],CustomName:'["",{"translate":"Strawberry"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["cookies"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","cookies"],CustomName:'["",{"translate":"Cookies \'n Cream"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["mint"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","mint"],CustomName:'["",{"translate":"Mint"},{"text":" ❄"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["mango"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","mango"],CustomName:'["",{"translate":"Mango"},{"text":" ❄"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["sprinkles"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","sprinkles"],CustomName:'["",{"translate":"Sprinkles"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["chips"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","chips"],CustomName:'["",{"translate":"Chocolate Chips"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["cherry"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","cherry"],CustomName:'["",{"translate":"Cherry"}]'}
