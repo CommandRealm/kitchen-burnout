@@ -1,4 +1,4 @@
-# Slime jump sushi map
+# Snow falling ice cream map
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=30}] 3488 69 1985 -90 -5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=30}] 3488 69 1985 -90
 execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=30}] run forceload add ~50 ~50 ~-50 ~-50

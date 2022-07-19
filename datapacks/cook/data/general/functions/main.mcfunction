@@ -15,6 +15,8 @@ execute if score $game state matches 1 run function game:main
 # Lobby function
 execute if entity @a[x=0,y=66,z=0,distance=..500] run function lobby:main
 
+# Give entities that should be invisible invisibility
+effect give @e[tag=invisible] invisibility 1000000 255 true
 
 # Saturation
 effect give @a saturation 2 255 true
