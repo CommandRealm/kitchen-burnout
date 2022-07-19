@@ -1,7 +1,7 @@
 # Riptide fishing sushi map
-tp @a[tag=playing,tag=!team_2,scores={map=12}] 1971 88 653 90 5
-spawnpoint @a[tag=playing,tag=!team_2,scores={map=12}] 1971 88 653 90
-execute at @a[tag=playing,tag=!team_2,scores={map=12}] run forceload add ~150 ~150 ~-150 ~-150
+tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=12}] 1971 88 653 90 5
+spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=12}] 1971 88 653 90
+execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=12}] run forceload add ~150 ~150 ~-150 ~-150
 
 advancement revoke @a only game:player_hit_trident
 

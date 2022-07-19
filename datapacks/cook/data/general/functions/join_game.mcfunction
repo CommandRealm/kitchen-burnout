@@ -12,6 +12,8 @@ scoreboard players set @s ready 1
 
 # Remove tags
 tag @s remove playing
+tag @s remove in_pipe
+tag @s remove team_2
 
 # effect
 effect give @s instant_health 1 5 true
