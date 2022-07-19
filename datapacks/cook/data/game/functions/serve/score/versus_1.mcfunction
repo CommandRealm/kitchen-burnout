@@ -1,4 +1,4 @@
-# Scoring for Classic Mode
+# Scoring for Versus Mode
 scoreboard players add $finished_recipes_1 game 1
 ## Add base points
 #scoreboard players add $score game 3

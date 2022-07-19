@@ -1,8 +1,10 @@
 # Score
 execute unless entity @s[tag=tutorial] if score $mode settings matches 0 run function game:serve/score/classic
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1 unless entity @s[tag=2] run function game:serve/score/versus_1
+execute unless entity @s[tag=tutorial] if score $mode settings matches 1 if entity @s[tag=2] run function game:serve/score/versus_2
+execute unless entity @s[tag=tutorial] if score $mode settings matches 2 unless entity @s[tag=2] run scoreboard players add $finished_recipes_1 game 1
+execute unless entity @s[tag=tutorial] if score $mode settings matches 2 if entity @s[tag=2] run scoreboard players add $finished_recipes_2 game 1
 execute unless entity @s[tag=tutorial] if score $mode settings matches 3 run function game:serve/score/competitive
-execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 unless entity @s[tag=2] run function game:serve/score/versus_1
-execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 if entity @s[tag=2] run function game:serve/score/versus_2
 scoreboard players reset @s recipe_timer
 
 # Reset marker
