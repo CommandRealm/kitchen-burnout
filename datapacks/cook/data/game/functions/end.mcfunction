@@ -1,7 +1,7 @@
 #> game:end Ending function of the game. Some things here are also used in game:restart_early
 
 # Resets ingredient boxes back to their normal blocks
-execute as @e[type=marker,tag=reset_boxes] at @s run function game:map/reset_boxes
+execute as @e[type=marker,tag=reset_boxes,tag=!tutorial] at @s run function game:map/reset_boxes
 
 # Reset ice blocks
 execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
