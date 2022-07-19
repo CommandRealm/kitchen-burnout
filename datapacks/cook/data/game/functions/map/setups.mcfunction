@@ -1,3 +1,4 @@
+# Setup for Team 1/No Teams
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=1},tag=!team_2] run function game:map/1/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=2},tag=!team_2] run function game:map/2/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=5},tag=!team_2] run function game:map/5/setup

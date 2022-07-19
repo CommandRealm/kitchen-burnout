@@ -18,7 +18,8 @@ advancement grant @a[gamemode=adventure,tag=playing,scores={map=9},distance=..50
 particle poof ~ ~ ~ 0 0 0 1 0 force
 playsound entity.arrow.hit_player master @a[gamemode=adventure,tag=playing,scores={map=9},distance=..500,tag=archery_owner,sort=nearest,limit=1] ~ ~ ~ 2 0.6
 # Bullseye!
-execute as @e[type=glow_item_frame,tag=ingredient_box_outline,distance=..2] at @s if block ~ ~1 ~-1 target[power=15] run scoreboard players set $bullseye archery 1
+execute as @e[type=glow_item_frame,tag=ingredient_box_outline,distance=..2,tag=!2] at @s if block ~ ~1 ~-1 target[power=15] run scoreboard players set $bullseye archery 1
+execute as @e[type=glow_item_frame,tag=ingredient_box_outline,distance=..2,tag=2] at @s if block ~ ~1 ~-1 target[power=15] run scoreboard players set $bullseye_2 archery 1
 execute as @e[type=glow_item_frame,tag=ingredient_box_outline,distance=..2] at @s if block ~ ~1 ~-1 target[power=15] run particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force
 
 # Ending

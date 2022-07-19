@@ -3,6 +3,7 @@
 execute if score $map settings matches 1 run scoreboard players set $output random 0
 execute if score $map settings matches 2 run scoreboard players set $output random 1
 execute if score $map settings matches 5 run scoreboard players set $output random 5
+execute if score $map settings matches 9 run scoreboard players set $output random 2
 execute if score $map settings matches 17 run scoreboard players set $output random 4
 ## Sushi
 execute if score $map settings matches 11 run scoreboard players set $output random 0
@@ -29,6 +30,7 @@ function game:mode_competitive/add_recipe
 execute if score $map settings matches 1 run scoreboard players set $output random 4
 execute if score $map settings matches 2 run scoreboard players set $output random 6
 execute if score $map settings matches 5 run scoreboard players set $output random 0
+execute if score $map settings matches 9 run scoreboard players set $output random 7
 execute if score $map settings matches 17 run scoreboard players set $output random 2
 ## Sushi
 execute if score $map settings matches 11 run scoreboard players set $output random 5
@@ -55,6 +57,7 @@ function game:mode_competitive/add_recipe
 execute if score $map settings matches 1 run scoreboard players set $output random 7
 execute if score $map settings matches 2 run scoreboard players set $output random 3
 execute if score $map settings matches 5 run scoreboard players set $output random 2
+execute if score $map settings matches 9 run scoreboard players set $output random 4
 execute if score $map settings matches 17 run scoreboard players set $output random 5
 ## Sushi
 execute if score $map settings matches 11 run scoreboard players set $output random 9

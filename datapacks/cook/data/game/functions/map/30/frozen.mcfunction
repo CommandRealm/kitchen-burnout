@@ -13,7 +13,7 @@ execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limi
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[0] double 0.01 run scoreboard players get @s freeze_pos_x
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[1] double 1 run scoreboard players get @s freeze_pos_y
 execute store result entity @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1] Pos[2] double 0.01 run scoreboard players get @s freeze_pos_z
-tp @s @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1]
+tp @s @e[type=marker,tag=lock_frozen_pos,sort=nearest,limit=1,distance=..500]
 kill @e[type=marker,tag=lock_frozen_pos,limit=1,sort=nearest,distance=..5]
 
 # End

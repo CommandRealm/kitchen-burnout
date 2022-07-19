@@ -1,0 +1,11 @@
+execute positioned 11996 63 4 run function game:map/ingredient_sets/sushi
+execute positioned 11996 63 -2 run function game:map/ingredient_sets/sushi
+execute positioned 12002 63 -4 run function game:map/ingredient_sets/sushi
+execute positioned 12004 64 4 run function game:map/ingredient_sets/sushi
+execute positioned 11996 64 -4 run function game:map/ingredient_sets/sushi
+execute positioned 12000 64 0 run function game:map/ingredient_sets/sushi
+execute positioned 12000 64 -1 run function game:map/ingredient_sets/sushi
+execute positioned 11986 60 -1 run function game:map/ingredient_sets/sushi
+execute positioned 12001 61 -12 run function game:map/ingredient_sets/sushi
+execute positioned 12014 60 11 run function game:map/ingredient_sets/sushi
+execute positioned 11999 63 0 run function game:map/ingredient_sets/sushi

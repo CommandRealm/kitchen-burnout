@@ -1,4 +1,4 @@
-execute as @a[tag=playing,gamemode=adventure,scores={map=30}] at @s run function game:map/30/snow_local
+execute as @a[tag=playing,gamemode=adventure,scores={map=30},tag=!team_2] at @s run function game:map/30/snow_local
 
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
@@ -389,5 +389,5 @@ summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 summon snowball 3473 105 1993 {Tags:["die_between_games","snowfall"]}
 
-spreadplayers 3473 1993 1 40 false @e[type=snowball,tag=snowfall,tag=!snowfall_local]
+spreadplayers 3473 1993 1 40 false @e[type=snowball,tag=snowfall,tag=!2,tag=!snowfall_local]
 execute as @e[type=snowball,tag=snowfall] at @s run tp @s ~ 120 ~
