@@ -70,7 +70,7 @@ execute as @e[type=armor_stand,tag=bell,tag=bell_pressed,limit=1,sort=nearest,di
 
 # Get rid of the closest customer
 execute as @e[type=marker,tag=customer_line,sort=nearest,limit=1,distance=..100] at @s run function game:serve/customers/remove_first
-setblock ~ ~ ~ air
+execute unless entity @a[gamemode=adventure,tag=playing,scores={map=22},distance=..500] run setblock ~ ~ ~ air
 
 # Next order
 execute if entity @s[tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1] recipe_cooldown 25
