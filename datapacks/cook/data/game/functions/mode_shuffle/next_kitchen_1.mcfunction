@@ -20,7 +20,7 @@ execute unless score $food_type_1 shuffle matches 5.. as @e[type=marker,tag=rese
 execute unless score $food_type_1 shuffle matches 5.. as @e[type=marker,tag=thin_ice,distance=..500] at @s run scoreboard players set @s thin_ice 295
 execute unless score $food_type_1 shuffle matches 5.. as @e[type=marker,tag=thin_ice,distance=..500] at @s run function game:map/29/ice
 execute unless score $food_type_1 shuffle matches 5.. run tag @e[tag=die_between_games,distance=..500] add die_1
-execute unless score $food_type_1 shuffle matches 5.. run tp @e[tag=die_between_games,tag=die_1] 0 0 0
+execute unless score $food_type_1 shuffle matches 5.. run tp @e[tag=die_between_games,tag=die_1] 0 -10000 0
 execute unless score $food_type_1 shuffle matches 5.. run kill @e[tag=die_between_games,tag=die_1]
 
 # Setup the next map
