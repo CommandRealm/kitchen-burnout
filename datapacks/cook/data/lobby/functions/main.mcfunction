@@ -28,4 +28,4 @@ tag @a[gamemode=adventure,tag=tutorial,x=4,y=65,z=-6,dx=18,dy=5,dz=7] add playin
 execute if entity @a[gamemode=adventure,tag=tutorial,x=0,y=66,z=0,distance=..500] run function lobby:tutorial/main
 
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2.5 ~
-effect give @e[type=slime,x=0,y=66,z=0,distance=..1000] invisibility 100 255 true
+#effect give @e[type=slime,x=0,y=66,z=0,distance=..1000] invisibility 100 255 true

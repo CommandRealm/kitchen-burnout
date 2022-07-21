@@ -41,6 +41,9 @@ execute if entity @a[tag=playing,scores={click_cooldown=1..},limit=1] run functi
 # When we right-click
 execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={click_cooldown=1..}] run function game:click/start 
 
+# Ingredient box setup
+execute as @e[type=marker,tag=ingredient_setup] at @s unless block ~ ~ ~ air run function game:map/ingredient_setup/main
+
 ### CAN OPTIMIZE BY LIMITING NBT CHECKS TO ONLY HAPPEN WHEN IN RANGE OF ENTITIES
 # Prep display activator
 execute as @a[tag=playing,gamemode=adventure] at @s if entity @e[type=marker,tag=prep_display,distance=..10] run function game:stations/prep/activate

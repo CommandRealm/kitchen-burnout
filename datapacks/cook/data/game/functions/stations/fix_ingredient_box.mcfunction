@@ -68,11 +68,11 @@ kill @e[type=magma_cube,tag=ingredient_box_outline,limit=1,sort=nearest,distance
 kill @e[type=armor_stand,sort=nearest,limit=1,tag=ingredient_box_display,distance=..3]
 kill @s
 # Place the new box using the food category we set earlier
-execute if score $temp_food_type ingredient matches 1 run function game:map/ingredient_sets/burger
-execute if score $temp_food_type ingredient matches 2 run function game:map/ingredient_sets/sushi
-execute if score $temp_food_type ingredient matches 3 run function game:map/ingredient_sets/pizza
-execute if score $temp_food_type ingredient matches 4 run function game:map/ingredient_sets/tacos
-execute if score $temp_food_type ingredient matches 5 run function game:map/ingredient_sets/ice_cream
+execute if score $temp_food_type ingredient matches 1 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","burger_set"]}
+execute if score $temp_food_type ingredient matches 2 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
+execute if score $temp_food_type ingredient matches 3 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","pizza_set"]}
+execute if score $temp_food_type ingredient matches 4 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute if score $temp_food_type ingredient matches 5 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 
 # Give proper colors
 execute if entity @a[gamemode=adventure,tag=playing,tag=!team_2,distance=..500] if data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=hamburger_bun,distance=..500] add recipe_ingredient
@@ -149,7 +149,7 @@ execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] i
 execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] if data storage current_order_2 Recipe{Ingredients:["cherry"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cherry,distance=..500] add recipe_ingredient
 execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] if data storage current_order_2 Recipe{Ingredients:["cookie_dough"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cookie_dough,distance=..500] add recipe_ingredient
 
-team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient,tag=!tutorial,distance=..1]
+team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient,tag=!tutorial,distance=..500]
 
 # Reset score so scoreboard isn't cluttered
 scoreboard players reset $temp_food_type ingredient

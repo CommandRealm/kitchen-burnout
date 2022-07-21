@@ -1,23 +1,23 @@
 # Prep
-execute positioned 3476 72 1 run function game:map/ingredient_sets/ice_cream
-execute positioned 3476 72 0 run function game:map/ingredient_sets/ice_cream
+execute positioned 3476 72 1 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3476 72 0 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 # Holders
-execute positioned 3475 72 -19 run function game:map/ingredient_sets/ice_cream
-execute positioned 3477 72 -19 run function game:map/ingredient_sets/ice_cream
+execute positioned 3475 72 -19 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3477 72 -19 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 # Toppings
-execute positioned 3478 72 18 run function game:map/ingredient_sets/ice_cream
-execute positioned 3477 72 20 run function game:map/ingredient_sets/ice_cream
-execute positioned 3475 72 20 run function game:map/ingredient_sets/ice_cream
-execute positioned 3474 72 18 run function game:map/ingredient_sets/ice_cream
+execute positioned 3478 72 18 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3477 72 20 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3475 72 20 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3474 72 18 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 # Ice Cream
-execute positioned 3459 72 2 run function game:map/ingredient_sets/ice_cream
-execute positioned 3457 72 3 run function game:map/ingredient_sets/ice_cream
-execute positioned 3456 72 1 run function game:map/ingredient_sets/ice_cream
-execute positioned 3456 72 -1 run function game:map/ingredient_sets/ice_cream
-execute positioned 3457 72 -3 run function game:map/ingredient_sets/ice_cream
-execute positioned 3459 72 -2 run function game:map/ingredient_sets/ice_cream
+execute positioned 3459 72 2 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3457 72 3 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3456 72 1 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3456 72 -1 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3457 72 -3 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
+execute positioned 3459 72 -2 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 # Customers
-execute positioned 3477 71 0 run function game:map/ingredient_sets/ice_cream
+execute positioned 3477 71 0 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 
 # Inner Buttons
 execute positioned 3480 72 0 run function game:map/26/button/new
