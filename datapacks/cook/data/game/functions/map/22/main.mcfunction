@@ -1,3 +1,7 @@
+# Setup platforms
+execute as @e[type=marker,tag=platform_setup,tag=normal_platform] at @s if block ~ ~ ~ air run function game:map/22/normal_platform
+execute as @e[type=marker,tag=platform_setup,tag=short_platform] at @s if block ~ ~ ~ air run function game:map/22/short_platform
+
 # Sliding platforms
 execute as @e[type=marker,tag=sliding_platform] at @s run function game:map/22/slide
 # Fix platforms not being able to move at the start
