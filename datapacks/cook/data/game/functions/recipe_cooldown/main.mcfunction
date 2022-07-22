@@ -1,5 +1,8 @@
+# Decrement cooldown if area is loaded for server
+execute as @a[scores={recipe_cooldown=1..}] at @s unless block ~ -63 ~ potted_white_tulip run scoreboard players remove @s recipe_cooldown 1
+# Reset cooldown if lagging
+execute as @a[scores={recipe_cooldown=0}] at @s unless entity @e[type=marker,tag=prep_display,sort=nearest,limit=1,distance=..500] run scoreboard players set @s recipe_cooldown 60
 # Giving players a new recipe
-scoreboard players remove @a[scores={recipe_cooldown=1..}] recipe_cooldown 1
 execute as @a[scores={recipe_cooldown=0}] at @s run tag @e[type=marker,tag=prep_display,sort=nearest,limit=1,distance=..500] add place_plate
 execute as @a[scores={recipe_cooldown=0},tag=tutorial] at @s run function lobby:tutorial/order
 execute as @a[scores={recipe_cooldown=0},tag=tutorial] at @s run function lobby:tutorial/ingredients
