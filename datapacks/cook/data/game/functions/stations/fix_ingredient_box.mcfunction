@@ -149,6 +149,7 @@ execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] i
 execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] if data storage current_order_2 Recipe{Ingredients:["cherry"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cherry,distance=..500] add recipe_ingredient
 execute if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] if data storage current_order_2 Recipe{Ingredients:["cookie_dough"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cookie_dough,distance=..500] add recipe_ingredient
 
+# Color ingredient names
 team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient,tag=!tutorial,distance=..500]
 
 # Reset score so scoreboard isn't cluttered

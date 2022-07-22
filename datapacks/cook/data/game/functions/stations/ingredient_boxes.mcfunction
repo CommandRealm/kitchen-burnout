@@ -6,5 +6,6 @@ execute as @e[type=armor_stand,tag=ingredient_box_display,tag=bob] at @s if scor
 execute as @e[type=armor_stand,tag=ingredient_box_display,tag=bob] at @s if score $bob game_ticks matches 20..39 run tp @s ~ ~.005 ~ ~3 ~
 
 # Fixing ingredient boxes not getting ingredients
-execute as @e[type=armor_stand,tag=ingredient_box_display] at @s positioned ~ ~1.65 ~ as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s unless score @s ingredient matches -2147483648.. run function game:stations/fix_ingredient_box 
-execute as @e[type=armor_stand,tag=ingredient_box_display] unless data entity @s ArmorItems[3].id at @s positioned ~ ~1.65 ~ as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s run function game:stations/fix_ingredient_box 
+execute as @e[type=armor_stand,tag=ingredient_box_display] at @s positioned ~ ~1.65 ~ as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s unless score @s ingredient matches -2147483648.. run function game:stations/fix_ingredient_box
+execute as @e[type=armor_stand,tag=ingredient_box_display] unless data entity @s ArmorItems[3].id at @s positioned ~ ~1.65 ~ as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s run function game:stations/fix_ingredient_box
+execute as @e[type=magma_cube,tag=ingredient_box_outline,team=!recipe_filled,team=!recipe_missing,team=!no_collision] at @s as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s run function game:stations/fix_ingredient_box

@@ -30,3 +30,6 @@ execute if score @s prep_display matches 0 run tag @s remove start_closing
 
 # Fix score not being assigned because of lag
 execute unless score @s prep_display matches -2147483648..2147483647 run scoreboard players set @s prep_display 0
+
+# Place down plate
+execute if entity @s[tag=place_plate] unless block ~ ~ ~ oak_pressure_plate[powered=true] run function game:stations/prep/plate
