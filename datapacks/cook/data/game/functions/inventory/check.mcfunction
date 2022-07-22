@@ -72,6 +72,7 @@ execute as @a[tag=playing,tag=!tutorial,scores={map=9}] at @s unless entity @s[n
 execute as @a[tag=playing,tag=!tutorial,scores={map=9}] at @s unless entity @s[nbt={Inventory:[{Slot:35b,id:"minecraft:arrow"}]}] run function game:inventory/get_arrow
 execute as @a[tag=playing,tag=!tutorial,scores={map=12}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_warping_trident
 execute as @a[tag=playing,tag=!tutorial,scores={map=13}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:trident"}]}] run function game:inventory/get_riptide_trident
+execute as @a[tag=playing,tag=!tutorial,scores={map=15}] at @s unless entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra"}]}] run function game:inventory/get_elytra
 execute as @a[tag=playing,tag=!tutorial,scores={map=17}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:fishing_rod"}]}] run function game:inventory/get_fishing_rod
 
 # Update ingredient icon for classic mode
