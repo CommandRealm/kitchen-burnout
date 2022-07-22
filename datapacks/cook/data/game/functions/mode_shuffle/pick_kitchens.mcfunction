@@ -7,12 +7,13 @@ execute if score $output random matches 2 run scoreboard players set $burgers_ma
 execute if score $output random matches 3 run scoreboard players set $burgers_map shuffle 9
 execute if score $output random matches 4 run scoreboard players set $burgers_map shuffle 17
 
-scoreboard players set $mod random 4
+scoreboard players set $mod random 5
 function random:random
 execute if score $output random matches 0 run scoreboard players set $sushi_map shuffle 11
 execute if score $output random matches 1 run scoreboard players set $sushi_map shuffle 12
 execute if score $output random matches 2 run scoreboard players set $sushi_map shuffle 13
 execute if score $output random matches 3 run scoreboard players set $sushi_map shuffle 14
+execute if score $output random matches 4 run scoreboard players set $sushi_map shuffle 15
 
 scoreboard players set $mod random 3
 function random:random

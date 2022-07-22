@@ -10,6 +10,7 @@ execute if score $map settings matches 11 run scoreboard players set $output ran
 execute if score $map settings matches 12 run scoreboard players set $output random 6
 execute if score $map settings matches 13 run scoreboard players set $output random 7
 execute if score $map settings matches 14 run scoreboard players set $output random 3
+execute if score $map settings matches 15 run scoreboard players set $output random 1
 ## Tacos
 execute if score $map settings matches 8 run scoreboard players set $output random 0
 execute if score $map settings matches 18 run scoreboard players set $output random 27
@@ -37,6 +38,7 @@ execute if score $map settings matches 11 run scoreboard players set $output ran
 execute if score $map settings matches 12 run scoreboard players set $output random 1
 execute if score $map settings matches 13 run scoreboard players set $output random 4
 execute if score $map settings matches 14 run scoreboard players set $output random 8
+execute if score $map settings matches 15 run scoreboard players set $output random 7
 ## Tacos
 execute if score $map settings matches 8 run scoreboard players set $output random 4
 execute if score $map settings matches 18 run scoreboard players set $output random 12
@@ -64,6 +66,7 @@ execute if score $map settings matches 11 run scoreboard players set $output ran
 execute if score $map settings matches 12 run scoreboard players set $output random 4
 execute if score $map settings matches 13 run scoreboard players set $output random 2
 execute if score $map settings matches 14 run scoreboard players set $output random 0
+execute if score $map settings matches 15 run scoreboard players set $output random 8
 ## Tacos
 execute if score $map settings matches 8 run scoreboard players set $output random 26
 execute if score $map settings matches 18 run scoreboard players set $output random 3
