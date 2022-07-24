@@ -13,5 +13,6 @@ tag @e[type=#game:fish,tag=can_catch,tag=!tutorial] remove recipe_ingredient
 team join no_collision @e[type=#game:fish,tag=can_catch,tag=!tutorial]
 kill @e[type=marker,tag=recipe_name,tag=!tutorial]
 function game:recipe_cooldown/classic/ingredient_summon
+function game:stations/recipe_ingredient
 # Add ingredient markers to missing team
 team join recipe_missing @e[type=#game:recipe_ingredient,tag=recipe_ingredient,tag=!tutorial]
