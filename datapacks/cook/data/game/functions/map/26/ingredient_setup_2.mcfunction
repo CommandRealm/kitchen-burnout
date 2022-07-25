@@ -20,7 +20,7 @@ execute positioned 13459 72 -2 run summon marker ~ ~ ~ {Tags:["die_between_games
 execute positioned 13477 71 0 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 
 # Inner Buttons
-execute positioned 13480 72 0 run function game:map/26/button/new
+#execute positioned 13480 72 0 run function game:map/26/button/new
 execute positioned 13472 72 0 run function game:map/26/button/new
 execute positioned 13476 72 -4 run function game:map/26/button/new
 execute positioned 13476 72 4 run function game:map/26/button/new
