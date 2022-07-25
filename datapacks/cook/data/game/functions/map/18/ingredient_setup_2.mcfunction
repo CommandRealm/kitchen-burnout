@@ -8,22 +8,14 @@ execute positioned 12672 70 968 run summon marker ~ ~ ~ {Tags:["die_between_game
 execute positioned 12688 70 996 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 
 # Cutting Boards
-execute positioned 12661 66 1010 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12660 66 1010 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12652 66 1010 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12651 66 1010 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12642 66 1001 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12642 66 1000 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12642 66 992 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12642 66 991 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12651 66 982 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12652 66 982 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12660 66 982 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12661 66 982 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12670 66 991 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12670 66 992 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12670 66 1000 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
-execute positioned 12670 66 1001 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12663 75 1001 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12661 75 1003 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12651 75 1003 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12649 75 1001 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12649 75 991 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12651 75 989 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12661 75 989 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
+execute positioned 12663 75 991 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 
 # Stovetops
 execute positioned 12663 75 989 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}

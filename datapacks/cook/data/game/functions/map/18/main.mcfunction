@@ -1,5 +1,5 @@
 # Rotating platforms
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @s ~ ~ ~ ~0.75 ~
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @s ~ ~ ~ ~0.7 ~
 execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_n,limit=1,sort=nearest,distance=..500] ^ ^ ^-24
 execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_e,limit=1,sort=nearest,distance=..500] ^24 ^ ^
 execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_s,limit=1,sort=nearest,distance=..500] ^ ^ ^24
