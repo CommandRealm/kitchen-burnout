@@ -1,9 +1,9 @@
 # Rotating platforms
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @s ~ ~ ~ ~.5 ~
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_n] ^ ^ ^-24
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_e] ^24 ^ ^
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_s] ^ ^ ^24
-execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_w] ^-24 ^ ^
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @s ~ ~ ~ ~0.75 ~
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_n,limit=1,sort=nearest,distance=..500] ^ ^ ^-24
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_e,limit=1,sort=nearest,distance=..500] ^24 ^ ^
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_s,limit=1,sort=nearest,distance=..500] ^ ^ ^24
+execute as @e[type=marker,tag=platform_rotator] at @s run tp @e[type=marker,tag=rotating_platform,tag=platform_w,limit=1,sort=nearest,distance=..500] ^-24 ^ ^
 execute as @e[type=marker,tag=rotating_platform] at @s run function game:map/18/move_platforms
 
 # Falling
