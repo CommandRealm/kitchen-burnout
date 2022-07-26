@@ -2,6 +2,7 @@
     "Kitchen": "Kitchen",
     "BURNOUT": "BURNOUT",
 
+    
     "Cosmetics": "Cosmetics",
     "Tutorial": "Tutorial",
     "Statistics": "Statistics",
@@ -18,6 +19,7 @@
     "LEGENDARY": "LEGENDARY",
     "Locked": "Locked",
     "Selected": "Selected",
+
     "Default": "Default",
     "Dark": "Dark",
     "Burger": "Burger",
@@ -29,6 +31,25 @@
     "Top Hat": "Top Hat",
     "Gene": "Gene",
     " Plush": " Plush",
+
+    "Wooden": "Wooden",
+    "Stone": "Stone",
+    "Gold": "Gold",
+    "Diamond": "Diamond",
+    "Copper": "Copper",
+    "Emerald": "Emerald",
+    "Glass": "Glass",
+    "Ice": "Ice",
+    "Lapis": "Lapis",
+    "Netherite": "Netherite",
+    "Pink": "Pink",
+    "Quartz": "Quartz",
+    "Redstone": "Redstone",
+    "Katana": "Katana",
+    "Pizza": "Pizza",
+    "Scalpel": "Scalpel",
+    "Swiss": "Swiss",
+
 
     "The game has ended.": "The game has ended.",
     "Time's Up!": "Time's Up!",

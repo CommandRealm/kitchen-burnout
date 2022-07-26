@@ -20,10 +20,10 @@ item replace entity @s[scores={hat=3}] enderchest.5 with stone_button{CustomMode
 ###Epics
 
 ##Locked
-item replace entity @s enderchest.10 with iron_bars{CustomModelData:6,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Burger","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
-item replace entity @s enderchest.11 with iron_bars{CustomModelData:7,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Sushi","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
-item replace entity @s enderchest.12 with iron_bars{CustomModelData:8,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Taco","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
-item replace entity @s enderchest.13 with iron_bars{CustomModelData:9,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Ice Cream","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.10 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Burger","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.11 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Sushi","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.12 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Taco","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.13 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Ice Cream","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
 
 ##Unlocked
 item replace entity @s[tag=hat_4] enderchest.10 with stone_button{CustomModelData:6,clickable:1,cosmetic:1,HideFlags:63,display:{Name:'[{"translate":"Burger","bold":true,"italic":false,"color":"dark_purple"}]',Lore:['[{"translate":"Epic","italic":false,"color":"light_purple"}]']}}
@@ -40,9 +40,9 @@ item replace entity @s[scores={hat=7}] enderchest.13 with stone_button{CustomMod
 ###Legendaries
 
 ##Locked
-item replace entity @s enderchest.14 with iron_bars{CustomModelData:10,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Cake","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
-item replace entity @s enderchest.15 with iron_bars{CustomModelData:5,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Guacamole","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
-item replace entity @s enderchest.16 with iron_bars{CustomModelData:3,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Top Hat","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.14 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Cake","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.15 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Guacamole","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
+item replace entity @s enderchest.16 with iron_bars{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Top Hat","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Locked","color":"red","italic":false}]']}}
 
 ##Unlocked
 item replace entity @s[tag=hat_8] enderchest.14 with stone_button{CustomModelData:10,clickable:1,cosmetic:1,HideFlags:63,display:{Name:'[{"translate":"Cake","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]']}}

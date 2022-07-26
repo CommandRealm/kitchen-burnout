@@ -4,7 +4,26 @@
     "layer0": "minecraft:item/iron_sword"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1},"model": "item/knife"}
-               ]
+    {"predicate": {"custom_model_data": 1},"model": "item/knife/default"},
+    {"predicate": {"custom_model_data": 2},"model": "item/knife/common/wood"},
+    {"predicate": {"custom_model_data": 3},"model": "item/knife/common/stone"},
+    {"predicate": {"custom_model_data": 4},"model": "item/knife/common/gold"},
+    {"predicate": {"custom_model_data": 5},"model": "item/knife/common/diamond"},
+    {"predicate": {"custom_model_data": 6},"model": "item/knife/epic/copper"},
+    {"predicate": {"custom_model_data": 7},"model": "item/knife/epic/lapis"},
+    {"predicate": {"custom_model_data": 8},"model": "item/knife/epic/redstone"},
+    {"predicate": {"custom_model_data": 9},"model": "item/knife/epic/emerald"},
+    {"predicate": {"custom_model_data": 10},"model": "item/knife/epic/quartz"},
+    {"predicate": {"custom_model_data": 11},"model": "item/knife/epic/ice"},
+    {"predicate": {"custom_model_data": 12},"model": "item/knife/epic/pink"},
+    {"predicate": {"custom_model_data": 13},"model": "item/knife/epic/netherite"},
+    {"predicate": {"custom_model_data": 14},"model": "item/knife/epic/glass"},
+    {"predicate": {"custom_model_data": 15},"model": "item/knife/legendary/swiss"},
+    {"predicate": {"custom_model_data": 16},"model": "item/knife/legendary/scalpel"},
+    {"predicate": {"custom_model_data": 17},"model": "item/knife/legendary/katana"},
+    {"predicate": {"custom_model_data": 18},"model": "item/knife/legendary/pizza"},
+    {"predicate": {"custom_model_data": 19},"model": "item/iron_axe"},
+    {"predicate": {"custom_model_data": 20},"model": "item/knife/scoop"}
+  ]
 }
 
