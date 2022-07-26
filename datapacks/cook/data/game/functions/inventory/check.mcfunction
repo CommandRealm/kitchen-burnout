@@ -63,7 +63,7 @@ execute as @a[tag=playing,tag=!tutorial,scores={ingredient=50}] unless entity @s
 execute as @a[tag=playing,tag=!tutorial,scores={ingredient=51}] unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:packed_ice"}]}] run function game:inventory/get_frozen_food
 
 # Hat
-execute as @a[tag=playing,tag=!tutorial,scores={hat=1..9}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
+execute as @a[tag=playing,tag=!tutorial,scores={hat=1..}] unless entity @s[nbt={Inventory:[{Slot:101b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
 
 # Map specific
 execute as @a[tag=playing,tag=!tutorial,scores={map=11..15}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:cobweb"}]}] run function game:inventory/get_fishing_net
