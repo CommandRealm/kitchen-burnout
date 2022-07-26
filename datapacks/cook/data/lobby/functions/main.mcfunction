@@ -10,7 +10,7 @@ execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500] at @s run function
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500] at @s run function lobby:check_advancements
 
 # Hats
-execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500,scores={hat=1..9}] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
+execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500,scores={hat=1..}] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
 
 # Tutorial (should probably give tag if anywhere in restauraunt with overlapping checks)
 execute as @a[gamemode=adventure,tag=playing,tag=tutorial,x=0,y=66,z=0,distance=..500] at @s unless entity @s[x=4,y=65,z=-6,dx=18,dy=5,dz=7] run tag @s remove playing

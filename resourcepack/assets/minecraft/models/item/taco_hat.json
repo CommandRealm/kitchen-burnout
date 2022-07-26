@@ -69,7 +69,7 @@
 	],
 	"display": {
 		"gui": {
-			"rotation": [19.25, -38.5, 0],
+			"rotation": [19.25, 38.5, 0],
 			"translation": [0, 4, 0]
 		},
 		"head": {

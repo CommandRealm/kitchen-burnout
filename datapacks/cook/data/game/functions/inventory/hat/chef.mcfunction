@@ -8,5 +8,7 @@ item replace entity @s[scores={hat=4}] armor.head with stone_button{CustomModelD
 item replace entity @s[scores={hat=5}] armor.head with stone_button{CustomModelData: 7, display: {Name: '[{"translate":"Sushi","color":"white","italic":false},{"translate":" Hat","color":"gray"}]'}}
 item replace entity @s[scores={hat=6}] armor.head with stone_button{CustomModelData: 8, display: {Name: '[{"translate":"Taco","color":"white","italic":false},{"translate":" Hat","color":"gray"}]'}}
 item replace entity @s[scores={hat=7}] armor.head with stone_button{CustomModelData: 9, display: {Name: '[{"translate":"Ice Cream","color":"white","italic":false},{"translate":" Hat","color":"gray"}]'}}
-item replace entity @s[scores={hat=8}] armor.head with stone_button{CustomModelData: 3, display: {Name: '[{"translate":"Top Hat","color":"gray","italic":false}]'}}
-item replace entity @s[scores={hat=9}] armor.head with stone_button{CustomModelData: 5, display: {Name: '[{"translate":"Guacamole","color":"green","italic":false},{"translate":" Hat","color":"yellow"}]'}}
+item replace entity @s[scores={hat=8}] armor.head with stone_button{CustomModelData: 10, display: {Name: '[{"translate":"Cake","color":"green","italic":false},{"translate":" Hat","color":"yellow"}]'}}
+item replace entity @s[scores={hat=9}] armor.head with stone_button{CustomModelData: 5, display: {Name: '[{"translate":"Guac","color":"green","italic":false},{"translate":" Hat","color":"yellow"}]'}}
+item replace entity @s[scores={hat=10}] armor.head with stone_button{CustomModelData: 3, display: {Name: '[{"translate":"Top Hat","color":"gray","italic":false}]'}}
+item replace entity @s[scores={hat=11}] armor.head with stone_button{CustomModelData: 11, display: {Name: '[{"translate":"Gene","color":"blue","italic":false},{"translate":" Plush","color":"aqua"},{"translate":" Hat","color":"yellow"}]'}}

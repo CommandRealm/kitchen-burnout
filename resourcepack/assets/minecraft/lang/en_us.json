@@ -1,6 +1,7 @@
 {
     "Kitchen": "Kitchen",
     "BURNOUT": "BURNOUT",
+
     "Cosmetics": "Cosmetics",
     "Tutorial": "Tutorial",
     "Statistics": "Statistics",
@@ -23,7 +24,11 @@
     "Sushi": "Sushi",
     "Taco": "Taco",
     "Ice Cream": "Ice Cream",
+    "Cake": "Cake",
+    "Guac": "Guac",
     "Top Hat": "Top Hat",
+    "Gene": "Gene",
+    " Plush": " Plush",
 
     "The game has ended.": "The game has ended.",
     "Time's Up!": "Time's Up!",
