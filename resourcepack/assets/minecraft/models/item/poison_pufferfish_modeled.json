@@ -1,8 +1,8 @@
 {
     "credit": "Made by Pinkessi",
 	"textures": {
-		"0": "minecraft:item/poison_pufferfish",
-		"particle": "minecraft:item/poison_pufferfish"
+		"0": "minecraft:custom/poison_pufferfish",
+		"particle": "minecraft:custom/poison_pufferfish"
     },
     "elements": [
         {

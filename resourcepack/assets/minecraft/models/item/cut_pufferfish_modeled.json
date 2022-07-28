@@ -1,8 +1,8 @@
 {
 	"credit": "Made by Pinkessi",
 	"textures": {
-		"0": "minecraft:item/cut_pufferfish",
-		"particle": "minecraft:item/cut_pufferfish"
+		"0": "minecraft:custom/cut_pufferfish",
+		"particle": "minecraft:custom/cut_pufferfish"
 	},
 	"elements": [
 		{
