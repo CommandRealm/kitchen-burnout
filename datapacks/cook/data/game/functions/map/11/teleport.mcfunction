@@ -1,5 +1,5 @@
 # Default sushi map
-tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=11}] 2023.0 63.0 -3.0 90 5
+tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=11}] 2023.0 64.0 -3.0 90 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=11}] 2023 63 -3 90
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=11}] run forceload add ~50 ~50 ~-50 ~-50
 
