@@ -11,6 +11,7 @@ execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=14
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=15},tag=!team_2] run function game:map/15/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=17},tag=!team_2] run function game:map/17/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=18},tag=!team_2] run function game:map/18/setup
+execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=19},tag=!team_2] run function game:map/19/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=22},tag=!team_2] run function game:map/22/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=25},tag=!team_2] run function game:map/25/setup
 execute if entity @a[gamemode=adventure,tag=playing,tag=!tutorial,scores={map=26},tag=!team_2] run function game:map/26/setup

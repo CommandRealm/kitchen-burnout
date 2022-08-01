@@ -15,12 +15,13 @@ execute if score $output random matches 2 run scoreboard players set $sushi_map 
 execute if score $output random matches 3 run scoreboard players set $sushi_map shuffle 14
 execute if score $output random matches 4 run scoreboard players set $sushi_map shuffle 15
 
-scoreboard players set $mod random 4
+scoreboard players set $mod random 5
 function random:random
 execute if score $output random matches 0 run scoreboard players set $tacos_map shuffle 8
 execute if score $output random matches 1 run scoreboard players set $tacos_map shuffle 18
-execute if score $output random matches 2 run scoreboard players set $tacos_map shuffle 22
-execute if score $output random matches 3 run scoreboard players set $tacos_map shuffle 25
+execute if score $output random matches 2 run scoreboard players set $tacos_map shuffle 19
+execute if score $output random matches 3 run scoreboard players set $tacos_map shuffle 22
+execute if score $output random matches 4 run scoreboard players set $tacos_map shuffle 25
 
 scoreboard players set $mod random 5
 function random:random
