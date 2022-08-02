@@ -23,30 +23,30 @@ execute if score $display_mode settings matches 3 run summon armor_stand 4 65.82
 
 
 # turning time on/off
-execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -3 66 42 minecraft:quartz_bricks
-execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -3 67 42 minecraft:white_stained_glass
-execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -3 68 42 minecraft:white_carpet
+execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock 8 66 39 minecraft:quartz_bricks
+execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock 8 67 39 minecraft:white_stained_glass
+execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock 8 68 39 minecraft:white_carpet
 
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run scoreboard players remove $time settings 1200
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run function options:time/add_time
 
-execute unless score $display_mode settings matches 2 unless score $display_mode settings matches 0 run fill -3 66 41 -3 68 42 air destroy
+execute unless score $display_mode settings matches 2 unless score $display_mode settings matches 0 run fill 8 66 39 8 68 39 air destroy
 execute unless score $display_mode settings matches 2 unless score $display_mode settings matches 0 run kill @e[type=armor_stand,tag=display_time]
 
 # turning time bonus on/off (should be off for comp and shuffle because it's always on)
-execute unless score $display_mode settings matches 0 unless score $display_mode settings matches 2 unless block -5 66 40 air run fill -5 66 40 -5 67 41 air destroy
+execute unless score $display_mode settings matches 0 unless score $display_mode settings matches 2 unless block 9 66 37 air run fill 9 66 37 9 67 37 air destroy
 execute unless score $display_mode settings matches 0 unless score $display_mode settings matches 2 run kill @e[type=armor_stand,tag=display_bonus]
 
-execute if score $display_mode settings matches 0 if block -5 66 41 air run setblock -5 67 41 white_stained_glass
-execute if score $display_mode settings matches 0 if block -5 66 41 air run setblock -5 68 41 white_carpet
-execute if score $display_mode settings matches 0 if block -5 66 41 air run setblock -5 66 41 quartz_bricks
+execute if score $display_mode settings matches 0 if block 9 66 37 air run setblock 9 67 37 white_stained_glass
+execute if score $display_mode settings matches 0 if block 9 66 37 air run setblock 9 68 37 white_carpet
+execute if score $display_mode settings matches 0 if block 9 66 37 air run setblock 9 66 37 quartz_bricks
 
 execute if score $display_mode settings matches 0 run scoreboard players remove $bonus settings 1
 execute if score $display_mode settings matches 0 run function options:bonus/add_bonus
 
-execute if score $display_mode settings matches 2 if block -5 66 41 air run setblock -5 67 41 white_stained_glass
-execute if score $display_mode settings matches 2 if block -5 66 41 air run setblock -5 68 41 white_carpet
-execute if score $display_mode settings matches 2 if block -5 66 41 air run setblock -5 66 41 quartz_bricks
+execute if score $display_mode settings matches 2 if block 9 66 37 air run setblock 9 67 37 white_stained_glass
+execute if score $display_mode settings matches 2 if block 9 66 37 air run setblock 9 68 37 white_carpet
+execute if score $display_mode settings matches 2 if block 9 66 37 air run setblock 9 66 37 quartz_bricks
 
 execute if score $display_mode settings matches 2 run scoreboard players remove $bonus settings 1
 execute if score $display_mode settings matches 2 run function options:bonus/add_bonus
