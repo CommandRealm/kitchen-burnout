@@ -26,7 +26,8 @@ scoreboard players set @a[scores={ready=1}] readied_players 1
 
 
 # Countdown ending
-execute if score $ready_players pregame matches ..1 run function lobby:pregame/countdown_end
+execute if score $ready_players pregame matches ..1 if score $mode settings matches 1..2 run function lobby:pregame/countdown_end
+execute unless score $ready_players pregame matches 1.. unless score $mode settings matches 1..2 run function lobby:pregame/countdown_end
 
 execute if score $countdown pregame matches 0 run function lobby:pregame/countdown_hit_0
 

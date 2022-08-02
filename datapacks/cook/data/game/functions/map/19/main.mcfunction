@@ -1,6 +1,6 @@
 # New meteor
 scoreboard players operation $meteor game_ticks = $const game_ticks
-scoreboard players operation $meteor game_ticks %= $75 number
+scoreboard players operation $meteor game_ticks %= $40 number
 execute if score $meteor game_ticks matches 0 run scoreboard players set $mod random 2
 execute if score $meteor game_ticks matches 0 run function random:random
 execute if score $meteor game_ticks matches 0 if score $output random matches 0 if entity @a[gamemode=adventure,tag=playing,scores={map=19},tag=!team_2] run function game:map/19/new_meteor
