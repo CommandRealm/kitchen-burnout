@@ -109,6 +109,7 @@ bossbar set game:progress_2 visible false
 
 # Lobby teams
 team add lobby
+team add unlock
 team add test
 team add help
 team add bld
@@ -132,6 +133,7 @@ team modify lead color white
 team modify manager color white
 team modify pc_role color white
 team modify unlock color white
+team modify unlock prefix {"translate":"[SPORK] ","color":"light_purple"}
 team modify test prefix {"translate":"(Tester) ","color":"white"}
 team modify help prefix {"translate":"[Helper] ","color":"gray "}
 team modify bld prefix {"translate":"{Builder} ","color":"blue"}
@@ -147,6 +149,7 @@ team add cr
 team modify cr color white
 team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
 
+team modify unlock collisionRule never
 team modify lobby collisionRule never
 team modify test collisionRule never
 team modify help collisionRule never

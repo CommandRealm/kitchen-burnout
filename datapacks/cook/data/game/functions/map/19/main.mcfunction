@@ -14,4 +14,4 @@ execute as @e[type=marker,tag=danger_zone] at @s run function game:map/19/danger
 
 execute as @a[gamemode=adventure,tag=playing,scores={map=19}] at @s unless data entity @s {Fire:-20s} unless score @s ingredient matches 0 unless score @s ingredient matches 11 run function game:map/19/burn
 # Falling (need to do timer based system)
-execute as @a[gamemode=adventure,tag=playing,scores={map=19}] at @s if entity @s[y=52,dy=7] run function game:map/18/falling
+execute as @a[gamemode=adventure,tag=playing,scores={map=19}] at @s if entity @s[y=52,dy=7] run function game:map/19/falling

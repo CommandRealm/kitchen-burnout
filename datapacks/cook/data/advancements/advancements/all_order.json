@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bell"
+        },
+        "title": {
+            "text": "Exclusive Bell Sound",
+            "color": "dark_aqua",
+            "bold": true
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete this row to unlock",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:order_nopoints",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

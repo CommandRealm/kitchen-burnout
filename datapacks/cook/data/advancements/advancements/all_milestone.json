@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword",
+            "nbt":"{CustomModelData:1}"
+        },
+        "title": {
+            "text": "Exclusive \"Knife\"",
+            "color": "dark_aqua",
+            "bold": true
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete this row to unlock",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:milestone_20",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

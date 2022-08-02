@@ -29,8 +29,6 @@
     "Cake": "Cake",
     "Guac": "Guac",
     "Top Hat": "Top Hat",
-    "Gene": "Gene",
-    " Plush": " Plush",
 
     "Wooden": "Wooden",
     "Stone": "Stone",
@@ -50,6 +48,15 @@
     "Scalpel": "Scalpel",
     "Swiss": "Swiss",
 
+    "Gene": "Gene",
+    " Plush": " Plush",
+    "Ice Cream... Knife?": "Ice Cream... Knife?",
+    "Intense Bell Sound": "Intense Bell Sound",
+    "Lobby Prefix": "Lobby Prefix",
+    "Unlocked by completing all general advancements.": "Unlocked by completing all general advancements.",
+    "Unlocked by completing all \"milestone\" advancements.": "Unlocked by completing all \"milestone\" advancements.",
+    "Unlocked by completing all order-based advancements.": "Unlocked by completing all order-based advancements.",
+    "Unlocked by completing all lobby advancements.": "Unlocked by completing all lobby advancements.",
 
     "The game has ended.": "The game has ended.",
     "Time's Up!": "Time's Up!",
@@ -138,6 +145,7 @@
 
     "[SPOONS]": "[SPOONS] ",
     "[FORKS]": "[FORKS] ",
+    "[SPORK]": "[SPORK]",
     "(Tester) ": "(Tester) ",
     "[Helper] ": "[Helper] ",
     "{Builder} ": "{Builder} ",
