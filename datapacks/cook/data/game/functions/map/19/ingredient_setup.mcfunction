@@ -97,45 +97,6 @@ summon falling_block 2525 35 1500 {BlockState:{Name:"minecraft:light_blue_staine
 summon falling_block 2525 34 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
 summon falling_block 2525 33 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
 summon falling_block 2525 32 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 31 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 30 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 29 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 28 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 27 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 26 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 25 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 24 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 23 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 22 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 21 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 20 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 19 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 18 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 17 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 16 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 15 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 14 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 13 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 12 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 11 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 10 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 9 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 8 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 7 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 6 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 5 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 4 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 3 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 2 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 1 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 0 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -1 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -2 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -3 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -4 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -5 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -6 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
-summon falling_block 2525 -7 1500 {BlockState:{Name:"minecraft:light_blue_stained_glass"},Time:-2147483648,Tags:["die_between_games","fake_stem"],NoGravity:1b,DropItem:false}
 
 # Fix glass
-fill 2538 104 1521 2510 124 1478 glass replace minecraft:structure_void
+fill 2538 104 1521 2510 124 1478 white_stained_glass replace minecraft:structure_void

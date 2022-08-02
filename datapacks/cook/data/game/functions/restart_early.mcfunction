@@ -6,8 +6,8 @@ execute as @e[type=marker,tag=reset_boxes,tag=!tutorial] at @s run function game
 execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
 execute as @e[type=marker,tag=thin_ice] at @s run function game:map/29/ice
 execute as @e[type=marker,tag=danger_zone] at @s run fill ~-2 ~ ~-2 ~2 ~ ~2 air replace fire
-fill 2538 104 1521 2510 124 1478 glass replace minecraft:structure_void
-fill 12538 104 1521 12510 124 1478 glass replace minecraft:structure_void
+fill 2538 104 1521 2510 124 1478 white_stained_glass replace minecraft:structure_void
+fill 12538 104 1521 12510 124 1478 white_stained_glass replace minecraft:structure_void
 
 # Removes all entities that should die between games (most of them)
 tp @e[tag=die_between_games] 0 -10000 0

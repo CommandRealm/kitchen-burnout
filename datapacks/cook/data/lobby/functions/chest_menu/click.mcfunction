@@ -15,7 +15,7 @@ execute if score @s screen matches 0 unless data entity @s EnderItems[{id:"minec
 
 execute if score @s screen matches 0 unless data entity @s EnderItems[{id:"minecraft:command_block"}] run function lobby:chest_menu/start_credits
 
-execute if score @s screen matches 0 unless data entity @s EnderItems[{id:"minecraft:book"}] run function lobby:teleport_to_tutorial
+execute if score @s screen matches 0 unless data entity @s EnderItems[{id:"minecraft:book"}] run function lobby:tutorial/teleport
 
 execute if score @s screen matches 0 unless entity @s[tag=!has_test,tag=!has_help,tag=!has_bld,tag=!has_srbld,tag=!has_prg,tag=!has_srprg,tag=!has_manager,tag=!has_lead,tag=!has_pc,tag=!has_cr,tag=!has_art] unless data entity @s EnderItems[{id:"minecraft:written_book"}] run function lobby:chest_menu/start_titles
 
@@ -63,26 +63,12 @@ execute if score @s screen matches 15 unless data entity @s EnderItems[{id:"mine
 execute if score @s screen matches 15 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_website_credits
 
 ##Unlock screen
-execute if score @s screen matches 18 if entity @s[advancements={advancements:wins-all=true}] unless data entity @s EnderItems[{Slot:2b,id:"minecraft:golden_chestplate"}] run scoreboard players set @s armor 14
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-parkour=true}] unless data entity @s EnderItems[{Slot:3b,id:"minecraft:elytra"}] run scoreboard players set @s armor 15
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-hardcore=true}] unless data entity @s EnderItems[{Slot:4b,id:"minecraft:chainmail_chestplate"}] run scoreboard players set @s armor 16
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-nightmare=true}] unless data entity @s EnderItems[{Slot:5b,id:"minecraft:netherite_chestplate"}] run scoreboard players set @s armor 17
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-titles=true}] unless data entity @s EnderItems[{Slot:6b,id:"minecraft:diamond_chestplate"}] run scoreboard players set @s armor 18
-
-execute if score @s screen matches 18 if entity @s[advancements={advancements:lobby-all=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:oak_sign"}] run scoreboard players set @s prefix 263
-execute if score @s screen matches 18 if entity @s[advancements={advancements:lobby-all=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:oak_sign"}] run function general:rank
-execute if score @s screen matches 18 if entity @s[advancements={advancements:game-all=true}] unless data entity @s EnderItems[{Slot:11b,id:"minecraft:podzol"}] run scoreboard players set @s cosmetics_punch 18
-execute if score @s screen matches 18 if entity @s[advancements={minecraft:completionist/completionist=true}] unless data entity @s EnderItems[{Slot:12b,id:"minecraft:gold_ingot"}] run function lobby:chest_menu/toggle_completionist_particles
-
-execute if score @s screen matches 18 if entity @s[advancements={advancements:upgrade-all=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:name_tag"}] run scoreboard players set @s prefix 264
-execute if score @s screen matches 18 if entity @s[advancements={advancements:upgrade-all=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:name_tag"}] run function general:rank
-
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-journal=true}] unless data entity @s EnderItems[{Slot:15b,id:"minecraft:name_tag"}] run scoreboard players set @s prefix 265
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-journal=true}] unless data entity @s EnderItems[{Slot:15b,id:"minecraft:name_tag"}] run function general:rank
-
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-titles=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:name_tag"}] run scoreboard players set @s prefix 266
-execute if score @s screen matches 18 if entity @s[advancements={advancements:hidden/hidden-titles=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:name_tag"}] run function general:rank
-
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_general=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:stone_button"}] run scoreboard players set @s hat 11
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_general=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:stone_button"}] run clear @s stone_button
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_milestone=true}] unless data entity @s EnderItems[{Slot:12b,id:"minecraft:iron_sword"}] run scoreboard players set @s knife 20
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_order=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:bell"}] run scoreboard players set @s bell_sound 19
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_lobby=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:oak_sign"}] run scoreboard players set @s prefix 263
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_lobby=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:oak_sign"}] run function general:rank
 execute if score @s screen matches 18 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_unlocks
 execute if score @s screen matches 18 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_cosmetics
 

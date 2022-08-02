@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sign"
+        },
+        "title": {
+            "text": "Exclusive Lobby Prefix",
+            "color": "dark_aqua",
+            "bold": true
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Complete this row to unlock",
+            "color": "#fac84b",
+            "bold": false
+        }
+    },
+    "parent": "advancements:lobby_socials",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
