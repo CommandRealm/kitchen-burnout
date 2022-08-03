@@ -1,4 +1,5 @@
 # Slime jump sushi map
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=14}] add m_14
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=14}] 1965 70 1491 -90 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=14}] 1965 70 1491 -90
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=14}] run forceload add ~100 ~100 ~-100 ~-100

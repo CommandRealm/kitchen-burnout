@@ -1,4 +1,5 @@
 # Snow falling ice cream map
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=30}] add m_30
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=30}] 13488 69 1985 -90 -5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=30}] 13488 69 1985 -90
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=30}] run forceload add ~50 ~50 ~-50 ~-50

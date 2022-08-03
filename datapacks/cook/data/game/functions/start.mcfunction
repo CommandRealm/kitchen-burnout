@@ -103,6 +103,12 @@ execute if score $mode settings matches 0..1 run function game:timers/normal_set
 execute if score $mode settings matches 2 run function game:timers/shuffle_setup
 execute if score $mode settings matches 3 run function game:timers/competitive_setup
 
+# Advancements
+execute if score $mode settings matches 0 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_classic
+execute if score $mode settings matches 1 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_versus
+execute if score $mode settings matches 2 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_shuffle
+execute if score $mode settings matches 3 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_competitive
+
 # End early stuff
 scoreboard players reset * end
 scoreboard players reset * restart

@@ -1,4 +1,5 @@
 # Elytra sushi map
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=15}] add m_15
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=15}] 2160 88 1988 180 -5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=15}] 2160 88 1988 180
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=13}] run forceload add ~50 ~50 ~-150 ~-50

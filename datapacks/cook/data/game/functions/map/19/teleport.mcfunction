@@ -1,4 +1,5 @@
 # Meteor shower taco map
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=19}] add m_19
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=19}] 2525 103 1506 180 -5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=19}] 2525 103 1506 180
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=18}] run forceload add ~180 ~180 ~-180 ~-180

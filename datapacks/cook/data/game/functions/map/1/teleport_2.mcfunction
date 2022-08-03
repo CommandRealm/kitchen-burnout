@@ -1,4 +1,5 @@
 # Default burger map
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=1}] add m_1
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=1}] 10991 62 505 225 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=1}] 10992 62 504 225
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=1}] run forceload add ~50 ~50 ~-50 ~-50

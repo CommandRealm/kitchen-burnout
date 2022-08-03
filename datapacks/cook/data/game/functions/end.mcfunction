@@ -14,6 +14,11 @@ fill 12538 104 1521 12510 124 1478 white_stained_glass replace minecraft:structu
 tp @e[tag=die_between_games] 0 -10000 0
 kill @e[tag=die_between_games]
 
+# Advancements
+scoreboard players add @a[gamemode=adventure,tag=playing] finished_games 1
+advancement grant @a[scores={finished_games=25..}] only advancements:milestone_25
+advancement grant @a[tag=m_1,tag=m_9,tag=m_2,tag=m_5,tag=m_17,tag=m_11,tag=m_13,tag=m_15,tag=m_14,tag=m_12,tag=m_25,tag=m_22,tag=m_8,tag=m_18,tag=m_19,tag=m_30,tag=m_28,tag=m_29,tag=m_26,tag=m_27] only advancements:milestone_every
+
 # Resets timer
 scoreboard players set $timer game_ticks 0
 bossbar set game:timer visible false
@@ -63,7 +68,9 @@ execute if score $mode settings matches 1 unless score $no_contest game matches 
 execute if score $mode settings matches 1 unless score $no_contest game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
 
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $winner shuffle matches 1 run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Spoons","color":"aqua","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2]","color":"blue"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
+execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $winner shuffle matches 1 run advancement grant @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2] only advancements:milestone_shuffle
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $winner shuffle matches 2 run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Forks","color":"light_purple","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2]","color":"red"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
+execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $winner shuffle matches 2 run advancement grant @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2] only advancements:milestone_shuffle
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"Time: ","color":"green"},{"score":{"objective":"game_minutes","name":"$timer"},"color":"gold","bold":true},{"text":":","color":"gold","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"gold","bold":true}]
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"Time: ","color":"green"},{"score":{"objective":"game_minutes","name":"$timer"},"color":"gold","bold":true},{"text":":0","color":"gold","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"gold","bold":true}]
 

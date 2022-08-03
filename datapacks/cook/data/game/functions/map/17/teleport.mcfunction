@@ -1,4 +1,5 @@
 # Honey Wall Burger Kitchen
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=17}] add m_17
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=17}] 2503.0 67 521.0 90 2
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=17}] 2503 67 521 90
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=17}] run forceload add ~50 ~50 ~-50 ~-50

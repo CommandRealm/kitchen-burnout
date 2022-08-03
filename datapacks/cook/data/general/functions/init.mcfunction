@@ -194,6 +194,15 @@ scoreboard objectives add hat dummy
 scoreboard objectives add knife dummy
 scoreboard objectives add bell_sound dummy
 
+# Advancement stuff
+scoreboard objectives add finished_games dummy
+scoreboard objectives add finished_orders dummy
+scoreboard objectives add ingredients_taken dummy
+scoreboard objectives add ingredients_cut dummy
+scoreboard objectives add fish_caught dummy
+scoreboard objectives add ingredients_trashed dummy
+scoreboard objectives add ingredients_burnt dummy
+
 # Game stuff
 scoreboard objectives add calculate dummy
 scoreboard objectives add ingredient dummy

@@ -1,4 +1,5 @@
 # Riptide fishing sushi map
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=12}] add m_12
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=12}] 11971 88 653 90 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=12}] 11971 88 653 90
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=12}] run forceload add ~150 ~150 ~-150 ~-150

@@ -3,6 +3,7 @@ effect give @s slowness 3 3 true
 scoreboard players set @s ingredient 0
 clear @s
 advancement grant @s only game:inventory_changed
+advancement grant @s only advancements:general_hazard
 tp @s[tag=!team_2] 2503.0 67 521.0 90 2
 tp @s[tag=team_2] 12503.0 67 521.0 90 2
 playsound block.fire.extinguish master @s ~ ~ ~ 10 1.5

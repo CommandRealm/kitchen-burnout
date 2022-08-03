@@ -9,6 +9,7 @@ execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -10..-7 run scoreboard players add @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station 5
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -5..-4 run scoreboard players remove @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station 2
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -3..-2 run scoreboard players remove @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station 3
+execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -1..1 run advancement grant @s only advancements:general_green
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -1..1 run scoreboard players remove @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station 8
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -1..1 at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 0.594604
 execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_timer matches -1..1 at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 0.749154
@@ -25,4 +26,6 @@ execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station_
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 1.25
 
 
+execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station matches ..0 run scoreboard players add @s ingredients_cut 1
+execute if score @e[type=marker,tag=cutting_board,sort=nearest,limit=1] station matches ..0 run advancement grant @s[scores={ingredients_cut=125..}] only advancements:milestone_cut
 execute as @e[type=marker,tag=cutting_board,sort=nearest,limit=1,scores={station=..0}] run function game:stations/cutting_board/finished_item

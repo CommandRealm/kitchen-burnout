@@ -193,3 +193,6 @@ execute if score $recipe_id game matches 164 if entity @s[tag=bowl,tag=vanilla,t
 execute if score $recipe_id game matches 165 if entity @s[tag=bowl,tag=vanilla,tag=chocolate,tag=strawberry,tag=cookies,tag=mint,tag=mango,tag=sprinkles,tag=chips,tag=cherry,tag=!cone,tag=!cookie_dough,tag=!frozen_food] run function game:serve/check/success
 execute if score $recipe_id game matches 166 if entity @s[tag=bowl,tag=vanilla,tag=chocolate,tag=strawberry,tag=cookies,tag=mint,tag=mango,tag=sprinkles,tag=chips,tag=cherry,tag=cookie_dough,tag=!cone,tag=!frozen_food] run function game:serve/check/success
 execute if score $recipe_id game matches 167 if entity @s[tag=bowl,tag=sprinkles,tag=chips,tag=cherry,tag=cookie_dough,tag=!cone,tag=!vanilla,tag=!chocolate,tag=!strawberry,tag=!cookies,tag=!mint,tag=!mango,tag=!frozen_food] run function game:serve/check/success
+
+execute if entity @s[tag=add_new_recipe] run tag @a[gamemode=adventure,tag=playing,distance=..500] add order_icecream
+execute if entity @s[tag=add_new_recipe] run advancement grant @a[gamemode=adventure,tag=playing,distance=..500] only advancements:order_icecream
