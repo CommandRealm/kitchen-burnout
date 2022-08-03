@@ -23,10 +23,10 @@ execute if score $display_mode settings matches 3 run summon armor_stand 5 65.82
 
 
 # turning time on/off
-execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 66 46 minecraft:iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 66 45 minecraft:quartz_bricks
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 67 45 minecraft:white_stained_glass
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 68 45 minecraft:white_carpet
+execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 66 46 minecraft:iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]
 
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run scoreboard players remove $time settings 1200
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run function options:time/add_time
