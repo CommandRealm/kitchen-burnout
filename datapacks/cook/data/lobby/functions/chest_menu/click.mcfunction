@@ -23,7 +23,7 @@ execute if score @s screen matches 0 unless entity @s[tag=!has_test,tag=!has_hel
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:stone_button"}] run function lobby:chest_menu/start_hats
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:iron_sword"}] run function lobby:chest_menu/start_knives
-execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:bell"}] run function lobby:chest_menu/start_bells
+execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:bell"}] run function lobby:chest_menu/start_bell_sounds
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:gold_nugget"}] run function lobby:chest_menu/start_unlocks
 
 ##Statistics screen
@@ -46,7 +46,7 @@ execute if score @s screen matches 11 if data entity @s EnderItems[{id:"minecraf
 execute if score @s screen matches 12 store result score $calculate calculate run clear @s #game:click_ec{cosmetic:1} 0
 execute if score @s screen matches 12 if score $calculate calculate matches 1.. run function lobby:chest_menu/change_bell_sound
 execute if score @s screen matches 12 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_cosmetics
-execute if score @s screen matches 12 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_bells
+execute if score @s screen matches 12 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_bell_sounds
 
 ##Credits
 execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start

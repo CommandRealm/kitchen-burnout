@@ -79,7 +79,21 @@
       "minecraft:gold_ingot",
       "minecraft:stone_button",
       "minecraft:iron_sword",
-      "minecraft:bell"
-  
+      "minecraft:bell",
+      "minecraft:note_block",
+      "minecraft:bell",
+      "minecraft:potion",
+      "minecraft:cod_bucket",
+      "minecraft:porkchop",
+      "minecraft:ender_pearl",
+      "minecraft:cod",
+      "minecraft:beacon",
+      "minecraft:goat_horn",
+      "minecraft:music_disc_pigstep",
+      "minecraft:blue_wool",
+      "minecraft:cake",
+      "minecraft:melon",
+      "minecraft:pufferfish",
+      "minecraft:ghast_tear"
     ]
   }

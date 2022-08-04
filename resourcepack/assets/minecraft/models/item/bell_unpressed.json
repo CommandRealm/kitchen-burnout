@@ -158,9 +158,9 @@
             "rotation": [90, 0, 0]
         },
         "thirdperson_righthand": {
-            "translation": [0, 2.85, 23.5],
+            "translation": [0, 2.85, 20.75],
             "rotation": [90, 0, 0],
-            "scale": [1.25, 1.25, 1.25]
+            "scale": [0.9, 0.9, 0.9]
         }
 	}
 }
