@@ -68,6 +68,8 @@ scoreboard players set $200 number 200
 scoreboard players set $500 number 500
 scoreboard players set $6000 number 6000
 scoreboard players set $-1 number -1
+scoreboard players set $1 number 1
+scoreboard players set $12 number 12
 scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
 scoreboard players set $75 number 75
