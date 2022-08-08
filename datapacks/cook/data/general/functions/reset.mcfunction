@@ -24,3 +24,24 @@ execute if entity @s[tag=has_lead] run scoreboard players set @s prefix 7
 scoreboard players set @s hat 1
 scoreboard players set @s knife 1
 scoreboard players set @s bell_sound 1
+
+execute unless score @s comp_1 matches -2147483648..2147483647 run scoreboard players set @s comp_1 2147483647
+execute unless score @s comp_2 matches -2147483648..2147483647 run scoreboard players set @s comp_2 2147483647
+execute unless score @s comp_3 matches -2147483648..2147483647 run scoreboard players set @s comp_3 2147483647
+execute unless score @s comp_4 matches -2147483648..2147483647 run scoreboard players set @s comp_4 2147483647
+execute unless score @s comp_5 matches -2147483648..2147483647 run scoreboard players set @s comp_5 2147483647
+execute unless score @s comp_6 matches -2147483648..2147483647 run scoreboard players set @s comp_6 2147483647
+execute unless score @s comp_7 matches -2147483648..2147483647 run scoreboard players set @s comp_7 2147483647
+execute unless score @s comp_8 matches -2147483648..2147483647 run scoreboard players set @s comp_8 2147483647
+execute unless score @s comp_9 matches -2147483648..2147483647 run scoreboard players set @s comp_9 2147483647
+execute unless score @s comp_10 matches -2147483648..2147483647 run scoreboard players set @s comp_10 2147483647
+execute unless score @s comp_11 matches -2147483648..2147483647 run scoreboard players set @s comp_11 2147483647
+execute unless score @s comp_12 matches -2147483648..2147483647 run scoreboard players set @s comp_12 2147483647
+execute unless score @s comp_13 matches -2147483648..2147483647 run scoreboard players set @s comp_13 2147483647
+execute unless score @s comp_14 matches -2147483648..2147483647 run scoreboard players set @s comp_14 2147483647
+execute unless score @s comp_15 matches -2147483648..2147483647 run scoreboard players set @s comp_15 2147483647
+execute unless score @s comp_16 matches -2147483648..2147483647 run scoreboard players set @s comp_16 2147483647
+execute unless score @s comp_17 matches -2147483648..2147483647 run scoreboard players set @s comp_17 2147483647
+execute unless score @s comp_18 matches -2147483648..2147483647 run scoreboard players set @s comp_18 2147483647
+execute unless score @s comp_19 matches -2147483648..2147483647 run scoreboard players set @s comp_19 2147483647
+execute unless score @s comp_20 matches -2147483648..2147483647 run scoreboard players set @s comp_20 2147483647

@@ -19,12 +19,6 @@ scoreboard players add @a[gamemode=adventure,tag=playing] finished_games 1
 advancement grant @a[scores={finished_games=25..}] only advancements:milestone_25
 advancement grant @a[tag=m_1,tag=m_9,tag=m_2,tag=m_5,tag=m_17,tag=m_11,tag=m_13,tag=m_15,tag=m_14,tag=m_12,tag=m_25,tag=m_22,tag=m_8,tag=m_18,tag=m_19,tag=m_30,tag=m_28,tag=m_29,tag=m_26,tag=m_27] only advancements:milestone_every
 
-# Resets timer
-scoreboard players set $timer game_ticks 0
-bossbar set game:timer visible false
-bossbar set game:progress_1 visible false
-bossbar set game:progress_2 visible false
-
 # Sets game state to 0
 scoreboard players set $game state 0
 
@@ -74,16 +68,22 @@ execute if score $mode settings matches 2 unless score $no_contest game matches 
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"Time: ","color":"green"},{"score":{"objective":"game_minutes","name":"$timer"},"color":"gold","bold":true},{"text":":","color":"gold","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"gold","bold":true}]
 execute if score $mode settings matches 2 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"Time: ","color":"green"},{"score":{"objective":"game_minutes","name":"$timer"},"color":"gold","bold":true},{"text":":0","color":"gold","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"gold","bold":true}]
 
-execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"blue"},{"translate":"'s ","color":"blue"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
-execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"blue"},{"translate":"'s ","color":"blue"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
-execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"blue"},{"translate":"'s ","color":"blue"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
-execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"blue"},{"translate":"'s ","color":"blue"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
-
-# Temp
-execute if score $mode settings matches 3 run tellraw @a ["",{"translate":"Map: ","color":"blue"},{"score":{"objective":"settings","name":"$map"},"color":"blue"}]
+# Competitive
+execute if score $mode settings matches 3 run tellraw @a ["",{"translate":"Kitchen: ","color":"aqua"},{"selector":"@e[type=area_effect_cloud,tag=map_name,limit=1]","color":"blue"}]
+execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"green"},{"translate":"'s ","color":"green"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches 10.. if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"green"},{"translate":"'s ","color":"green"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches 10.. run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"green"},{"translate":"'s ","color":"green"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 unless score $no_contest game matches 1 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"green"},{"translate":"'s ","color":"green"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
+execute if score $mode settings matches 3 unless score $no_contest game matches 1 as @a[gamemode=adventure,tag=playing,limit=1] at @s run function game:mode_competitive/best_times
 
 # Reset teams
 execute as @a[tag=playing,tag=!tutorial] at @s run function general:rank
+
+# Resets timer
+scoreboard players set $timer game_ticks 0
+bossbar set game:timer visible false
+bossbar set game:progress_1 visible false
+bossbar set game:progress_2 visible false
 
 # Removing tags
 tag @a[tag=playing,tag=!tutorial] remove mechanics

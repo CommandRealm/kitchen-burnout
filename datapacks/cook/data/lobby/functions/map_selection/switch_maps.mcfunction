@@ -105,3 +105,87 @@ execute if score $display_map settings matches 19 run data merge entity @e[type=
 execute if score $display_map settings matches 19 run data merge entity @e[type=area_effect_cloud,tag=gimmick_2,limit=1] {CustomName:'["",{"translate":"of ice over the frigid water.","color":"aqua"}]'}
 execute if score $display_map settings matches 20 run data merge entity @e[type=area_effect_cloud,tag=gimmick,limit=1] {CustomName:""}
 execute if score $display_map settings matches 20 run data merge entity @e[type=area_effect_cloud,tag=gimmick_2,limit=1] {CustomName:'["",{"translate":"Stay warm from the heat of the campfire.","color":"aqua"}]'}
+
+# Competitive Best WR Holder
+execute if score $display_map settings matches 1 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 1 run data modify entity @s CustomName set from storage comp_wr_holders 1
+execute if score $display_map settings matches 2 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 2 run data modify entity @s CustomName set from storage comp_wr_holders 2
+execute if score $display_map settings matches 3 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 3 run data modify entity @s CustomName set from storage comp_wr_holders 3
+execute if score $display_map settings matches 4 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 4 run data modify entity @s CustomName set from storage comp_wr_holders 4
+execute if score $display_map settings matches 5 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 5 run data modify entity @s CustomName set from storage comp_wr_holders 5
+execute if score $display_map settings matches 6 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 6 run data modify entity @s CustomName set from storage comp_wr_holders 6
+execute if score $display_map settings matches 7 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 7 run data modify entity @s CustomName set from storage comp_wr_holders 7
+execute if score $display_map settings matches 8 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 8 run data modify entity @s CustomName set from storage comp_wr_holders 8
+execute if score $display_map settings matches 9 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 9 run data modify entity @s CustomName set from storage comp_wr_holders 9
+execute if score $display_map settings matches 10 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 10 run data modify entity @s CustomName set from storage comp_wr_holders 10
+execute if score $display_map settings matches 11 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 11 run data modify entity @s CustomName set from storage comp_wr_holders 11
+execute if score $display_map settings matches 12 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 12 run data modify entity @s CustomName set from storage comp_wr_holders 12
+execute if score $display_map settings matches 13 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 13 run data modify entity @s CustomName set from storage comp_wr_holders 13
+execute if score $display_map settings matches 14 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 14 run data modify entity @s CustomName set from storage comp_wr_holders 14
+execute if score $display_map settings matches 15 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 15 run data modify entity @s CustomName set from storage comp_wr_holders 15
+execute if score $display_map settings matches 16 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 16 run data modify entity @s CustomName set from storage comp_wr_holders 16
+execute if score $display_map settings matches 17 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 17 run data modify entity @s CustomName set from storage comp_wr_holders 17
+execute if score $display_map settings matches 18 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 18 run data modify entity @s CustomName set from storage comp_wr_holders 18
+execute if score $display_map settings matches 19 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 19 run data modify entity @s CustomName set from storage comp_wr_holders 19
+execute if score $display_map settings matches 20 as @e[type=area_effect_cloud,tag=comp_wr] if data storage comp_wr_holders 20 run data modify entity @s CustomName set from storage comp_wr_holders 20
+execute if score $display_map settings matches 1 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 1 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 2 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 2 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 3 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 3 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 4 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 4 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 5 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 5 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 6 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 6 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 7 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 7 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 8 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 8 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 9 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 9 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 10 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 10 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 11 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 11 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 12 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 12 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 13 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 13 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 14 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 14 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 15 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 15 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 16 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 16 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 17 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 17 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 18 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 18 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 19 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 19 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+execute if score $display_map settings matches 20 as @e[type=area_effect_cloud,tag=comp_wr] unless data storage comp_wr_holders 20 run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"blue"}]'}
+# Competitive Best WR Time
+execute if score $display_map settings matches 1 run scoreboard players operation $calculate game_ticks = $wr comp_1
+execute if score $display_map settings matches 2 run scoreboard players operation $calculate game_ticks = $wr comp_2
+execute if score $display_map settings matches 3 run scoreboard players operation $calculate game_ticks = $wr comp_3
+execute if score $display_map settings matches 4 run scoreboard players operation $calculate game_ticks = $wr comp_4
+execute if score $display_map settings matches 5 run scoreboard players operation $calculate game_ticks = $wr comp_5
+execute if score $display_map settings matches 6 run scoreboard players operation $calculate game_ticks = $wr comp_6
+execute if score $display_map settings matches 7 run scoreboard players operation $calculate game_ticks = $wr comp_7
+execute if score $display_map settings matches 8 run scoreboard players operation $calculate game_ticks = $wr comp_8
+execute if score $display_map settings matches 9 run scoreboard players operation $calculate game_ticks = $wr comp_9
+execute if score $display_map settings matches 10 run scoreboard players operation $calculate game_ticks = $wr comp_10
+execute if score $display_map settings matches 11 run scoreboard players operation $calculate game_ticks = $wr comp_11
+execute if score $display_map settings matches 12 run scoreboard players operation $calculate game_ticks = $wr comp_12
+execute if score $display_map settings matches 13 run scoreboard players operation $calculate game_ticks = $wr comp_13
+execute if score $display_map settings matches 14 run scoreboard players operation $calculate game_ticks = $wr comp_14
+execute if score $display_map settings matches 15 run scoreboard players operation $calculate game_ticks = $wr comp_15
+execute if score $display_map settings matches 16 run scoreboard players operation $calculate game_ticks = $wr comp_16
+execute if score $display_map settings matches 17 run scoreboard players operation $calculate game_ticks = $wr comp_17
+execute if score $display_map settings matches 18 run scoreboard players operation $calculate game_ticks = $wr comp_18
+execute if score $display_map settings matches 19 run scoreboard players operation $calculate game_ticks = $wr comp_19
+execute if score $display_map settings matches 20 run scoreboard players operation $calculate game_ticks = $wr comp_20
+scoreboard players operation $check game_ticks = $calculate game_ticks
+scoreboard players operation $calculate game_minutes = $calculate game_ticks
+scoreboard players operation $calculate game_seconds = $calculate game_ticks
+# Actually decaseconds
+scoreboard players operation $calculate game_ticks %= $100 number
+scoreboard players operation $calculate game_minutes /= $6000 number
+scoreboard players operation $calculate game_seconds %= $6000 number
+scoreboard players operation $calculate game_seconds /= $100 number
+# Display times
+## Normal
+execute if score $calculate game_seconds matches 10.. if score $calculate game_ticks matches 10.. run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"game_minutes","name":"$calculate"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$calculate"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$calculate"},"color":"red","bold":true}]'} destroy
+## <10 Decaseconds
+execute if score $calculate game_seconds matches 10.. if score $calculate game_ticks matches ..9 run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"game_minutes","name":"$calculate"},"color":"red","bold":true},{"text":":","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$calculate"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$calculate"},"color":"red","bold":true}]'} destroy
+## <10 Seconds
+execute if score $calculate game_seconds matches ..9 if score $calculate game_ticks matches 10.. run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"game_minutes","name":"$calculate"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$calculate"},"color":"red","bold":true},{"text":".","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$calculate"},"color":"red","bold":true}]'} destroy
+## <10 Seconds and <10 Decaseconds
+execute if score $calculate game_seconds matches ..9 if score $calculate game_ticks matches ..9 run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"game_minutes","name":"$calculate"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$calculate"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$calculate"},"color":"red","bold":true}]'} destroy
+# Set from sign
+execute unless score $check game_ticks matches 2147483647 as @e[type=area_effect_cloud,tag=comp_wr_time] run data modify entity @s CustomName set from block 0 -62 0 Text1
+# No WR Yet
+execute if score $check game_ticks matches 2147483647 as @e[type=area_effect_cloud,tag=comp_wr_time] run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"red","bold":true}]'}

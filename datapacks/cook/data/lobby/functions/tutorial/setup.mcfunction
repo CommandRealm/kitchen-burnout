@@ -4,7 +4,7 @@ kill @e[type=!player,tag=tutorial]
 
 # Enable glowing
 scoreboard players operation $glowing_t settings = $glowing settings
-scoreboard players set $glowing settings 1
+scoreboard players set $glowing settings 0
 
 # Add new stations
 execute positioned 18 67 -7 run function game:stations/stovetop/create
