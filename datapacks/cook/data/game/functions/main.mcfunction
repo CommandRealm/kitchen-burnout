@@ -57,8 +57,8 @@ execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s an
 execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s title [{"text":""}]
 
 # Fish Reminder
-execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=#game:fish,tag=can_catch,distance=..0.75] run title @s subtitle [{"translate":"Hold your net and click to catch.","color":"red"}]
-execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=#game:fish,tag=can_catch,distance=..0.75] run title @s title ""
+execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^3 if entity @e[type=#game:fish,tag=can_catch,distance=..2.5] run title @s subtitle [{"translate":"Hold your net and click to catch.","color":"red"}]
+execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^3 if entity @e[type=#game:fish,tag=can_catch,distance=..2.5] run title @s title ""
 
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..}] run function game:stations/main
