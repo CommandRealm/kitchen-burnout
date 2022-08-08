@@ -1,6 +1,6 @@
 # Kill old stuff
-tp @e[type=!player,tag=tutorial] 0 -10000 0
-kill @e[type=!player,tag=tutorial]
+tp @e[type=!player,tag=tutorial,tag=!counter] 0 -10000 0
+kill @e[type=!player,tag=tutorial,tag=!counter]
 
 # Enable glowing
 scoreboard players operation $glowing_t settings = $glowing settings

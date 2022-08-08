@@ -139,6 +139,9 @@ execute unless entity @a[gamemode=adventure,tag=playing,scores={map=22},distance
 
 # Next order
 execute if entity @s[tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1] recipe_cooldown 25
+execute if entity @s[tag=tutorial] run scoreboard players add $tutorial_orders prep_display 1
+execute if entity @s[tag=tutorial] run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"prep_display","name":"$tutorial_orders"},"color":"green","bold":true}]'} destroy
+execute if entity @s[tag=tutorial] run data modify entity @e[type=area_effect_cloud,tag=station_display_text,tag=counter,tag=number,tag=tutorial,limit=1] CustomName set from block 0 -62 0 Text1
 execute unless entity @s[tag=tutorial] if score $mode settings matches 0 run data remove storage orders_1 Recipe[0]
 execute unless entity @s[tag=tutorial] if score $mode settings matches 3 run data remove storage orders_1 Recipe[0]
 execute unless entity @s[tag=tutorial] if score $mode settings matches 1..2 unless entity @s[tag=2] run data remove storage orders_1 Recipe[0]
