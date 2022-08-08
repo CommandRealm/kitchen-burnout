@@ -125,26 +125,26 @@ scoreboard objectives add comp_18 dummy
 scoreboard objectives add comp_19 dummy 
 scoreboard objectives add comp_20 dummy 
 
-execute unless score $wr comp_1 matches -2147483648..2147483647 run scoreboard players set $wr comp_1 2147483647
-execute unless score $wr comp_2 matches -2147483648..2147483647 run scoreboard players set $wr comp_2 2147483647
-execute unless score $wr comp_3 matches -2147483648..2147483647 run scoreboard players set $wr comp_3 2147483647
-execute unless score $wr comp_4 matches -2147483648..2147483647 run scoreboard players set $wr comp_4 2147483647
-execute unless score $wr comp_5 matches -2147483648..2147483647 run scoreboard players set $wr comp_5 2147483647
-execute unless score $wr comp_6 matches -2147483648..2147483647 run scoreboard players set $wr comp_6 2147483647
-execute unless score $wr comp_7 matches -2147483648..2147483647 run scoreboard players set $wr comp_7 2147483647
-execute unless score $wr comp_8 matches -2147483648..2147483647 run scoreboard players set $wr comp_8 2147483647
-execute unless score $wr comp_9 matches -2147483648..2147483647 run scoreboard players set $wr comp_9 2147483647
-execute unless score $wr comp_10 matches -2147483648..2147483647 run scoreboard players set $wr comp_10 2147483647
-execute unless score $wr comp_11 matches -2147483648..2147483647 run scoreboard players set $wr comp_11 2147483647
-execute unless score $wr comp_12 matches -2147483648..2147483647 run scoreboard players set $wr comp_12 2147483647
-execute unless score $wr comp_13 matches -2147483648..2147483647 run scoreboard players set $wr comp_13 2147483647
-execute unless score $wr comp_14 matches -2147483648..2147483647 run scoreboard players set $wr comp_14 2147483647
-execute unless score $wr comp_15 matches -2147483648..2147483647 run scoreboard players set $wr comp_15 2147483647
-execute unless score $wr comp_16 matches -2147483648..2147483647 run scoreboard players set $wr comp_16 2147483647
-execute unless score $wr comp_17 matches -2147483648..2147483647 run scoreboard players set $wr comp_17 2147483647
-execute unless score $wr comp_18 matches -2147483648..2147483647 run scoreboard players set $wr comp_18 2147483647
-execute unless score $wr comp_19 matches -2147483648..2147483647 run scoreboard players set $wr comp_19 2147483647
-execute unless score $wr comp_20 matches -2147483648..2147483647 run scoreboard players set $wr comp_20 2147483647
+execute unless score $wr comp_1 matches 1..2147483647 run scoreboard players set $wr comp_1 2147483647
+execute unless score $wr comp_2 matches 1..2147483647 run scoreboard players set $wr comp_2 2147483647
+execute unless score $wr comp_3 matches 1..2147483647 run scoreboard players set $wr comp_3 2147483647
+execute unless score $wr comp_4 matches 1..2147483647 run scoreboard players set $wr comp_4 2147483647
+execute unless score $wr comp_5 matches 1..2147483647 run scoreboard players set $wr comp_5 2147483647
+execute unless score $wr comp_6 matches 1..2147483647 run scoreboard players set $wr comp_6 2147483647
+execute unless score $wr comp_7 matches 1..2147483647 run scoreboard players set $wr comp_7 2147483647
+execute unless score $wr comp_8 matches 1..2147483647 run scoreboard players set $wr comp_8 2147483647
+execute unless score $wr comp_9 matches 1..2147483647 run scoreboard players set $wr comp_9 2147483647
+execute unless score $wr comp_10 matches 1..2147483647 run scoreboard players set $wr comp_10 2147483647
+execute unless score $wr comp_11 matches 1..2147483647 run scoreboard players set $wr comp_11 2147483647
+execute unless score $wr comp_12 matches 1..2147483647 run scoreboard players set $wr comp_12 2147483647
+execute unless score $wr comp_13 matches 1..2147483647 run scoreboard players set $wr comp_13 2147483647
+execute unless score $wr comp_14 matches 1..2147483647 run scoreboard players set $wr comp_14 2147483647
+execute unless score $wr comp_15 matches 1..2147483647 run scoreboard players set $wr comp_15 2147483647
+execute unless score $wr comp_16 matches 1..2147483647 run scoreboard players set $wr comp_16 2147483647
+execute unless score $wr comp_17 matches 1..2147483647 run scoreboard players set $wr comp_17 2147483647
+execute unless score $wr comp_18 matches 1..2147483647 run scoreboard players set $wr comp_18 2147483647
+execute unless score $wr comp_19 matches 1..2147483647 run scoreboard players set $wr comp_19 2147483647
+execute unless score $wr comp_20 matches 1..2147483647 run scoreboard players set $wr comp_20 2147483647
 
 # Other bossbars
 bossbar add game:progress_1 ["",{"text":"Current Kitchen: 1/4"}]
