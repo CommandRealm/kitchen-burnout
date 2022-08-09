@@ -36,6 +36,7 @@ clear @a[tag=playing,tag=!tutorial]
 tp @a[tag=playing,tag=!tutorial] -11.0 68 46.0 -148 -18
 spawnpoint @a[tag=playing] -11 68 46 -148
 scoreboard players reset @a freeze_time
+setblock -4 68 38 minecraft:stone_button[face=wall,facing=south,powered=false]
 
 # Resetting the dropped knowledge book objective.
 scoreboard players reset @a[tag=playing,tag=!tutorial] drop_ready_book

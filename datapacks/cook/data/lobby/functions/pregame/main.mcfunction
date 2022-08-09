@@ -23,7 +23,7 @@ execute if score $countdown pregame matches 1.. run function lobby:pregame/count
 
 # Button delay
 execute if score $button pregame matches 1.. run scoreboard players remove $button pregame 1
-execute if score $button pregame matches 0 run function lobby:pregame/replace_button
+execute if score $button pregame matches 0 if score $game state matches 0 run function lobby:pregame/replace_button
 
 # When someone drops their book
 execute as @a[x=0,y=66,z=0,distance=..1000,scores={drop_ready_book=1..}] at @s run function lobby:pregame/drop_ready_book
