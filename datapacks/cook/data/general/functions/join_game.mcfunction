@@ -9,7 +9,8 @@ clear @s
 gamemode adventure @s
 title @s times 0 25 5
 effect clear @s
-scoreboard players set @s ready 1
+execute if score $mode settings matches 3 unless entity @a[gamemode=adventure,scores={ready=1..}] unless entity @a[gamemode=adventure,tag=playing,tag=!tutorial] run scoreboard players set @s ready 1
+execute unless score $mode settings matches 3 run scoreboard players set @s ready 1
 
 # Remove tags
 tag @s remove playing
