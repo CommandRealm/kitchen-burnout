@@ -29,7 +29,7 @@ gamerule universalAnger false
 
 # Has joined will by default be null and with an unless statement it can teleport them.
 scoreboard objectives add has_joined dummy
-
+scoreboard objectives add has_reset dummy
 
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
 

@@ -14,7 +14,7 @@ execute store result score $old_players end if entity @a[gamemode=adventure,tag=
 
 # End game if required players are met
 execute if score $players end >= $required end run scoreboard players reset @a end
-execute if score $players end >= $required end run scoreboard players set $no_contest game 1
+execute if score $players end >= $required end run scoreboard players set $no_contest state 1
 execute if score $players end >= $required end if score $mode settings matches 0..1 run scoreboard players set $timer game_ticks 39
 execute if score $players end >= $required end if score $mode settings matches 2..3 run scoreboard players set $winner shuffle -1
 

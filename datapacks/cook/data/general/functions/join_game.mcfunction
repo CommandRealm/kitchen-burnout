@@ -14,6 +14,7 @@ scoreboard players set @s ready 1
 tag @s remove playing
 tag @s remove in_pipe
 tag @s remove team_2
+tag @s remove admin
 
 # effect
 effect give @s instant_health 1 5 true
@@ -21,7 +22,7 @@ effect give @s instant_health 1 5 true
 
 
 # if we haven't been reset
-execute unless entity @s[scores={resetting=1..}] run function general:reset
+execute unless entity @s[scores={has_reset=1..}] run function general:reset
 
 # Rank
 function general:rank

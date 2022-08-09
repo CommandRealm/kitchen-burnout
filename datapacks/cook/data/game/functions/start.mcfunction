@@ -95,6 +95,7 @@ execute if score $mode settings matches 0 run function game:mode_classic/generat
 execute if score $mode settings matches 1 run function game:mode_versus/generate_recipes
 execute if score $mode settings matches 2 run function game:mode_shuffle/generate_recipes
 execute if score $mode settings matches 3 run function game:mode_competitive/generate_recipes
+scoreboard players reset @a recipe_cooldown
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2,limit=1] recipe_cooldown 65
 scoreboard players set @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2,limit=1] recipe_cooldown 65
 
@@ -114,7 +115,7 @@ scoreboard players reset * end
 scoreboard players reset * restart
 scoreboard players enable @a[gamemode=adventure,tag=playing,tag=!tutorial] end
 execute if score $mode settings matches 3 run scoreboard players enable @a[gamemode=adventure,tag=playing,tag=!tutorial] restart
-scoreboard players reset $no_contest game
+scoreboard players reset $no_contest state
 scoreboard players reset $players end
 scoreboard players set $old_players end 0
 execute unless score $mode settings matches 3 run tellraw @a[gamemode=adventure,tag=playing,tag=!tutorial] ["",{"text":"\n\n- ","color":"gray"},{"translate":"If you'd like to end the game early, click this message or run","color":"green","clickEvent":{"action":"run_command","value":"/trigger end"}},{"text":"\n- ","color":"gray"},{"text":"/trigger end","clickEvent":{"action":"run_command","value":"/trigger end"},"color":"dark_green","underlined":true},{"text":"\n\n"}]

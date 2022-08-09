@@ -4,7 +4,7 @@
 execute as @a at @s unless entity @s[scores={has_joined=1..}] run function general:join_game
 
 # Leave game call
-# execute as @a[scores={has_left=1..}] run function general:leave_game
+execute as @a[scores={has_left=1..}] run function general:leave_game
 
 
 

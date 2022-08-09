@@ -18,17 +18,16 @@ execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={cli
 # Ingredient box setup
 execute as @e[type=marker,tag=ingredient_setup] at @s unless block ~ ~ ~ air run function game:map/ingredient_setup/main
 
-### CAN OPTIMIZE BY LIMITING NBT CHECKS TO ONLY HAPPEN WHEN IN RANGE OF ENTITIES
 # Prep display activator
 execute as @a[tag=playing,gamemode=adventure] at @s if entity @e[type=marker,tag=prep_display,distance=..10] run function game:stations/prep/activate
 
 # Cutting board display activator
-execute as @a[tag=playing,gamemode=adventure,nbt={SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,scores={station_timer=-10..10},distance=..0.75] run tag @s add using_cutting_board
-execute as @a[tag=playing,gamemode=adventure] at @s anchored eyes positioned ^ ^ ^1.75 unless entity @e[type=marker,tag=cutting_board,distance=..0.75] run tag @s remove using_cutting_board
+execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt={SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,scores={station_timer=-10..10},distance=..0.75] run tag @s add using_cutting_board
+execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure] at @s anchored eyes positioned ^ ^ ^1.75 unless entity @e[type=marker,tag=cutting_board,distance=..0.75] run tag @s remove using_cutting_board
 # Hold knife reminder
-execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] run tag @s remove using_cutting_board
-execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s subtitle [{"translate":"Hold your knife.","color":"red"}]
-execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s title [{"text":""}]
+execute as @a[tag=playing,gamemode=adventure,tag=using_cutting_board,nbt=!{SelectedItemSlot:0}] run tag @s remove using_cutting_board
+execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s subtitle [{"translate":"Hold your knife.","color":"red"}]
+execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s title [{"text":""}]
 
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..},tag=tutorial] run function game:stations/main
@@ -46,7 +45,8 @@ execute as @e[type=marker,tag=prep_display,tag=tutorial] at @s run function game
 execute as @e[type=armor_stand,tag=bell,tag=tutorial] at @s run function game:stations/bell/main
 
 # If there is a recipe cooldown
-execute if entity @a[scores={recipe_cooldown=1..},tag=tutorial] run function game:recipe_cooldown/main
+execute if entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=tutorial] run function game:recipe_cooldown/main
+execute if score $flag_t recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1,sort=random] recipe_cooldown 65
 
 # Globals
 scoreboard players add $const game_ticks 1
