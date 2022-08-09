@@ -22,12 +22,12 @@ execute as @e[type=marker,tag=ingredient_setup] at @s unless block ~ ~ ~ air run
 execute as @a[tag=playing,gamemode=adventure] at @s if entity @e[type=marker,tag=prep_display,distance=..10] run function game:stations/prep/activate
 
 # Cutting board display activator
-execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt={SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,scores={station_timer=-10..10},distance=..0.75] run tag @s add using_cutting_board
-execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure] at @s anchored eyes positioned ^ ^ ^1.75 unless entity @e[type=marker,tag=cutting_board,distance=..0.75] run tag @s remove using_cutting_board
+execute as @a[tag=playing,gamemode=adventure,nbt={SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,scores={station_timer=-10..10},distance=..0.75] run tag @s add using_cutting_board
+execute as @a[tag=playing,gamemode=adventure] at @s anchored eyes positioned ^ ^ ^1.75 unless entity @e[type=marker,tag=cutting_board,distance=..0.75] run tag @s remove using_cutting_board
 # Hold knife reminder
-execute as @a[tag=playing,gamemode=adventure,tag=using_cutting_board,nbt=!{SelectedItemSlot:0}] run tag @s remove using_cutting_board
-execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s subtitle [{"translate":"Hold your knife.","color":"red"}]
-execute if entity @e[type=marker,tag=cutting_board,distance=..10] as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s title [{"text":""}]
+execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] run tag @s remove using_cutting_board
+execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s subtitle [{"translate":"Hold your knife.","color":"red"}]
+execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s anchored eyes positioned ^ ^ ^1.75 if entity @e[type=marker,tag=cutting_board,distance=..0.75] if data entity @e[type=armor_stand,tag=cutting_board_item,sort=nearest,limit=1,distance=..2] HandItems[0].tag{cutting_board:1b} run title @s title [{"text":""}]
 
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..},tag=tutorial] run function game:stations/main
