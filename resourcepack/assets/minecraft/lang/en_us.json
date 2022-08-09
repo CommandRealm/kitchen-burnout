@@ -199,6 +199,7 @@
     "not play.": "not play.",
     "play.": "play.",
     "Not enough players.": "Not enough players.",
+    "Competitive Mode is for only one player at a time.": "Competitive Mode is for only one player at a time.",
     " Playing ": " Playing ",
     "Game over!": "Game over!",
     "Score: ": "Score: ",
@@ -209,6 +210,7 @@
     "It's a tie!": "It's a tie!",
     " Points!": " Points!",
     "Time: ": "Time: ",
+    "Orders": "Orders",
 
 
     "Hold ": "Hold ",

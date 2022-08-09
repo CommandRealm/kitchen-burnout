@@ -60,13 +60,14 @@ tag EdLePug add has_bld
 tag Connop add has_bld
 
 # Programmers
+tag Calverin add has_prg
 tag FalconReign add has_prg
 tag CheckMC add has_prg
 
 # Artists
 tag Pinkessi add has_art
 tag EdLePug add has_art
-
+tag TheRegularMex add has_art
 
 # Senior Builders
 tag knad add has_srbld
