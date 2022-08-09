@@ -89,6 +89,9 @@ scoreboard objectives add game dummy
 scoreboard objectives add end trigger
 scoreboard objectives add restart trigger
 
+# To stop spectating
+scoreboard objectives add stop_spectating trigger
+
 # Customer stuff
 scoreboard objectives add customers dummy
 

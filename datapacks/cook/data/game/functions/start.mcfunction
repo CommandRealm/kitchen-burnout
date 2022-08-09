@@ -110,6 +110,10 @@ execute if score $mode settings matches 1 run advancement grant @a[gamemode=adve
 execute if score $mode settings matches 2 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_shuffle
 execute if score $mode settings matches 3 run advancement grant @a[gamemode=adventure,tag=playing] only advancements:general_competitive
 
+# Spectating
+scoreboard players reset * stop_spectating
+scoreboard players enable @a[gamemode=spectator,tag=spectating] stop_spectating
+
 # End early stuff
 scoreboard players reset * end
 scoreboard players reset * restart

@@ -2,6 +2,7 @@
 
 # Run pregame function when appropriate
 execute if score $game state matches 0 run function lobby:pregame/main
+execute if score $game state matches 1 run function lobby:spectating/main
 
 # Ender chest stuff
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500] at @s run function lobby:chest_menu/main
@@ -12,7 +13,7 @@ execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500] at @s run function
 # Hats
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500,scores={hat=1..}] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:stone_button"}]}] run function game:inventory/hat/chef
 
-# Tutorial (should probably give tag if anywhere in restauraunt with overlapping checks)
+# Tutorial
 execute as @a[gamemode=adventure,tag=playing,tag=tutorial,x=0,y=66,z=0,distance=..500] at @s unless entity @s[x=4,y=65,z=-6,dx=18,dy=5,dz=7] run tag @s remove playing
 execute as @a[gamemode=adventure,tag=!playing,tag=tutorial,x=0,y=66,z=0,distance=..500,scores={recipe_cooldown=1..}] at @s unless entity @s[x=4,y=65,z=-6,dx=18,dy=5,dz=7] if entity @a[gamemode=adventure,tag=tutorial,tag=playing] run scoreboard players operation @a[tag=tutorial,tag=playing,limit=1,sort=nearest] recipe_cooldown = @s recipe_cooldown
 execute as @a[gamemode=adventure,tag=!playing,tag=tutorial,x=0,y=66,z=0,distance=..500,scores={recipe_cooldown=1..}] at @s unless entity @s[x=4,y=65,z=-6,dx=18,dy=5,dz=7] if entity @a[gamemode=adventure,tag=tutorial,tag=playing] run scoreboard players reset @s recipe_cooldown

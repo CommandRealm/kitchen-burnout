@@ -4,6 +4,7 @@
 tp @s -11.0 68 46.0 -148 -18
 spawnpoint @s -11 68 46 -148
 scoreboard players set @s has_joined 1
+scoreboard players reset @s stop_spectating
 clear @s
 gamemode adventure @s
 title @s times 0 25 5
@@ -15,6 +16,7 @@ tag @s remove playing
 tag @s remove in_pipe
 tag @s remove team_2
 tag @s remove admin
+tag @s remove spectating
 
 execute unless score $mode settings matches 2 run bossbar set game:timer players @a[tag=playing,tag=!tutorial]
 execute if score $mode settings matches 2 run bossbar set game:progress_1 players @a[tag=playing,tag=!tutorial,tag=!team_2]
