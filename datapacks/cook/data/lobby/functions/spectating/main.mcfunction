@@ -11,6 +11,6 @@ execute as @a[x=0,y=66,z=0,distance=..1000,gamemode=adventure,tag=tutorial] at @
 execute as @a[x=0,y=66,z=0,distance=..1000,scores={drop_ready_book=1..}] at @s run function lobby:pregame/drop_ready_book
 
 # Keep them near players
-execute as @a[gamemode=spectator,tag=spectating,tag=!admin] at @s unless entity @a[gamemode=adventure,tag=playing,tag=!tutorial,distance=..150] run tp @s @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=nearest]
+execute as @a[gamemode=spectator,tag=spectating,tag=!admin] at @s unless entity @a[gamemode=adventure,tag=playing,tag=!tutorial,distance=..50] run tp @s @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=nearest]
 
 execute as @a[gamemode=spectator,tag=spectating,scores={stop_spectating=1..}] at @s run function general:join_game

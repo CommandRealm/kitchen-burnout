@@ -1,5 +1,7 @@
 #> game:end Ending function of the game. Some things here are also used in game:restart_early
 
+# Reset knowledge books
+clear @a knowledge_book
 # Resets ingredient boxes back to their normal blocks
 execute as @e[type=marker,tag=reset_boxes,tag=!tutorial] at @s run function game:map/reset_boxes
 
