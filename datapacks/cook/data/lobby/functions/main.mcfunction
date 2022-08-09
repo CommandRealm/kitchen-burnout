@@ -2,7 +2,6 @@
 
 # Run pregame function when appropriate
 execute if score $game state matches 0 run function lobby:pregame/main
-execute if score $game state matches 1 run function lobby:spectating/main
 
 # Ender chest stuff
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..500] at @s run function lobby:chest_menu/main

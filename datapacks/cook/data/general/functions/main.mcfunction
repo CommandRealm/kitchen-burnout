@@ -11,6 +11,8 @@ execute as @a[scores={has_left=1..}] run function general:leave_game
 # Calling the main game function.
 execute if score $game state matches 1 run function game:main
 
+# Spectating function
+execute if score $game state matches 1 run function lobby:spectating/main
 
 # Lobby function
 execute if entity @a[x=0,y=66,z=0,distance=..500] run function lobby:main

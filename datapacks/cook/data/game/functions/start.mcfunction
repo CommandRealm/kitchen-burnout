@@ -7,6 +7,9 @@ scoreboard players set $const game_ticks 0
 scoreboard players reset $finished_recipes game
 scoreboard players reset $score game
 
+# Clear all players to reset books
+clear @a knowledge_book
+
 # Classic mode
 execute if score $mode settings matches 0 run scoreboard players set $finished_recipes game 0
 execute if score $mode settings matches 0 run scoreboard players set $score game 0
