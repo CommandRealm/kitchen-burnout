@@ -42,7 +42,7 @@ execute if score $mode settings matches 1..2 run team join 1_0 @a[tag=playing,ta
 execute if score $mode settings matches 1..2 run team join 2_0 @a[tag=playing,tag=!tutorial,tag=team_2]
 
 # Show held ingredient scoreboard
-execute if score $mode settings matches 0 run scoreboard objectives setdisplay sidebar sidebar_disp
+execute if score $mode settings matches 0 run scoreboard objectives setdisplay sidebar.team.gray sidebar_disp
 execute if score $mode settings matches 0 run scoreboard players reset * sidebar_disp
 execute if score $mode settings matches 0 run scoreboard players set @a[tag=playing,tag=!tutorial] sidebar_disp 0
 execute if score $mode settings matches 1..2 run scoreboard objectives setdisplay sidebar.team.blue sidebar_disp_1
