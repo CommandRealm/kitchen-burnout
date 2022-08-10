@@ -40,12 +40,12 @@
       ],
       "subtitle": "I'm the Melon Man!"
     },
-    "custom.pufferfish": {
+    "custom.mail": {
       "replace": true,
       "sounds": [
-        "custom/pufferfish"
+        "custom/mail"
       ],
-      "subtitle": "Ugh"
+      "subtitle": "Thou hast mail."
     },
     "custom.wilhelm": {
       "replace": true,

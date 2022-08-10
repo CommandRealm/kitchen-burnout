@@ -22,7 +22,7 @@ execute if score $sound bell_sound matches 14 run playsound custom.oof master @a
 execute if score $sound bell_sound matches 15 run playsound custom.melon master @a ~ ~ ~ 1 1
 
 # Legendary
-execute if score $sound bell_sound matches 16 run playsound custom.pufferfish master @a ~ ~ ~ 1 1
+execute if score $sound bell_sound matches 16 run playsound custom.mail master @a ~ ~ ~ 1 1
 execute if score $sound bell_sound matches 17 run playsound custom.wilhelm master @a ~ ~ ~ .25 1
 execute if score $sound bell_sound matches 18 run playsound custom.cc master @a ~ ~ ~ 1 1
 

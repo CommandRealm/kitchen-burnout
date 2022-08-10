@@ -53,7 +53,7 @@ team join lobby @a[tag=playing,tag=!tutorial]
 tellraw @a[tag=!playing] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
 tellraw @a[tag=tutorial] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
 execute unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Game over!","color":"green","bold":true}]
-execute if score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"NO CONTEST","color":"gray","bold":true}]
+execute if score $no_contest state matches 1 run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"NO CONTEST","color":"gray","bold":true}]
 
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game > $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Spoons","color":"aqua","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2]","color":"blue"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game < $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Forks","color":"light_purple","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2]","color":"red"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]

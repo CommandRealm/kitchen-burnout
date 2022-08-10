@@ -66,7 +66,8 @@ execute if score @s screen matches 15 if data entity @s EnderItems[{id:"minecraf
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_general=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:stone_button"}] run scoreboard players set @s hat 11
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_general=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:stone_button"}] run clear @s stone_button
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_milestone=true}] unless data entity @s EnderItems[{Slot:12b,id:"minecraft:iron_sword"}] run scoreboard players set @s knife 20
-execute if score @s screen matches 18 if entity @s[advancements={advancements:all_order=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:bell"}] run scoreboard players set @s bell_sound 19
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_order=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:player_head"}] run scoreboard players set @s bell_sound 19
+execute if score @s screen matches 18 if entity @s[advancements={advancements:all_order=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:player_head"}] run playsound custom.regs master @s ~ ~ ~ .025 1
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_lobby=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:oak_sign"}] run scoreboard players set @s prefix 263
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_lobby=true}] unless data entity @s EnderItems[{Slot:16b,id:"minecraft:oak_sign"}] run function general:rank
 execute if score @s screen matches 18 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_unlocks
