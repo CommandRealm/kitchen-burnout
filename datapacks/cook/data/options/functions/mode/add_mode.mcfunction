@@ -56,3 +56,11 @@ execute if score $display_mode settings matches 0 run scoreboard players set $mo
 execute if score $display_mode settings matches 1 run scoreboard players set $mode settings 3
 execute if score $display_mode settings matches 2 run scoreboard players set $mode settings 1
 execute if score $display_mode settings matches 3 run scoreboard players set $mode settings 2
+
+# Team platforms
+execute if score $display_mode settings matches 2..3 unless block 6 66 38 blue_stained_glass unless entity @e[type=falling_block,tag=team_platform] run fill 6 65 38 7 65 37 minecraft:black_concrete
+execute if score $display_mode settings matches 2..3 unless block 6 66 38 blue_stained_glass unless entity @e[type=falling_block,tag=team_platform] run fill 9 65 38 10 65 37 minecraft:black_concrete
+execute if score $display_mode settings matches 2..3 unless block 6 66 38 blue_stained_glass unless entity @e[type=falling_block,tag=team_platform] run setblock 8 65 36 minecraft:black_concrete
+execute if score $display_mode settings matches 2..3 unless block 6 66 38 blue_stained_glass unless entity @e[type=falling_block,tag=team_platform] run playsound block.stone.break master @a 9 65 38 3 0
+execute if score $display_mode settings matches 2..3 unless block 6 66 38 blue_stained_glass unless entity @e[type=falling_block,tag=team_platform] run schedule function options:teams/launch_blocks 5t replace
+execute unless score $display_mode settings matches 2..3 run function options:teams/remove_platforms

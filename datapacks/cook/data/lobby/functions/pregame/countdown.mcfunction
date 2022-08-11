@@ -21,12 +21,17 @@ execute store result score $players_on pregame if entity @a
 
 # Make players appear/disappear off of sidebar
 scoreboard players reset @a[scores={ready=0}] readied_players
-scoreboard players set @a[scores={ready=1}] readied_players 1
+execute unless score $mode settings matches 1..2 run scoreboard players set @a[scores={ready=1}] readied_players 1
+execute if score $mode settings matches 1..2 run scoreboard players set --§9§l[SPOONS]§f-- readied_players -1
+execute if score $mode settings matches 1..2 run scoreboard players set --§c§l[FORKS]§f-- readied_players -2
+execute if score $mode settings matches 1..2 run scoreboard players set @a[scores={ready=1},tag=lobby_team_1] readied_players -1
+execute if score $mode settings matches 1..2 run scoreboard players set @a[scores={ready=1},tag=lobby_team_2] readied_players -2
 
 
 
 # Countdown ending
 execute if score $ready_players pregame matches ..1 if score $mode settings matches 1..2 run function lobby:pregame/countdown_end
+execute if score $ready_players pregame matches 2.. if score $mode settings matches 3 run function lobby:pregame/countdown_end
 execute unless score $ready_players pregame matches 1.. unless score $mode settings matches 1..2 run function lobby:pregame/countdown_end
 
 execute if score $countdown pregame matches 0 run function lobby:pregame/countdown_hit_0

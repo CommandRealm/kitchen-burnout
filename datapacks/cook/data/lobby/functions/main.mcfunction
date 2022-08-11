@@ -29,5 +29,19 @@ execute as @a[gamemode=adventure,x=4,y=65,z=-6,dx=18,dy=5,dz=7,tag=tutorial,tag=
 tag @a[gamemode=adventure,tag=tutorial,x=4,y=65,z=-6,dx=18,dy=5,dz=7] add playing
 execute if entity @a[gamemode=adventure,tag=tutorial,x=0,y=66,z=0,distance=..500] run function lobby:tutorial/main
 
+# Team platforms
+execute as @e[type=falling_block,tag=team_platform] at @s unless block ~ ~-0.6 ~ air run playsound block.glass.fall master @a ~ ~ ~ 1 0
+execute as @e[type=falling_block,tag=team_platform] at @s unless block ~ ~-0.6 ~ air run setblock ~ ~-0.6 ~ sea_lantern
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s add lobby_team_1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s remove lobby_team_2
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s remove lobby_team_1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s add lobby_team_2
+execute if block 10 66 37 minecraft:red_stained_glass if block 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=true] run function options:teams/randomize
+execute if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=false]
+execute if block 10 66 37 minecraft:red_stained_glass as @e[type=area_effect_cloud,tag=team_platform] run data merge entity @s {CustomNameVisible:1b}
+execute unless block 10 66 37 minecraft:red_stained_glass as @e[type=area_effect_cloud,tag=team_platform] run data merge entity @s {CustomNameVisible:0b}
+#summon minecraft:area_effect_cloud 7.0 66.5 38.0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["team_platform"],CustomName:'["",{"translate":"The SPOONS","color":"blue"}]'}
+#summon minecraft:area_effect_cloud 10.0 66.5 38.0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["team_platform"],CustomName:'["",{"translate":"The FORKS","color":"red"}]'}
+# Spin armor stands
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2.5 ~
-#effect give @e[type=slime,x=0,y=66,z=0,distance=..1000] invisibility 100 255 true
+#effect give @e[type=slime,x=0,y=66,z=0,distance=..500] invisibility 100 255 true

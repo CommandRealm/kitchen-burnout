@@ -1,5 +1,5 @@
 # Get sound
-scoreboard players operation $sound bell_sound = @a[distance=..5,limit=1,sort=random] bell_sound
+scoreboard players operation $sound bell_sound = @a[distance=..500,limit=1,sort=random] bell_sound
 
 # Commons
 execute if score $sound bell_sound matches 1 run playsound block.note_block.bell master @a ~ ~ ~ .5 1

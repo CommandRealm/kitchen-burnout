@@ -9,8 +9,8 @@ clear @s
 gamemode adventure @s
 title @s times 0 25 5
 effect clear @s
-execute if score $mode settings matches 3 unless entity @a[gamemode=adventure,scores={ready=1..}] unless entity @a[gamemode=adventure,tag=playing,tag=!tutorial] run scoreboard players set @s ready 1
-execute unless score $mode settings matches 3 run scoreboard players set @s ready 1
+execute if score $mode settings matches 3 unless entity @a[gamemode=adventure,scores={ready=1..}] unless entity @a[gamemode=adventure,tag=playing,tag=!tutorial] run scoreboard players set @s[tag=!spectating] ready 1
+execute unless score $mode settings matches 3 run scoreboard players set @s[tag=!spectating] ready 1
 
 # Remove tags
 tag @s remove playing
@@ -18,6 +18,8 @@ tag @s remove in_pipe
 tag @s remove team_2
 tag @s remove admin
 tag @s remove spectating
+tag @s remove lobby_team_1
+tag @s remove lobby_team_2
 
 execute unless score $mode settings matches 2 run bossbar set game:timer players @a[tag=playing,tag=!tutorial]
 execute if score $mode settings matches 2 run bossbar set game:progress_1 players @a[tag=playing,tag=!tutorial,tag=!team_2]
