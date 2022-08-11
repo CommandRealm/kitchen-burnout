@@ -10,6 +10,7 @@ execute unless data entity @s[tag=has_manager] EnderItems[{Slot:6b}] run scorebo
 execute unless data entity @s[tag=has_lead] EnderItems[{Slot:7b}] run scoreboard players set @s prefix 7
 execute unless data entity @s[tag=has_cr] EnderItems[{Slot:8b}] run scoreboard players set @s prefix 99
 execute unless data entity @s[tag=has_art] EnderItems[{Slot:9b}] run scoreboard players set @s prefix 8
+execute unless data entity @s[tag=has_srart] EnderItems[{Slot:10b}] run scoreboard players set @s prefix 9
 execute unless data entity @s[tag=has_pc] EnderItems[{Slot:26b}] run scoreboard players set @s prefix -2
 
 execute unless data entity @s EnderItems[{Slot:18b}] run function lobby:chest_menu/start

@@ -18,6 +18,7 @@ item replace entity @s[tag=has_manager] enderchest.6 with book{clickable:1,HideF
 item replace entity @s[tag=has_lead] enderchest.7 with book{clickable:1,HideFlags:63,display:{Name:'[{"text":"{","color":"dark_purple","bold":true,"italic":false},{"translate":"Project Lead","bold":false},{"text":"}","bold":true}]'}}
 item replace entity @s[tag=has_cr] enderchest.8 with book{clickable:1,HideFlags:63,display:{Name:'[{"text":"{","color":"white","bold":true,"italic":false},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"}","color":"white","bold":true}]'}}
 item replace entity @s[tag=has_art] enderchest.9 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Artist} ","bold":false,"italic":false,"color":"green"}]'}}
+item replace entity @s[tag=has_srart] enderchest.10 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
 
 
 item replace entity @s[scores={prefix=0}] enderchest.0 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"dark_green"}]'}}
@@ -30,6 +31,7 @@ item replace entity @s[scores={prefix=6}] enderchest.6 with written_book{invalid
 item replace entity @s[scores={prefix=7}] enderchest.7 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"{","color":"dark_purple","bold":true,"italic":false},{"translate":"Project Lead","bold":false},{"text":"}","bold":true}]'}}
 item replace entity @s[scores={prefix=99}] enderchest.8 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"{","color":"white","bold":true,"italic":false},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"}","color":"white","bold":true}]'}}
 item replace entity @s[scores={prefix=8}] enderchest.9 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Artist} ","bold":false,"italic":false,"color":"green"}]'}}
+item replace entity @s[scores={prefix=9}] enderchest.10 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
 
 item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
 
