@@ -22,6 +22,9 @@ tag TripOnaka add has_test
 tag GameGenMC add has_test
 tag 3letters_ add has_test
 tag Quackleb add has_test
+tag Sktls add has_test
+tag Strongis13 add has_test
+tag 4953makcim add has_test
 
 # Helpers
 tag Bagee add has_help
@@ -41,7 +44,7 @@ tag oPando add has_help
 tag rgbyy add has_help
 tag EdLePug add has_help
 tag Calverin add has_help
-
+tag Urgle add has_help
 
 # Builders
 tag knad add has_bld

@@ -46,6 +46,7 @@ execute unless block 10 66 37 minecraft:red_stained_glass as @e[type=area_effect
 execute if block 10 66 37 minecraft:red_stained_glass if block 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=true] if score $game state matches 0 run function options:teams/randomize
 execute if score $random_button pregame matches 1.. run scoreboard players remove $random_button pregame 1
 execute if score $random_button pregame matches 0 if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=false]
+execute if score $random_button pregame matches 0 if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 35 minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false,waterlogged=false] replace
 
 # Spin armor stands
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2.5 ~
