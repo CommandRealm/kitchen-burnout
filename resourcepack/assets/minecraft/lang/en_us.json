@@ -138,7 +138,11 @@
     "Please wait until the game is over to change this option.": "Please wait until the game is over to change this option.",
     "Randomize Teams": "Randomize Teams",
     "Stand here to join": "Stand here to join",
-
+    "You're on the Spoons!": "You're on the Spoons!",
+    "You're on the Forks!": "You're on the Forks!",
+    "[SPOONS]": "[SPOONS]",
+    "[FORKS]": "[FORKS]",
+    
     "The game has ended.": "The game has ended.",
     "Time's Up!": "Time's Up!",
     "Time!": "Time!",
@@ -234,9 +238,9 @@
     "Go to the edge of the snowglobe!": "Go to the edge of the snowglobe!",
 
 
-    "[SPOONS]": "[SPOONS] ",
-    "[FORKS]": "[FORKS] ",
-    "[SPORK]": "[SPORK]",
+    "[SPOONS] ": "[SPOONS] ",
+    "[FORKS] ": "[FORKS] ",
+    "[SPORK] ": "[SPORK] ",
     "(Tester) ": "(Tester) ",
     "[Helper] ": "[Helper] ",
     "{Builder} ": "{Builder} ",

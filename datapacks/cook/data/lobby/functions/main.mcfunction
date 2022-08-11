@@ -32,16 +32,26 @@ execute if entity @a[gamemode=adventure,tag=tutorial,x=0,y=66,z=0,distance=..500
 # Team platforms
 execute as @e[type=falling_block,tag=team_platform] at @s unless block ~ ~-0.6 ~ air run playsound block.glass.fall master @a ~ ~ ~ 1 0
 execute as @e[type=falling_block,tag=team_platform] at @s unless block ~ ~-0.6 ~ air run setblock ~ ~-0.6 ~ sea_lantern
-execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s add lobby_team_1
-execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s remove lobby_team_2
-execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s remove lobby_team_1
-execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=1,dz=1] at @s run tag @s add lobby_team_2
-execute if block 10 66 37 minecraft:red_stained_glass if block 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=true] run function options:teams/randomize
-execute if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=false]
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=0,dz=1,tag=!lobby_team_1] at @s[nbt={OnGround:1b}] run playsound entity.experience_orb.pickup master @s ~ ~ ~ 5 1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=0,dz=1,tag=!lobby_team_1] at @s[nbt={OnGround:1b}] run tellraw @s ["",{"text":"- ","color":"gray"},{"translate":"You're on the Spoons!","color":"blue"}]
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=0,dz=1] at @s run tag @s[nbt={OnGround:1b}] add lobby_team_1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=6,y=68,z=37,dx=1,dy=0,dz=1] at @s run tag @s[nbt={OnGround:1b}] remove lobby_team_2
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=0,dz=1,tag=!lobby_team_2] at @s[nbt={OnGround:1b}] run playsound entity.experience_orb.pickup master @s ~ ~ ~ 5 1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=0,dz=1,tag=!lobby_team_2] at @s[nbt={OnGround:1b}] run tellraw @s ["",{"text":"- ","color":"gray"},{"translate":"You're on the Forks!","color":"red"}]
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=0,dz=1] at @s run tag @s[nbt={OnGround:1b}] remove lobby_team_1
+execute if block 10 66 37 minecraft:red_stained_glass as @a[gamemode=adventure,x=9,y=68,z=37,dx=1,dy=0,dz=1] at @s run tag @s[nbt={OnGround:1b}] add lobby_team_2
 execute if block 10 66 37 minecraft:red_stained_glass as @e[type=area_effect_cloud,tag=team_platform] run data merge entity @s {CustomNameVisible:1b}
 execute unless block 10 66 37 minecraft:red_stained_glass as @e[type=area_effect_cloud,tag=team_platform] run data merge entity @s {CustomNameVisible:0b}
-#summon minecraft:area_effect_cloud 7.0 66.5 38.0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["team_platform"],CustomName:'["",{"translate":"The SPOONS","color":"blue"}]'}
-#summon minecraft:area_effect_cloud 10.0 66.5 38.0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["team_platform"],CustomName:'["",{"translate":"The FORKS","color":"red"}]'}
+# Randomize button
+execute if block 10 66 37 minecraft:red_stained_glass if block 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=true] if score $game state matches 0 run function options:teams/randomize
+execute if score $random_button pregame matches 1.. run scoreboard players remove $random_button pregame 1
+execute if score $random_button pregame matches 0 if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=false]
+
 # Spin armor stands
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2.5 ~
-#effect give @e[type=slime,x=0,y=66,z=0,distance=..500] invisibility 100 255 true
+
+# Warp players back if they go too far out
+execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run effect give @s blindness 3 255 true
+execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run effect give @s darkness 3 255 true
+execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run playsound entity.enderman.teleport master @s -11.0 68 46.0 1000 0
+execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run tp @s -11.0 68 46.0 -148 -18
