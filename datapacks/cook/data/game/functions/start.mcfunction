@@ -24,8 +24,9 @@ scoreboard players set $winner shuffle 0
 scoreboard players set $end_timer shuffle 0
 
 # Giving people the playing tag
+tag @a[scores={ready=1..},tag=tutorial] remove playing
+execute as @a[scores={ready=1..},tag=tutorial] at @s run function lobby:tutorial/exit
 tag @a[scores={ready=1..}] add playing
-tag @a[scores={ready=1..}] remove tutorial
 clear @a[tag=playing,tag=!tutorial]
 effect clear @a[tag=playing,tag=!tutorial]
 gamemode adventure @a[tag=playing]
