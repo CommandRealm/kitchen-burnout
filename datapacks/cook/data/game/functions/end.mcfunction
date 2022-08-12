@@ -81,6 +81,16 @@ execute if score $mode settings matches 3 unless score $no_contest state matches
 execute if score $mode settings matches 3 unless score $no_contest state matches 1 if score $timer game_seconds matches ..9 if score $decaseconds game_ticks matches ..9 run tellraw @a ["",{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]","color":"green"},{"translate":"'s ","color":"green"},{"translate":"Competitive Time: ","color":"dark_red","underlined": false},{"score":{"objective":"game_minutes","name":"$timer"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$timer"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$decaseconds"},"color":"red","bold":true}]
 execute if score $mode settings matches 3 unless score $no_contest state matches 1 as @a[gamemode=adventure,tag=playing,limit=1] at @s run function game:mode_competitive/best_times
 
+# Cosmetic Unlocks
+execute unless score $mode settings matches 1..2 unless score $no_contest state matches 1 as @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_20
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game > $score_2 game as @a[tag=playing,tag=!tutorial,tag=!team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_60
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game < $score_2 game as @a[tag=playing,tag=!tutorial,tag=team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_60
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game = $score_2 game as @a[tag=playing,tag=!tutorial,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_20
+execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 1 as @a[tag=playing,tag=!tutorial,tag=!team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_60
+execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 1 as @a[tag=playing,tag=!tutorial,tag=team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_20
+execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 2 as @a[tag=playing,tag=!tutorial,tag=team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_60
+execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 2 as @a[tag=playing,tag=!tutorial,tag=!team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_20
+
 # Reset teams
 execute as @a[tag=playing,tag=!tutorial] at @s run function general:rank
 

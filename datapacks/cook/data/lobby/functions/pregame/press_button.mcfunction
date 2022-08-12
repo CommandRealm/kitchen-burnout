@@ -10,8 +10,9 @@ setblock -4 67 37 minecraft:iron_trapdoor[facing=south,half=top,open=false,power
 
 execute if score $countdown pregame matches 0.. run tag @p add temporary_tag
 execute if score $countdown pregame matches 0.. run function lobby:pregame/countdown_end
-execute if score $ready_players pregame matches 2.. if score $mode settings matches 1..2 unless score $countdown pregame matches 0.. unless entity @a[tag=temporary_tag] run function lobby:pregame/start_countdown
-execute if score $ready_players pregame matches ..1 if score $mode settings matches 1..2 run function lobby:pregame/not_enough_players
+execute if score $ready_players_1 pregame matches 1.. if score $ready_players_2 pregame matches 1.. if score $mode settings matches 1..2 unless score $countdown pregame matches 0.. unless entity @a[tag=temporary_tag] run function lobby:pregame/start_countdown
+execute unless score $ready_players_1 pregame matches 1.. if score $mode settings matches 1..2 run function lobby:pregame/not_enough_players
+execute unless score $ready_players_2 pregame matches 1.. if score $mode settings matches 1..2 run function lobby:pregame/not_enough_players
 execute if score $ready_players pregame matches 1.. if score $mode settings matches 0 unless score $countdown pregame matches 0.. unless entity @a[tag=temporary_tag] run function lobby:pregame/start_countdown
 execute if score $ready_players pregame matches 1 if score $mode settings matches 3 unless score $countdown pregame matches 0.. unless entity @a[tag=temporary_tag] run function lobby:pregame/start_countdown
 execute if score $ready_players pregame matches 2.. if score $mode settings matches 3 run function lobby:pregame/too_many_players

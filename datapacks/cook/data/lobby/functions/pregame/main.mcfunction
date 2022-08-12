@@ -13,7 +13,11 @@ title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure,scores={ready=1},tag=!pa
 
 # Count readied players
 execute store result score $ready_players pregame if entity @a[scores={ready=1..}]
+execute store result score $ready_players_1 pregame if entity @a[scores={ready=1..},tag=lobby_team_1]
+execute store result score $ready_players_2 pregame if entity @a[scores={ready=1..},tag=lobby_team_2]
 execute if entity @a[tag=admin] run scoreboard players add $ready_players pregame 1
+execute if entity @a[tag=admin] run scoreboard players add $ready_players_1 pregame 1
+execute if entity @a[tag=admin] run scoreboard players add $ready_players_2 pregame 1
 # Start countdown if it's ready to be started
 execute if block -4 68 38 stone_button[powered=true] run function lobby:pregame/press_button
 
