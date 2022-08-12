@@ -1,6 +1,3 @@
-playsound minecraft:entity.player.hurt_freeze master @s ~ ~ ~ 100 0 1
-execute if score @s ingredient matches 1..50 run effect give @s blindness 2 128 true
-
 execute if score @s ingredient matches 1..50 run advancement grant @s only game:inventory_changed
 execute if score @s ingredient matches 1..50 run scoreboard players set @s ingredient 51
 advancement grant @s only advancements:general_hazard

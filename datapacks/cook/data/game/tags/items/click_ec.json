@@ -94,6 +94,9 @@
       "minecraft:cake",
       "minecraft:melon",
       "minecraft:pufferfish",
-      "minecraft:ghast_tear"
+      "minecraft:ghast_tear",
+      "minecraft:clock",
+      "minecraft:map",
+      "minecraft:crafting_table"
     ]
   }
