@@ -19,7 +19,7 @@ item replace entity @s enderchest.3 with crafting_table{clickable:1,invalid_clic
 
 item replace entity @s enderchest.4 with command_block{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"text":"SPGoding\'s Data-pack Helper+","bold":true,"italic":false,"color":"yellow"}]',Lore:['[{"text":" - MCFunction support in Visual Studio Code.","color":"gray","italic":false}]']}}
 
-item replace entity @s enderchest.5 with clock{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"text":"Command Master","bold":true,"italic":false,"color":"yellow"}]',Lore:['[{"text":" - Wolrdborder-based timer tech.","color":"gray","italic":false}]']}}
+item replace entity @s enderchest.5 with clock{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"text":"Command Master","bold":true,"italic":false,"color":"yellow"}]',Lore:['[{"text":" - Worldborder-based timer tech.","color":"gray","italic":false}]']}}
 
 item replace entity @s enderchest.6 with map{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"text":"mc-map.djfun.de","bold":true,"italic":false,"color":"yellow"}]',Lore:['[{"text":" - Image to minecraft map generator.","color":"gray","italic":false}]']}}
 

@@ -90,6 +90,8 @@ execute as @e[type=armor_stand,tag=bell] at @s run function game:stations/bell/m
 
 # If there is a recipe cooldown
 execute if entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..}] run function game:recipe_cooldown/main
+execute if score $place_plate_1 recipe_cooldown matches 1.. run function game:recipe_cooldown/place_plate
+execute if score $place_plate_2 recipe_cooldown matches 1.. run function game:recipe_cooldown/place_plate
 execute if score $flag recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=!team_2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!team_2,limit=1,sort=random] recipe_cooldown 65
 execute if score $flag_2 recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=team_2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1,sort=random] recipe_cooldown 65
 
