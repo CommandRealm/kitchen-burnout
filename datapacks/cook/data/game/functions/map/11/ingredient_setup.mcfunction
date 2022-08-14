@@ -1,3 +1,4 @@
+execute positioned 1996 64 4 run kill @e[tag=ingredient_setup,distance=..500]
 execute positioned 1996 64 4 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
 execute positioned 1996 64 -2 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
 execute positioned 2002 64 -4 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}

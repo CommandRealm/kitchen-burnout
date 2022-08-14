@@ -1,3 +1,4 @@
+execute positioned 12516 104 1505 run kill @e[tag=ingredient_setup,distance=..500]
 # Ingredients
 execute positioned 12516 104 1505 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 execute positioned 12516 103 1504 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}

@@ -1,3 +1,4 @@
+execute positioned 1965 53 1447 run kill @e[tag=ingredient_setup,distance=..500]
 # Parkour endings
 execute positioned 1965 53 1447 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
 execute positioned 1957 41 1494 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}

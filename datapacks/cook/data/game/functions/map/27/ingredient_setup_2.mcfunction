@@ -1,3 +1,4 @@
+execute positioned 13491 67 499 run kill @e[tag=ingredient_setup,distance=..500]
 # House
 execute positioned 13491 67 499 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 execute positioned 13491 67 497 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
