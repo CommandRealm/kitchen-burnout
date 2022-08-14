@@ -29,5 +29,9 @@ scoreboard players reset @a[gamemode=adventure,tag=playing] freeze_time
 scoreboard players reset * end
 scoreboard players reset * restart
 
+execute as @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1] at @s run tag @s add restart_early_tag
+scoreboard players set @a[tag=!restart_early_tag] ready -1000
 # Actually Restart
 function game:start
+scoreboard players set @a[tag=!restart_early_tag,scores={ready=..-10}] ready 1
+tag @a remove restart_early_tag
