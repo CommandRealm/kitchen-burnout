@@ -1,3 +1,4 @@
+say meteor for team 2
 # Choose a section
 scoreboard players set $mod random 8
 function random:random
