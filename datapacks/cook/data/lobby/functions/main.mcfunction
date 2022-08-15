@@ -43,6 +43,9 @@ execute if score $random_button pregame matches 1.. run scoreboard players remov
 execute if score $random_button pregame matches 0 if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 37 minecraft:stone_button[face=wall,facing=south,powered=false]
 execute if score $random_button pregame matches 0 if block 10 66 37 minecraft:red_stained_glass run setblock 8 67 35 minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false,waterlogged=false] replace
 
+# Intro text
+execute if entity @a[gamemode=adventure,x=0,y=66,z=0,distance=..500,tag=intro_text_call] run function lobby:intro/main
+
 # Spin armor stands
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2.5 ~
 

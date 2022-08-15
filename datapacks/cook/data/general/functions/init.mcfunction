@@ -33,6 +33,8 @@ scoreboard objectives add has_reset dummy
 
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
 
+scoreboard objectives add intro dummy
+
 scoreboard objectives add state dummy
 # $game will be 1 while the game is running and 0 while it isn't running.
 scoreboard players add $game state 0

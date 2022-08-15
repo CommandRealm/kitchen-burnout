@@ -21,10 +21,12 @@ execute if entity @s[tag=has_srart] run scoreboard players set @s prefix 9
 execute if entity @s[tag=has_manager] run scoreboard players set @s prefix 6
 execute if entity @s[tag=has_lead] run scoreboard players set @s prefix 7
 
+# Reset cosmetics
 scoreboard players set @s hat 1
 scoreboard players set @s knife 1
 scoreboard players set @s bell_sound 1
 
+# Set PBs
 execute unless score @s comp_1 matches 1..2147483647 run scoreboard players set @s comp_1 2147483647
 execute unless score @s comp_2 matches 1..2147483647 run scoreboard players set @s comp_2 2147483647
 execute unless score @s comp_3 matches 1..2147483647 run scoreboard players set @s comp_3 2147483647
@@ -45,3 +47,6 @@ execute unless score @s comp_17 matches 1..2147483647 run scoreboard players set
 execute unless score @s comp_18 matches 1..2147483647 run scoreboard players set @s comp_18 2147483647
 execute unless score @s comp_19 matches 1..2147483647 run scoreboard players set @s comp_19 2147483647
 execute unless score @s comp_20 matches 1..2147483647 run scoreboard players set @s comp_20 2147483647
+
+# Start intro
+tag @s add intro_text_call
