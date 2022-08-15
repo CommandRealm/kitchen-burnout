@@ -1,4 +1,3 @@
-say meteor for team 1
 # Choose a section
 scoreboard players set $mod random 8
 function random:random
