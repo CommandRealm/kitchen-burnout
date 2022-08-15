@@ -77,9 +77,13 @@ execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function g
 
 # Recipe actionbar display
 execute if score $mode settings matches 0 as @a[tag=playing,tag=!tutorial] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!tutorial]"}]
+execute if score $mode settings matches 0 as @a[gamemode=spectator,tag=spectating] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!tutorial]"}]
 execute if score $mode settings matches 3 as @a[tag=playing,tag=!tutorial] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!tutorial]"}]
+execute if score $mode settings matches 3 as @a[gamemode=spectator,tag=spectating] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!tutorial]"}]
 execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!tutorial,tag=!team_2] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2,tag=!tutorial]"}]
+execute if score $mode settings matches 1..2 as @a[gamemode=spectator,tag=spectating] at @s if entity @a[gamemode=adventure,tag=playing,tag=!team_2,tag=!tutorial,distance=..500] if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!2,tag=!tutorial]"}]
 execute if score $mode settings matches 1..2 as @a[tag=playing,tag=!tutorial,tag=team_2] at @s if data storage current_order_2 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2,tag=!tutorial]"}]
+execute if score $mode settings matches 1..2 as @a[gamemode=spectator,tag=spectating] at @s if entity @a[gamemode=adventure,tag=playing,tag=team_2,distance=..500] if data storage current_order_2 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=2,tag=!tutorial]"}]
 execute as @a[tag=playing,tag=tutorial] at @s if data storage tutorial {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=tutorial]"}]
 
 # Prep Station
