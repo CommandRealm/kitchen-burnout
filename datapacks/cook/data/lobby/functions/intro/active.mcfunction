@@ -88,7 +88,7 @@ execute as @a[tag=intro_text_call,scores={intro=104}] at @s run playsound minecr
 
 #execute as @a[tag=intro_text_call] at @s run playsound minecraft:block.note_block.hat master @a[scores={intro=78..86}] ~ ~ ~ 0.75 1.25
 
-execute as @a[tag=intro_text_call] at @s run playsound minecraft:entity.firework_rocket.blast master @a[scores={intro=101..111}] ~ ~ ~ 0.25 1.0
+#execute as @a[tag=intro_text_call] at @s run playsound minecraft:entity.firework_rocket.blast master @a[scores={intro=101..111}] ~ ~ ~ 0.25 1.0
 
 
 ##Ending function
