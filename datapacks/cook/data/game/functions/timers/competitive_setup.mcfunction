@@ -1,5 +1,5 @@
 scoreboard players set $timer game_ticks 0
-bossbar set game:timer players @a[tag=playing,tag=!tutorial]
+bossbar set game:timer players @a[tag=show_bossbar]
 bossbar set game:timer color red
 bossbar set game:timer visible true
 bossbar set game:timer max 1

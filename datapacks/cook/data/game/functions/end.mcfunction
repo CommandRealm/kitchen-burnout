@@ -110,6 +110,7 @@ bossbar set game:progress_2 visible false
 tag @a[tag=playing,tag=!tutorial] remove mechanics
 tag @a[tag=playing,tag=!tutorial] remove playing
 tag @a remove team_2
+tag @a remove show_bossbar
 
 scoreboard objectives setdisplay sidebar
 

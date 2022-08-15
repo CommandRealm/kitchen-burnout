@@ -20,8 +20,9 @@ tag @s remove admin
 tag @s remove spectating
 tag @s remove lobby_team_1
 tag @s remove lobby_team_2
+tag @s remove show_bossbar
 
-execute unless score $mode settings matches 2 run bossbar set game:timer players @a[tag=playing,tag=!tutorial]
+execute unless score $mode settings matches 2 run bossbar set game:timer players @a[tag=show_bossbar]
 execute if score $mode settings matches 2 run bossbar set game:progress_1 players @a[tag=playing,tag=!tutorial,tag=!team_2]
 execute if score $mode settings matches 2 run bossbar set game:progress_2 players @a[tag=playing,tag=!tutorial,tag=team_2]
 

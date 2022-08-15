@@ -30,6 +30,7 @@ tag @a[scores={ready=1..}] add playing
 clear @a[tag=playing,tag=!tutorial]
 effect clear @a[tag=playing,tag=!tutorial]
 tag @a[tag=playing] remove intro_text_call
+tag @a[tag=playing,tag=!tutorial] add show_bossbar
 gamemode adventure @a[tag=playing]
 tag @a[tag=playing] remove team_2
 

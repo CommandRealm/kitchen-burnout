@@ -1,5 +1,7 @@
 # Spectate
 tag @s add spectating
+tag @s add show_bossbar
+execute unless score $mode settings matches 2 run bossbar set game:timer players @a[tag=show_bossbar]
 gamemode spectator @s
 tag @s remove playing
 tag @s remove tutorial
