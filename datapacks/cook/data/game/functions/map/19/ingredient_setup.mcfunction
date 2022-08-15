@@ -1,4 +1,5 @@
 execute positioned 2516 104 1505 run kill @e[tag=ingredient_setup,distance=..500]
+fill 2518 102 1493 2532 102 1507 air replace fire
 # Ingredients
 execute positioned 2516 104 1505 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 execute positioned 2516 103 1504 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
