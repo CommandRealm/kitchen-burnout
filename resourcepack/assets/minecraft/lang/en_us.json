@@ -159,7 +159,7 @@
     "Shuffle": "Shuffle",
     "All players must work together to complete as many recipes as possible before time runs out.": "All players must work together to complete as many recipes as possible before time runs out.",
     "One player must complete a set of three fixed recipes as fast as possible.": "One player must complete a set of three fixed recipes as fast as possible.",
-    "Two teams compete to finish more recipes than the other team before time runs out.": "Two teams compete to finish more recipes than the other team before time runs out.",
+    "Two teams compete to finish more recipes than the other before time runs out.": "Two teams compete to finish more recipes than the other before time runs out.",
     "Two teams race their way through each food type by completing one recipe in each of four kitchens as fast as possible.": "Two teams race their way through each food type by completing one recipe in each of four kitchens as fast as possible.",
     "Need a player on The Spoons.":"Need a player on The Spoons.",
     "Need a player on The Forks.": "Need a player on The Forks.",
@@ -242,7 +242,10 @@
     " Points!": " Points!",
     "Time: ": "Time: ",
     "Orders": "Orders",
-
+    "Your Score:": "Your Score:",
+    "Their Score:": "Their Score:",
+    " recipes)": " recipes)",
+    " recipe)": " recipe)",
 
     "Hold ": "Hold ",
     " to charge up!": " to charge up!",

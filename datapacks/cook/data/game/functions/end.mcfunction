@@ -31,23 +31,6 @@ worldborder set 59999968
 
 title @a[tag=playing] times 0 25 5
 
-# Resets players
-effect clear @a[tag=playing,tag=!tutorial]
-gamemode adventure @a[tag=playing]
-clear @a[tag=playing,tag=!tutorial]
-tp @a[tag=playing,tag=!tutorial] -11.0 68 46.0 -148 -18
-spawnpoint @a[tag=playing] -11 68 46 -148
-scoreboard players reset @a freeze_time
-setblock -4 68 38 minecraft:stone_button[face=wall,facing=south,powered=false]
-execute as @a[gamemode=spectator,tag=spectating] at @s run function general:join_game
-scoreboard players reset * stop_spectating
-
-# Resetting the dropped knowledge book objective.
-scoreboard players reset @a[tag=playing,tag=!tutorial] drop_ready_book
-
-# healing players
-effect give @a[tag=playing] regeneration 1 255 true
-
 # Scores
 team join lobby @a[tag=playing,tag=!tutorial]
 tellraw @a[tag=!playing] ["",{"text":"- ","color":"gray"},{"translate":"The game has ended.","color":"green"}]
@@ -55,19 +38,32 @@ tellraw @a[tag=tutorial] ["",{"text":"- ","color":"gray"},{"translate":"The game
 execute unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Game over!","color":"green","bold":true}]
 execute if score $no_contest state matches 1 run tellraw @a ["",{"text":"- ","color":"gray"},{"translate":"NO CONTEST","color":"gray","bold":true}]
 
+# Classic
+execute if score $mode settings matches 0 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
+execute if score $mode settings matches 0 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes"},"color":"gold","bold":true}]
+# Versus
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game > $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Spoons","color":"aqua","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2]","color":"blue"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game < $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Forks","color":"light_purple","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2]","color":"red"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game > $score_2 game run playsound entity.firework_rocket.twinkle master @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2] -11.0 68 46.0 1000 1
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game < $score_2 game run playsound entity.firework_rocket.twinkle master @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=team_2] -11.0 68 46.0 1000 1
 execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $score game = $score_2 game run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"It's a tie!","color":"gold"}]
-execute if score $mode settings matches 0 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
-execute if score $mode settings matches 0 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes"},"color":"gold","bold":true}]
 
-execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Score: ","color":"green"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true}]
-execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_1 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Your Score:","color":"green","underlined": true}," ",{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true},{"text":" (","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold"},{"translate":" recipes)","color":"green"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_1 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Your Score:","color":"green","underlined": true}," ",{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true},{"text":" (","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold"},{"translate":" recipe)","color":"green"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_2 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Their Score: ","color":"gray"},{"score":{"objective":"game","name":"$score_2"},"color":"dark_gray","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"dark_gray"},{"translate":" recipes)","color":"gray"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_2 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Their Score: ","color":"gray"},{"score":{"objective":"game","name":"$score_2"},"color":"dark_gray","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"dark_gray"},{"translate":" recipe)","color":"gray"}]
+#execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=!team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_2 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Your Score:","color":"green","underlined": true}," ",{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true},{"text":" (","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold"},{"translate":" recipes)","color":"green"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_2 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Your Score:","color":"green","underlined": true}," ",{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true},{"text":" (","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold"},{"translate":" recipe)","color":"green"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_1 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Their Score: ","color":"gray"},{"score":{"objective":"game","name":"$score"},"color":"dark_gray","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"dark_gray"},{"translate":" recipes)","color":"gray"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_1 game matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Their Score: ","color":"gray"},{"score":{"objective":"game","name":"$score"},"color":"dark_gray","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"dark_gray"},{"translate":" recipe)","color":"gray"}]
+#execute if score $mode settings matches 1 unless score $no_contest state matches 1 run tellraw @a[tag=playing,tag=!tutorial,tag=team_2] ["",{"text":"- ","color":"gray"},{"translate":"Completed Recipes: ","color":"green"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":true}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_1 game matches 1 run tellraw @a[tag=spectating] ["",{"text":"- ","color":"gray"},{"translate":"The Spoons","color":"blue"},{"text":": ","color":"blue"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":false},{"translate":" recipes)","color":"gray"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_1 game matches 1 run tellraw @a[tag=spectating] ["",{"text":"- ","color":"gray"},{"translate":"The Spoons","color":"blue"},{"text":": ","color":"blue"},{"score":{"objective":"game","name":"$score"},"color":"gold","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_1"},"color":"gold","bold":false},{"translate":" recipe)","color":"gray"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 unless score $finished_recipes_2 game matches 1 run tellraw @a[tag=spectating] ["",{"text":"- ","color":"gray"},{"translate":"The Forks","color":"red"},{"text":": ","color":"red"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":false},{"translate":" recipes)","color":"gray"}]
+execute if score $mode settings matches 1 unless score $no_contest state matches 1 if score $finished_recipes_2 game matches 1 run tellraw @a[tag=spectating] ["",{"text":"- ","color":"gray"},{"translate":"The Forks","color":"red"},{"text":": ","color":"red"},{"score":{"objective":"game","name":"$score_2"},"color":"gold","bold":true},{"text":" (","color":"gray"},{"score":{"objective":"game","name":"$finished_recipes_2"},"color":"gold","bold":false},{"translate":" recipe)","color":"gray"}]
 
+# Shuffle
 execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 1 run tellraw @a ["",{"text":"+ ","color":"gray"},{"translate":"The Spoons","color":"aqua","bold":true},{"text":" (","color":"gray"},{"selector":"@a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2]","color":"blue"},{"text":")","color":"gray"},{"translate":" win!","color":"gold"}]
 execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 1 run advancement grant @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2] only advancements:milestone_shuffle
 execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 1 run playsound entity.firework_rocket.twinkle master @a[gamemode=adventure,tag=playing,tag=!tutorial,tag=!team_2] -11.0 68 46.0 1000 1
@@ -97,6 +93,23 @@ execute if score $mode settings matches 2 unless score $no_contest state matches
 execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 2 as @a[tag=playing,tag=!tutorial,tag=team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_60
 execute if score $mode settings matches 2 unless score $no_contest state matches 1 if score $winner shuffle matches 2 as @a[tag=playing,tag=!tutorial,tag=!team_2,tag=!all_cosmetics] at @s run function lobby:cosmetics/give_20
 
+
+# Resets players
+effect clear @a[tag=playing,tag=!tutorial]
+gamemode adventure @a[tag=playing]
+clear @a[tag=playing,tag=!tutorial]
+tp @a[tag=playing,tag=!tutorial] -11.0 68 46.0 -148 -18
+spawnpoint @a[tag=playing] -11 68 46 -148
+scoreboard players reset @a freeze_time
+setblock -4 68 38 minecraft:stone_button[face=wall,facing=south,powered=false]
+execute as @a[gamemode=spectator,tag=spectating] at @s run function general:join_game
+scoreboard players reset * stop_spectating
+
+# Resetting the dropped knowledge book objective.
+scoreboard players reset @a[tag=playing,tag=!tutorial] drop_ready_book
+
+# healing players
+effect give @a[tag=playing] regeneration 1 255 true
 # Reset teams
 execute as @a[tag=playing,tag=!tutorial] at @s run function general:rank
 
