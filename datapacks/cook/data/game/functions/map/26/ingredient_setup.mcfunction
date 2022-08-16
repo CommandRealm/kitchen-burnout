@@ -1,4 +1,5 @@
 execute positioned 3476 72 1 run kill @e[tag=ingredient_setup,distance=..500]
+fill 3497 70 22 3454 70 -21 water replace minecraft:frosted_ice
 # Prep
 execute positioned 3476 72 1 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 execute positioned 3476 72 0 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}

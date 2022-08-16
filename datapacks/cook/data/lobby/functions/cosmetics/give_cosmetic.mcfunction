@@ -1,5 +1,4 @@
 # Main function to actually give a cosmetic
-scoreboard players reset $success random
 scoreboard players set $mod random 8
 function random:random
 execute if score $output random matches 0..1 unless entity @s[tag=hat_4,tag=hat_5,tag=hat_6,tag=hat_7,tag=hat_8,tag=hat_9,tag=hat_10] run function lobby:cosmetics/hats/give

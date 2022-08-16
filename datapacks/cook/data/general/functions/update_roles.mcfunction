@@ -13,6 +13,34 @@ tag @a remove has_cr
 
 
 # Testers
+tag FalconReign add has_test
+tag Connop add has_test
+tag TheRegularMex add has_test
+tag Captonium add has_test
+#tag TheRangerMark add has_test
+tag TheTypicalMex add has_test
+tag Calverin add has_test
+tag ChipChase add has_test
+tag CheckMC add has_test
+tag SmallDeemo add has_test
+tag Focii_ add has_test
+tag pcgus add has_test
+tag Bodi25 add has_test
+tag EdLePug add has_test
+tag Bagee add has_test
+tag BobaFate add has_test
+tag knad add has_test
+tag Mezimo add has_test
+tag Shullker add has_test
+tag Pinkessi add has_test
+tag joelzoboyo add has_test
+tag Beybwug add has_test
+tag Coraze add has_test
+tag oPando add has_test
+tag rgbyy add has_test
+tag pogglin add has_test
+tag Urgle add has_test
+tag Icy_Craby add has_test
 tag KirbyThings add has_test
 tag JaxF2008 add has_test
 tag Blaxter22 add has_test
@@ -25,6 +53,11 @@ tag Quackleb add has_test
 tag Sktls add has_test
 tag Strongis13 add has_test
 tag 4953makcim add has_test
+tag blunkaccino add has_test
+tag dio_yeeto add has_test
+tag McDic add has_test
+tag TheTurtleDan add has_test
+tag Roleinet add has_test
 
 # Helpers
 tag Bagee add has_help
