@@ -26,9 +26,9 @@ execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minec
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:bell"}] run function lobby:chest_menu/start_bell_sounds
 execute if score @s screen matches 1 unless data entity @s EnderItems[{id:"minecraft:gold_nugget"}] run function lobby:chest_menu/start_unlocks
 
-##Statistics screen
-execute if score @s screen matches 5 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start
-execute if score @s screen matches 5 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_statistics
+##Personal Bests screen
+#execute if score @s screen matches 5 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start
+#execute if score @s screen matches 5 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_statistics
 
 ##Cosmetics Hats screen.
 execute if score @s screen matches 10 store result score $calculate calculate run clear @s #game:click_ec{cosmetic:1} 0

@@ -14,7 +14,7 @@ item replace entity @s enderchest.10 with turtle_helmet{clickable:1,HideFlags:63
 
 item replace entity @s enderchest.12 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Tutorial","bold":true,"italic":false,"color":"green"}]'}}
 
-item replace entity @s enderchest.14 with nether_star{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Statistics","bold":true,"italic":false,"color":"red"}]'}}
+item replace entity @s enderchest.14 with nether_star{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Personal Bests","bold":true,"italic":false,"color":"red"}]'}}
 
 item replace entity @s enderchest.16 with command_block{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Credits","bold":true,"italic":false,"color":"aqua"}]'}}
 

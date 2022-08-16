@@ -5,7 +5,7 @@
     
     "Cosmetics": "Cosmetics",
     "Tutorial": "Tutorial",
-    "Statistics": "Statistics",
+    "Personal Bests": "Personal Bests",
     "Credits": "Credits",
     "Titles": "Titles",
     "Hats": "Hats",
@@ -86,6 +86,10 @@
     "Thanks to all the testers!": "Thanks to all the testers!",
     "Click to receive a message": "Click to receive a message",
     "showing the playtesters.": "showing the playtesters.",
+
+    "COMPETITIVE PERSONAL BESTS": "COMPETITIVE PERSONAL BESTS",
+    "No scores to display!": "No scores to display!",
+
 
 
     "Burgers": "Burgers",
