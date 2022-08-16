@@ -1,21 +1,11 @@
-execute positioned ~-1 ~-1.5 ~-1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~-1 ~-1.5 ~ unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~-1 ~-1.5 ~1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~-1 ~-1.5 ~2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~ ~-1.5 ~-2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~ ~-1.5 ~-1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~ ~-1.5 ~ unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~ ~-1.5 ~1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~ ~-1.5 ~2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~1 ~-1.5 ~-2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~1 ~-1.5 ~-1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~1 ~-1.5 ~ unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-execute positioned ~1 ~-1.5 ~1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~1 ~-1.5 ~2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~2 ~-1.5 ~-2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~2 ~-1.5 ~-1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~2 ~-1.5 ~ unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~2 ~-1.5 ~1 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
-#execute positioned ~2 ~-1.5 ~2 unless entity @e[type=armor_stand,tag=rotating_platform,tag=!move_block,distance=..0.1] run tp @s ~ ~ ~
+tag @s add move_block
+tp @s[tag=1] ~-1 ~-1.5 ~-1
+tp @s[tag=2] ~-1 ~-1.5 ~
+tp @s[tag=3] ~-1 ~-1.5 ~1
+tp @s[tag=4] ~ ~-1.5 ~-1
+tp @s[tag=5] ~ ~-1.5 ~1
+tp @s[tag=6] ~1 ~-1.5 ~-1 
+tp @s[tag=7] ~1 ~-1.5 ~
+tp @s[tag=8] ~1 ~-1.5 ~1
 tp @s[tag=platform_center] ~ ~-1.5 ~
 tag @s remove move_block

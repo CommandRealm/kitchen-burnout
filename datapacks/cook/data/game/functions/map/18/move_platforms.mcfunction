@@ -1,5 +1,8 @@
-tag @e[type=armor_stand,tag=rotating_platform,distance=..500] add move_block
-execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_n,tag=move_block,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_n,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
-execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_e,tag=move_block,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_e,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
-execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_s,tag=move_block,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_s,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
-execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_w,tag=move_block,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_w,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_n,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_n,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_e,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_e,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_s,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_s,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_w,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_w,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_ne,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_ne,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_nw,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_nw,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_se,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_se,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
+execute as @e[type=armor_stand,tag=rotating_platform,tag=platform_sw,distance=..500] at @e[type=marker,tag=rotating_platform,tag=platform_sw,limit=1,sort=nearest,distance=..500] run function game:map/18/move_block
