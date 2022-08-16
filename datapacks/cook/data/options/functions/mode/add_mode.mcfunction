@@ -17,7 +17,11 @@ execute if score $display_mode settings matches 0 run summon armor_stand 5 65.82
 execute if score $display_mode settings matches 1 run summon armor_stand 5 65.825 45 {DisabledSlots:2039583,Tags:["display_mode","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:blue_terracotta",Count:1b}]}
 execute if score $display_mode settings matches 2 run summon armor_stand 5 65.825 45 {DisabledSlots:2039583,Tags:["display_mode","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:red_terracotta",Count:1b}]}
 execute if score $display_mode settings matches 3 run summon armor_stand 5 65.825 45 {DisabledSlots:2039583,Tags:["display_mode","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:yellow_terracotta",Count:1b}]}
-
+# Mode Descriptions
+execute if score $display_mode settings matches 0 positioned 5 66 44 run tellraw @a[distance=..6] ["",{"text":"------------------------------------\n- ","color":"gray"},{"translate":"Mode: ","color":"white","bold":true},{"translate":"Classic","color":"gold","underlined":true},{"text":"\n- ","color":"gray"},{"translate":"All players must work together to complete as many recipes as possible before time runs out.","color":"green"}]
+execute if score $display_mode settings matches 1 positioned 5 66 44 run tellraw @a[distance=..6] ["",{"text":"------------------------------------\n- ","color":"gray"},{"translate":"Mode: ","color":"white","bold":true},{"translate":"Competitive","color":"gold","underlined":true},{"text":"\n- ","color":"gray"},{"translate":"One player must complete a set of three fixed recipes as fast as possible.","color":"green"}]
+execute if score $display_mode settings matches 2 positioned 5 66 44 run tellraw @a[distance=..6] ["",{"text":"------------------------------------\n- ","color":"gray"},{"translate":"Mode: ","color":"white","bold":true},{"translate":"Versus","color":"gold","underlined":true},{"text":"\n- ","color":"gray"},{"translate":"Two teams compete to finish more recipes than the other team before time runs out.","color":"green"}]
+execute if score $display_mode settings matches 3 positioned 5 66 44 run tellraw @a[distance=..6] ["",{"text":"------------------------------------\n- ","color":"gray"},{"translate":"Mode: ","color":"white","bold":true},{"translate":"Shuffle","color":"gold","underlined":true},{"text":"\n- ","color":"gray"},{"translate":"Two teams race their way through each food type by completing one recipe in each of four kitchens as fast as possible.","color":"green"}]
 
 # specific mode settings
 
@@ -27,6 +31,7 @@ execute unless score $display_mode settings matches 1 unless score $display_mode
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 67 45 minecraft:white_stained_glass
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -4 68 45 minecraft:white_carpet
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run clone 5 66 46 5 66 46 -4 66 46
+execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run setblock -3 67 46 jungle_button[face=floor] replace
 
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run scoreboard players remove $time settings 1200
 execute unless score $display_mode settings matches 1 unless score $display_mode settings matches 3 run function options:time/add_time

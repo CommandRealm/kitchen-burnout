@@ -1,3 +1,5 @@
 # called when there aren't enough players to start the game.
 title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] title [{"text":""}]
-title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] subtitle [{"text":"- ","color":"gray"},{"translate":"Not enough players.","color":"red"}]
+execute unless score $mode settings matches 1..2 run title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] subtitle [{"text":"- ","color":"gray"},{"translate":"Not enough players.","color":"red"}]
+execute unless score $ready_players_1 pregame matches 1.. if score $mode settings matches 1..2 run title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] subtitle [{"text":"- ","color":"gray"},{"translate":"Need a player on The Spoons.","color":"red"}]
+execute unless score $ready_players_2 pregame matches 1.. if score $mode settings matches 1..2 run title @a[x=0,y=66,z=0,distance=..500,gamemode=adventure] subtitle [{"text":"- ","color":"gray"},{"translate":"Need a player on The Forks.","color":"red"}]
