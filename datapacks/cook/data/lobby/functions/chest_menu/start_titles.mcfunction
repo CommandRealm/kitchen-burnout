@@ -8,8 +8,8 @@ scoreboard players set @s screen 99
 
 
 ##Middle row
-item replace entity @s[tag=has_test] enderchest.0 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"dark_green"}]'}}
-item replace entity @s[tag=has_help] enderchest.1 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"[Helper] ","bold":false,"italic":false,"color":"green"}]'}}
+item replace entity @s[tag=has_test] enderchest.0 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"white"}]'}}
+item replace entity @s[tag=has_help] enderchest.1 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"[Helper] ","bold":false,"italic":false,"color":"gray"}]'}}
 item replace entity @s[tag=has_bld] enderchest.2 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Builder} ","bold":false,"italic":false,"color":"blue"}]'}}
 item replace entity @s[tag=has_srbld] enderchest.3 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Builder} ","bold":false,"italic":false,"color":"dark_blue"}]'}}
 item replace entity @s[tag=has_prg] enderchest.4 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Programmer} ","bold":false,"italic":false,"color":"red"}]'}}
@@ -34,5 +34,3 @@ item replace entity @s[scores={prefix=8}] enderchest.9 with written_book{invalid
 item replace entity @s[scores={prefix=9}] enderchest.10 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
 
 item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
-
-

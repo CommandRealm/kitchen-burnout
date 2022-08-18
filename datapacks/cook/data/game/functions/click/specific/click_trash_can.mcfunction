@@ -10,6 +10,9 @@ execute if data entity @s Inventory[{Slot:4b}] run playsound minecraft:entity.ir
 execute if data entity @s Inventory[{Slot:4b}] run scoreboard players add @s ingredients_trashed 1
 execute if data entity @s Inventory[{Slot:4b}] run advancement grant @s[scores={ingredients_trashed=50..}] only advancements:milestone_trash
 
+# Tutorial
+execute if data entity @s Inventory[{Slot:4b}] run tag @s[tag=tutorial] add tut_trash
+
 scoreboard players set @s ingredient 0
 item replace entity @s hotbar.4 with air
 

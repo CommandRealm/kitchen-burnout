@@ -26,6 +26,14 @@ scoreboard players set @s hat 1
 scoreboard players set @s knife 1
 scoreboard players set @s bell_sound 1
 
+# Reset tutorial
+tag @s remove tut_cook
+tag @s remove tut_cut
+tag @s remove tut_ingredient
+tag @s remove tut_place
+tag @s remove tut_trash
+tag @s remove tut_serve
+
 # Set PBs
 execute unless score @s comp_1 matches 1..2147483647 run scoreboard players set @s comp_1 2147483647
 execute unless score @s comp_2 matches 1..2147483647 run scoreboard players set @s comp_2 2147483647

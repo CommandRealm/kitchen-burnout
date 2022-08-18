@@ -1,4 +1,4 @@
-# Get how many players are needed to end the game early (Classic=Half,Competitive=1,Versus/Shuffle=All)
+# Get how many players are needed to end the game early (Classic=Half,Competitive=1,Versus/Shuffle=Half)
 execute unless score $mode settings matches 3 store result score $required end if entity @a[gamemode=adventure,tag=playing,tag=!tutorial]
 execute unless score $mode settings matches 3 if score $required end matches 2.. run scoreboard players operation $required end /= $2 number
 execute if score $mode settings matches 3 run scoreboard players set $required end 1

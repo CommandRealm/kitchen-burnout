@@ -2,6 +2,8 @@
 
 execute at @e[type=marker,sort=nearest,limit=1,tag=stovetop] run function game:stations/place_item
 
+# Tutorial
+tag @s[tag=tutorial] add tut_cook
 
 # If we placed a cutting board item
 execute as @e[type=marker,sort=nearest,limit=1,tag=stovetop] at @s if data entity @e[type=armor_stand,tag=stovetop_item,sort=nearest,limit=1] HandItems[0].tag{stovetop:1b} store result score @s station_timer run data get entity @e[type=armor_stand,tag=stovetop_item,sort=nearest,limit=1] HandItems[0].tag.cooking_time

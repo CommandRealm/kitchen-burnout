@@ -9,9 +9,8 @@ execute as @a[scores={intro=20..29},tag=intro_text_call] at @s run title @s titl
 # Cut 2 - Kitch (perfect sound)
 execute as @a[scores={intro=30..39},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitch","color":"gray","bold":true}]
 # Cut 3 - Kitchen (finish cutting sound)
-execute as @a[scores={intro=40..49},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen","color":"gray","bold":true}]
+execute as @a[scores={intro=40..59},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen","color":"gray","bold":true}]
 # Ticking sound of turning on a stove to make fire appear - Kitchen 🔥🔥🔥🔥🔥🔥🔥
-execute as @a[scores={intro=50..59},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen ","color":"gray","bold":true}]
 execute as @a[scores={intro=60},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen ","color":"gray","bold":true},{"text":"🔥","color":"red"}]
 execute as @a[scores={intro=61},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen ","color":"gray","bold":true},{"text":"🔥🔥","color":"red"}]
 execute as @a[scores={intro=62},tag=intro_text_call] at @s run title @s title ["",{"text":"Kitchen ","color":"gray","bold":true},{"text":"🔥🔥🔥","color":"red"}]

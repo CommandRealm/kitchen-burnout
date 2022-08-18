@@ -37,7 +37,7 @@ tag joelzoboyo add has_test
 tag Beybwug add has_test
 tag Coraze add has_test
 tag oPando add has_test
-tag rgbyy add has_test
+tag vixy_11 add has_test
 tag pogglin add has_test
 tag Urgle add has_test
 tag Icy_Craby add has_test
@@ -58,6 +58,11 @@ tag dio_yeeto add has_test
 tag McDic add has_test
 tag TheTurtleDan add has_test
 tag Roleinet add has_test
+tag Flamin_Fury add has_test
+tag Glise add has_test
+tag Buof add has_test
+tag hexalotl add has_test
+tag Ardak78 add has_test
 
 # Helpers
 tag Bagee add has_help
@@ -74,7 +79,7 @@ tag ChipChase add has_help
 tag Pinkessi add has_help
 tag FalconReign add has_help
 tag oPando add has_help
-tag rgbyy add has_help
+tag vixy_11 add has_help
 tag EdLePug add has_help
 tag Calverin add has_help
 tag Urgle add has_help
@@ -91,7 +96,7 @@ tag ChipChase add has_bld
 tag Pinkessi add has_bld
 tag FalconReign add has_bld
 tag oPando add has_bld
-tag rgbyy add has_bld
+tag vixy_11 add has_bld
 tag EdLePug add has_bld
 tag Connop add has_bld
 
@@ -150,7 +155,7 @@ tag joelzoboyo add has_cr
 tag Beybwug add has_cr
 tag Coraze add has_cr
 tag oPando add has_cr
-tag rgbyy add has_cr
+tag vixy_11 add has_cr
 tag pogglin add has_cr
 tag Urgle add has_cr
 tag Icy_Craby add has_cr

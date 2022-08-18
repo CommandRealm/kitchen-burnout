@@ -25,6 +25,16 @@ gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
 gamerule universalAnger false
 
+# Lobby bossbar
+bossbar remove minecraft:lobby
+bossbar add minecraft:lobby ["",{"text":"🔥 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" 🔥","color":"red"}]
+bossbar set minecraft:lobby style progress
+bossbar set minecraft:lobby color white
+bossbar set minecraft:lobby max 1
+bossbar set minecraft:lobby value 1
+bossbar set minecraft:lobby players @a[gamemode=adventure,x=0,y=66,z=0,distance=..500]
+bossbar set minecraft:lobby visible true
+
 # Basic game objectives
 
 # Has joined will by default be null and with an unless statement it can teleport them.
@@ -185,7 +195,7 @@ team modify pc_role color white
 team modify unlock color white
 team modify unlock prefix {"translate":"[SPORK] ","color":"light_purple"}
 team modify test prefix {"translate":"(Tester) ","color":"white"}
-team modify help prefix {"translate":"[Helper] ","color":"gray "}
+team modify help prefix {"translate":"[Helper] ","color":"gray"}
 team modify bld prefix {"translate":"{Builder} ","color":"blue"}
 team modify prg prefix {"translate":"{Programmer} ","color":"red"}
 team modify srbld prefix {"translate":"{Sr. Builder} ","color":"dark_blue"}
@@ -201,6 +211,7 @@ team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","col
 
 team modify unlock collisionRule never
 team modify lobby collisionRule never
+team modify lobby nametagVisibility always
 team modify test collisionRule never
 team modify help collisionRule never
 team modify bld collisionRule never

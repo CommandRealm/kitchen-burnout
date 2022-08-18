@@ -1,7 +1,7 @@
 # Meteor Shower taco map
 tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=19}] add m_19
-tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=19}] 12525 103 1506 180 -5
-spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=19}] 12525 103 1506 180
+tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=19}] 12537 102 1500 90 -15
+spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=19}] 12537 103 1500 90
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=18}] run forceload add ~180 ~180 ~-180 ~-180
 
 # Station placer

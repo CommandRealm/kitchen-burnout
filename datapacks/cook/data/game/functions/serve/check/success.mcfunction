@@ -138,6 +138,7 @@ execute as @e[type=marker,tag=customer_line,sort=nearest,limit=1,distance=..100]
 execute unless entity @a[gamemode=adventure,tag=playing,scores={map=22},distance=..500] run setblock ~ ~ ~ air
 
 # Next order
+execute if entity @s[tag=tutorial] run tag @a[gamemode=adventure,tag=tutorial,distance=..500] add tut_serve
 execute if entity @s[tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1] recipe_cooldown 25
 execute if entity @s[tag=tutorial] run scoreboard players add $tutorial_orders prep_display 1
 execute if entity @s[tag=tutorial] run setblock 0 -62 0 oak_sign{Text1:'["",{"score":{"objective":"prep_display","name":"$tutorial_orders"},"color":"green","bold":true}]'} destroy
