@@ -1,0 +1,2 @@
+execute as @e[tag=joel,scores={joel.new.timer=4}] run function credits:joel/frames/4
+scoreboard players set @s joel.new.is_paused 0
