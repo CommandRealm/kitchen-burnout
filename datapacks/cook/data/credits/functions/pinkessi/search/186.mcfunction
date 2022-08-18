@@ -1,0 +1,2 @@
+execute as @e[tag=pinkessi,scores={model.new.timer=186}] run function credits:pinkessi/frames/186
+scoreboard players set @s model.new.is_paused 0
