@@ -2,8 +2,8 @@ scoreboard players add $number credits 1
 scoreboard players set $time credits 0
 execute if score $number credits matches 12.. run scoreboard players set $number credits 1
 kill @e[type=armor_stand,tag=credits_cycle]
-particle cloud 18 92 21 0 0 0 0.15 5
-playsound minecraft:entity.arrow.hit_player master @a 18 92 21 0.05 2
+particle cloud 44 67 36 0 0 0 0.15 5
+playsound minecraft:entity.arrow.hit_player master @a 44 67 36 0.05 2
 
 
 ##Example:

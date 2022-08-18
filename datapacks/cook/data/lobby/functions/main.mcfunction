@@ -54,3 +54,9 @@ execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s u
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run effect give @s darkness 3 255 true
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run playsound entity.enderman.teleport master @s -11.0 68 46.0 1000 0
 execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s unless entity @s[x=-250,y=42,z=-250,dx=500,dy=500,dz=500] run tp @s -11.0 68 46.0 -148 -18
+
+# credits stuffs
+execute if entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] run function credits:main
+execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=knad,limit=1] unless score @s knad.is_paused matches 1 run function credits:knad/pause
+execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=joel,limit=1] unless score @s joel.new.is_paused matches 1 run function credits:joel/pause
+execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=pinkessi,limit=1] unless score @s model.new.is_paused matches 1 run function credits:pinkessi/pause
