@@ -23,12 +23,12 @@ summon minecraft:armor_stand 34 67 33 {DisabledSlots: 4144959,Marker:1,HandItems
 
 
 
-summon minecraft:armor_stand 42 67 34 {DisabledSlots: 4144959,Marker:1,Rotation:[180f,0f],NoGravity:1b,Tags:["pinkessi","credits","show_details"], NoBasePlate:1b, ShowArms:1b, Pose:{LeftArm:[0f, 0f, 0f], RightArm:[0f, 0f, 0f], LeftLeg:[0f, 0f, 0f], RightLeg:[0f, 0f, 0f]},ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;2119929409,1715093750,-1635934702,503858979],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmUxZjU1YzYzZTY1NjRhOWFkNjBlZTBlMDhmYzQwMDUzMTg4ZmVhMjg5Yzk2OWVkZmNiODA2ZDE0MjY0MzdjIn19fQ=="}]}}}}]}
+summon minecraft:armor_stand 42 67 34 {DisabledSlots: 4144959,Marker:1,Rotation:[180f,0f],NoGravity:1b,Tags:["pinkessi","credits","show_details"], NoBasePlate:1b, ShowArms:1b, Pose:{LeftArm:[0f, 0f, 0f], RightArm:[0f, 0f, 0f], LeftLeg:[0f, 0f, 0f], RightLeg:[0f, 0f, 0f]},ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:iron_leggings",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16757247}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;2119929409,1715093750,-1635934702,503858979],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmUxZjU1YzYzZTY1NjRhOWFkNjBlZTBlMDhmYzQwMDUzMTg4ZmVhMjg5Yzk2OWVkZmNiODA2ZDE0MjY0MzdjIn19fQ=="}]}}}}]}
 
 
 execute as @e[type=armor_stand,tag=knad] at @s run function credits:knad/start
 execute as @e[type=armor_stand,tag=joel] at @s run function credits:joel/start
-execute as @e[type=armor_stand,tag=pinkessi] at @s run function credits:pstart
+execute as @e[type=armor_stand,tag=pinkessi] at @s run function credits:pinkessi/start
 
 scoreboard players operation $knad calculate = @e[type=armor_stand,tag=knad,limit=1] knad.timer
 scoreboard players operation $joel calculate = @e[type=armor_stand,tag=joel,limit=1] joel.new.timer
