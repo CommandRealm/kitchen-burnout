@@ -21,8 +21,8 @@ item replace entity @s[tag=has_art] enderchest.9 with book{clickable:1,HideFlags
 item replace entity @s[tag=has_srart] enderchest.10 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
 
 
-item replace entity @s[scores={prefix=0}] enderchest.0 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"dark_green"}]'}}
-item replace entity @s[scores={prefix=1}] enderchest.1 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"[Helper] ","bold":false,"italic":false,"color":"green"}]'}}
+item replace entity @s[scores={prefix=0}] enderchest.0 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"white"}]'}}
+item replace entity @s[scores={prefix=1}] enderchest.1 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"[Helper] ","bold":false,"italic":false,"color":"gray"}]'}}
 item replace entity @s[scores={prefix=2}] enderchest.2 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Builder} ","bold":false,"italic":false,"color":"blue"}]'}}
 item replace entity @s[scores={prefix=3}] enderchest.3 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Builder} ","bold":false,"italic":false,"color":"dark_blue"}]'}}
 item replace entity @s[scores={prefix=4}] enderchest.4 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Programmer} ","bold":false,"italic":false,"color":"red"}]'}}

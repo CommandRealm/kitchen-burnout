@@ -13,6 +13,9 @@ tp @s @a[gamemode=adventure,tag=playing,tag=!tutorial,limit=1,sort=random]
 # Reset score
 scoreboard players reset @s pregame_click
 
+# Reset lobby bossbar players
+bossbar set lobby players @a[gamemode=adventure,x=0,y=66,z=0,distance=..500]
+
 # Clearing the book makes the function called quickly after it update the book.
 clear @s knowledge_book
 

@@ -63,6 +63,7 @@ tag Glise add has_test
 tag Buof add has_test
 tag hexalotl add has_test
 tag Ardak78 add has_test
+tag Maksim4557 add has_test
 
 # Helpers
 tag Bagee add has_help
