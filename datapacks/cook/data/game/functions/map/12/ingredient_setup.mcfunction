@@ -1,3 +1,4 @@
+execute positioned 1959 82 673 run kill @e[tag=ingredient_setup,distance=..500]
 # Fish spawners
 execute positioned 1959 82 673 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
 execute positioned 1952 79 662 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}

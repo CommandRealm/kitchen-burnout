@@ -29,3 +29,6 @@ execute if score $recipe_id game matches 24 if entity @s[tag=tortilla,tag=beef,t
 execute if score $recipe_id game matches 25 if entity @s[tag=tortilla,tag=beef,tag=!raw_beef,tag=!lettuce_head_2,tag=taco_cheese,tag=guac,tag=salsa,tag=sour_cream,tag=!lettuce_shreds] run function game:serve/check/success
 execute if score $recipe_id game matches 26 if entity @s[tag=tortilla,tag=beef,tag=!raw_beef,tag=!lettuce_head_2,tag=taco_cheese,tag=!guac,tag=salsa,tag=sour_cream,tag=lettuce_shreds] run function game:serve/check/success
 execute if score $recipe_id game matches 27 if entity @s[tag=tortilla,tag=beef,tag=!raw_beef,tag=!lettuce_head_2,tag=taco_cheese,tag=guac,tag=salsa,tag=sour_cream,tag=lettuce_shreds] run function game:serve/check/success
+
+execute if entity @s[tag=add_new_recipe] run tag @a[gamemode=adventure,tag=playing,distance=..500] add order_taco
+execute if entity @s[tag=add_new_recipe] run advancement grant @a[gamemode=adventure,tag=playing,distance=..500] only advancements:order_taco

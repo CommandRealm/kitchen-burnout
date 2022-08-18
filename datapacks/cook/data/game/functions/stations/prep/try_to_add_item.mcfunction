@@ -118,6 +118,7 @@ execute if score @s[tag=team_2] ingredient matches 51 if entity @e[tag=2,type=ma
 
 # If ingredient is not there, add ingredient for team 1
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 4 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_leaf] run tag @s add lettuce_leaf
@@ -141,6 +142,7 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 20 
 
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 21 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!dough] run tag @s add dough
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 22 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sauce] run tag @s add sauce
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 23 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 23 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run tag @s add pizza_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 24 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pepperoni] run tag @s add pepperoni
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 25 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mushroom] run tag @s add mushroom
@@ -149,8 +151,10 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 27 
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 28 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thin_crust] run tag @s add thin_crust
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 29 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_mushroom] run tag @s add cut_mushroom
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 30 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pineapple] run tag @s add cut_pineapple
+
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 31 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tortilla] run tag @s add tortilla
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 32 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_beef] run tag @s add raw_beef
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 33 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 33 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run tag @s add taco_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 34 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!guac] run tag @s add guac
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 35 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salsa] run tag @s add salsa
@@ -175,6 +179,7 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 51 
 
 # If ingredient is not there, add ingredient for team 2
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 4 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_leaf] run tag @s add lettuce_leaf
@@ -198,6 +203,7 @@ execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 20 a
 
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 21 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!dough] run tag @s add dough
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 22 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!sauce] run tag @s add sauce
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 22 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 23 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pizza_cheese] run tag @s add pizza_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 24 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!pepperoni] run tag @s add pepperoni
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 25 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!mushroom] run tag @s add mushroom
@@ -206,8 +212,10 @@ execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 27 a
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 28 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!thin_crust] run tag @s add thin_crust
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 29 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_mushroom] run tag @s add cut_mushroom
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 30 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cut_pineapple] run tag @s add cut_pineapple
+
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 31 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!tortilla] run tag @s add tortilla
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 32 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!raw_beef] run tag @s add raw_beef
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 33 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 33 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!taco_cheese] run tag @s add taco_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 34 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!guac] run tag @s add guac
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 35 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!salsa] run tag @s add salsa

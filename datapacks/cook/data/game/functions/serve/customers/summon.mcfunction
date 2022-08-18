@@ -1,5 +1,5 @@
 # Limit customers in competitive
-execute if score $mode settings matches 3 run scoreboard players add $competitive customers 1
+execute unless entity @s[tag=tutorial] if score $mode settings matches 3 run scoreboard players add $competitive customers 1
 
 # "Portal"
 execute if entity @s[tag=customer_line_north] run particle minecraft:totem_of_undying ^ ^1 ^-3 .5 .85 0 .2 200 force

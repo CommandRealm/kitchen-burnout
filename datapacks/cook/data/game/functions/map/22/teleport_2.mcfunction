@@ -1,4 +1,5 @@
 # Sliding platforms taco map
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=22}] add m_22
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=22}] 13186 90 499 90 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=22}] 13186 90 499 90
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=22}] run forceload add ~180 ~180 ~-180 ~-180

@@ -1,4 +1,5 @@
 # Taco Factory map
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=8}] add m_8
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=8}] 11450 111 1002 -45 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=8}] 11450 111 1002 -45
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=8}] run forceload add ~50 ~70 ~-10 ~-10

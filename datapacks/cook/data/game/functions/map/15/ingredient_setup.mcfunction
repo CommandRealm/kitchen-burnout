@@ -1,3 +1,4 @@
+execute positioned 2156 88 1981 run kill @e[tag=ingredient_setup,distance=..500]
 # Serving
 execute positioned 2156 88 1981 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}
 execute positioned 2156 88 1980 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","sushi_set"]}

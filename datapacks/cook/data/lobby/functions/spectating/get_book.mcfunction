@@ -1,0 +1,5 @@
+# Clears and kills books and then gives it to self
+clear @s knowledge_book
+kill @e[type=item,tag=!honey_wall_pickup,nbt={Item:{id:"minecraft:knowledge_book"}},distance=..5]
+item replace entity @s[tag=!spectating,tag=!tutorial] hotbar.4 with knowledge_book{not_clickable: 1, Recipes: [], display: {Name: '[{"translate":"Click","color":"white","bold":true,"italic":false},{"translate":" to spectate the current game.","color":"gray","bold":false}]', Lore: ['[{"translate":"Drop to reset your lobby position.","color":"gray","italic":false}]']}}
+item replace entity @s[tag=!spectating,tag=tutorial] hotbar.6 with knowledge_book{not_clickable: 1, Recipes: [], display: {Name: '[{"translate":"Click","color":"white","bold":true,"italic":false},{"translate":" to spectate the current game.","color":"gray","bold":false}]', Lore: ['[{"translate":"Drop to reset your lobby position.","color":"gray","italic":false}]']}}

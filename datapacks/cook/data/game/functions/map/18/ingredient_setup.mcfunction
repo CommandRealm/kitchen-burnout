@@ -1,3 +1,4 @@
+execute positioned 2656 80 996 run kill @e[tag=ingredient_setup,distance=..500]
 # Ingredients
 execute positioned 2656 80 996 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 execute positioned 2672 70 1024 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
@@ -31,6 +32,10 @@ execute positioned 2656 74 997 run summon marker ~ ~ ~ {Tags:["die_between_games
 execute positioned 2656 73 995 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 
 # Rotating Platforms based on direction
+execute positioned 2656 64 972 run function game:map/18/platform_ne
+execute positioned 2656 64 972 run function game:map/18/platform_nw
+execute positioned 2656 64 972 run function game:map/18/platform_se
+execute positioned 2656 64 972 run function game:map/18/platform_sw
 execute positioned 2656 64 972 run function game:map/18/platform_n
 execute positioned 2680 64 996 run function game:map/18/platform_e
 execute positioned 2656 64 1020 run function game:map/18/platform_s

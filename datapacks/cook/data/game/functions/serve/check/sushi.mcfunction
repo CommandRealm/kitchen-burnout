@@ -12,3 +12,6 @@ execute if score $recipe_id game matches 6 if entity @s[tag=rice,tag=!salmon,tag
 execute if score $recipe_id game matches 7 if entity @s[tag=rice,tag=!salmon,tag=!cut_salmon,tag=!pufferfish,tag=cut_pufferfish,tag=!poison_pufferfish,tag=!avocado_slice,tag=!avocado,tag=wasabi] run function game:serve/check/success
 execute if score $recipe_id game matches 8 if entity @s[tag=rice,tag=!salmon,tag=!cut_salmon,tag=!pufferfish,tag=!cut_pufferfish,tag=!poison_pufferfish,tag=avocado_slice,tag=!avocado,tag=!wasabi] run function game:serve/check/success
 execute if score $recipe_id game matches 9 if entity @s[tag=rice,tag=!salmon,tag=!cut_salmon,tag=!pufferfish,tag=!cut_pufferfish,tag=!poison_pufferfish,tag=avocado_slice,tag=!avocado,tag=wasabi] run function game:serve/check/success
+
+execute if entity @s[tag=add_new_recipe] run tag @a[gamemode=adventure,tag=playing,distance=..500] add order_sushi
+execute if entity @s[tag=add_new_recipe] run advancement grant @a[gamemode=adventure,tag=playing,distance=..500] only advancements:order_sushi

@@ -1,6 +1,7 @@
 # Freeze ingredient
 execute unless score @s ingredient matches 0 run scoreboard players set @s ingredient 51
 advancement grant @s only game:inventory_changed
+advancement grant @s only advancements:general_hazard
 
 # Sound
 playsound minecraft:entity.player.hurt_freeze master @s ~ ~ ~ 1 0 .1

@@ -1,4 +1,5 @@
 # Ice bridges kitchen
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=26}] add m_26
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=26}] 3496 72 0 90 3
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=26}] 3496 72 0 90
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=26}] run forceload add ~100 ~100 ~-100 ~-100

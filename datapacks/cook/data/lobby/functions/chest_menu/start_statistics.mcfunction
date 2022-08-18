@@ -1,4 +1,4 @@
-##Starting the ender chest cosmetics screen
+##Starting the ender chest PB screen
 
 ##Clear Function
 function lobby:chest_menu/clear_chest
@@ -6,49 +6,74 @@ function lobby:chest_menu/clear_chest
 ##Setting screen
 scoreboard players set @s screen 5
 
-##Finding accuracy
-scoreboard players operation @s global_accuracy = @s global_hits
-scoreboard players operation @s global_accuracy *= $100 number
-scoreboard players operation @s global_accuracy /= @s global_shots
-##Middle row
-loot replace entity @s enderchest.0 loot lobby:stats/games
-loot replace entity @s enderchest.1 loot lobby:stats/wins
-loot replace entity @s enderchest.2 loot lobby:stats/shots
-loot replace entity @s enderchest.3 loot lobby:stats/hits
-loot replace entity @s enderchest.4 loot lobby:stats/accuracy
-loot replace entity @s enderchest.5 loot lobby:stats/kills
-loot replace entity @s enderchest.6 loot lobby:stats/treasure
-loot replace entity @s enderchest.7 loot lobby:stats/spent
+# TPing to close chest
+tp @s ~ ~9 ~
+tag @s add tp_back
+effect give @s resistance 1 255 true
+schedule function lobby:chest_menu/tp_back 2t append
 
-##clickable:1,invalid_click:1,displaying difficulty
-execute if score @s global_difficult matches -1 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"None","color":"dark_gray","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 0 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Super Easy","color":"dark_green","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 1 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Easy","color":"green","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 2 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Medium","color":"yellow","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 3 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Hard","color":"red","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 4 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Super Hard","color":"dark_red","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 5 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Hardcore","color":"#600011","italic":false,"bold":true}]'}}
-execute if score @s global_difficult matches 6 run item replace entity @s enderchest.8 with enderman_spawn_egg{clickable:1,invalid_click:1,display:{Name:'[{"text":"Highest ","color":"gray","italic":false,"bold":false},{"text":"difficulty ","color":"red"},{"text":"beaten","color":"dark_red"},{"text":": ","color":"gray"},{"text":"Nightmare","color":"#423031","italic":false,"bold":true}]'}}
+# Show PBs (if there is one)
+tellraw @s ["",{"text":"\n- ","color":"white"},{"translate":"COMPETITIVE PERSONAL BESTS","color":"gold","bold":true},{"text":" -","color":"white"},{"text":"\n------------------------------------","color":"gray"}]
+execute if score @s comp_1 matches 2147483647 if score @s comp_2 matches 2147483647 if score @s comp_3 matches 2147483647 if score @s comp_4 matches 2147483647 if score @s comp_5 matches 2147483647 if score @s comp_6 matches 2147483647 if score @s comp_7 matches 2147483647 if score @s comp_8 matches 2147483647 if score @s comp_9 matches 2147483647 if score @s comp_10 matches 2147483647 if score @s comp_11 matches 2147483647 if score @s comp_12 matches 2147483647 if score @s comp_13 matches 2147483647 if score @s comp_14 matches 2147483647 if score @s comp_15 matches 2147483647 if score @s comp_16 matches 2147483647 if score @s comp_17 matches 2147483647 if score @s comp_18 matches 2147483647 if score @s comp_19 matches 2147483647 if score @s comp_20 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"dark_gray"},{"translate":"No scores to display!","color":"gray"}]
 
-
-
-
-
-
-loot replace entity @s enderchest.9 loot lobby:stats/fire
-loot replace entity @s enderchest.10 loot lobby:stats/water
-loot replace entity @s enderchest.11 loot lobby:stats/earth
-loot replace entity @s enderchest.12 loot lobby:stats/air
-loot replace entity @s enderchest.13 loot lobby:stats/ice
-loot replace entity @s enderchest.14 loot lobby:stats/lightning
-loot replace entity @s enderchest.15 loot lobby:stats/nature
-loot replace entity @s enderchest.16 loot lobby:stats/darkness
-loot replace entity @s enderchest.17 loot lobby:stats/metal
-
-loot replace entity @s enderchest.21 loot lobby:stats/falls
-loot replace entity @s enderchest.22 loot lobby:stats/revives
-loot replace entity @s enderchest.23 loot lobby:stats/punch
-
-
-item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,clickable:1,display:{Name:'[{"text":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
-
+scoreboard players operation $calculate game_ticks = @s comp_1
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_1 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Default Kitchen","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_2
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_2 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Archery Range","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_3
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_3 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Simple Parkour","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_4
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_4 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"TNT Launchpads","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_5
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_5 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Falling Ingredients","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_6
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_6 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Simply Sushi","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_7
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_7 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Riptide Sewers","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_8
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_8 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Elytra Tunnels","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_9
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_9 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Slime Jumps","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_10
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_10 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Trident Fishing","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_11
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_11 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Laser Laboratory","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_12
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_12 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Sliding Platforms","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_13
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_13 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Projectile Panic","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_14
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_14 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Spinning Supports","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_15
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_15 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Meteor Shower","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_16
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_16 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Blizzard Blast","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_17
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_17 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Frozen Paths","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_18
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_18 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Thin Ice","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_19
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_19 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Ice Bridges","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+scoreboard players operation $calculate game_ticks = @s comp_20
+function lobby:chest_menu/convert_pb
+execute unless score @s comp_20 matches 2147483647 run tellraw @s ["",{"text":"\n- ","color":"gray"},{"translate":"Trial by (Camp)fire","color":"blue","underlined":true},{"text":" — ","color":"gray"},{"nbt":"time","storage":"convert_pb","interpret":true}]
+tellraw @s ["",{"text":"\n------------------------------------ ","color":"gray"}]

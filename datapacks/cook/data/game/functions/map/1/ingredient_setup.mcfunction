@@ -1,3 +1,4 @@
+execute positioned 1001 62 498 run kill @e[tag=ingredient_setup,distance=..500]
 execute positioned 1001 62 498 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","burger_set"]}
 execute positioned 1001 62 499 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","burger_set"]}
 

@@ -1,6 +1,6 @@
 # Kill old stuff
-tp @e[type=!player,tag=tutorial] 0 -10000 0
-kill @e[type=!player,tag=tutorial]
+tp @e[type=!player,tag=tutorial,tag=!counter] 0 -10000 0
+kill @e[type=!player,tag=tutorial,tag=!counter]
 
 # Enable glowing
 scoreboard players operation $glowing_t settings = $glowing settings
@@ -21,13 +21,15 @@ execute positioned 5 68 -3 run function game:stations/bell/create
 
 execute positioned 6 67 -2 run function game:stations/customer_line/create_north
 
-# Fix glowing
-scoreboard players operation $glowing settings = $glowing_t settings
-scoreboard players reset $glowing_t settings
-
 # Give needed tag and remove old one
 tag @e[tag=die_between_games,x=13,y=67,z=-3,distance=..20] add tutorial
 tag @e[tag=die_between_games,tag=tutorial,x=13,y=67,z=-3,distance=..20] remove die_between_games
+
+# Fix glowing
+scoreboard players operation $glowing settings = $glowing_t settings
+scoreboard players reset $glowing_t settings
+execute as @e[type=magma_cube,tag=tutorial] run data merge entity @s {Glowing:0b}
+execute as @e[type=area_effect_cloud,tag=tutorial] run data merge entity @s {CustomNameVisible:0b}
 
 # Generate the recipe for the tutorial
 data remove storage tutorial {}

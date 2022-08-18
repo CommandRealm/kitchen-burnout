@@ -1,6 +1,6 @@
 # Get how many players are needed to end the game early (Classic=Half,Competitive=1,Versus/Shuffle=All)
 execute unless score $mode settings matches 3 store result score $required end if entity @a[gamemode=adventure,tag=playing,tag=!tutorial]
-execute if score $mode settings matches 0 if score $required end matches 2.. run scoreboard players operation $required end /= $2 number
+execute unless score $mode settings matches 3 if score $required end matches 2.. run scoreboard players operation $required end /= $2 number
 execute if score $mode settings matches 3 run scoreboard players set $required end 1
 
 # Get players trying to end the game
@@ -14,7 +14,7 @@ execute store result score $old_players end if entity @a[gamemode=adventure,tag=
 
 # End game if required players are met
 execute if score $players end >= $required end run scoreboard players reset @a end
-execute if score $players end >= $required end run scoreboard players set $no_contest game 1
+execute if score $players end >= $required end run scoreboard players set $no_contest state 1
 execute if score $players end >= $required end if score $mode settings matches 0..1 run scoreboard players set $timer game_ticks 39
 execute if score $players end >= $required end if score $mode settings matches 2..3 run scoreboard players set $winner shuffle -1
 

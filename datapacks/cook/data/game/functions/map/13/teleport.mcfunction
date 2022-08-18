@@ -1,4 +1,5 @@
 # Riptide sewer sushi map
+tag @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=13}] add m_13
 tp @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=13}] 2010 85 979 125 -15
 spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=13}] 2010 85 979 125
 #execute at @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=13}] run forceload add ~50 ~50 ~-150 ~-50

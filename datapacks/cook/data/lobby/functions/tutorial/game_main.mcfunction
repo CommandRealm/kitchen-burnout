@@ -18,7 +18,6 @@ execute as @a[tag=playing,scores={click=1..}] at @s unless entity @s[scores={cli
 # Ingredient box setup
 execute as @e[type=marker,tag=ingredient_setup] at @s unless block ~ ~ ~ air run function game:map/ingredient_setup/main
 
-### CAN OPTIMIZE BY LIMITING NBT CHECKS TO ONLY HAPPEN WHEN IN RANGE OF ENTITIES
 # Prep display activator
 execute as @a[tag=playing,gamemode=adventure] at @s if entity @e[type=marker,tag=prep_display,distance=..10] run function game:stations/prep/activate
 
@@ -46,7 +45,9 @@ execute as @e[type=marker,tag=prep_display,tag=tutorial] at @s run function game
 execute as @e[type=armor_stand,tag=bell,tag=tutorial] at @s run function game:stations/bell/main
 
 # If there is a recipe cooldown
-execute if entity @a[scores={recipe_cooldown=1..},tag=tutorial] run function game:recipe_cooldown/main
+execute if entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=tutorial] run function game:recipe_cooldown/main
+execute if score $place_plate_t recipe_cooldown matches 1.. run function game:recipe_cooldown/place_plate
+execute if score $flag_t recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=tutorial] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=tutorial,limit=1,sort=random] recipe_cooldown 65
 
 # Globals
 scoreboard players add $const game_ticks 1

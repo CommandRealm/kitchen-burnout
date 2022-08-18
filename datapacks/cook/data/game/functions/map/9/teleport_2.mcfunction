@@ -1,4 +1,5 @@
 # Archery Range burger kitchen
+tag @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=9}] add m_9
 tp @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=9}] 11501 67 1497 180 5
 spawnpoint @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=9}] 11501 67 1497 180
 #execute at @a[tag=playing,tag=!tutorial,tag=team_2,scores={map=9}] run forceload add ~100 ~100 ~-100 ~-50

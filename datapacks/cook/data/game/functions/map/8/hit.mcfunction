@@ -3,6 +3,8 @@ advancement revoke @s only game:arrow_hit_player
 # Clear ingredient
 scoreboard players set @s ingredient 0
 item replace entity @s hotbar.4 with air
+advancement grant @s only game:inventory_changed
+advancement grant @s only advancements:general_hazard
 
 # Effects
 tp @s[tag=!team_2] 1463.0 110 1014 0 0

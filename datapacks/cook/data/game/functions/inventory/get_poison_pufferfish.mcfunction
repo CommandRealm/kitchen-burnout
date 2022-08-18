@@ -4,3 +4,5 @@ execute at @s run kill @e[type=item,tag=!honey_wall_pickup,nbt={Item:{id:"minecr
 loot replace entity @s[type=player] hotbar.4 loot game:food/sushi/poison_pufferfish
 loot replace entity @s[type=armor_stand] weapon.mainhand loot game:food/sushi/poison_pufferfish_modeled
 scoreboard players set @s[type=armor_stand] ingredient 17
+# Poison pufferfish advancement
+advancement grant @s only advancements:general_poison

@@ -1,3 +1,4 @@
+execute positioned 3415 64 925 run kill @e[tag=ingredient_setup,distance=..500]
 # North
 execute positioned 3415 64 925 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 execute positioned 3422 64 925 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}

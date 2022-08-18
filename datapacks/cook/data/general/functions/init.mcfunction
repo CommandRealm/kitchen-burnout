@@ -29,9 +29,11 @@ gamerule universalAnger false
 
 # Has joined will by default be null and with an unless statement it can teleport them.
 scoreboard objectives add has_joined dummy
-
+scoreboard objectives add has_reset dummy
 
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
+
+scoreboard objectives add intro dummy
 
 scoreboard objectives add state dummy
 # $game will be 1 while the game is running and 0 while it isn't running.
@@ -68,6 +70,8 @@ scoreboard players set $200 number 200
 scoreboard players set $500 number 500
 scoreboard players set $6000 number 6000
 scoreboard players set $-1 number -1
+scoreboard players set $1 number 1
+scoreboard players set $12 number 12
 scoreboard players set $40 number 40
 scoreboard players set $-40 number -40
 scoreboard players set $75 number 75
@@ -87,6 +91,9 @@ scoreboard objectives add game dummy
 scoreboard objectives add end trigger
 scoreboard objectives add restart trigger
 
+# To stop spectating
+scoreboard objectives add stop_spectating trigger
+
 # Customer stuff
 scoreboard objectives add customers dummy
 
@@ -100,6 +107,49 @@ scoreboard objectives add game_minutes dummy
 bossbar add game:timer ["",{"text":"Time Left: 00:00"}]
 bossbar set game:timer visible false
 scoreboard players set $time settings 4800
+
+# Competitive PBs/WRs
+scoreboard objectives add comp_1 dummy 
+scoreboard objectives add comp_2 dummy 
+scoreboard objectives add comp_3 dummy 
+scoreboard objectives add comp_4 dummy 
+scoreboard objectives add comp_5 dummy 
+scoreboard objectives add comp_6 dummy 
+scoreboard objectives add comp_7 dummy 
+scoreboard objectives add comp_8 dummy 
+scoreboard objectives add comp_9 dummy 
+scoreboard objectives add comp_10 dummy 
+scoreboard objectives add comp_11 dummy 
+scoreboard objectives add comp_12 dummy 
+scoreboard objectives add comp_13 dummy 
+scoreboard objectives add comp_14 dummy 
+scoreboard objectives add comp_15 dummy 
+scoreboard objectives add comp_16 dummy 
+scoreboard objectives add comp_17 dummy 
+scoreboard objectives add comp_18 dummy 
+scoreboard objectives add comp_19 dummy 
+scoreboard objectives add comp_20 dummy 
+
+execute unless score $wr comp_1 matches 1..2147483647 run scoreboard players set $wr comp_1 2147483647
+execute unless score $wr comp_2 matches 1..2147483647 run scoreboard players set $wr comp_2 2147483647
+execute unless score $wr comp_3 matches 1..2147483647 run scoreboard players set $wr comp_3 2147483647
+execute unless score $wr comp_4 matches 1..2147483647 run scoreboard players set $wr comp_4 2147483647
+execute unless score $wr comp_5 matches 1..2147483647 run scoreboard players set $wr comp_5 2147483647
+execute unless score $wr comp_6 matches 1..2147483647 run scoreboard players set $wr comp_6 2147483647
+execute unless score $wr comp_7 matches 1..2147483647 run scoreboard players set $wr comp_7 2147483647
+execute unless score $wr comp_8 matches 1..2147483647 run scoreboard players set $wr comp_8 2147483647
+execute unless score $wr comp_9 matches 1..2147483647 run scoreboard players set $wr comp_9 2147483647
+execute unless score $wr comp_10 matches 1..2147483647 run scoreboard players set $wr comp_10 2147483647
+execute unless score $wr comp_11 matches 1..2147483647 run scoreboard players set $wr comp_11 2147483647
+execute unless score $wr comp_12 matches 1..2147483647 run scoreboard players set $wr comp_12 2147483647
+execute unless score $wr comp_13 matches 1..2147483647 run scoreboard players set $wr comp_13 2147483647
+execute unless score $wr comp_14 matches 1..2147483647 run scoreboard players set $wr comp_14 2147483647
+execute unless score $wr comp_15 matches 1..2147483647 run scoreboard players set $wr comp_15 2147483647
+execute unless score $wr comp_16 matches 1..2147483647 run scoreboard players set $wr comp_16 2147483647
+execute unless score $wr comp_17 matches 1..2147483647 run scoreboard players set $wr comp_17 2147483647
+execute unless score $wr comp_18 matches 1..2147483647 run scoreboard players set $wr comp_18 2147483647
+execute unless score $wr comp_19 matches 1..2147483647 run scoreboard players set $wr comp_19 2147483647
+execute unless score $wr comp_20 matches 1..2147483647 run scoreboard players set $wr comp_20 2147483647
 
 # Other bossbars
 bossbar add game:progress_1 ["",{"text":"Current Kitchen: 1/4"}]
@@ -193,6 +243,15 @@ scoreboard objectives add screen dummy
 scoreboard objectives add hat dummy
 scoreboard objectives add knife dummy
 scoreboard objectives add bell_sound dummy
+
+# Advancement stuff
+scoreboard objectives add finished_games dummy
+scoreboard objectives add finished_orders dummy
+scoreboard objectives add ingredients_taken dummy
+scoreboard objectives add ingredients_cut dummy
+scoreboard objectives add fish_caught dummy
+scoreboard objectives add ingredients_trashed dummy
+scoreboard objectives add ingredients_burnt dummy
 
 # Game stuff
 scoreboard objectives add calculate dummy

@@ -1,3 +1,4 @@
+execute positioned 1470 111 1026 run kill @e[tag=ingredient_setup,distance=..500]
 # Hallway ingredients
 execute positioned 1470 111 1026 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}
 execute positioned 1457 110 1028 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","tacos_set"]}

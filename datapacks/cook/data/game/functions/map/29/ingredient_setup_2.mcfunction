@@ -1,3 +1,4 @@
+execute positioned 13512 77 1498 run kill @e[tag=ingredient_setup,distance=..500]
 # Bowl and Cone
 execute positioned 13512 77 1498 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
 execute positioned 13510 77 1496 run summon marker ~ ~ ~ {Tags:["die_between_games","ingredient_setup","ice_cream_set"]}
