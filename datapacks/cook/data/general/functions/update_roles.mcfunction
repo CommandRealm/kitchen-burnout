@@ -29,7 +29,7 @@ tag Bodi25 add has_test
 tag EdLePug add has_test
 tag Bagee add has_test
 tag BobaFate add has_test
-tag knad add has_test
+tag admius add has_test
 tag Mezimo add has_test
 tag Shullker add has_test
 tag Pinkessi add has_test
@@ -70,7 +70,7 @@ tag Bagee add has_help
 tag Connop add has_help
 tag Beybwug add has_help
 tag Focii_ add has_help
-tag knad add has_help
+tag admius add has_help
 tag joelzoboyo add has_help
 tag CheckMC add has_help
 tag Shullker add has_help
@@ -86,7 +86,7 @@ tag Calverin add has_help
 tag Urgle add has_help
 
 # Builders
-tag knad add has_bld
+tag admius add has_bld
 tag joelzoboyo add has_bld
 tag CheckMC add has_bld
 tag Shullker add has_bld
@@ -112,7 +112,7 @@ tag EdLePug add has_art
 tag TheRegularMex add has_art
 
 # Senior Builders
-tag knad add has_srbld
+tag admius add has_srbld
 tag joelzoboyo add has_srbld
 tag EdLePug add has_srbld
 
@@ -148,7 +148,7 @@ tag Bodi25 add has_cr
 tag EdLePug add has_cr
 tag Bagee add has_cr
 tag BobaFate add has_cr
-tag knad add has_cr
+tag admius add has_cr
 tag Mezimo add has_cr
 tag Shullker add has_cr
 tag Pinkessi add has_cr

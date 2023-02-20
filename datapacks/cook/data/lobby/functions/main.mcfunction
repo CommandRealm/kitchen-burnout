@@ -61,6 +61,6 @@ execute as @a[gamemode=adventure,x=0,y=66,z=0,distance=..600,tag=!admin] at @s u
 
 # credits stuffs
 execute if entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] run function credits:main
-execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=knad,limit=1] unless score @s knad.is_paused matches 1 run function credits:knad/pause
+execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=admius,limit=1] unless score @s admius.is_paused matches 1 run function credits:admius/pause
 execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=joel,limit=1] unless score @s joel.new.is_paused matches 1 run function credits:joel/pause
 execute unless entity @a[gamemode=adventure,x=37,y=67,z=37,distance=..15] as @e[type=armor_stand,tag=pinkessi,limit=1] unless score @s model.new.is_paused matches 1 run function credits:pinkessi/pause
