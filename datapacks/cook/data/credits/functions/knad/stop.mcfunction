@@ -1,1 +1,0 @@
-scoreboard players set @s knad.timer -2147483646
