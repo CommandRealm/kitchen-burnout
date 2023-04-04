@@ -1,5 +1,5 @@
 # Summon the recipe_ingredient markers for displaying the ingredients for team 2 
-execute if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
+execute if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["Burnt Hamburger"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","burnt_hamburger"],CustomName:'["",{"translate":"Burnt Hamburger"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["Cheese"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","cheese"],CustomName:'["",{"translate":"Cheese"}]'}
 execute if data storage current_order_2 Recipe{Ingredients:["Half-Cooked Hamburger"]} run summon marker ~ 0 ~ {Tags:["recipe_ingredient","die_between_games","2","half_cooked_hamburger"],CustomName:'["",{"translate":"Half-Cooked Hamburger"}]'}
@@ -276,7 +276,7 @@ execute if data storage current_order_2 Recipe{Name:"the whole shebang in a bowl
 execute if data storage current_order_2 Recipe{Name:"everything but the ice cream in a bowl"} run summon marker ~ 0 ~ {Tags:["recipe_name","die_between_games","2"],CustomName:'["",{"translate":"Everything but the Ice Cream"},{"translate":" in a Bowl"}]'}
 
 # Give tags to proper ingredient boxes
-execute if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=hamburger_bun,distance=..500] add recipe_ingredient
+execute if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=bun,distance=..500] add recipe_ingredient
 execute if data storage current_order_2 Recipe{Ingredients:["Cheese"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=cheese,distance=..500] add recipe_ingredient
 execute if data storage current_order_2 Recipe{Ingredients:["Lettuce Leaf"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=lettuce_leaf,distance=..500] add recipe_ingredient
 execute if data storage current_order_2 Recipe{Ingredients:["Hamburger"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=hamburger,distance=..500] add recipe_ingredient

@@ -1,7 +1,7 @@
 scoreboard players set $calculate calculate 0
 
 # If ingredient is already there, stop them from putting it there
-execute if score @s[tag=!team_2] ingredient matches 1 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger_bun] run function game:stations/prep/cannot_place
+execute if score @s[tag=!team_2] ingredient matches 1 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=bun] run function game:stations/prep/cannot_place
 execute if score @s[tag=!team_2] ingredient matches 2 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cheese] run function game:stations/prep/cannot_place
 execute if score @s[tag=!team_2] ingredient matches 3 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head] run function game:stations/prep/cannot_place
 execute if score @s[tag=!team_2] ingredient matches 4 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_leaf] run function game:stations/prep/cannot_place
@@ -59,7 +59,7 @@ execute if score @s[tag=!team_2] ingredient matches 50 if entity @e[tag=!2,type=
 execute if score @s[tag=!team_2] ingredient matches 51 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=frozen_food] run function game:stations/prep/cannot_place
 
 # If ingredient is already there, stop them from putting it there for team 2
-execute if score @s[tag=team_2] ingredient matches 1 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=hamburger_bun] run function game:stations/prep/cannot_place
+execute if score @s[tag=team_2] ingredient matches 1 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=bun] run function game:stations/prep/cannot_place
 execute if score @s[tag=team_2] ingredient matches 2 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=cheese] run function game:stations/prep/cannot_place
 execute if score @s[tag=team_2] ingredient matches 3 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_head] run function game:stations/prep/cannot_place
 execute if score @s[tag=team_2] ingredient matches 4 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=lettuce_leaf] run function game:stations/prep/cannot_place
@@ -117,7 +117,7 @@ execute if score @s[tag=team_2] ingredient matches 50 if entity @e[tag=2,type=ma
 execute if score @s[tag=team_2] ingredient matches 51 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=frozen_food] run function game:stations/prep/cannot_place
 
 # If ingredient is not there, add ingredient for team 1
-execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!bun] run tag @s add bun
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 if entity @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 3 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
@@ -178,7 +178,7 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 50 
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 51 as @e[tag=!2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!frozen_food] run tag @s add frozen_food
 
 # If ingredient is not there, add ingredient for team 2
-execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!hamburger_bun] run tag @s add hamburger_bun
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!bun] run tag @s add bun
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 if entity @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run advancement grant @s only advancements:general_cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!cheese] run tag @s add cheese
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 3 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!lettuce_head] run tag @s add lettuce_head
@@ -239,8 +239,8 @@ execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 50 a
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 51 as @e[tag=2,type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500,tag=!frozen_food] run tag @s add frozen_food
 
 # Summon ingredient marker for display if necessary for team one
-execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=!tutorial] ingredient matches 1 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
-execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=tutorial] ingredient matches 1 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","hamburger_bun","tutorial"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
+execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=!tutorial] ingredient matches 1 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
+execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=tutorial] ingredient matches 1 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","bun","tutorial"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=cheese] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","cheese"],CustomName:'["",{"translate":"Cheese"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=!tutorial] ingredient matches 3 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=lettuce_head] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_head"],CustomName:'["",{"translate":"Lettuce Head"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=!team_2,tag=tutorial] ingredient matches 3 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=lettuce_head] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","lettuce_head","tutorial"],CustomName:'["",{"translate":"Lettuce Head"}]'}
@@ -305,8 +305,8 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 50 
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 51 unless entity @e[tag=!2,type=marker,tag=recipe_ingredient,tag=frozen_Food] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","frozen_food"],CustomName:'["",{"translate":"Frozen Food"}]'}
 
 # Mark ingredient as being there for team 1
-execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=hamburger_bun,tag=!tutorial] if data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
-execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=hamburger_bun,tag=tutorial] if data storage tutorial Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=bun,tag=!tutorial] if data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
+execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=bun,tag=tutorial] if data storage tutorial Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 2 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=cheese,tag=!tutorial] if data storage current_order_1 Recipe{Ingredients:["Cheese"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 3 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=lettuce_head,tag=!tutorial] if data storage current_order_1 Recipe{Ingredients:["Lettuce Head"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 4 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=lettuce_leaf,tag=!tutorial] if data storage current_order_1 Recipe{Ingredients:["Lettuce Leaf"]} run team join recipe_filled @s
@@ -364,7 +364,7 @@ execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 49 
 execute if score @s[tag=!temporary_place_tag,tag=!team_2] ingredient matches 50 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=cookie_dough] if data storage current_order_1 Recipe{Ingredients:["cookie_dough"]} run team join recipe_filled @s
 
 # Summon ingredient marker for display if necessary for team 2
-execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=hamburger_bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","hamburger_bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=bun] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","bun"],CustomName:'["",{"translate":"Hamburger Bun"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=cheese] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","cheese"],CustomName:'["",{"translate":"Cheese"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 3 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=lettuce_head] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","lettuce_head"],CustomName:'["",{"translate":"Lettuce Head"}]'}
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 4 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=lettuce_leaf] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","lettuce_leaf"],CustomName:'["",{"translate":"Lettuce Leaf"}]'}
@@ -422,7 +422,7 @@ execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 50 u
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 51 unless entity @e[tag=2,type=marker,tag=recipe_ingredient,tag=frozen_Food] run summon marker 0 0 0 {Tags:["recipe_ingredient","die_between_games","2","frozen_food"],CustomName:'["",{"translate":"Frozen Food"}]'}
 
 # Mark ingredient as being there for team 2
-execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=hamburger_bun] if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
+execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=bun] if data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 2 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=cheese] if data storage current_order_2 Recipe{Ingredients:["Cheese"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 3 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=lettuce_head] if data storage current_order_2 Recipe{Ingredients:["Lettuce Head"]} run team join recipe_filled @s
 execute if score @s[tag=!temporary_place_tag,tag=team_2] ingredient matches 4 as @e[type=#game:recipe_ingredient,distance=..500,tag=recipe_ingredient,tag=lettuce_leaf] if data storage current_order_2 Recipe{Ingredients:["Lettuce Leaf"]} run team join recipe_filled @s
@@ -482,8 +482,8 @@ tag @s[tag=tutorial,tag=!temporary_place_tag] add tut_place
 execute if entity @s[tag=tutorial,tag=!tut_mistake] unless score @s ingredient matches 1 unless score @s ingredient matches 4 unless score @s ingredient matches 9 run playsound block.note_block.pling master @s ~ ~ ~ 1 2
 execute if entity @s[tag=tutorial,tag=!tut_mistake] unless score @s ingredient matches 1 unless score @s ingredient matches 4 unless score @s ingredient matches 9 run tellraw @s ["",{"text":"\n------------------------------------\n- ","color":"gray"},{"translate":"Removing Ingredients:","color":"gold"},{"text":"\n- ","color":"gray"},{"translate":"Right click","color":"green"},{"translate":" on an "},{"translate":"incorrect ingredient","color":"green"},{"translate":" to remove it from the order."},{"text":"\n------------------------------------\n","color":"gray"}]
 execute if entity @s[tag=tutorial,tag=!tut_mistake] unless score @s ingredient matches 1 unless score @s ingredient matches 4 unless score @s ingredient matches 9 run tag @s add tut_mistake
-execute if entity @s[tag=tutorial] if entity @e[type=marker,tag=prep_display,tag=tutorial,limit=1,distance=..500,sort=nearest,tag=hamburger_bun,tag=hamburger,tag=lettuce_leaf,tag=!lettuce_head,tag=!raw_hamburger,tag=!half_cooked_hamburger,tag=!burnt_hamburger,tag=!scorched_food] run playsound block.note_block.pling master @a[gamemode=adventure,tag=tutorial,tag=!tut_serve] ~ ~ ~ 10 2
-execute if entity @s[tag=tutorial] if entity @e[type=marker,tag=prep_display,tag=tutorial,limit=1,distance=..500,sort=nearest,tag=hamburger_bun,tag=hamburger,tag=lettuce_leaf,tag=!lettuce_head,tag=!raw_hamburger,tag=!half_cooked_hamburger,tag=!burnt_hamburger,tag=!scorched_food] run tellraw @a[gamemode=adventure,tag=tutorial,tag=!tut_serve] ["",{"text":"\n------------------------------------\n- ","color":"gray"},{"translate":"Serving Orders:","color":"gold"},{"text":"\n- ","color":"gray"},{"translate":"If the "},{"translate":"recipe is complete, right click","color":"green"},{"translate":" on the "},{"translate":"Bell (Spruce Button)","color":"green"},{"translate":" to serve the order to a customer."},{"text":"\n------------------------------------\n","color":"gray"}]
+execute if entity @s[tag=tutorial] if entity @e[type=marker,tag=prep_display,tag=tutorial,limit=1,distance=..500,sort=nearest,tag=bun,tag=hamburger,tag=lettuce_leaf,tag=!lettuce_head,tag=!raw_hamburger,tag=!half_cooked_hamburger,tag=!burnt_hamburger,tag=!scorched_food] run playsound block.note_block.pling master @a[gamemode=adventure,tag=tutorial,tag=!tut_serve] ~ ~ ~ 10 2
+execute if entity @s[tag=tutorial] if entity @e[type=marker,tag=prep_display,tag=tutorial,limit=1,distance=..500,sort=nearest,tag=bun,tag=hamburger,tag=lettuce_leaf,tag=!lettuce_head,tag=!raw_hamburger,tag=!half_cooked_hamburger,tag=!burnt_hamburger,tag=!scorched_food] run tellraw @a[gamemode=adventure,tag=tutorial,tag=!tut_serve] ["",{"text":"\n------------------------------------\n- ","color":"gray"},{"translate":"Serving Orders:","color":"gold"},{"text":"\n- ","color":"gray"},{"translate":"If the "},{"translate":"recipe is complete, right click","color":"green"},{"translate":" on the "},{"translate":"Bell (Spruce Button)","color":"green"},{"translate":" to serve the order to a customer."},{"text":"\n------------------------------------\n","color":"gray"}]
 
 # If ingredient was added, play sounds and get rid of armor stands
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0

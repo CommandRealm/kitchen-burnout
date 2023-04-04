@@ -9,7 +9,7 @@ scoreboard players reset @s recipe_timer
 
 scoreboard players reset $tags calculate
 # Reset marker
-execute store success score $removed calculate run tag @s remove hamburger_bun
+execute store success score $removed calculate run tag @s remove bun
 scoreboard players operation $tags calculate += $removed calculate
 execute store success score $removed calculate run tag @s remove cheese
 scoreboard players operation $tags calculate += $removed calculate

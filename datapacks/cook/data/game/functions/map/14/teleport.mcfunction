@@ -7,7 +7,7 @@ spawnpoint @a[tag=playing,tag=!tutorial,tag=!team_2,scores={map=14}] 1965 70 149
 # Station placer
 #summon minecraft:area_effect_cloud 1963 53 1537 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["station_placer","die_between_games","x_50","y_20"]}
 
-#execute positioned 1965 53 1447 run function game:stations/ingredient_wasabi/create
+#execute positioned 1965 53 1447 run function game:stations/ingredient_box/wasabi
 
 # Recipe set
 scoreboard players set $food_type game 3

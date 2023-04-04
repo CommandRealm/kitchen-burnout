@@ -1,6 +1,6 @@
-execute if block ~ ~ ~ white_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_rice/create
-execute if block ~ ~ ~ green_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_avocado/create
-execute if block ~ ~ ~ lime_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_wasabi/create
+execute if block ~ ~ ~ white_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_box/rice
+execute if block ~ ~ ~ green_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_box/avocado
+execute if block ~ ~ ~ lime_glazed_terracotta unless entity @e[type=marker,tag=ingredient_box,distance=..0.1] run function game:stations/ingredient_box/wasabi
 
 execute if block ~ ~ ~ orange_glazed_terracotta unless entity @e[type=marker,tag=fish_spawner,distance=..0.1] run function game:stations/salmon_spawner/create
 execute if block ~ ~ ~ yellow_glazed_terracotta unless entity @e[type=marker,tag=fish_spawner,distance=..0.1] run function game:stations/pufferfish_spawner/create

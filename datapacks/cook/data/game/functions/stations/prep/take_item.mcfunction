@@ -4,11 +4,11 @@ scoreboard players set $calculate calculate 0
 # Match ingredient
 tag @e[type=armor_stand,sort=nearest,limit=1,distance=..500,tag=prep_slot] add selected_prep_slot
 scoreboard players operation @s ingredient = @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] ingredient
-execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=!hamburger_bun] run kill @s
-execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=hamburger_bun] run kill @e[type=armor_stand,tag=prep_slot,tag=hamburger_bun,sort=nearest,distance=..15]
+execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=!bun] run kill @s
+execute as @e[type=armor_stand,tag=prep_slot,tag=selected_prep_slot,limit=1,sort=nearest] at @s if entity @s[tag=bun] run kill @e[type=armor_stand,tag=prep_slot,tag=bun,sort=nearest,distance=..15]
 
 # Remove ingredient from array
-execute if score @s ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove hamburger_bun
+execute if score @s ingredient matches 1 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove bun
 execute if score @s ingredient matches 2 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove cheese
 execute if score @s ingredient matches 3 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_head
 execute if score @s ingredient matches 4 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove lettuce_leaf
@@ -66,7 +66,7 @@ execute if score @s ingredient matches 50 as @e[type=marker,tag=prep_display,lim
 execute if score @s ingredient matches 51 as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] run tag @s remove frozen_food
 
 # Mark ingredient as not being there
-execute if score @s[tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=hamburger_bun] run team join recipe_missing @s
+execute if score @s[tag=!team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=bun] run team join recipe_missing @s
 execute if score @s[tag=!team_2] ingredient matches 2 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=cheese] run team join recipe_missing @s
 execute if score @s[tag=!team_2] ingredient matches 3 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=lettuce_head] run team join recipe_missing @s
 execute if score @s[tag=!team_2] ingredient matches 4 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=lettuce_leaf] run team join recipe_missing @s
@@ -124,7 +124,7 @@ execute if score @s[tag=!team_2] ingredient matches 50 as @e[type=#game:recipe_i
 execute if score @s[tag=!team_2] ingredient matches 51 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=frozen_food] run team join recipe_missing @s
 
 # Kill ingredient marker for display if necessary
-execute if score @s[tag=!team_2] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=!2,tag=hamburger_bun] unless data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
+execute if score @s[tag=!team_2] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=!2,tag=bun] unless data storage current_order_1 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
 execute if score @s[tag=!team_2] ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=!2,tag=cheese] unless data storage current_order_1 Recipe{Ingredients:["Cheese"]} run kill @s
 execute if score @s[tag=!team_2] ingredient matches 3 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=!2,tag=lettuce_head] unless data storage current_order_1 Recipe{Ingredients:["Lettuce Head"]} run kill @s
 execute if score @s[tag=!team_2] ingredient matches 3 as @e[type=marker,tag=recipe_ingredient,tag=tutorial,tag=!2,tag=lettuce_head] unless data storage tutorial Recipe{Ingredients:["Lettuce Head"]} run kill @s
@@ -187,7 +187,7 @@ execute if score @s[tag=!team_2] ingredient matches 50 as @e[type=marker,tag=rec
 execute if score @s[tag=!team_2] ingredient matches 51 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=!2,tag=frozen_food] unless data storage current_order_1 Recipe{Ingredients:["frozen_food"]} run kill @s
 
 # Mark ingredient as not being there
-execute if score @s[tag=team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=hamburger_bun] run team join recipe_missing @s
+execute if score @s[tag=team_2] ingredient matches 1 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=bun] run team join recipe_missing @s
 execute if score @s[tag=team_2] ingredient matches 2 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=cheese] run team join recipe_missing @s
 execute if score @s[tag=team_2] ingredient matches 3 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=lettuce_head] run team join recipe_missing @s
 execute if score @s[tag=team_2] ingredient matches 4 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=lettuce_leaf] run team join recipe_missing @s
@@ -245,7 +245,7 @@ execute if score @s[tag=team_2] ingredient matches 50 as @e[type=#game:recipe_in
 execute if score @s[tag=team_2] ingredient matches 51 as @e[type=#game:recipe_ingredient,tag=recipe_ingredient,distance=..500,tag=frozen_food] run team join recipe_missing @s
 
 # Kill ingredient marker or display if necessary
-execute if score @s[tag=team_2] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=2,tag=hamburger_bun] unless data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
+execute if score @s[tag=team_2] ingredient matches 1 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=2,tag=bun] unless data storage current_order_2 Recipe{Ingredients:["Hamburger Bun"]} run kill @s
 execute if score @s[tag=team_2] ingredient matches 2 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=2,tag=cheese] unless data storage current_order_2 Recipe{Ingredients:["Cheese"]} run kill @s
 execute if score @s[tag=team_2] ingredient matches 3 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=2,tag=lettuce_head] unless data storage current_order_2 Recipe{Ingredients:["Lettuce Head"]} run kill @s
 execute if score @s[tag=team_2] ingredient matches 4 as @e[type=marker,tag=recipe_ingredient,tag=!tutorial,tag=2,tag=lettuce_leaf] unless data storage current_order_2 Recipe{Ingredients:["Lettuce Leaf"]} run kill @s

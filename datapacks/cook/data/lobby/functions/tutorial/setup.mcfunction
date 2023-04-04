@@ -12,9 +12,9 @@ execute positioned 19 67 -7 run function game:stations/stovetop/create
 
 execute positioned 18 67 -1 run function game:stations/cutting_board/create
 
-execute positioned 22 66 -3 run function game:stations/ingredient_raw_hamburger/create
-execute positioned 17 67 -1 run function game:stations/ingredient_lettuce_head/create
-execute positioned 14 67 -2 run function game:stations/ingredient_bun/create
+execute positioned 22 66 -3 run function game:stations/ingredient_box/raw_hamburger
+execute positioned 17 67 -1 run function game:stations/ingredient_box/lettuce_head
+execute positioned 14 67 -2 run function game:stations/ingredient_box/bun
 
 execute positioned 6 68 -3 run function game:stations/prep/create
 execute positioned 5 68 -3 run function game:stations/bell/create
