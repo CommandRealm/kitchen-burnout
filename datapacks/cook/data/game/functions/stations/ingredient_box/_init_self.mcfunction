@@ -4,7 +4,7 @@
 #   [storage] game:new_ingredient_box ingredient - for the ingredient tag/name
 #   [score] $glowing settings - to determine if it should glow (maybe remove this setting?)
 setblock ~ ~ ~ glass
-data merge entity @s {width:1.001,height:1.001}
+data merge entity @s {width:1.001f,height:1.001f}
 tag @s add ingredient_box
 tag @s add reset_boxes
 tag @s add die_between_games

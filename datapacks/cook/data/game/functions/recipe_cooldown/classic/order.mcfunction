@@ -25,7 +25,6 @@ execute if score $output random matches 7 run tellraw @a[distance=..500] [{"text
 execute if score $output random matches 8 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"translate":"Customer","color":"gold"},{"text":"> "},{"translate":"I would love a "},{"selector":"@e[type=marker,tag=recipe_name,tag=!tutorial,limit=1]","color":"gray","underlined":true},{"text":"!"}]
 execute if score $output random matches 9 run tellraw @a[distance=..500] [{"text":"<","color":"white"},{"translate":"Customer","color":"gold"},{"text":"> "},{"translate":"I think I'll get a "},{"selector":"@e[type=marker,tag=recipe_name,tag=!tutorial,limit=1]","color":"gray","underlined":true},{"text":"."}]
 
-
 # Random sound pitch
 scoreboard players set $mod random 16
 function random:random

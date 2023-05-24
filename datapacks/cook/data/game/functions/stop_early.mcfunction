@@ -19,4 +19,4 @@ execute if score $players end >= $required end if score $mode settings matches 0
 execute if score $players end >= $required end if score $mode settings matches 2..3 run scoreboard players set $winner shuffle -1
 
 # Correct players trying to use this to end the game early
-tellraw @s ["",{"text":"Hey there, it seems like you're trying to end the game early. To do that, use \"/function game:end\" or click on this message!","clickEvent": {"action":"run_command","value":"/function game:end"},"color":"green"}]
+tellraw @s ["",{"text":"Hey there, it seems like you're trying to end the game early. To do that, use '/function game:end' or click on this message!","color":"green","clickEvent": {"action": "run_command","value":"/function game:end"}}]

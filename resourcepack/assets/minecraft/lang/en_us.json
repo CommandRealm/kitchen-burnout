@@ -1,5 +1,5 @@
 {
-    "Kitchen": "Kitchen",
+    "Kitchen ": "Kitchen ",
     "BURNOUT": "BURNOUT",
 
     
@@ -234,7 +234,7 @@
     "Elytra": "Elytra",
     "Trash": "Trash",
     " Can": " Can",
-    "Chef": "Chef",
+    "Chef Hat": "Chef Hat",
     " Hat": " Hat",
     " INGREDIENTS ": " INGREDIENTS ",
     "Customer": "Customer",
@@ -559,5 +559,28 @@
     "I\\'d rather have just eaten from the dumpster like last week": "I\\'d rather have just eaten from the dumpster like last week",
     "Heurmmm...": "Heurmmm...",
     "My stomach won't feed itself!": "My stomach won't feed itself!",
-    "My stomach won\\'t feed itself!": "My stomach won\\'t feed itself!"
+    "My stomach won\\'t feed itself!": "My stomach won\\'t feed itself!",
+
+    "Epic Hat": "Epic Hat",
+    "Epic Knife": "Epic Knife",
+    "Epic Bell Sound": "Epic Bell Sound",
+    "LEGENDARY Hat": "LEGENDARY Hat",
+    "LEGENDARY Knife": "LEGENDARY Knife",
+    "LEGENDARY Bell Sound": "LEGENDARY Bell Sound",
+
+    "%s's Competitive Time: %s": "%s's Competitive Time: %s",
+
+    "Avocado Slice": "Avocado Slice",
+
+    "Competitive": "Competitive",
+    "Time Bonus:" : "Time Bonus:",
+    "Off": "Off",
+    "On": "On",
+    "Glowing": "Glowing",
+    "Ingredients:": "Ingredients:",
+    " (Suggested)": " (Suggested)",
+    "Time:" : "Time:",
+    "1": "1",
+    " minute": " minute",
+    " minutes": " minutes"
 }
