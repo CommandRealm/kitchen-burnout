@@ -16,7 +16,7 @@ execute unless score $food_type_2 shuffle matches 5.. run clear @a[gamemode=adve
 execute unless score $food_type_2 shuffle matches 5.. run advancement grant @a[gamemode=adventure,tag=playing,tag=team_2] only game:inventory_changed
 
 # Reset current kitchen
-execute unless score $food_type_2 shuffle matches 5.. as @e[type=marker,tag=reset_boxes,tag=!tutorial,distance=..500] at @s run function game:map/reset_boxes
+execute unless score $food_type_2 shuffle matches 5.. as @e[type=#game:reset_boxes,tag=reset_boxes,tag=!tutorial,distance=..500] at @s run function game:map/reset_boxes
 execute unless score $food_type_2 shuffle matches 5.. as @e[type=marker,tag=thin_ice,distance=..500] at @s run scoreboard players set @s thin_ice 295
 execute unless score $food_type_2 shuffle matches 5.. as @e[type=marker,tag=thin_ice,distance=..500] at @s run function game:map/29/ice
 execute unless score $food_type_2 shuffle matches 5.. run tag @e[tag=die_between_games,distance=..500] add die_2

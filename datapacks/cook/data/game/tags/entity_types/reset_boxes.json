@@ -1,8 +1,8 @@
 {
     "replace": true,
     "values": [
-        "minecraft:magma_cube",
-        "minecraft:glow_item_frame",
+        "minecraft:marker",
+        "minecraft:interaction",
         "minecraft:item_display"
     ]
   }

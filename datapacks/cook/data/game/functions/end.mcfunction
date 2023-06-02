@@ -3,7 +3,7 @@
 # Reset knowledge books
 clear @a knowledge_book
 # Resets ingredient boxes back to their normal blocks
-execute as @e[type=marker,tag=reset_boxes,tag=!tutorial] at @s run function game:map/reset_boxes
+execute as @e[type=#game:reset_boxes,tag=reset_boxes,tag=!tutorial] at @s run function game:map/reset_boxes
 
 # Reset ice blocks
 execute as @e[type=marker,tag=thin_ice] at @s run scoreboard players set @s thin_ice 295
