@@ -119,6 +119,10 @@ bossbar set game:timer visible false
 bossbar set game:progress_1 visible false
 bossbar set game:progress_2 visible false
 
+# Clear storage
+data merge storage minecraft:current_order_1 {Recipe:[]}
+data merge storage minecraft:current_order_2 {Recipe:[]}
+
 # Removing tags
 tag @a[tag=playing,tag=!tutorial] remove mechanics
 tag @a[tag=playing,tag=!tutorial] remove playing

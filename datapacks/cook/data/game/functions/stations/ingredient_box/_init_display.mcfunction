@@ -1,4 +1,5 @@
 # For setting up a new ingredient box's item display
+tag @s add ingredient_box
 tag @s add ingredient_box_display
 tag @s add ingredient_box_outline
 tag @s add die_between_games

@@ -1,4 +1,4 @@
-kill @e[tag=die_between_games,distance=..1]
+kill @e[tag=die_between_games,tag=ingredient_box,distance=..1]
 scoreboard players set $new_box ingredient 32
 data modify storage game:new_ingredient_box ingredient set value "raw_beef"
 data modify storage game:new_ingredient_box becomes set value "beef"
