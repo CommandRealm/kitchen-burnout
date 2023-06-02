@@ -4,7 +4,6 @@ scoreboard players remove $calculate calculate 1
 execute if entity @s[scores={map=15}] if block ~ ~ ~ #game:block_raycast run scoreboard players set $calculate calculate 0
 
 execute if entity @e[tag=raycast_target,limit=1,distance=..0.5] run function game:click/hit_half
-execute if entity @e[tag=raycast_target,limit=1,distance=..1] run function game:click/hit_full
 
 execute if entity @e[type=marker,tag=prep_display,limit=1,distance=..0.35] positioned as @e[type=marker,tag=prep_display,limit=1,distance=..0.35] if block ~ ~ ~ oak_pressure_plate unless entity @e[type=armor_stand,tag=prep_slot,distance=..10] unless entity @e[type=villager,tag=customer,tag=update_line_pos,distance=..100] unless entity @a[gamemode=adventure,scores={recipe_cooldown=1..},distance=..500] run function game:click/prep_slot_hit
 

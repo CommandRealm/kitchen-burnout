@@ -72,8 +72,8 @@ execute as @a[tag=playing,gamemode=adventure,scores={map=11..15},nbt=!{SelectedI
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..}] run function game:stations/main
 
-# Moving ingredients in boxes
-execute if entity @e[type=armor_stand,tag=ingredient_box_display] run function game:stations/ingredient_box/_main
+# Ingredient box logic
+function game:stations/ingredient_box/_main
 
 # Recipe actionbar display
 execute if score $mode settings matches 0 as @a[tag=playing,tag=!tutorial] at @s if data storage current_order_1 {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=!tutorial]"}]

@@ -14,3 +14,5 @@
 #execute as @e[type=magma_cube,tag=ingredient_box_outline,team=!recipe_filled,team=!recipe_missing,team=!no_collision] at @s as @e[type=marker,tag=ingredient_box,distance=..0.5] at @s run function game:stations/fix_ingredient_box
 
 execute as @e[type=item_display,tag=ingredient_box_display] at @s run tp @s ~ ~ ~ ~3 ~
+
+execute as @e[type=interaction,tag=ingredient_box] at @s run function game:stations/ingredient_box/zzz_check_click

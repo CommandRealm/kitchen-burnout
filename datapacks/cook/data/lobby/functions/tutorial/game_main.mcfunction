@@ -32,8 +32,8 @@ execute as @a[tag=playing,gamemode=adventure,nbt=!{SelectedItemSlot:0}] at @s an
 # If a station has something going on.
 execute if entity @e[type=marker,scores={station=1..},tag=tutorial] run function game:stations/main
 
-# Moving ingredients in boxes
-execute if entity @e[type=armor_stand,tag=ingredient_box_display,tag=tutorial] run function game:stations/ingredient_box/_main
+# Ingredient box logic
+function game:stations/ingredient_box/_main
 
 # Recipe actionbar display
 execute as @a[tag=playing,tag=tutorial] at @s if data storage tutorial {} run title @s actionbar [{"text":"","color":"gray"},{"selector":"@e[type=marker,tag=recipe_ingredient,tag=tutorial]"}]
