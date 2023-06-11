@@ -249,8 +249,8 @@
     "I would love a ": "I would love a ",
     "I think I'll get a ": "I think I'll get a ",
     " please.": " please.",
-    "You can't use this cutting board now.": "You can't use this cutting board now.",
-    "You can\\'t use this cutting board now.": "You can\\'t use this cutting board now.",
+    "You can't use this cutting board now!": "You can't use this cutting board now!",
+    "You can\\'t use this cutting board now!": "You can\\'t use this cutting board now!",
     "You can't put this down right now!": "You can't put this down right now!",
     "You can\\'t put this down right now!": "You can\\'t put this down right now!",
     "You can't cook that!": "You can't cook that!",
@@ -582,5 +582,8 @@
     "Time:" : "Time:",
     "1": "1",
     " minute": " minute",
-    " minutes": " minutes"
+    " minutes": " minutes",
+    " second . . .": " second . . .",
+    "This ingredient is already there!" : "This ingredient is already there!"
+
 }
