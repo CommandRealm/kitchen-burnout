@@ -20,7 +20,7 @@ execute if score $display_map settings matches 18 if score $timer game_ticks < @
 execute if score $display_map settings matches 19 if score $timer game_ticks < @s comp_19 unless score @s comp_19 matches 2147483647 run function game:mode_competitive/pb
 execute if score $display_map settings matches 20 if score $timer game_ticks < @s comp_20 unless score @s comp_20 matches 2147483647 run function game:mode_competitive/pb
 # Save WR Name
-setblock 0 -62 0 oak_sign{Text1:'["",{"selector":"@a[gamemode=adventure,tag=playing,limit=1,sort=nearest]","color":"blue"}]'} destroy
+setblock 0 -62 0 oak_sign{front_text:{messages:['["",{"selector":"@a[gamemode=adventure,tag=playing,limit=1,sort=nearest]","color":"blue"}]', '{"text":""}', '{"text":""}', '{"text":""}'], has_glowing_text: false, color: "black"}} destroy
 execute if score $display_map settings matches 1 if score $timer game_ticks < $wr comp_1 run data modify storage comp_wr_holders 1 set from block 0 -62 0 Text1
 execute if score $display_map settings matches 2 if score $timer game_ticks < $wr comp_2 run data modify storage comp_wr_holders 2 set from block 0 -62 0 Text1
 execute if score $display_map settings matches 3 if score $timer game_ticks < $wr comp_3 run data modify storage comp_wr_holders 3 set from block 0 -62 0 Text1
