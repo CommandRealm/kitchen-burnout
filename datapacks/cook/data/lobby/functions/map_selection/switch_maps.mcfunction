@@ -186,6 +186,6 @@ execute if score $calculate game_seconds matches ..9 if score $calculate game_ti
 ## <10 Seconds and <10 Decaseconds
 execute if score $calculate game_seconds matches ..9 if score $calculate game_ticks matches ..9 run setblock 0 -62 0 oak_sign{front_text:{messages:['["",{"score":{"objective":"game_minutes","name":"$calculate"},"color":"red","bold":true},{"text":":0","color":"red","bold":true},{"score":{"objective":"game_seconds","name":"$calculate"},"color":"red","bold":true},{"text":".0","color":"red","bold":true},{"score":{"objective":"game_ticks","name":"$calculate"},"color":"red","bold":true}]', '{"text":""}', '{"text":""}', '{"text":""}'], has_glowing_text: false, color: "black"}} destroy
 # Set from sign
-execute unless score $check game_ticks matches 2147483647 as @e[type=area_effect_cloud,tag=comp_wr_time] run data modify entity @s CustomName set from block 0 -62 0 Text1
+execute unless score $check game_ticks matches 2147483647 as @e[type=area_effect_cloud,tag=comp_wr_time] run data modify entity @s CustomName set from block 0 -62 0 front_text.messages[0]
 # No WR Yet
 execute if score $check game_ticks matches 2147483647 as @e[type=area_effect_cloud,tag=comp_wr_time] run data merge entity @s {CustomName:'["",{"translate":"N/A","color":"red","bold":true}]'}

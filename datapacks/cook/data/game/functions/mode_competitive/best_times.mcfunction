@@ -21,26 +21,26 @@ execute if score $display_map settings matches 19 if score $timer game_ticks < @
 execute if score $display_map settings matches 20 if score $timer game_ticks < @s comp_20 unless score @s comp_20 matches 2147483647 run function game:mode_competitive/pb
 # Save WR Name
 setblock 0 -62 0 oak_sign{front_text:{messages:['["",{"selector":"@a[gamemode=adventure,tag=playing,limit=1,sort=nearest]","color":"blue"}]', '{"text":""}', '{"text":""}', '{"text":""}'], has_glowing_text: false, color: "black"}} destroy
-execute if score $display_map settings matches 1 if score $timer game_ticks < $wr comp_1 run data modify storage comp_wr_holders 1 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 2 if score $timer game_ticks < $wr comp_2 run data modify storage comp_wr_holders 2 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 3 if score $timer game_ticks < $wr comp_3 run data modify storage comp_wr_holders 3 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 4 if score $timer game_ticks < $wr comp_4 run data modify storage comp_wr_holders 4 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 5 if score $timer game_ticks < $wr comp_5 run data modify storage comp_wr_holders 5 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 6 if score $timer game_ticks < $wr comp_6 run data modify storage comp_wr_holders 6 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 7 if score $timer game_ticks < $wr comp_7 run data modify storage comp_wr_holders 7 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 8 if score $timer game_ticks < $wr comp_8 run data modify storage comp_wr_holders 8 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 9 if score $timer game_ticks < $wr comp_9 run data modify storage comp_wr_holders 9 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 10 if score $timer game_ticks < $wr comp_10 run data modify storage comp_wr_holders 10 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 11 if score $timer game_ticks < $wr comp_11 run data modify storage comp_wr_holders 11 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 12 if score $timer game_ticks < $wr comp_12 run data modify storage comp_wr_holders 12 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 13 if score $timer game_ticks < $wr comp_13 run data modify storage comp_wr_holders 13 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 14 if score $timer game_ticks < $wr comp_14 run data modify storage comp_wr_holders 14 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 15 if score $timer game_ticks < $wr comp_15 run data modify storage comp_wr_holders 15 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 16 if score $timer game_ticks < $wr comp_16 run data modify storage comp_wr_holders 16 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 17 if score $timer game_ticks < $wr comp_17 run data modify storage comp_wr_holders 17 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 18 if score $timer game_ticks < $wr comp_18 run data modify storage comp_wr_holders 18 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 19 if score $timer game_ticks < $wr comp_19 run data modify storage comp_wr_holders 19 set from block 0 -62 0 Text1
-execute if score $display_map settings matches 20 if score $timer game_ticks < $wr comp_20 run data modify storage comp_wr_holders 20 set from block 0 -62 0 Text1
+execute if score $display_map settings matches 1 if score $timer game_ticks < $wr comp_1 run data modify storage comp_wr_holders 1 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 2 if score $timer game_ticks < $wr comp_2 run data modify storage comp_wr_holders 2 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 3 if score $timer game_ticks < $wr comp_3 run data modify storage comp_wr_holders 3 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 4 if score $timer game_ticks < $wr comp_4 run data modify storage comp_wr_holders 4 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 5 if score $timer game_ticks < $wr comp_5 run data modify storage comp_wr_holders 5 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 6 if score $timer game_ticks < $wr comp_6 run data modify storage comp_wr_holders 6 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 7 if score $timer game_ticks < $wr comp_7 run data modify storage comp_wr_holders 7 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 8 if score $timer game_ticks < $wr comp_8 run data modify storage comp_wr_holders 8 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 9 if score $timer game_ticks < $wr comp_9 run data modify storage comp_wr_holders 9 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 10 if score $timer game_ticks < $wr comp_10 run data modify storage comp_wr_holders 10 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 11 if score $timer game_ticks < $wr comp_11 run data modify storage comp_wr_holders 11 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 12 if score $timer game_ticks < $wr comp_12 run data modify storage comp_wr_holders 12 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 13 if score $timer game_ticks < $wr comp_13 run data modify storage comp_wr_holders 13 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 14 if score $timer game_ticks < $wr comp_14 run data modify storage comp_wr_holders 14 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 15 if score $timer game_ticks < $wr comp_15 run data modify storage comp_wr_holders 15 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 16 if score $timer game_ticks < $wr comp_16 run data modify storage comp_wr_holders 16 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 17 if score $timer game_ticks < $wr comp_17 run data modify storage comp_wr_holders 17 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 18 if score $timer game_ticks < $wr comp_18 run data modify storage comp_wr_holders 18 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 19 if score $timer game_ticks < $wr comp_19 run data modify storage comp_wr_holders 19 set from block 0 -62 0 front_text.messages[0]
+execute if score $display_map settings matches 20 if score $timer game_ticks < $wr comp_20 run data modify storage comp_wr_holders 20 set from block 0 -62 0 front_text.messages[0]
 # Announce WR
 execute if score $display_map settings matches 1 if score $timer game_ticks < $wr comp_1 unless score $wr comp_1 matches 2147483647 run function game:mode_competitive/wr
 execute if score $display_map settings matches 2 if score $timer game_ticks < $wr comp_2 unless score $wr comp_2 matches 2147483647 run function game:mode_competitive/wr
