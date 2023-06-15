@@ -280,6 +280,8 @@ scoreboard objectives add station_state dummy
 #scoreboard objectives add station_placer_d dummy
 
 scoreboard objectives add prep_display dummy
+scoreboard objectives add prep_position dummy
+
 scoreboard objectives add floating_text dummy
 scoreboard objectives add fish_count dummy
 

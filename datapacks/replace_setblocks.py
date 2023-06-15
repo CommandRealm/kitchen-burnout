@@ -53,7 +53,7 @@ def replace_text(file_path):
                     gfiltered = 'true'
                 elif gfiltered == '0b':
                     gfiltered = 'false'
-            if re.search("Color:", line):
+            if re.search(r'Color:"(?:white|orange|magenta|light_blue|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)"', line):
                 c = re.findall(r'Color:"(?:white|orange|magenta|light_blue|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)"', line, re.I)[0]
                 cfiltered = re.findall(r'"(?:white|orange|magenta|light_blue|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)"', c, re.I)[0]
 
