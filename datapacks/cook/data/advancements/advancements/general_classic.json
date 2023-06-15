@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Play a game of Classic Mode",
+            "text": "Play a game of Co-op (Classic) Mode",
             "color": "#fac84b",
             "bold": false
         }

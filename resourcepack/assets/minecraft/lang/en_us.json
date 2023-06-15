@@ -584,6 +584,11 @@
     " minute": " minute",
     " minutes": " minutes",
     " second . . .": " second . . .",
-    "This ingredient is already there!" : "This ingredient is already there!"
+    "This ingredient is already there!" : "This ingredient is already there!",
 
+    "Translators": "Translators",
+    "Co-op": "Co-op",
+    "Recipes": "Recipes",
+    "Per Kitchen": "Per Kitchen",
+    "Loading": "Loading"
 }

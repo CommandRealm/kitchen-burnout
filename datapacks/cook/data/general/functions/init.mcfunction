@@ -235,6 +235,7 @@ scoreboard players set $seed random 424242
 scoreboard objectives add prefix dummy
 
 # Settings
+scoreboard players set $recipes settings 1
 scoreboard players add $mode settings 0
 scoreboard players add $map settings 0
 execute if score $map settings matches 0 run scoreboard players set $map settings 1
