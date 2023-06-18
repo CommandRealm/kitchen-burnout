@@ -16,4 +16,4 @@ item replace entity @s enderchest.14 with player_head{clickable:1,HideFlags:63,d
 
 
 ##Back button
-item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"text":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
+item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}

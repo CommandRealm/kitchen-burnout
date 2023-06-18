@@ -590,5 +590,10 @@
     "Co-op": "Co-op",
     "Recipes": "Recipes",
     "Per Kitchen": "Per Kitchen",
-    "Loading": "Loading"
+    "Loading": "Loading",
+
+    "MENU": "MENU",
+    "START!": "START!",
+    "The Spoons are in kitchen ": "The Spoons are in kitchen ",
+    "The Forks are in kitchen ": "The Forks are in kitchen "
 }

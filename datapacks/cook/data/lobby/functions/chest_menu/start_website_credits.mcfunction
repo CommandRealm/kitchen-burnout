@@ -24,4 +24,4 @@ item replace entity @s enderchest.5 with clock{clickable:1,invalid_click:1,HideF
 item replace entity @s enderchest.6 with map{clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"text":"mc-map.djfun.de","bold":true,"italic":false,"color":"yellow"}]',Lore:['[{"text":" - Image to Minecraft map generator.","color":"gray","italic":false}]']}}
 
 ##Back button
-item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"text":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
+item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
