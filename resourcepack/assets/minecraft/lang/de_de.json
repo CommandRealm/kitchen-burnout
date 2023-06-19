@@ -511,14 +511,14 @@
     "Recipes": "Rezepte",
     "Per Kitchen": "pro Küche",
     "Loading": "Lädt",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
+    "MENU": "MENÜ",
+    "START!": "START!",
+    "The Spoons are in kitchen ": "Die Löffel sind in Küche ",
+    "The Forks are in kitchen ": "Die Gabeln sind in Küche ",
+    "Kitchen Burnout can now be played in these languages": "Küchenchaos kann jetzt in diesen Sprachen gespielt werden",
+    "Just change your language in the Minecraft settings to one of these languages and the game should be updated to match!": "Ändere einfach deine Sprache in den Minecraft‐Einstellungen auf eine dieser Sprachen, und das Spiel wird sich entsprechend aktualisieren!",
+    "Try Co-op or Competitive mode to play by yourself": "Versuche den Koop‐ oder Wettbewerbsmodus, um alleine zu spielen",
+    "Right click below to use": "Rechtsklicke unten, um zu benutzen",
     "": "",
     "": "",
     "": "",
@@ -996,4 +996,4 @@
     "": "",
     "": "",
     "": ""
-}
+    }

@@ -511,14 +511,14 @@
     "Recipes": "Recipes",
     "Per Kitchen": "Per Kitchen",
     "Loading": "Loading",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
+    "MENU": "MENU",
+    "START!": "START!",
+    "The Spoons are in kitchen ": "The Spoons are in kitchen ",
+    "The Forks are in kitchen ": "The Forks are in kitchen ",
+    "Kitchen Burnout can now be played in these languages": "Kitchen Burnout can now be played in these languages",
+    "Just change your language in the Minecraft settings to one of these languages and the game should be updated to match!": "Just change your language in the Minecraft settings to one of these languages and the game should be updated to match!",
+    "Try Co-op or Competitive mode to play by yourself": "Try Co-op or Competitive mode to play by yourself",
+    "Right click below to use": "Right click below to use",
     "": "",
     "": "",
     "": "",
@@ -996,4 +996,4 @@
     "": "",
     "": "",
     "": ""
-}
+    }
