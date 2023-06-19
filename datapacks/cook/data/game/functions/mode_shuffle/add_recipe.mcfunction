@@ -171,3 +171,7 @@ execute if score $output random matches 164 run data modify storage orders_1 Rec
 execute if score $output random matches 165 run data modify storage orders_1 Recipe append from storage recipe:bank Recipe[165]
 execute if score $output random matches 166 run data modify storage orders_1 Recipe append from storage recipe:bank Recipe[166]
 execute if score $output random matches 167 run data modify storage orders_1 Recipe append from storage recipe:bank Recipe[167]
+
+# Run this again if necessary.
+scoreboard players remove $calculate calculate 1
+execute if score $calculate calculate matches 1.. run function game:mode_shuffle/add_recipe

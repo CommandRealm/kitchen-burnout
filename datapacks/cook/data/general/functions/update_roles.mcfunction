@@ -65,6 +65,12 @@ tag Buof add has_test
 tag hexalotl add has_test
 tag Ardak78 add has_test
 tag Maksim4557 add has_test
+tag Pilllager add has_test
+tag zTxrbq add has_test
+tag ZeroIceBear add has_test
+tag Kotyaken add has_test
+tag Richardleb add has_test
+tag tanumen add has_test
 
 # Translators
 tag Calverin add has_translate
@@ -73,9 +79,9 @@ tag Shullker add has_translate
 tag zTxrbq add has_translate
 tag ZeroIceBear add has_translate
 tag 4953makcim add has_translate
-tag kotyaken add has_translate
+tag Kotyaken add has_translate
 tag Richardleb add has_translate
-tag tanuki_ add has_translate
+tag tanumen add has_translate
 
 
 # Helpers

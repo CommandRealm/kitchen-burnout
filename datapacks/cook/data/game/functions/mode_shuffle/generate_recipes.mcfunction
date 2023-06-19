@@ -6,20 +6,23 @@ data merge storage orders_1 {Recipe:[]}
 
 # Updating the bank
 function game:recipes/burgers
-#scoreboard players set $calculate calculate 2
+scoreboard players operation $calculate calculate = $recipes settings
 function game:mode_shuffle/add_recipe
 
 #function game:recipes/soup
 
 function game:recipes/sushi
+scoreboard players operation $calculate calculate = $recipes settings
 function game:mode_shuffle/add_recipe
 
 #function game:recipes/pizza
 
 function game:recipes/tacos
+scoreboard players operation $calculate calculate = $recipes settings
 function game:mode_shuffle/add_recipe
 
 function game:recipes/ice_cream
+scoreboard players operation $calculate calculate = $recipes settings
 function game:mode_shuffle/add_recipe
 
 data remove storage orders_2 {}
