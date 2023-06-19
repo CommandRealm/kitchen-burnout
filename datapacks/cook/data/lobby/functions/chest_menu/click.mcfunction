@@ -51,7 +51,8 @@ execute if score @s screen matches 12 if data entity @s EnderItems[{id:"minecraf
 ##Credits
 execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start
 execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:chain_command_block"}] run function lobby:chest_menu/start_team_credits
-execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:player_head"}] run function lobby:chest_menu/start_website_credits
+execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:player_head",tag:{web:1}}] run function lobby:chest_menu/start_website_credits
+execute if score @s screen matches 13 unless data entity @s EnderItems[{id:"minecraft:player_head",tag:{translate:1}}] run function lobby:chest_menu/start_translator_credits
 
 ##Team credits
 execute if score @s screen matches 14 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_credits
@@ -61,6 +62,10 @@ execute if score @s screen matches 14 unless data entity @s EnderItems[{id:"mine
 ##Website credits
 execute if score @s screen matches 15 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_credits
 execute if score @s screen matches 15 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_website_credits
+
+##Website credits
+execute if score @s screen matches 16 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_credits
+execute if score @s screen matches 16 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function lobby:chest_menu/start_translator_credits
 
 ##Unlock screen
 execute if score @s screen matches 18 if entity @s[advancements={advancements:all_general=true}] unless data entity @s EnderItems[{Slot:10b,id:"minecraft:stone_button"}] run scoreboard players set @s hat 11

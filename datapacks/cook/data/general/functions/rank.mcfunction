@@ -22,6 +22,7 @@ team join lead @s[scores={prefix=7}]
 team join art @s[scores={prefix=8}]
 team join srart @s[scores={prefix=9}]
 
+team join translate @s[scores={prefix=20}]
 
 team join cr @s[scores={prefix=99}]
 

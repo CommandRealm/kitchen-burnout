@@ -1,4 +1,5 @@
 # Removing tags
+tag @a remove has_translate
 tag @a remove has_test
 tag @a remove has_help
 tag @a remove has_bld
@@ -64,6 +65,18 @@ tag Buof add has_test
 tag hexalotl add has_test
 tag Ardak78 add has_test
 tag Maksim4557 add has_test
+
+# Translators
+tag Calverin add has_translate
+tag Pilllager add has_translate
+tag Shullker add has_translate
+tag zTxrbq add has_translate
+tag ZeroIceBear add has_translate
+tag 4953makcim add has_translate
+tag kotyaken add has_translate
+tag Richardleb add has_translate
+tag tanuki_ add has_translate
+
 
 # Helpers
 tag Bagee add has_help
@@ -148,7 +161,6 @@ tag Bodi25 add has_cr
 tag EdLePug add has_cr
 tag Bagee add has_cr
 tag BobaFate add has_cr
-tag admius add has_cr
 tag Mezimo add has_cr
 tag Shullker add has_cr
 tag Pinkessi add has_cr
@@ -159,4 +171,8 @@ tag oPando add has_cr
 tag vixy_11 add has_cr
 tag pogglin add has_cr
 tag Urgle add has_cr
-tag Icy_Craby add has_cr
+tag Billignton add has_cr
+tag Quackleb add has_cr
+tag TheTurtleDan add has_cr
+
+tag Pilllager add has_cr

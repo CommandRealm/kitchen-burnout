@@ -171,6 +171,7 @@ bossbar set game:progress_2 visible false
 team add lobby
 team add unlock
 team add test
+team add translate
 team add help
 team add bld
 team add prg
@@ -182,6 +183,7 @@ team add lead
 team add manager
 team modify lobby color white
 team modify test color white
+team modify translate color white
 team modify help color white
 team modify bld color white
 team modify prg color white
@@ -191,10 +193,10 @@ team modify art color white
 team modify srart color white
 team modify lead color white
 team modify manager color white
-team modify pc_role color white
 team modify unlock color white
 team modify unlock prefix {"translate":"[SPORK] ","color":"light_purple"}
 team modify test prefix {"translate":"(Tester) ","color":"white"}
+team modify translate prefix [{"translate":"(Translator)","color":"#fc58aa"},{"text":" "}]
 team modify help prefix {"translate":"[Helper] ","color":"gray"}
 team modify bld prefix {"translate":"{Builder} ","color":"blue"}
 team modify prg prefix {"translate":"{Programmer} ","color":"red"}
@@ -211,8 +213,10 @@ team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","col
 
 team modify unlock collisionRule never
 team modify lobby collisionRule never
+# Unneeded as it's set to always by default
 team modify lobby nametagVisibility always
 team modify test collisionRule never
+team modify translate collisionRule never
 team modify help collisionRule never
 team modify bld collisionRule never
 team modify prg collisionRule never

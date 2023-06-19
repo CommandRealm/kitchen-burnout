@@ -20,6 +20,7 @@ item replace entity @s[tag=has_cr] enderchest.8 with book{clickable:1,HideFlags:
 item replace entity @s[tag=has_art] enderchest.9 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Artist} ","bold":false,"italic":false,"color":"green"}]'}}
 item replace entity @s[tag=has_srart] enderchest.10 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
 
+item replace entity @s[tag=has_translate] enderchest.13 with book{clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Translator)","bold":false,"italic":false,"color":"#fc58aa"}]'}}
 
 item replace entity @s[scores={prefix=0}] enderchest.0 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Tester) ","bold":false,"italic":false,"color":"white"}]'}}
 item replace entity @s[scores={prefix=1}] enderchest.1 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"[Helper] ","bold":false,"italic":false,"color":"gray"}]'}}
@@ -32,5 +33,7 @@ item replace entity @s[scores={prefix=7}] enderchest.7 with written_book{invalid
 item replace entity @s[scores={prefix=99}] enderchest.8 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"{","color":"white","bold":true,"italic":false},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"}","color":"white","bold":true}]'}}
 item replace entity @s[scores={prefix=8}] enderchest.9 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Artist} ","bold":false,"italic":false,"color":"green"}]'}}
 item replace entity @s[scores={prefix=9}] enderchest.10 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"{Sr. Artist} ","bold":false,"italic":false,"color":"dark_green"}]'}}
+
+item replace entity @s[scores={prefix=20}] enderchest.13 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"translate":"(Translator)","bold":false,"italic":false,"color":"#fc58aa"}]'}}
 
 item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
