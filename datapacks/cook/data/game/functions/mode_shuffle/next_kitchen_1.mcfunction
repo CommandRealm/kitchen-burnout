@@ -1,6 +1,6 @@
 # Progress to the next kitchen
 scoreboard players add $food_type_1 shuffle 1
-scoreboard players set $recipes_1 shuffle 0
+execute unless score $food_type_1 shuffle matches 5.. run scoreboard players set $recipes_1 shuffle 0
 execute if score $food_type_1 shuffle matches 1 run scoreboard players operation $map_1 shuffle = $burgers_map shuffle
 execute if score $food_type_1 shuffle matches 2 run scoreboard players operation $map_1 shuffle = $sushi_map shuffle
 execute if score $food_type_1 shuffle matches 3 run scoreboard players operation $map_1 shuffle = $tacos_map shuffle

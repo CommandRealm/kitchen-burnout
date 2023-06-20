@@ -71,6 +71,7 @@ tag ZeroIceBear add has_test
 tag Kotyaken add has_test
 tag Richardleb add has_test
 tag tanumen add has_test
+tag _Lexist_ add has_test
 
 # Translators
 tag Calverin add has_translate
