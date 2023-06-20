@@ -489,6 +489,7 @@ execute if entity @s[tag=tutorial] if entity @e[type=marker,tag=prep_display,tag
 scoreboard players set @s[tag=!temporary_place_tag] ingredient 0
 playsound entity.item.pickup master @s[tag=!temporary_place_tag] ~ ~ ~ 1 1.1
 item replace entity @s[tag=!temporary_place_tag] hotbar.4 with air
+execute if entity @s[tag=!temporary_place_tag] as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] at @s run kill @e[type=text_display,tag=prep_text,distance=..2,sort=nearest,limit=1]
 execute if entity @s[tag=!temporary_place_tag] as @e[type=marker,tag=prep_display,limit=1,sort=nearest,distance=..500] at @s run tag @s add reset_prep_ingredients
 #execute if entity @s[tag=!temporary_place_tag] run scoreboard players set @e[type=marker,tag=prep_display,limit=1,sort=nearest] prep_display -1
 
