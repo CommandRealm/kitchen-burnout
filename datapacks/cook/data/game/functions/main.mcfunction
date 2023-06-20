@@ -99,6 +99,11 @@ execute if score $place_plate_2 recipe_cooldown matches 1.. run function game:re
 execute if score $flag recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=!team_2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=!team_2,limit=1,sort=random] recipe_cooldown 65
 execute if score $flag_2 recipe_cooldown matches 1 unless entity @a[gamemode=adventure,tag=playing,scores={recipe_cooldown=1..},tag=team_2] run scoreboard players set @a[gamemode=adventure,tag=playing,tag=team_2,limit=1,sort=random] recipe_cooldown 65
 
+# Remove levitation from players once prep station is loaded to avoid them falling through the ground
+execute as @a[gamemode=adventure,tag=playing,tag=levitating] at @s unless loaded ~ ~ ~ run effect give @s levitation 2 255 true
+execute as @a[gamemode=adventure,tag=playing,tag=levitating] at @s if loaded ~ ~ ~ run effect clear @s levitation
+execute as @a[gamemode=adventure,tag=playing,tag=levitating] at @s if loaded ~ ~ ~ run tag @s remove levitating
+
 # Globals
 scoreboard players add $const game_ticks 1
 scoreboard players operation $flashing game_ticks = $const game_ticks

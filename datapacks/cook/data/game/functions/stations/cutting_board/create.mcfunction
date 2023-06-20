@@ -1,4 +1,8 @@
 # Called to create a cutting board
+kill @e[type=marker,tag=cutting_board,distance=..0.25,sort=nearest,limit=1]
+execute positioned ~-0.3125 ~-0.732 ~-0.375 run kill @e[type=armor_stand,tag=cutting_board_item,distance=..0.25,sort=nearest,limit=1]
+kill @e[type=area_effect_cloud,tag=station_display_text,distance=..1,sort=nearest,limit=1]
+kill @e[type=area_effect_cloud,tag=station_display_text,distance=..1,sort=nearest,limit=1]
 setblock ~ ~ ~ spruce_pressure_plate[powered=true]
 summon marker ~ ~ ~ {Tags:["cutting_board","station","die_between_games","raycast_target"]}
 

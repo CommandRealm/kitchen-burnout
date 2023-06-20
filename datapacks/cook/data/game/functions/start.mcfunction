@@ -40,6 +40,8 @@ effect give @a[tag=playing,tag=!tutorial] instant_health 1 9 true
 effect give @a[tag=playing,tag=!tutorial] blindness 1 255 true
 effect give @a[tag=playing,tag=!tutorial] slowness 1 255 true
 effect give @a[tag=playing,tag=!tutorial] jump_boost 1 128 true
+tag @a[tag=playing,tag=!tutorial] add levitating
+effect give @a[tag=playing,tag=!tutorial] levitation 10 255 true
 
 # Joining game teams
 execute if score $mode settings matches 0 run team join game_0 @a[tag=playing,tag=!tutorial]

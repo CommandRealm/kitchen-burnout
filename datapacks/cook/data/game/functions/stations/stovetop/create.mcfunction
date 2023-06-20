@@ -1,4 +1,8 @@
 # Called to create a cutting board
+kill @e[type=marker,tag=stovetop,distance=..0.25,sort=nearest,limit=1]
+execute positioned ~-0.3125 ~-0.732 ~-0.375 run kill @e[type=armor_stand,tag=stovetop_item,distance=..0.25,sort=nearest,limit=1]
+kill @e[type=area_effect_cloud,tag=stovetop_indicator,distance=..1,sort=nearest,limit=1]
+kill @e[type=area_effect_cloud,tag=station_display_text,distance=..1,sort=nearest,limit=1]
 setblock ~ ~ ~ heavy_weighted_pressure_plate[power=15]
 summon marker ~ ~ ~ {Tags:["stovetop","station","die_between_games","raycast_target"]}
 
