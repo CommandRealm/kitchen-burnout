@@ -284,7 +284,9 @@ execute if data storage current_order_1 Recipe{Ingredients:["Tomato Slice"]} run
 
 execute if data storage current_order_1 Recipe{Ingredients:["Sushi Rice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=rice] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run tag @e[type=salmon,tag=can_catch] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run tag @e[type=item_display,tag=salmon] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run tag @e[type=pufferfish,tag=can_catch] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run tag @e[type=item_display,tag=pufferfish] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Avocado Slice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=avocado_slice] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Wasabi"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=wasabi] add recipe_ingredient
 

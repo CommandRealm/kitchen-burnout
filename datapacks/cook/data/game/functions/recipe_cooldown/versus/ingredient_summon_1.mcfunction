@@ -283,7 +283,9 @@ execute if data storage current_order_1 Recipe{Ingredients:["Hamburger"]} run ta
 execute if data storage current_order_1 Recipe{Ingredients:["Tomato Slice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=tomato_slice,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Sushi Rice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=rice,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run tag @e[type=salmon,tag=can_catch,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Cut Salmon"]} run tag @e[type=item_display,tag=salmon,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run tag @e[type=pufferfish,tag=can_catch,distance=..500] add recipe_ingredient
+execute if data storage current_order_1 Recipe{Ingredients:["Cut Pufferfish"]} run tag @e[type=item_display,tag=pufferfish,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Avocado Slice"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=avocado_slice,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Wasabi"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=wasabi,distance=..500] add recipe_ingredient
 execute if data storage current_order_1 Recipe{Ingredients:["Tomato Sauce"]} run tag @e[type=#game:ingredient_box_outline,tag=ingredient_box_outline,tag=sauce,distance=..500] add recipe_ingredient

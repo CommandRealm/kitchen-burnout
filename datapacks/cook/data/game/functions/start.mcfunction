@@ -22,6 +22,8 @@ execute if score $mode settings matches 1..2 run scoreboard players set $score_2
 scoreboard players set $competitive customers 0
 scoreboard players set $winner shuffle 0
 scoreboard players set $end_timer shuffle 0
+scoreboard players set $recipes_1 shuffle 0
+scoreboard players set $recipes_2 shuffle 0
 
 # Giving people the playing tag
 tag @a[scores={ready=1..},tag=tutorial] remove playing
