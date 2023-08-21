@@ -32,7 +32,7 @@
         }
       ]
     },
-    "background": "minecraft:translateures/block/white_concrete.png",
+    "background": "minecraft:textures/block/white_concrete.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
