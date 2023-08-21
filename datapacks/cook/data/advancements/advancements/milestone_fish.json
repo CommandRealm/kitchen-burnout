@@ -4,7 +4,7 @@
             "item": "minecraft:fishing_rod"
             },
         "title": {
-            "text": "Fishing Fun!",
+            "translate": "Fishing Fun!",
             "color": "red",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Catch 50 fish",
+            "translate": "Catch 50 fish",
             "color": "#fac84b",
             "bold": false
         }

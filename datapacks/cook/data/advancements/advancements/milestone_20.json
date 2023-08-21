@@ -4,7 +4,7 @@
             "item": "minecraft:flint_and_steel"
             },
         "title": {
-            "text": "You're on Fire",
+            "translate": "You're on Fire",
             "color": "red",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Burn 20 ingredients",
+            "translate": "Burn 20 ingredients",
             "color": "#fac84b",
             "bold": false
         }

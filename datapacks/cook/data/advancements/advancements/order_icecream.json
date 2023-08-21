@@ -5,7 +5,7 @@
             "nbt":"{CustomModelData:1}"
             },
         "title": {
-            "text": "Cool!",
+            "translate": "Cool!",
             "color": "yellow",
             "bold": true
         },
@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Complete an Ice Cream order",
+            "translate": "Complete an Ice Cream order",
             "color": "#fac84b",
             "bold": false
         }

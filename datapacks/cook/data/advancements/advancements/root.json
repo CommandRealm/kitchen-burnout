@@ -7,19 +7,18 @@
       {
         "color": "gray",
         "bold": true,
-        "text": "Kitchen"
+        "translate": "Kitchen"
       },
       {
         "color": "gold",
         "bold": true,
-        "text": " BURNOUT"
+        "translate": " BURNOUT"
       }
     ],
     "description": {
-      "text": "By the ",
+      "translate": "By the %s Team",
       "color": "white",
-      "underlined": false,
-      "extra": [
+      "with": [
         {
           "text": "Command",
           "color": "aqua",
@@ -27,20 +26,13 @@
           "extra": [
             {
               "text": " Realm",
-              "color": "dark_aqua",
-              "extra": [
-                {
-                  "text": " Team",
-                  "bold": false,
-                  "color": "white"
-                }
-              ]
+              "color": "dark_aqua"
             }
           ]
         }
       ]
     },
-    "background": "minecraft:textures/block/white_concrete.png",
+    "background": "minecraft:translateures/block/white_concrete.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
