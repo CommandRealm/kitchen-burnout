@@ -566,7 +566,7 @@
     "Exclusive Hat": "Уникальная шляпа",
     "Exclusive Lobby Prefix": "Уникальный титул в лобби",
     "Exclusive Bell Sound": "Уникальный звук колокольчика",
-    "Exclusive «Knife»":"Уникальный «Нож»",
+    "Exclusive \"Knife\"": "Уникальный «Нож»",
     "Complete this row to unlock": "Выполните предыдущие достижения, чтобы открыть",
     "Can You Smell That?": "Чувствуешь запах?",
     "Burn an item": "Сожгите предмет",
@@ -640,9 +640,13 @@
     "Complete a Taco order": "Завершите заказ с тако",
     "Culinary Expert!": "Кулинарный эксперт",
     "Complete an order of each type of food": "Завершите заказ с каждым типом еды",
-    "Kitchen":"Кухонный",
-    " BURNOUT":" ПЕРЕПОЛОХ",
-    "By the %s Team":"От команды %s",
-    "Command":"Command",
-    " Realm":" Realm"
+    "By the %s Team": "От команды %s",
+
+    " - Custom player heads.": " - Пользовательские головы игрока.",
+    " - Armor stand posing.": " - Позирующие стойки для брони.",
+    " - JSON generators.": " - Генераторы JSON.",
+    " - 3D modeling.": " - 3D моделирование.",
+    " - MCFunction support in Visual Studio Code.": " - Поддержка MCFunction в Visual Studio Code.",
+    " - Worldborder-based timer tech.": " - Технология таймера на основе границы мира.",
+    " - Image to Minecraft map generator.": " - Конвертация изображения в карту в Майнкрафте."
 }

@@ -606,7 +606,7 @@
     "Exclusive Hat": "Exclusive Hat",
     "Exclusive Lobby Prefix": "Exclusive Lobby Prefix",
     "Exclusive Bell Sound": "Exclusive Bell Sound",
-    "Exclusive «Knife»":"Exclusive «Knife»",
+    "Exclusive \"Knife\"":"Exclusive \"Knife\"",
     "Complete this row to unlock": "Complete this row to unlock",
     "Can You Smell That?": "Can You Smell That?",
     "Burn an item": "Burn an item",
@@ -680,9 +680,13 @@
     "Complete a Taco order": "Complete a Taco order",
     "Culinary Expert!": "Culinary Expert!",
     "Complete an order of each type of food": "Complete an order of each type of food",
-    "Kitchen":"Kitchen",
-    " BURNOUT":" BURNOUT",
-    "By the %s Team":"By the %s Team",
-    "Command":"Command",
-    " Realm":" Realm"
+    "By the %s Team": "By the %s Team",
+
+    " - Custom player heads.": " - Custom player heads.",
+    " - Armor stand posing.": " - Armor stand posing.",
+    " - JSON generators.": " - JSON generators.",
+    " - 3D modeling.": " - 3D modeling.",
+    " - MCFunction support in Visual Studio Code.": " - MCFunction support in Visual Studio Code.",
+    " - Worldborder-based timer tech.": " - Worldborder-based timer tech.",
+    " - Image to Minecraft map generator.": " - Image to Minecraft map generator."
 }
