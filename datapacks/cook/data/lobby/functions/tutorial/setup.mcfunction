@@ -33,4 +33,4 @@ execute as @e[type=area_effect_cloud,tag=tutorial] run data merge entity @s {Cus
 
 # Generate the recipe for the tutorial
 data remove storage tutorial {}
-data merge storage tutorial {Recipe:{Id:1,Name:"hamburger with lettuce",Ingredients:["Hamburger","Hamburger Bun","Lettuce Leaf"]}}
+data merge storage tutorial {Recipe:{id:1,Name:"hamburger with lettuce",Ingredients:["Hamburger","Hamburger Bun","Lettuce Leaf"]}}
