@@ -5,7 +5,7 @@
             "nbt":"{CustomModelData:1}"
             },
         "title": {
-            "text": "Wasting Food",
+            "translate": "Wasting Food",
             "color": "red",
             "bold": true
         },
@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Trash 50 ingredients",
+            "translate": "Trash 50 ingredients",
             "color": "#fac84b",
             "bold": false
         }

@@ -4,7 +4,7 @@
             "item": "minecraft:book"
             },
         "title": {
-            "text": "Fast Learner!",
+            "translate": "Fast Learner!",
             "color": "blue",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "View the tutorial in the lobby",
+            "translate": "View the tutorial in the lobby",
             "color": "#fac84b",
             "bold": false
         }

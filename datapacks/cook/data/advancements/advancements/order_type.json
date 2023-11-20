@@ -4,7 +4,7 @@
             "item": "minecraft:compass"
             },
         "title": {
-            "text": "Culinary Expert!",
+            "translate": "Culinary Expert!",
             "color": "yellow",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Complete an order of each type of food",
+            "translate": "Complete an order of each type of food",
             "color": "#fac84b",
             "bold": false
         }

@@ -4,7 +4,7 @@
             "item": "minecraft:elytra"
             },
         "title": {
-            "text": "First Class",
+            "translate": "First Class",
             "color": "blue",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Enter the airplane in the lobby",
+            "translate": "Enter the airplane in the lobby",
             "color": "#fac84b",
             "bold": false
         }

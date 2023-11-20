@@ -4,7 +4,7 @@
             "item": "minecraft:spyglass"
             },
         "title": {
-            "text": "Jack of All Trades",
+            "translate": "Jack of All Trades",
             "color": "green",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Play a game of Shuffle Mode",
+            "translate": "Play a game of Shuffle Mode",
             "color": "#fac84b",
             "bold": false
         }
