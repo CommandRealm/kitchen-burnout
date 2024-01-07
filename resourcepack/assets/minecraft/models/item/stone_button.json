@@ -11,7 +11,8 @@
     {"predicate": {"custom_model_data": 8},"model": "item/taco_hat"},
     {"predicate": {"custom_model_data": 9},"model": "item/ice_cream_hat"},
     {"predicate": {"custom_model_data": 10},"model": "item/cake_hat"},
-    {"predicate": {"custom_model_data": 11},"model": "item/gene_hat"}
+    {"predicate": {"custom_model_data": 11},"model": "item/gene_hat"},
+    {"predicate": {"custom_model_data": 12},"model": "item/gold_hat"}
     ]
 }
 

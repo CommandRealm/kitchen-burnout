@@ -54,6 +54,9 @@ item replace entity @s[scores={hat=8}] enderchest.14 with stone_button{CustomMod
 item replace entity @s[scores={hat=9}] enderchest.15 with stone_button{CustomModelData:5,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Guacamole","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Selected","color":"blue","italic":false}]']},Enchantments:[{}]}
 item replace entity @s[scores={hat=10}] enderchest.16 with stone_button{CustomModelData:3,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Top Hat","bold":true,"italic":false,"color":"gold"}]',Lore:['[{"translate":"LEGENDARY","italic":false,"color":"yellow"}]','[{"translate":"Selected","color":"blue","italic":false}]']},Enchantments:[{}]}
 
+# Special
+item replace entity @s[tag=hat_12] enderchest.22 with stone_button{CustomModelData:12,clickable:1,cosmetic:1,HideFlags:63,display:{Name:'[{"translate":"Golden Hat","color":"gold","bold": true}]',Lore:['[{"translate":"Placed Top 3 in the 1st Official Tournament!","italic":false,"color":"yellow"}]']}}
+item replace entity @s[scores={hat=12}] enderchest.22 with stone_button{CustomModelData:12,clickable:1,invalid_click:1,HideFlags:63,display:{Name:'[{"translate":"Golden Hat","color":"gold","bold": true}]',Lore:['[{"translate":"Placed Top 3 in the 1st Official Tournament!","italic":false,"color":"yellow"}]','[{"translate":"Selected","color":"blue","italic":false}]']},Enchantments:[{}]}
 
 item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"translate":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}
 

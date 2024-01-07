@@ -12,3 +12,4 @@ item replace entity @s[scores={hat=8}] armor.head with stone_button{CustomModelD
 item replace entity @s[scores={hat=9}] armor.head with stone_button{CustomModelData: 5, display: {Name: '[{"translate":"Guac","color":"green"}]'}}
 item replace entity @s[scores={hat=10}] armor.head with stone_button{CustomModelData: 3, display: {Name: '[{"translate":"Top Hat","color":"gray"}]'}}
 item replace entity @s[scores={hat=11}] armor.head with stone_button{CustomModelData: 11, display: {Name: '[{"translate":"Gene","color":"blue","italic":false},{"translate":" Plush","color":"aqua"},{"translate":" Hat","color":"yellow"}]'}}
+item replace entity @s[scores={hat=12}] armor.head with stone_button{CustomModelData: 12, display: {Name: '[{"translate":"Golden Hat","color":"gold","bold": true}]'}}

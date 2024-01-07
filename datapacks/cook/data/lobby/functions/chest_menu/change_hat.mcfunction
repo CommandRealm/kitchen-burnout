@@ -11,4 +11,6 @@ execute unless data entity @s[tag=hat_8] EnderItems[{Slot:14b}] run scoreboard p
 execute unless data entity @s[tag=hat_9] EnderItems[{Slot:15b}] run scoreboard players set @s hat 9
 execute unless data entity @s[tag=hat_10] EnderItems[{Slot:16b}] run scoreboard players set @s hat 10
 
+execute unless data entity @s[tag=hat_12] EnderItems[{Slot:22b}] run scoreboard players set @s hat 12
+
 item replace entity @s armor.head with air
