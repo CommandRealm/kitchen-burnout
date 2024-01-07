@@ -28,4 +28,4 @@ effect give @a weakness 2 255 true
 execute as @e[type=area_effect_cloud,tag=spin,limit=1] at @s run tp @s ~ ~ ~ ~15 ~
 
 # Killing tnt
-kill @e[type=tnt,nbt={Fuse:1s}]
+kill @e[type=tnt,nbt={fuse:1s}]
