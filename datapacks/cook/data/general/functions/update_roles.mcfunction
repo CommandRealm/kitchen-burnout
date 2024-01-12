@@ -72,6 +72,7 @@ tag Kotyaken add has_test
 tag Richardleb add has_test
 tag tanumen add has_test
 tag _Lexist_ add has_test
+tag Mouese add has_test
 
 # Translators
 tag Calverin add has_translate
@@ -104,6 +105,8 @@ tag vixy_11 add has_help
 tag EdLePug add has_help
 tag Calverin add has_help
 tag Urgle add has_help
+tag JaxF2008 add has_help
+tag Mouese add has_help
 
 # Builders
 tag admius add has_bld
@@ -181,5 +184,8 @@ tag Urgle add has_cr
 tag Billignton add has_cr
 tag Quackleb add has_cr
 tag TheTurtleDan add has_cr
+tag 3letters_ add has_cr
+tag Mouese add has_cr
+tag JaxF2008 add has_cr
 
 tag Pilllager add has_cr

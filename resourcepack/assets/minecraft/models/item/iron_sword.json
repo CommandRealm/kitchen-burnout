@@ -24,7 +24,7 @@
     {"predicate": {"custom_model_data": 18},"model": "item/knife/legendary/pizza"},
     {"predicate": {"custom_model_data": 19},"model": "item/iron_axe"},
     {"predicate": {"custom_model_data": 20},"model": "item/knife/scoop"},
-    {"predicate": {"custom_model_data": 21},"model": "item/knife/winner"}
+    {"predicate": {"custom_model_data": 21},"model": "item/knife/crown_cleaver"}
   ]
 }
 
