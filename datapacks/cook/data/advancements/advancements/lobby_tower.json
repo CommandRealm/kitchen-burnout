@@ -4,7 +4,7 @@
             "item": "minecraft:end_rod"
             },
         "title": {
-            "text": "Permission to Land",
+            "translate": "Permission to Land",
             "color": "blue",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Visit the airport control tower (highest reachable point) in the lobby",
+            "translate": "Visit the airport control tower (highest reachable point) in the lobby",
             "color": "#fac84b",
             "bold": false
         }

@@ -4,7 +4,7 @@
             "item": "minecraft:oak_sign"
         },
         "title": {
-            "text": "Exclusive Lobby Prefix",
+            "translate": "Exclusive Lobby Prefix",
             "color": "dark_aqua",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Complete this row to unlock",
+            "translate": "Complete this row to unlock",
             "color": "#fac84b",
             "bold": false
         }

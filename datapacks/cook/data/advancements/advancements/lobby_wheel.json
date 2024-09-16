@@ -4,7 +4,7 @@
             "item": "minecraft:ender_pearl"
             },
         "title": {
-            "text": "A Wheel Great Time!",
+            "translate": "A Wheel Great Time!",
             "color": "blue",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Hop on the ferris wheel in the lobby",
+            "translate": "Hop on the ferris wheel in the lobby",
             "color": "#fac84b",
             "bold": false
         }

@@ -4,7 +4,7 @@
             "item": "minecraft:barrier"
             },
         "title": {
-            "text": "Poor Service",
+            "translate": "Poor Service",
             "color": "yellow",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Get no Bonus Points on an order",
+            "translate": "Get no Bonus Points on an order",
             "color": "#fac84b",
             "bold": false
         }

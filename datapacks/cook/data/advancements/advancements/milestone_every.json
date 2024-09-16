@@ -4,7 +4,7 @@
             "item": "minecraft:furnace"
             },
         "title": {
-            "text": "World Tour",
+            "translate": "World Tour",
             "color": "red",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Visit every kitchen",
+            "translate": "Visit every kitchen",
             "color": "#fac84b",
             "bold": false
         }

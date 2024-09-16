@@ -4,7 +4,7 @@
             "item": "minecraft:pufferfish"
             },
         "title": {
-            "text": "Inedible",
+            "translate": "Inedible",
             "color": "green",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Hold a Poisonous Pufferfish",
+            "translate": "Hold a Poisonous Pufferfish",
             "color": "#fac84b",
             "bold": false
         }

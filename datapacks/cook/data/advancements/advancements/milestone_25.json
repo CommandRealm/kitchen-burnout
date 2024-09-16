@@ -4,7 +4,7 @@
             "item": "minecraft:raw_gold"
             },
         "title": {
-            "text": "Master Chef Jr.",
+            "translate": "Master Chef Jr.",
             "color": "red",
             "bold": true
         },
@@ -12,7 +12,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "description": {
-            "text": "Finish 25 games (cannot end early)",
+            "translate": "Finish 25 games (cannot end early)",
             "color": "#fac84b",
             "bold": false
         }
