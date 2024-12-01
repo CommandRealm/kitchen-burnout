@@ -1,8 +1,0 @@
-{
-    "replace": true,
-    "values": [
-        "minecraft:marker",
-        "minecraft:interaction",
-        "minecraft:item_display"
-    ]
-  }

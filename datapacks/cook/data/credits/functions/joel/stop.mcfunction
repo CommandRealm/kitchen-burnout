@@ -1,1 +1,0 @@
-scoreboard players set @s joel.new.timer -2147483646

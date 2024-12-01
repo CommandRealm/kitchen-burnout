@@ -1,1 +1,0 @@
-scoreboard players set @s admius.timer -2147483646
