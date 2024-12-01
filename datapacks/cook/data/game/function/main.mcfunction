@@ -1,0 +1,1 @@
+execute as @a[gamemode=adventure,tag=playing] at @s run function game:players

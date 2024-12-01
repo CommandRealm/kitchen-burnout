@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#plinth:panes",
+        "#minecraft:fences",
+        "#minecraft:walls"
+  ]
+}

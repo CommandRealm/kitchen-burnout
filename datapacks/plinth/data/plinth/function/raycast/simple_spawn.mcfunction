@@ -1,0 +1,1 @@
+execute as @s at @s anchored eyes run function plinth:raycast/simple_sample

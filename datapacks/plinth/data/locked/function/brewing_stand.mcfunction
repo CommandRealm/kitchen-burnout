@@ -1,0 +1,1 @@
+give @s brewing_stand[lock=" "]
