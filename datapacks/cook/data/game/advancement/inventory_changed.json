@@ -5,6 +5,6 @@
       }
     },
     "rewards": {
-      "function": "inputs:inventory/changed"
+      "function": "game:inventory/changed"
     }
   }

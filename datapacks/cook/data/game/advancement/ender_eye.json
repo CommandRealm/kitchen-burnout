@@ -12,6 +12,6 @@
       }
     },
     "rewards": {
-      "function": "inputs:right_click/click"
+      "function": "game:inputs/right_click/click"
     }
   }

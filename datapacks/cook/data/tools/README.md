@@ -1,0 +1,32 @@
+## Storage manipulation tools
+### Functions
+- `storage/set`
+    - Inputs:
+        - `path`: The storage to set the value of.
+        - `key`: The key to set the value of.
+        - `value`: The value to set the storage to.
+    - Result:
+        - `data modify storage <path> <key> set value <value>`
+- `storage/get`
+    - Inputs:
+        - `path`: The storage to get the value of.
+        - `key`: The key to get the value of.
+        - `result_key`: The key to store the result in.
+    - Result:
+        - `data modify storage <path> <result_key> set from storage <path> <key>`
+    ----
+    ### Name specific
+- `storage/set_for_player`
+    - Inputs:
+        - `path`: The storage to set the value of.
+        - `value`: The value to set the storage to.
+        - The name of the player that executed the command will be used as the key.
+    - Result:
+        - Runs `storage/set` with the `key` set to the player's name.
+- `storage/get_for_player`
+    - Inputs:
+        - `path`: The storage to get the value of.
+        - `result_key`: The key to store the result in.
+        - The name of the player that executed the command will be used as the key.
+    - Result:
+        - Runs `storage/get` with the `key` set to the player's name.

@@ -19,6 +19,4 @@ team join translate @s[scores={prefix=20}]
 
 team join cr @s[scores={prefix=99}]
 
-# Prefixes
-# Advancement Unlock
 team join unlock @s[scores={prefix=263}]

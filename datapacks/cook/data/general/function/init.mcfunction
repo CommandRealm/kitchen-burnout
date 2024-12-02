@@ -3,7 +3,7 @@ scoreboard objectives add has_joined dummy
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
 scoreboard objectives add has_reset_data dummy
 
-scoreboard objectives add ingredient dummy
+scoreboard objectives add held_item dummy
 
 scoreboard objectives add slot dummy
 scoreboard objectives add slot_old dummy
