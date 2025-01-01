@@ -190,8 +190,8 @@ scoreboard objectives add freeze_pos_z dummy
 scoreboard objectives add freeze_rot_x dummy
 scoreboard objectives add freeze_rot_y dummy
 
-# Ingredient specific teams
-function general:ingredient_teams
+# TODO: Ingredient specific teams
+#function general:ingredient_teams
 scoreboard objectives add sidebar_disp dummy ["",{"text":"🔥 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" 🔥","color":"red"}]
 scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Spoons","color":"blue","bold":true},{"text":" 🔥","color":"gold"}]
 scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Forks","color":"red","bold":true},{"text":" 🔥","color":"gold"}]
@@ -210,8 +210,8 @@ team add recipe_filled
 team modify recipe_filled color green
 team modify recipe_filled collisionRule never
 
-# Tutorial setup
-function lobby:tutorial/setup
+# TODO: Tutorial setup
+#function lobby:tutorial/setup
 
 # Forceload that chunk, I believe in you!
 forceload add 0 0

@@ -4,6 +4,7 @@ tag @s add ingredient_box_display
 tag @s add ingredient_box_outline
 tag @s add die_between_games
 
+
 # Set ingredient
 $function game:inventory/get_ingredient {slot:"container.0",id:$(id)}
 
