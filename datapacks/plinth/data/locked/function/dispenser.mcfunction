@@ -1,1 +1,0 @@
-give @s dispenser[lock=" "]

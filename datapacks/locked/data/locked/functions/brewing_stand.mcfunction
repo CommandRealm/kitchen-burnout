@@ -1,1 +1,0 @@
-give @s brewing_stand{BlockEntityTag:{Lock:" "}}

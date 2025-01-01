@@ -1,1 +1,0 @@
-give @s hopper{BlockEntityTag:{Lock:" "}}

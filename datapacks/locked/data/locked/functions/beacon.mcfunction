@@ -1,1 +1,0 @@
-give @s beacon{BlockEntityTag:{Lock:" "}}

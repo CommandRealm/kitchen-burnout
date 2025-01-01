@@ -1,1 +1,0 @@
-give @s dropper[lock=" "]

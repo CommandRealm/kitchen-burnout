@@ -1,1 +1,0 @@
-give @s orange_shulker_box[lock=" "]
