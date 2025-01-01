@@ -2,15 +2,15 @@
 execute store result score @s slot run data get entity @s SelectedItemSlot
 scoreboard players add @s slot 1
 # Fill the rest of the hotbar with invisible items for right click detection
-execute unless score @s slot matches 1 run item replace entity @s hotbar.0 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 2 run item replace entity @s hotbar.1 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 3 run item replace entity @s hotbar.2 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 4 run item replace entity @s hotbar.3 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 5 run item replace entity @s hotbar.4 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 6 run item replace entity @s hotbar.5 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 7 run item replace entity @s hotbar.6 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 8 run item replace entity @s hotbar.7 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
-execute unless score @s slot matches 9 run item replace entity @s hotbar.8 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:light_gray_stained_glass_pane"]
+execute unless score @s slot matches 1 run item replace entity @s hotbar.0 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 2 run item replace entity @s hotbar.1 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 3 run item replace entity @s hotbar.2 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 4 run item replace entity @s hotbar.3 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 5 run item replace entity @s hotbar.4 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 6 run item replace entity @s hotbar.5 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 7 run item replace entity @s hotbar.6 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 8 run item replace entity @s hotbar.7 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
+execute unless score @s slot matches 9 run item replace entity @s hotbar.8 with ender_eye[hide_tooltip={},hide_additional_tooltip={},item_name='""',item_model="minecraft:gray_stained_glass_pane"]
 
 #item replace entity @s weapon.offhand with ender_eye[hide_tooltip={},hide_additional_tooltip={},custom_data={offhand:1b},item_name='""']
 
