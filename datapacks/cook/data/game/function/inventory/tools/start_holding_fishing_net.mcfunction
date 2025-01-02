@@ -1,2 +1,2 @@
 scoreboard players set @s held_item -2
-function game:inventory/changed
+advancement grant @s only game:inventory_changed

@@ -1,8 +1,6 @@
 # Called by players looking at a cutting board
-execute if score @s held_item matches 0 run function game:inventory/tools/start_holding_knife
-
 # Animation
-execute positioned ~ ~1.75 ~ positioned ^ ^ ^1 run scoreboard players operation $cutting_board station_timer = @n[type=marker,tag=cutting_board,distance=..3] station_timer
+execute anchored eyes positioned ^ ^ ^1.75 run scoreboard players operation $cutting_board station_timer = @n[type=interaction,tag=cutting_board,distance=..1] station_timer
 execute if score $cutting_board station_timer matches -2147483648..2147483647 run title @s subtitle [{"translate":"station.cutting_board.instructions","color":"gold"}]
 # [{"text":"|||||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||||","color":"white"}]
 execute if score $cutting_board station_timer matches -10 run title @s title ["",{"text":"|","color":"#0042ff","underlined":true},{"text":"|","color":"red"},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||","color":"white"},{"text":"||","color":"red"}]
@@ -16,3 +14,5 @@ execute if score $cutting_board station_timer matches 4 run title @s title [{"te
 execute if score $cutting_board station_timer matches 6 run title @s title [{"text":"||","color":"red"},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"||","color":"white"},{"text":"|","color":"#0042ff","underlined":true},{"text":"||","color":"red"}]
 execute if score $cutting_board station_timer matches 8 run title @s title [{"text":"||","color":"red"},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||","color":"white"},{"text":"|","color":"#0042ff","underlined":true},{"text":"|","color":"red"}]
 execute if score $cutting_board station_timer matches 10 run title @s title [{"text":"||","color":"red"},{"text":"|||","color":"white"},{"text":"|","color":"#12ff00"},{"text":"|||","color":"white"},{"text":"|","color":"red"},{"text":"|","color":"#0042ff","underlined":true}]
+
+return 1
