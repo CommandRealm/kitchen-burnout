@@ -14,11 +14,11 @@ data modify storage game:stations/place id set from storage game:ingredient plac
 data remove storage game:ingredient place_ingredient
 
 # Place the ingredient on the station
-execute as @n[type=item_display,tag=station,distance=..2] at @s run function game:inventory/get_ingredient with storage game:stations/place
+execute as @n[type=item_display,tag=station,distance=..0.5] at @s run function game:inventory/get_ingredient with storage game:stations/place
 
 # Clear the ingredient from the player's inventory unless the player is getting an ingredient in return
 execute on target unless score $placed_ingredient station matches 1 run function game:inventory/clear_ingredient {slot:"weapon.mainhand"}
 
-execute on target run playsound minecraft:entity.egg.throw master @s ~ ~ ~ 1 0.69
+execute on target run playsound minecraft:block.dispenser.dispense master @s ~ ~ ~ 1 1.25
 
 return 1

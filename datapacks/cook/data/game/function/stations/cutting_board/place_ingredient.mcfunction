@@ -3,6 +3,18 @@
 # Call the common place_ingredient function
 function game:stations/place_ingredient
 
-# TODO: Check if this placed ingredient is a cuttable one, if so give ourselves the cuttable tag and set the cutting properties
+# Check if this placed ingredient is a cuttable one, if so start the cutting process
+data remove storage game:stations/cut input
+data modify storage game:stations/cut input set from entity @n[type=item_display,tag=cutting_board,distance=..0.5] item.components."minecraft:custom_data".ingredient
+
+# FIXME: CUTTING TIMES
+execute if data storage game:stations/cut {input:"tomato"} run function game:stations/cutting_board/cut/start {cutting_time:20}
+execute if data storage game:stations/cut {input:"lettuce_head"} run function game:stations/cutting_board/cut/start {cutting_time:10}
+
+execute if data storage game:stations/cut {input:"avocado"} run function game:stations/cutting_board/cut/start {cutting_time:10}
+execute if data storage game:stations/cut {input:"pufferfish"} run function game:stations/cutting_board/cut/start {cutting_time:24}
+execute if data storage game:stations/cut {input:"salmon"} run function game:stations/cutting_board/cut/start {cutting_time:20}
+
+execute if data storage game:stations/cut {input:"lettuce_head_2"} run function game:stations/cutting_board/cut/start {cutting_time:15}
 
 return 1

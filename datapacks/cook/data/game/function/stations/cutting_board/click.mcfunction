@@ -12,6 +12,7 @@ execute unless data entity @n[type=item_display,tag=cutting_board,distance=..0.5
 data modify storage game:stations/take id set from entity @n[type=item_display,tag=cutting_board,distance=..0.5] item.components."minecraft:custom_data".ingredient
 
 # If we have an ingredient and the player does too, take their ingredient and then give them ours
+tag @s remove cuttable
 execute if score $holding_ingredient station matches 1 run function game:stations/cutting_board/place_ingredient
 
 # Give the player our ingredient
