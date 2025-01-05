@@ -7,7 +7,7 @@ function game:stations/place_ingredient
 data remove storage game:stations/cut input
 data modify storage game:stations/cut input set from entity @n[type=item_display,tag=cutting_board,distance=..0.5] item.components."minecraft:custom_data".ingredient
 
-# FIXME: CUTTING TIMES
+# CUTTING TIMES
 execute if data storage game:stations/cut {input:"tomato"} run function game:stations/cutting_board/cut/start {cutting_time:20}
 execute if data storage game:stations/cut {input:"lettuce_head"} run function game:stations/cutting_board/cut/start {cutting_time:10}
 

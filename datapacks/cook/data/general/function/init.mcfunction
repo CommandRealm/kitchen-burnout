@@ -53,6 +53,8 @@ scoreboard objectives add pregame dummy
 
 # Number objective
 scoreboard objectives add number dummy
+scoreboard players set $7 number 7
+scoreboard players set $20 number 20
 
 # Game state
 scoreboard objectives add game dummy

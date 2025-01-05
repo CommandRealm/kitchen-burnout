@@ -15,6 +15,6 @@ playsound minecraft:block.note_block.chime master @a ~ ~ ~ 0.5 0.594604
 playsound minecraft:block.note_block.chime master @a ~ ~ ~ 0.5 0.749154
 playsound minecraft:block.note_block.chime master @a ~ ~ ~ 0.5 0.890899
 playsound minecraft:block.note_block.chime master @a ~ ~ ~ 0.5 1.189207
-particle dust{color:[0.925, 0.835, 0.416],scale:1} ~ ~0.1 ~ 1 1 1 0.15 20 force @a
-particle dust{color:[1.0, 0.816, 0.0],scale:1} ~ ~0.1 ~ 1 1 1 0.15 20 force @a
-particle dust{color:[0.925, 0.745, 0.416],scale: 1} ~ ~0.1 ~ 1 1 1 0.15 20 force @a
+particle dust{color:[0.925, 0.835, 0.416],scale:1} ~ ~0.1 ~ 0.2 0.05 0.2 0.15 5 force @a
+particle dust{color:[1.0, 0.816, 0.0],scale:1} ~ ~0.1 ~ 0.2 0.05 0.2 0.15 5 force @a
+particle dust{color:[0.925, 0.745, 0.416],scale: 1} ~ ~0.1 ~ 0.2 0.05 0.2 0.15 5 force @a

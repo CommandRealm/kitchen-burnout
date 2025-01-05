@@ -1,9 +1,9 @@
-# Called by a cutting board that needs to convert a cuttable ingredient into a cut ingredient
+# Called by a cutting board item display that needs to convert a cuttable ingredient into a cut ingredient
 data remove storage game:stations/cut input
 data modify storage game:stations/cut slot set value "container.0"
 data modify storage game:stations/cut input set from entity @s item.components."minecraft:custom_data".ingredient
 
-# FIXME: CUTTING RESULTS
+# CUTTING RESULTS
 execute if data storage game:stations/cut {input:"tomato"} run data modify storage game:stations/cut id set value "tomato_slice"
 execute if data storage game:stations/cut {input:"lettuce_head"} run data modify storage game:stations/cut id set value "lettuce_leaf"
 
