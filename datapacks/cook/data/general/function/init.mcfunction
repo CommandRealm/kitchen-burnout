@@ -53,6 +53,7 @@ scoreboard objectives add pregame dummy
 
 # Number objective
 scoreboard objectives add number dummy
+scoreboard players set $-1 number -1
 scoreboard players set $7 number 7
 scoreboard players set $20 number 20
 
@@ -164,6 +165,7 @@ scoreboard objectives add station_state dummy
 
 scoreboard objectives add prep_display dummy
 scoreboard objectives add prep_position dummy
+scoreboard objectives add prep_distance_threshold dummy
 
 scoreboard objectives add floating_text dummy
 scoreboard objectives add fish_count dummy
