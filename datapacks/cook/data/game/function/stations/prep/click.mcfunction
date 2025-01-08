@@ -17,6 +17,6 @@ function game:stations/prep/ingredient/create with storage game:stations/place
 # Clear the ingredient from the player's inventory unless the player is getting an ingredient in return
 execute on target run function game:inventory/clear_ingredient {slot:"weapon.mainhand"}
 
-scoreboard players set @s prep_display 0
+scoreboard players set @s prep_display 1
 
 execute on target run playsound minecraft:block.dispenser.dispense master @s ~ ~ ~ 1 1.25
