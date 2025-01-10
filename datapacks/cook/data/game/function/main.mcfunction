@@ -4,3 +4,5 @@ execute as @e[type=interaction,tag=station] at @s run function game:stations/mai
 
 # For clickable interaction entities, check if they are being interacted with
 execute as @e[type=interaction,tag=interactable] at @s run function game:stations/check_interaction
+
+execute as @e[type=interaction,tag=thrown_ingredient] at @s run function game:stations/thrown_ingredient/main
