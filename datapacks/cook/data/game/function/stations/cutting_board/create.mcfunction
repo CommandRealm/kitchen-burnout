@@ -7,4 +7,5 @@ execute align xyz run summon item_display ~0.5 ~0.0625 ~0.5 {Tags:["cutting_boar
 # Icon
 #summon minecraft:area_effect_cloud ~ ~-.4 ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["die_between_games","station_display_text"],CustomNameVisible:1b,CustomName:'[{"text":"🗡","color":"aqua"}]'}
 
-scoreboard players set @n[type=interaction,tag=cutting_board,distance=..0.5] station_state 1
+# Get a unique id
+execute align xyz as @n[type=interaction,tag=cutting_board,distance=..0.5] store result score @s cutting_id run scoreboard players add $new cutting_id 1

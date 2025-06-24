@@ -13,8 +13,8 @@ execute unless score @s slot matches 8 run item replace entity @s hotbar.7 with 
 execute unless score @s slot matches 9 run item replace entity @s hotbar.8 with ender_eye[tooltip_display={hide_tooltip:true},item_name="",item_model="minecraft:gray_stained_glass_pane"]
 
 # Offhand
-item replace entity @s[tag=!cutting] weapon.offhand with ender_eye[tooltip_display={hide_tooltip:true},item_name="",item_model="minecraft:gray_stained_glass_pane",custom_data={offhand:1b}]
-item replace entity @s[tag=cutting] weapon.offhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate": "tool.knife.name"},item_model="minecraft:iron_sword",custom_data={offhand:1b}]
+item replace entity @s[tag=!holding_knife] weapon.offhand with ender_eye[tooltip_display={hide_tooltip:true},item_name="",item_model="minecraft:gray_stained_glass_pane",custom_data={offhand:1b}]
+item replace entity @s[tag=holding_knife] weapon.offhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate": "tool.knife.name"},item_model="minecraft:iron_sword",custom_data={offhand:1b}]
 
 # Changes the player's currently held item to the specified item.
 # 0 - Nothing

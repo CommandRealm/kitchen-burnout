@@ -3,7 +3,7 @@
 playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 1.25
 
 # Bad cut (+/- 7 to 10)
-execute unless score @s station_timer matches -6..6 run return run function game:stations/cutting_board/cut/bad
+execute unless score @s station_timer matches -6..6 run return run function game:stations/cutting_board/result/bad
 
 # Okay cut (+/- 4 to 6)
 execute unless score @s station_timer matches -3..3 run return run scoreboard players remove @s station 2

@@ -11,6 +11,14 @@ execute unless data entity @n[type=item_display,tag=cutting_board,distance=..0.5
 # Cache our ingredient
 data modify storage game:stations/take id set from entity @n[type=item_display,tag=cutting_board,distance=..0.5] item.components."minecraft:custom_data".ingredient
 
+# Remove our input display if we had one unless the player is giving us an ingredient
+execute if score $holding_ingredient station matches 0 as @s[tag=cutting] align xyz run kill @n[type=text_display,tag=cutting_board_inputs,dx=0,dy=1,dz=0]
+tag @s remove cutting
+
+# Free players who are currently cutting on this cutting board
+scoreboard players operation $match cutting_id = @s cutting_id
+execute as @a[tag=cutting_mode] if score @s cutting_id = $match cutting_id run function game:stations/cutting_board/mode/exit
+
 # If we have an ingredient and the player does too, take their ingredient and then give them ours
 tag @s remove cuttable
 execute if score $holding_ingredient station matches 1 run function game:stations/cutting_board/place_ingredient
