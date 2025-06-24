@@ -103,9 +103,9 @@ scoreboard objectives add freeze_rot_y dummy
 
 # TODO: Ingredient specific teams
 #function general:ingredient_teams
-scoreboard objectives add sidebar_disp dummy ["",{"text":"🔥 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" 🔥","color":"red"}]
-scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Spoons","color":"blue","bold":true},{"text":" 🔥","color":"gold"}]
-scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"🔥 ","color":"gold"},{"translate":"The Forks","color":"red","bold":true},{"text":" 🔥","color":"gold"}]
+scoreboard objectives add sidebar_disp dummy ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" \U0001F525","color":"red"}]
+scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"\U0001F525 ","color":"gold"},{"translate":"The Spoons","color":"blue","bold":true},{"text":" \U0001F525","color":"gold"}]
+scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"\U0001F525 ","color":"gold"},{"translate":"The Forks","color":"red","bold":true},{"text":" \U0001F525","color":"gold"}]
 
 scoreboard objectives add random dummy
 
@@ -209,12 +209,12 @@ gamerule universalAnger false
 
 # Lobby bossbar
 bossbar remove minecraft:lobby
-bossbar add minecraft:lobby ["",{"text":"\u1F52 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \u1F52","color":"red"}]
+bossbar add minecraft:lobby ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \U0001F525","color":"red"}]
 bossbar set minecraft:lobby style progress
 bossbar set minecraft:lobby color white
 bossbar set minecraft:lobby max 1
 bossbar set minecraft:lobby value 1
-bossbar set minecraft:lobby players @a[gamemode=adventure,x=0,y=66,z=0,distance=..500]
+bossbar set minecraft:lobby players @a[tag=in_lobby]
 bossbar set minecraft:lobby visible true
 
 # TODO: Tutorial setup
@@ -222,5 +222,3 @@ bossbar set minecraft:lobby visible true
 
 # Forceload that chunk, I believe in you!
 forceload add 0 0
-
-title @a times 0 2 10
