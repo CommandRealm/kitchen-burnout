@@ -1,7 +1,5 @@
 # Player state
-scoreboard objectives add has_joined dummy
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
-scoreboard objectives add has_reset_data dummy
 
 scoreboard objectives add held_item dummy
 

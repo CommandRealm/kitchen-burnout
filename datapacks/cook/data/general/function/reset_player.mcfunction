@@ -3,7 +3,8 @@ tp @s -11.0 68 46.0 -148 -18
 spawnpoint @s -11 68 46 -148
 
 # Remove tags
-tag @s remove playing
+# TODO: Remove this tag
+#tag @s remove playing
 
 # Others
 clear @s
