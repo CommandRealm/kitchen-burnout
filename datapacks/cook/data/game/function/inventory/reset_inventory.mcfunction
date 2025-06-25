@@ -26,8 +26,10 @@ execute if score @s held_item matches -3 run item replace entity @s weapon.mainh
 execute unless score @s held_item matches 1.. run return 1
 # Get the held ingredient from the ingredient cache
 data remove storage game:inventory/held_item {}
+data modify storage game:inventory/held_item entity set value "@s"
 data modify storage game:inventory/held_item slot set value "weapon.mainhand"
 function tools:storage/get_for_player {path:"game:ingredient",result_key:"held_item"}
 data modify storage game:inventory/held_item id set from storage game:ingredient held_item
 data remove storage game:ingredient held_item
+
 function game:inventory/get_ingredient with storage game:inventory/held_item

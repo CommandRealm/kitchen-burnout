@@ -5,11 +5,13 @@ tag @s add ingredient_box
 tag @s add reset_boxes
 tag @s add die_between_games
 tag @s add interactable
-# Set ingredient
-$function game:inventory/get_ingredient {slot:"",id:$(id)}
 
 # Spinning item
-$execute positioned ~ ~0.5 ~ summon item_display run function game:stations/ingredient_box/setup_item_display {id:$(id)}
+execute positioned ~ ~0.5 ~ summon item_display run function game:stations/ingredient_box/setup_item_display
+
+# Set ingredient
+$execute positioned ~ ~0.5 ~ run function game:inventory/get_ingredient { \
+    entity:"@n[type=item_display,tag=ingredient_box,distance=..0.5]", slot:"container.0", id: $(id)}
 
 data remove storage game:new_ingredient_box ingredient
 data remove storage game:new_ingredient_box becomes

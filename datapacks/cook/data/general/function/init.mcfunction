@@ -66,7 +66,7 @@ scoreboard objectives add ingredients_burnt dummy
 scoreboard objectives add station dummy
 scoreboard objectives add station_timer dummy
 scoreboard objectives add station_state dummy
-scoreboard objectives add cutting_inputs dummy
+scoreboard objectives add cutting_inputs_completed dummy
 scoreboard objectives add cutting_inputs_length dummy
 scoreboard objectives add cutting_id dummy
 

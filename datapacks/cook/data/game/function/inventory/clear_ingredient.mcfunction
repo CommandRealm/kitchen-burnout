@@ -7,5 +7,5 @@ execute as @s[type=player] run function tools:storage/set_for_player {path:"game
 scoreboard players set @s[type=player] held_item 0
 advancement grant @s[type=player] only game:inventory_changed
 
-# Only works for markers
-execute as @s[type=marker] run data remove entity @s data.ingredient
+# Remove the ingredient data from the entity
+execute as @s[type=!player] run data remove entity @s data.ingredient

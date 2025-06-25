@@ -1,7 +1,7 @@
 # Called to reset the players.
 
 # so we don't reset again
-tag @s add has_reset_data
+tag @s add data_reset
 
 scoreboard players set @s prefix -1
 
