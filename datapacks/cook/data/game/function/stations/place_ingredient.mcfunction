@@ -18,7 +18,7 @@ data remove storage game:ingredient place_ingredient
 function game:inventory/get_ingredient with storage game:stations/place
 
 # Clear the ingredient from the player's inventory unless the player is getting an ingredient in return
-execute on target unless score $placed_ingredient station matches 1 run function game:inventory/clear_ingredient {slot:"weapon.mainhand"}
+execute on target unless score $placed_ingredient station matches 1 run function game:inventory/clear_ingredient {slot:"weapon.offhand"}
 
 execute on target run playsound minecraft:block.dispenser.dispense master @s ~ ~ ~ 1 1.25
 

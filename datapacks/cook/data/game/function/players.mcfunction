@@ -1,7 +1,7 @@
 # Called as all players
 
 # Check if the player should be holding a tool
-execute anchored eyes run function game:inventory/tools/check_for_needed_tool
+execute anchored eyes run function game:inventory/tools/check_tools
 
 # Check if the player is interacting with a station
 execute as @s[tag=cutting_mode] anchored eyes run function game:stations/cutting_board/mode/in

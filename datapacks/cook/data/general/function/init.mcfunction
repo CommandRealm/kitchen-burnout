@@ -217,6 +217,8 @@ bossbar set minecraft:lobby value 1
 bossbar set minecraft:lobby players @a[tag=in_lobby]
 bossbar set minecraft:lobby visible true
 
+title @a times 0 25 5
+
 # TODO: Tutorial setup
 #function lobby:tutorial/setup
 
