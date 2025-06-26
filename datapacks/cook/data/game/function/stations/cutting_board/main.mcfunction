@@ -1,10 +1,12 @@
 # Main cutting board function
 
-# Bouncing bar animation
-scoreboard players operation @s[tag=cuttable] station_timer += @s station_state
-execute unless score @s[tag=cuttable] station_state matches -2147483648..2147483647 run scoreboard players set @s station_state 1
-scoreboard players set @s[tag=cuttable,scores={station_timer=..-10}] station_state 1
-scoreboard players set @s[tag=cuttable,scores={station_timer=10..}] station_state -1
+# If we're not cutting, return
+execute as @s[tag=!cutting] run return 1
 
-# Cutting cooldown
-execute if score @s click_cooldown matches 1.. run scoreboard players remove @s click_cooldown 1
+# If we're cutting, give our input display the inputs
+execute store result storage game:stations/cut inputs.completed int 1 run scoreboard players get @s cutting_inputs_completed
+scoreboard players operation +1 cutting_inputs_completed = @s cutting_inputs_completed
+scoreboard players add +1 cutting_inputs_completed 1
+execute store result storage game:stations/cut inputs.completed_plus_1 int 1 run scoreboard players get +1 cutting_inputs_completed
+execute store result storage game:stations/cut inputs.length int 1 run scoreboard players get @s cutting_inputs_length
+function game:stations/cutting_board/show_inputs with storage game:stations/cut inputs

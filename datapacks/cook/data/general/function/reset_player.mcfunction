@@ -1,9 +1,14 @@
 # Take to spawn
 tp @s -11.0 68 46.0 -148 -18
 spawnpoint @s -11 68 46 -148
+tag @s add in_lobby
 
 # Remove tags
-tag @s remove playing
+# TODO: Remove this tag
+#tag @s remove playing
+
+# Bossbar
+bossbar set minecraft:lobby players @a[tag=in_lobby]
 
 # Others
 clear @s

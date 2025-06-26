@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific": {
+            "type": "minecraft:player",
+            "looking_at": {
+                "type": "interaction",
+                "nbt": "{Tags:[\"cutting_board\",\"cuttable\"]}"
+            }
+        }
+    }
+
+}

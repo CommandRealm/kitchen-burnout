@@ -15,7 +15,7 @@ data remove storage game:ingredient place_ingredient
 function game:stations/prep/ingredient/create with storage game:stations/place
 
 # Clear the ingredient from the player's inventory unless the player is getting an ingredient in return
-execute on target run function game:inventory/clear_ingredient {slot:"weapon.mainhand"}
+execute on target run function game:inventory/clear_ingredient {slot:"weapon.offhand"}
 
 # Start a new epoch to assign new positioning ids to all of the ingredients
 function game:stations/prep/ingredient/positioning/new_epoch

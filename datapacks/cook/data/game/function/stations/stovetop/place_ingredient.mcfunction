@@ -4,8 +4,7 @@
 function game:stations/place_ingredient
 
 # Check if this placed ingredient is a cookable one, if so start the cooking process
-data remove storage game:stations/cook input
-data modify storage game:stations/cook input set from entity @n[type=item_display,tag=stovetop,distance=..0.5] item.components."minecraft:custom_data".ingredient
+data modify storage game:stations/cook input set from entity @s data.ingredient
 
 # INITIAL COOKING TIMES
 execute if data storage game:stations/cook {input:"raw_hamburger"} run return run function game:stations/stovetop/cook/start {start:1,transform_point:150,type:"hamburger"}
