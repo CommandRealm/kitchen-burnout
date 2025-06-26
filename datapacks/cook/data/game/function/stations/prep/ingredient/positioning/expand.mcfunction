@@ -10,5 +10,7 @@ $scoreboard players add @s prep_position $(base_position)
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s prep_position
 
 # Create an interaction at our new position
-data modify storage game:prep interaction_y set from entity @s Pos[1]
-function game:stations/prep/ingredient/create_interaction with storage game:prep
+data modify storage game:stations/prep interaction_y set from entity @s Pos[1]
+data modify storage game:stations/prep ingredient_id set from entity @s data.ingredient
+execute store result storage game:stations/prep index int 1 run scoreboard players get @s prep_index
+function game:stations/prep/ingredient/create_interaction with storage game:stations/prep

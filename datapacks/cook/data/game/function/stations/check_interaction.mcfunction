@@ -3,6 +3,7 @@ scoreboard players set $check_interaction click 0
 execute on attacker run scoreboard players set $check_interaction click 1
 execute if score $check_interaction click matches 1 as @s[tag=cutting_board] run function game:stations/cutting_board/attack
 execute if score $check_interaction click matches 1 as @s[tag=stovetop] run function game:stations/stovetop/attack
+execute if score $check_interaction click matches 1 as @s[tag=prep_ingredient] run function game:stations/prep/ingredient/attack
 
 # Remove the attack data in case it wasn't cleaned up
 data remove entity @s attack
@@ -16,7 +17,7 @@ execute if score $check_interaction click matches 0 run return 1
 execute as @s[tag=ingredient_box] run function game:stations/ingredient_box/click
 execute as @s[tag=cutting_board] run function game:stations/cutting_board/click
 execute as @s[tag=stovetop] run function game:stations/stovetop/click
-execute as @s[tag=prep_base] run function game:stations/prep/click
+execute as @s[tag=prep_station] run function game:stations/prep/click
 execute as @s[tag=prep_ingredient] run function game:stations/prep/ingredient/click
 
 # Remove the interaction data in case it wasn't cleaned up

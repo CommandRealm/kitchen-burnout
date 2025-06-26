@@ -1,3 +1,10 @@
 {
-    "station.cutting_board.exit": "to Exit"
+    "station.cutting_board.exit": "to Exit",
+    "ingredient.bun.name": "Bun",
+    "ingredient.hamburger.name": "Burger",
+    "ingredient.cheese.name": "Cheese",
+    "ingredient.lettuce_head.name": "Head of Lettuce",
+    "ingredient.tomato.name": "Whole Tomato",
+    "ingredient.lettuce_leaf.name": "Lettuce Leaf",
+    "ingredient.tomato_slice.name": "Tomato Slice"
 }

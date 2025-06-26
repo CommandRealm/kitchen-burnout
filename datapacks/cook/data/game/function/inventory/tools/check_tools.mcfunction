@@ -9,4 +9,6 @@ execute as @s[tag=holding_knife,predicate=!game:looking_at/cutting_board] run re
 
 # Check for fishing nets near a fish
 
-# Otherwise the player should just be holding an ingredient or nothing
+# TODO: If they are looking at a prep ingredient/station it should show instructions (and maybe the name of the ingredient they're looking at?)
+
+# Otherwise the player should just be holding nothing in their main hand

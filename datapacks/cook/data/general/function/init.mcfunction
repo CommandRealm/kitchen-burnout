@@ -41,8 +41,6 @@ scoreboard objectives add map dummy
 
 scoreboard objectives add click minecraft.used:carrot_on_a_stick
 scoreboard objectives add click_cooldown dummy
-# Reset after main functions
-scoreboard objectives add is_sneaking minecraft.custom:sneak_time
 
 # Enderchest stuff
 scoreboard objectives add open_echest minecraft.custom:minecraft.open_enderchest
@@ -65,7 +63,6 @@ scoreboard objectives add ingredients_burnt dummy
 # Stations
 scoreboard objectives add station dummy
 scoreboard objectives add station_timer dummy
-scoreboard objectives add station_state dummy
 scoreboard objectives add cutting_inputs_completed dummy
 scoreboard objectives add cutting_inputs_length dummy
 scoreboard objectives add cutting_id dummy
@@ -73,6 +70,7 @@ scoreboard objectives add cutting_id dummy
 scoreboard objectives add prep_display dummy
 scoreboard objectives add prep_position dummy
 scoreboard objectives add prep_id dummy
+scoreboard objectives add prep_index dummy
 
 scoreboard objectives add floating_text dummy
 scoreboard objectives add fish_count dummy
@@ -109,6 +107,8 @@ scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"\U0001F525 ","color"
 
 scoreboard objectives add random dummy
 
+# Serving
+scoreboard objectives add serving dummy
 scoreboard objectives add recipe_cooldown dummy
 scoreboard objectives add recipe_timer dummy
 

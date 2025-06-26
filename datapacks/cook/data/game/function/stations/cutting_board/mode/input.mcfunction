@@ -5,11 +5,11 @@
 scoreboard players operation $match cutting_id = @s cutting_id
 # Check for a good input
 $execute as @e[type=interaction,tag=cutting_board,tag=cutting] at @s if score @s cutting_id = $match cutting_id \
-    if data entity @s data.cutting_board{current_input:"$(input)"} run function game:stations/cutting_board/cutting/good_cut
+    if data entity @s data{current_input:"$(input)"} run function game:stations/cutting_board/cutting/good_cut
 
 # Check for a bad input
 $execute as @e[type=interaction,tag=cutting_board,tag=cutting] at @s if score @s cutting_id = $match cutting_id \
-    unless data entity @s data.cutting_board{current_input:"$(input)"} run function game:stations/cutting_board/cutting/bad_cut
+    unless data entity @s data{current_input:"$(input)"} run function game:stations/cutting_board/cutting/bad_cut
 
 # Give a tag so that holding the input key down doesn't cause multiple inputs
 $tag @s add cut_$(direction)
