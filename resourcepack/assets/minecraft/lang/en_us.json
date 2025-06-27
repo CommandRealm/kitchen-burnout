@@ -7,9 +7,10 @@
     "ingredient.tomato": "Whole Tomato",
     "ingredient.lettuce_leaf": "Lettuce Leaf",
     "ingredient.tomato_slice": "Tomato Slice",
+    "ingredient.scorched_food": "Scorched Food",
     
     "instructions.station.cutting_board.exit": "to Exit",
-    
+
     "subtitles.station.bell.wubwubwubwub": "Bell Pigsteps",
     "subtitles.station.bell.weeeeee": "Bell goes weeeeee",
     "subtitles.station.bell.oof": "Bell oofs",

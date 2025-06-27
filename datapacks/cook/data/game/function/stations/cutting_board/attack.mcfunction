@@ -1,5 +1,5 @@
 # Called when a player left clicks a cutting board, if there is a cuttable ingredient on the cutting board, start the cutting process
-execute on attacker run playsound entity.breeze.charge master @s ~ ~ ~ 1 0.8
+execute on attacker run playsound entity.breeze.charge master @s ~ ~ ~ 1 1.5
 # If the player is already cutting, do nothing
 execute on attacker as @s[tag=cutting_mode] run return fail
 # If we aren't cuttable, do nothing
