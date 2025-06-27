@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "kitchen_burnout:item/ingredient/lettuce_leaf"
+    }
+}

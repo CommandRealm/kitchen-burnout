@@ -1,10 +1,21 @@
 {
-    "station.cutting_board.exit": "to Exit",
-    "ingredient.bun.name": "Bun",
-    "ingredient.hamburger.name": "Burger",
-    "ingredient.cheese.name": "Cheese",
-    "ingredient.lettuce_head.name": "Head of Lettuce",
-    "ingredient.tomato.name": "Whole Tomato",
-    "ingredient.lettuce_leaf.name": "Lettuce Leaf",
-    "ingredient.tomato_slice.name": "Tomato Slice"
+    "ingredient.bun": "Bun",
+    "ingredient.raw_hamburger": "Raw Patty",
+    "ingredient.hamburger": "Burger Patty",
+    "ingredient.cheese": "Cheese",
+    "ingredient.lettuce_head": "Head of Lettuce",
+    "ingredient.tomato": "Whole Tomato",
+    "ingredient.lettuce_leaf": "Lettuce Leaf",
+    "ingredient.tomato_slice": "Tomato Slice",
+    
+    "instructions.station.cutting_board.exit": "to Exit",
+    
+    "subtitles.station.bell.wubwubwubwub": "Bell Pigsteps",
+    "subtitles.station.bell.weeeeee": "Bell goes weeeeee",
+    "subtitles.station.bell.oof": "Bell oofs",
+    "subtitles.station.bell.melon": "Bell is the Melon Man",
+    "subtitles.station.bell.mail": "Bell has mail",
+    "subtitles.station.bell.wilhelm": "Bell goes EAUGHAGHUGH",
+    "subtitles.station.bell.cc": "Bell is a Celestial Champion",
+    "subtitles.station.bell.regs": "Bell dies"
 }

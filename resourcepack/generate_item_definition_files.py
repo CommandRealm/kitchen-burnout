@@ -2,8 +2,8 @@ import os
 import json
 
 def create_json_files():
-    source_dir = './assets/kitchen_burnout/models/item/ingredients/'
-    target_dir = './assets/kitchen_burnout/items/ingredients/'
+    source_dir = './assets/kitchen_burnout/models/item/ingredient/'
+    target_dir = './assets/kitchen_burnout/items/ingredient/'
 
     # Ensure the target directory exists
     os.makedirs(target_dir, exist_ok=True)
@@ -26,7 +26,7 @@ def create_json_files():
             json_content = {
                 "model": {
                     "type": "minecraft:model",
-                    "model": f"kitchen_burnout:item/ingredients/{name_without_extension}"
+                    "model": f"kitchen_burnout:item/ingredient/{name_without_extension}"
                 }
             }
 

@@ -5,5 +5,6 @@ particle totem_of_undying ~ ~ ~ .1 .1 .1 1 20 force
 # Remove ingredients
 execute align xyz positioned ~ -64 ~ run kill @e[tag=prep_ingredient,dx=0,dy=384,dz=0]
 data remove entity @s data.ingredients
+data remove entity @s data.formatted_ingredients
 
 # TODO: Get new recipe

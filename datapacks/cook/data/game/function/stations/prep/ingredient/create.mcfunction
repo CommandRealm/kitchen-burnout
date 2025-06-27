@@ -10,7 +10,7 @@ $execute as @n[type=item_display,tag=prep_ingredient,tag=needs_ingredient,distan
 
 # Add the ingredient to the prep station's list
 $data modify entity @s data.ingredients append value "$(id)"
-$data modify entity @s data.formatted_ingredients append value {"translate":"ingredient.$(id).name","color":"green"}
+$data modify entity @s data.formatted_ingredients append value {"translate":"ingredient.$(id)","color":"green"}
 
 # Set the ingredient's index
 execute store result score @n[type=item_display,tag=prep_ingredient,tag=needs_ingredient,distance=..0.5] \
