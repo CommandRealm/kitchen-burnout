@@ -13,5 +13,5 @@ execute positioned ~ ~0.5 ~ summon item_display run function game:stations/ingre
 $execute positioned ~ ~0.5 ~ run function game:inventory/get_ingredient { \
     entity:"@n[type=item_display,tag=ingredient_box,distance=..0.5]", slot:"container.0", id: $(id)}
 
-data remove storage game:new_ingredient_box ingredient
-data remove storage game:new_ingredient_box becomes
+data remove storage game:stations/box/new ingredient
+data remove storage game:stations/box/new becomes

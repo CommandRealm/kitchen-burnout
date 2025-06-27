@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "kitchen_burnout:item/ingredients/avocado_slice",
+		"0": "kitchen_burnout:item/ingredient/avocado_slice",
 		"1": "item/dried_kelp",
-		"particle": "kitchen_burnout:item/ingredients/avocado_slice"
+		"particle": "kitchen_burnout:item/ingredient/avocado_slice"
 	},
 	"elements": [
 		{

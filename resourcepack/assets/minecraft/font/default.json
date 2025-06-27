@@ -2,7 +2,7 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/bun.png",
+            "file": "kitchen_burnout:item/ingredient/bun.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -11,7 +11,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cheese.png",
+            "file": "kitchen_burnout:item/ingredient/cheese.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -20,7 +20,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/lettuce_head.png",
+            "file": "kitchen_burnout:item/ingredient/lettuce_head.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -29,7 +29,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/lettuce_leaf.png",
+            "file": "kitchen_burnout:item/ingredient/lettuce_leaf.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -38,7 +38,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/tomato.png",
+            "file": "kitchen_burnout:item/ingredient/tomato.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -47,7 +47,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/tomato_slice.png",
+            "file": "kitchen_burnout:item/ingredient/tomato_slice.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -56,7 +56,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/raw_hamburger.png",
+            "file": "kitchen_burnout:item/ingredient/raw_hamburger.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -65,7 +65,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/half_cooked_hamburger.png",
+            "file": "kitchen_burnout:item/ingredient/half_cooked_hamburger.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -74,7 +74,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/hamburger.png",
+            "file": "kitchen_burnout:item/ingredient/hamburger.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -83,7 +83,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/burnt_hamburger.png",
+            "file": "kitchen_burnout:item/ingredient/burnt_hamburger.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -102,7 +102,7 @@
 
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/rice.png",
+            "file": "kitchen_burnout:item/ingredient/rice.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -129,7 +129,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cut_salmon.png",
+            "file": "kitchen_burnout:item/ingredient/cut_salmon.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -138,7 +138,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cut_pufferfish.png",
+            "file": "kitchen_burnout:item/ingredient/cut_pufferfish.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -147,7 +147,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/poison_pufferfish.png",
+            "file": "kitchen_burnout:item/ingredient/poison_pufferfish.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -156,7 +156,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/avocado.png",
+            "file": "kitchen_burnout:item/ingredient/avocado.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -165,7 +165,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/avocado_slice.png",
+            "file": "kitchen_burnout:item/ingredient/avocado_slice.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -174,7 +174,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/wasabi.png",
+            "file": "kitchen_burnout:item/ingredient/wasabi.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -184,7 +184,7 @@
 
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/tortilla.png",
+            "file": "kitchen_burnout:item/ingredient/tortilla.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -193,7 +193,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/raw_beef.png",
+            "file": "kitchen_burnout:item/ingredient/raw_beef.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -202,7 +202,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/taco_cheese.png",
+            "file": "kitchen_burnout:item/ingredient/taco_cheese.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -211,7 +211,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/guac.png",
+            "file": "kitchen_burnout:item/ingredient/guac.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -220,7 +220,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/salsa.png",
+            "file": "kitchen_burnout:item/ingredient/salsa.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -229,7 +229,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/sour_cream.png",
+            "file": "kitchen_burnout:item/ingredient/sour_cream.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -238,7 +238,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/beef_taco.png",
+            "file": "kitchen_burnout:item/ingredient/beef_taco.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -247,7 +247,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/lettuce_shreds.png",
+            "file": "kitchen_burnout:item/ingredient/lettuce_shreds.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -257,7 +257,7 @@
 
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cone.png",
+            "file": "kitchen_burnout:item/ingredient/cone.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -266,7 +266,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/ice_cream_bowl.png",
+            "file": "kitchen_burnout:item/ingredient/ice_cream_bowl.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -275,7 +275,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/vanilla.png",
+            "file": "kitchen_burnout:item/ingredient/vanilla.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -284,7 +284,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/chocolate.png",
+            "file": "kitchen_burnout:item/ingredient/chocolate.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -293,7 +293,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/strawberry.png",
+            "file": "kitchen_burnout:item/ingredient/strawberry.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -302,7 +302,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cookies.png",
+            "file": "kitchen_burnout:item/ingredient/cookies.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -311,7 +311,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/mint.png",
+            "file": "kitchen_burnout:item/ingredient/mint.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -320,7 +320,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/mango.png",
+            "file": "kitchen_burnout:item/ingredient/mango.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -329,7 +329,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/sprinkles.png",
+            "file": "kitchen_burnout:item/ingredient/sprinkles.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -338,7 +338,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/chips.png",
+            "file": "kitchen_burnout:item/ingredient/chips.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -347,7 +347,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cherry.png",
+            "file": "kitchen_burnout:item/ingredient/cherry.png",
             "ascent": 7,
             "height": 8,
             "chars": [
@@ -356,7 +356,7 @@
         },
         {
             "type": "bitmap",
-            "file": "kitchen_burnout:item/ingredients/cookie_dough.png",
+            "file": "kitchen_burnout:item/ingredient/cookie_dough.png",
             "ascent": 7,
             "height": 8,
             "chars": [

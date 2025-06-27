@@ -1,0 +1,69 @@
+{
+  "station.bell.wubwubwubwub": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/wubwubwubwub"
+    ],
+    "subtitle": "subtitles.station.bell.wubwubwubwub"
+  },
+  "station.bell.weeeeee": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/weeeeee"
+    ],
+    "subtitle": "subtitles.station.bell.weeeeee"
+  },
+  "station.bell.oof": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "kitchen_burnout:station/bell/oof",
+        "pitch": 0.95
+      },
+      {
+        "name": "kitchen_burnout:station/bell/oof",
+        "pitch": 1.0
+      },
+      {
+        "name": "kitchen_burnout:station/bell/oof",
+        "pitch": 1.05
+      }
+    ],
+    "subtitle": "subtitles.station.bell.oof"
+  },
+  "station.bell.melon": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/melon"
+    ],
+    "subtitle": "subtitles.station.bell.melon"
+  },
+  "station.bell.mail": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/mail"
+    ],
+    "subtitle": "subtitles.station.bell.mail"
+  },
+  "station.bell.wilhelm": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/wilhelm"
+    ],
+    "subtitle": "subtitles.station.bell.wilhelm"
+  },
+  "station.bell.cc": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/cc"
+    ],
+    "subtitle": "subtitles.station.bell.cc"
+  },
+  "station.bell.regs": {
+    "replace": true,
+    "sounds": [
+      "kitchen_burnout:station/bell/regs"
+    ],
+    "subtitle": "subtitles.station.bell.regs"
+  }
+}

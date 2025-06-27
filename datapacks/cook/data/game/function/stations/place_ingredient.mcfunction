@@ -10,9 +10,9 @@ execute if data entity @s data.ingredient run scoreboard players set $placed_ing
 # Get the held ingredient from the ingredient cache
 data modify storage game:stations/place entity set value "@n[type=item_display,tag=station,distance=..0.5]"
 data modify storage game:stations/place slot set value "container.0"
-execute on target run function tools:storage/get_for_player {path:"game:ingredient",result_key:"place_ingredient"}
-data modify storage game:stations/place id set from storage game:ingredient place_ingredient
-data remove storage game:ingredient place_ingredient
+execute on target run function tools:storage/get_for_player {path:"game:inventory/ingredient",result_key:"place_ingredient"}
+data modify storage game:stations/place id set from storage game:inventory/ingredient place_ingredient
+data remove storage game:inventory/ingredient place_ingredient
 
 # Place the ingredient on the station
 function game:inventory/get_ingredient with storage game:stations/place
