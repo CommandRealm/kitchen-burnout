@@ -15,3 +15,7 @@ scoreboard players set @n[tag=prep_station] prep_index -1
 
 # Store the base position of the prep station
 execute as @n[tag=prep_station] store result score @s prep_position run data get entity @s Pos[1] 100
+
+# Get a random starting recipe
+function game:serving/recipes/category/tutorial_burgers
+execute as @n[tag=prep_station] run data modify entity @s data.current_recipe set from storage game:serving/recipe ingredients

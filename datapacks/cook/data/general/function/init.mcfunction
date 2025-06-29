@@ -1,8 +1,6 @@
 # Player state
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
-
 scoreboard objectives add held_item dummy
-
 scoreboard objectives add slot dummy
 scoreboard objectives add slot_old dummy
 scoreboard objectives add click_length dummy
@@ -75,7 +73,7 @@ scoreboard objectives add prep_index dummy
 scoreboard objectives add floating_text dummy
 scoreboard objectives add fish_count dummy
 
-
+# Kitchen Specific
 scoreboard objectives add tnt_launchpad dummy
 scoreboard objectives add warp_fish dummy
 scoreboard objectives add arrow_cycle dummy
@@ -109,8 +107,9 @@ scoreboard objectives add random dummy
 
 # Serving
 scoreboard objectives add serving dummy
-scoreboard objectives add recipe_cooldown dummy
-scoreboard objectives add recipe_timer dummy
+scoreboard objectives add order_cooldown dummy
+scoreboard objectives add order_timer dummy
+scoreboard objectives add recipe dummy
 
 # Recipe Ingredient Teams
 team add recipe_missing
