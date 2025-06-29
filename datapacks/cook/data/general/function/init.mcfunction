@@ -110,6 +110,24 @@ scoreboard objectives add serving dummy
 scoreboard objectives add order_cooldown dummy
 scoreboard objectives add order_timer dummy
 scoreboard objectives add recipe dummy
+scoreboard objectives add sidebar dummy ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" 2","color":"white","bold":true},{"text":" \U0001F525","color":"red"}]
+scoreboard objectives modify sidebar numberformat blank
+scoreboard objectives modify sidebar displayautoupdate true
+scoreboard players set $1 sidebar 15
+scoreboard players set $2 sidebar 14
+scoreboard players set $3 sidebar 13
+scoreboard players set $4 sidebar 12
+scoreboard players set $5 sidebar 11
+scoreboard players set $6 sidebar 10
+scoreboard players set $7 sidebar 9
+scoreboard players set $8 sidebar 8
+scoreboard players set $9 sidebar 7
+scoreboard players set $10 sidebar 6
+scoreboard players set $11 sidebar 5
+scoreboard players set $12 sidebar 4
+scoreboard players set $13 sidebar 3
+scoreboard players set $14 sidebar 2
+scoreboard players set $15 sidebar 1
 
 # Recipe Ingredient Teams
 team add recipe_missing

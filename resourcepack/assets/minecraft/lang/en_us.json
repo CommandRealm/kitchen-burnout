@@ -2,12 +2,31 @@
     "ingredient.bun": "Bun",
     "ingredient.raw_hamburger": "Raw Patty",
     "ingredient.hamburger": "Burger Patty",
+    "ingredient.hamburger.1": "Burger",
+    "ingredient.hamburger.2": "Double Burger",
+    "ingredient.hamburger.3": "Triple Burger",
+    "ingredient.smashed_hamburger": "Smashed Burger Patty",
+    "ingredient.smashed_hamburger.1": "Smash Burger",
+    "ingredient.smashed_hamburger.2": "Double Smash Burger",
+    "ingredient.smashed_hamburger.3": "Triple Smash Burger",
+    "ingredient.hamburger.cheese.1": "Cheeseburger",
+    "ingredient.hamburger.cheese.2": "Double Cheeseburger",
+    "ingredient.hamburger.cheese.3": "Triple Cheeseburger",
+    "ingredient.smashed_hamburger.cheese.1": "Cheeseburger Smash",
+    "ingredient.smashed_hamburger.cheese.2": "Double Cheeseburger Smash",
+    "ingredient.smashed_hamburger.cheese.3": "Triple Cheeseburger Smash",
     "ingredient.cheese": "Cheese",
     "ingredient.lettuce_head": "Head of Lettuce",
     "ingredient.tomato": "Whole Tomato",
     "ingredient.lettuce_leaf": "Lettuce Leaf",
+    "ingredient.lettuce_leaf.1": "Lettuce",
+    "ingredient.lettuce_leaf.2": "Extra Lettuce",
     "ingredient.tomato_slice": "Tomato Slice",
+    "ingredient.tomato_slice.1": "Tomato",
+    "ingredient.tomato_slice.2": "Extra Tomato",
     "ingredient.scorched_food": "Scorched Food",
+
+    "kitchen.tutorial": "Tutorial",
     
     "instructions.station.cutting_board.exit": "to Exit",
 
@@ -18,5 +37,10 @@
     "subtitles.station.bell.mail": "Bell has mail",
     "subtitles.station.bell.wilhelm": "Bell goes EAUGHAGHUGH",
     "subtitles.station.bell.cc": "Bell is a Celestial Champion",
-    "subtitles.station.bell.regs": "Bell dies"
+    "subtitles.station.bell.regs": "Bell dies",
+
+    "sidebar.header.kitchen": "Kitchen:",
+    "sidebar.header.order": "Order:",
+    "sidebar.header.recipe": "Recipe:",
+    "sidebar.order.subtitle": " → With "
 }
