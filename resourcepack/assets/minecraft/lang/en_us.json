@@ -1,20 +1,21 @@
 {
+    "title.kitchen": "KITCHEN",
+    "title.burnout": "BURNOUT",
+
     "ingredient.bun": "Bun",
     "ingredient.raw_hamburger": "Raw Patty",
     "ingredient.hamburger": "Burger Patty",
     "ingredient.hamburger.1": "Burger",
     "ingredient.hamburger.2": "Double Burger",
     "ingredient.hamburger.3": "Triple Burger",
-    "ingredient.smashed_hamburger": "Smashed Burger Patty",
+    "ingredient.smashed_hamburger": "Smash Patty",
     "ingredient.smashed_hamburger.1": "Smash Burger",
     "ingredient.smashed_hamburger.2": "Double Smash Burger",
-    "ingredient.smashed_hamburger.3": "Triple Smash Burger",
     "ingredient.hamburger.cheese.1": "Cheeseburger",
     "ingredient.hamburger.cheese.2": "Double Cheeseburger",
     "ingredient.hamburger.cheese.3": "Triple Cheeseburger",
     "ingredient.smashed_hamburger.cheese.1": "Cheeseburger Smash",
-    "ingredient.smashed_hamburger.cheese.2": "Double Cheeseburger Smash",
-    "ingredient.smashed_hamburger.cheese.3": "Triple Cheeseburger Smash",
+    "ingredient.smashed_hamburger.cheese.2": "Cheeseburger Smash+",
     "ingredient.cheese": "Cheese",
     "ingredient.lettuce_head": "Head of Lettuce",
     "ingredient.tomato": "Whole Tomato",
@@ -25,6 +26,8 @@
     "ingredient.tomato_slice.1": "Tomato",
     "ingredient.tomato_slice.2": "Extra Tomato",
     "ingredient.scorched_food": "Scorched Food",
+
+    "tool.knife": "Kitchen Knife",
 
     "kitchen.tutorial": "Tutorial",
     
@@ -42,5 +45,8 @@
     "sidebar.header.kitchen": "Kitchen:",
     "sidebar.header.order": "Order:",
     "sidebar.header.recipe": "Recipe:",
-    "sidebar.order.subtitle": " → With "
+    "sidebar.order.subtitle_prefix": "With",
+
+    "error.station.prep.not_needed": "Held ingredient is not needed for the current recipe.",
+    "error.station.prep.cannot_remove": "Can't swap: held ingredient is not needed for the current recipe."
 }

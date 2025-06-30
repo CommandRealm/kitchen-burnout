@@ -11,6 +11,17 @@ execute on target run function tools:storage/get_for_player {path:"game:inventor
 data modify storage game:stations/place id set from storage game:inventory/ingredient place_ingredient
 data remove storage game:inventory/ingredient place_ingredient
 
+# Check if the held ingredient is a valid placeable ingredient for the current recipe
+data modify storage game:stations/prep/check recipe set from entity @s data.current_recipe
+data modify storage game:stations/prep/check id set from storage game:stations/place id
+execute store result score $valid_placement prep_display run function game:stations/prep/ingredient/check_if_valid with storage game:stations/prep/check
+
+# If the held ingredient is not valid, let the player know and return
+execute if score $valid_placement prep_display matches 0 on target run playsound block.note_block.didgeridoo master @s ~ ~ ~ 1 0.25
+execute if score $valid_placement prep_display matches 0 on target run title @s actionbar \
+    {"translate":"error.station.prep.not_needed","color":"red","bold":false}
+execute if score $valid_placement prep_display matches 0 run return 1
+
 # Create a prep station ingredient with the held item above the ingredient with the highest positioning ID
 scoreboard players set $max prep_position -2147483648
 execute align xyz positioned ~ -64 ~ as @e[tag=prep,dx=0,dy=384,dz=0] run \

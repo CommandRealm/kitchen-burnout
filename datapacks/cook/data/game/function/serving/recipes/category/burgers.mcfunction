@@ -8,7 +8,7 @@ execute store result score $cheese recipe run random value 0..1
 # Patties
 execute store result score $burger_type recipe run random value 0..1
 #execute store result score $burger_doneness recipe run random value 0..10
-execute store result score $count recipe run random value 1..3
+execute store result score $count recipe run random value 1..2
 execute if score $burger_type recipe matches 0 if score $cheese recipe matches 0 run \
     function game:serving/recipes/add_to_title_multiple {id:"hamburger"}
 execute if score $burger_type recipe matches 0 if score $cheese recipe matches 1 run \

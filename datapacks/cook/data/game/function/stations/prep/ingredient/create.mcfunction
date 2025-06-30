@@ -12,6 +12,11 @@ $execute as @n[type=item_display,tag=prep_ingredient,tag=needs_ingredient,distan
 $data modify entity @s data.ingredients append value "$(id)"
 $data modify entity @s data.formatted_ingredients append value {"translate":"ingredient.$(id)","color":"green"}
 
+# Check the ingredient's index in the list to mark it as prepared
+$data modify storage game:stations/prep prepared_ingredient set from entity @s data.ingredient_indices.$(id)
+$data modify storage game:stations/prep prepared_ingredient.id set value "$(id)"
+function game:stations/prep/ingredient/mark_prepared with storage game:stations/prep prepared_ingredient
+
 # Set the ingredient's index
 execute store result score @n[type=item_display,tag=prep_ingredient,tag=needs_ingredient,distance=..0.5] \
     prep_index run scoreboard players add @s prep_index 1
