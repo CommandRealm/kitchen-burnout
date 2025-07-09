@@ -19,8 +19,12 @@ $execute if score $1 number matches $(list) store result storage game:serving/re
 $execute if score $1 number matches $(list) store result storage game:serving/recipe list_indices.$(id).needed int 1 run scoreboard players operation $count recipe > $1 number
 $execute if score $1 number matches $(list) run data modify storage game:serving/recipe list_indices.$(id).prepared set value 0
 
-# Add the icon for the ingredient to the recipe icons
-$data modify storage game:serving/recipe icons append value {translate:"ingredient.$(id).icon"}
+# Add the icon for the ingredient and a negative space to the recipe icons
+$execute if score $1 number matches $(list) run data modify storage game:serving/recipe icons append value \
+    {translate:"ingredient.$(id).icon",extra:["-",{text:"+.",color:"white"}]}
+# Add the number of ingredients needed to the recipe icon if there's more than 1 needed
+$execute if score $1 number matches $(list) if score $count recipe matches 2.. run \
+    data modify storage game:serving/recipe icons[-1].extra[1].text set string storage game:serving/recipe list_indices.$(id).needed
 
 
 # Loop recursively until $count ingredient is 0

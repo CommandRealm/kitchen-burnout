@@ -5,7 +5,7 @@ data modify storage game:serving/recipe title set value []
 data modify storage game:serving/recipe subtitle set value []
 data modify storage game:serving/recipe icons set value []
 data modify storage game:serving/recipe list_indices set value {}
-scoreboard players set $list_index recipe 4
+scoreboard players set $list_index recipe -1
 scoreboard players set $count recipe 0
 
 # Generate a random recipe
@@ -22,4 +22,4 @@ data modify entity @s data.recipe_icons set from storage game:serving/recipe ico
 #function game:serving/update_sidebar
 
 # Update our bossbar
-function game:serving/update_bossbar
+function game:serving/create_bossbars

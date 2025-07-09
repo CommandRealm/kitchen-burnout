@@ -84,7 +84,7 @@
     "sidebar.header.recipe": "Recipe:",
     "sidebar.order.subtitle_prefix": "with",
     
-    "bossbar.header.orders": "Orders",
+    "bossbar.header.orders": "ORDERS",
 
     "error.station.prep.not_needed": "Held ingredient is not needed for the current recipe.",
     "error.station.prep.cannot_remove": "Can't swap: held ingredient is not needed for the current recipe."

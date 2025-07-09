@@ -6,7 +6,7 @@ execute align xyz unless entity @n[type=text_display,tag=cutting_board_inputs,dx
     summon text_display ~0.5 ~0.2 ~0.5 { \
         Tags:["die_between_games", "cutting_board", "cutting_board_inputs"], \
         text:"", alignment:"center", "billboard":"center", background: 0, \
-        see_through: true, shadow: true, line_width: 48, \
+        see_through: true, shadow: true, line_width: 47, \
         transformation:{scale:[0.95f,0.95f,0.95f], left_rotation:[0.0f,0.0f,0.0f,1.0f], \
             right_rotation:[0.0f,0.0f,0.0f,1.0f], translation:[0.0f,0.0f,0.0f]}}
 # NOTE: Line width of 48 means that only 6 characters will be shown in each line
