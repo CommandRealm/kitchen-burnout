@@ -113,8 +113,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/wasabi.png",
-            "ascent": 7,
-            "height": 8,
+            "ascent": 12,
+            "height": 16,
             "chars": [
                 "\u0201"
             ]
