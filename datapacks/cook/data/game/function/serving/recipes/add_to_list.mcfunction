@@ -27,6 +27,5 @@ $execute if score $count recipe matches 2.. run \
 
 # Add the icon to the ingredient list
 data modify storage game:serving/recipe ingredients_list[-1] prepend value \
-    {translate:"",extra:[{translate:" ",color:"white",font:"kitchen_burnout:small_ingredients"}, \
-        {text:"..",font:"kitchen_burnout:small_ingredients"}]}
+    {translate:"",extra:[{translate:" ",color:"white",font:"kitchen_burnout:small_ingredients"}, " "]}
 data modify storage game:serving/recipe ingredients_list[-1][0].extra[0].translate set from storage game:serving/recipe icons[-1].translate

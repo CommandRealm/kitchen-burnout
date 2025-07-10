@@ -1,20 +1,14 @@
 # Called to create this prep station's order bossbars with the current recipe and order information.
 bossbar remove game:serving/order
-bossbar remove game:serving/order_2
+#bossbar remove game:serving/order_2
 bossbar remove game:serving/order_header
 
-#bossbar add game:serving/order [ \
-    "◆ ", {entity: "@s", nbt:"data.recipe_title[]", interpret:true, separator:" ",shadow_color:-16777216}, \
-    " ", {translate:"sidebar.order.subtitle_prefix", color:"yellow",shadow_color:-16777216}, \
-    " ", {entity: "@s", nbt:"data.recipe_subtitle[]", interpret:true, separator:{"text":", "},shadow_color:-16777216}, \
-    " ◆ ", {"entity":"@s","nbt":"data.recipe_icons[]","interpret":true,"separator":" ","font":"kitchen_burnout:ingredients",color:"white",shadow_color:-16777216}, " ◆" \
-#]
 bossbar add game:serving/order [ \
     {text:"▶ ",color:"white"}, \
     {"entity":"@s","nbt":"data.recipe_icons[]","interpret":true,"separator":" ", \
         "font":"kitchen_burnout:ingredients", color:"white",bold:false}," ◀"]
 
-bossbar add game:serving/order_2 [ \
+#bossbar add game:serving/order_2 [ \
     {text:" ► ",color:"#797979"}, \
     {"entity":"@s","nbt":"data.recipe_icons_2[]","interpret":true,"separator":" ", \
         "font":"kitchen_burnout:small_ingredients", color:"#797979"}," ◄ "]
@@ -28,4 +22,4 @@ bossbar set game:serving/order_header value 1
 bossbar set lobby players
 bossbar set game:serving/order_header players @a
 bossbar set game:serving/order players @a
-bossbar set game:serving/order_2 players @a
+#bossbar set game:serving/order_2 players @a

@@ -3,8 +3,8 @@
         {
             "type": "bitmap",
             "file": "minecraft:item/charcoal.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\uA002"
             ]
@@ -13,8 +13,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/bun.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0100"
             ]
@@ -22,8 +22,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/cheese.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0101"
             ]
@@ -31,8 +31,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/raw_hamburger.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0110"
             ]
@@ -40,8 +40,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/half_cooked_hamburger.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0111"
             ]
@@ -49,8 +49,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/hamburger.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0112"
             ]
@@ -58,8 +58,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/burnt_hamburger.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0113"
             ]
@@ -67,8 +67,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/lettuce_head.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0120"
             ]
@@ -76,8 +76,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/lettuce_leaf.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0121"
             ]
@@ -85,8 +85,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/tomato.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0122"
             ]
@@ -94,8 +94,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/tomato_slice.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0123"
             ]
@@ -104,8 +104,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/rice.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0200"
             ]
@@ -113,8 +113,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/wasabi.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0201"
             ]
@@ -122,8 +122,8 @@
         {
             "type": "bitmap",
             "file": "minecraft:item/salmon.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0210"
             ]
@@ -131,8 +131,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/cut_salmon.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0211"
             ]
@@ -140,8 +140,8 @@
         {
             "type": "bitmap",
             "file": "minecraft:item/pufferfish.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0220"
             ]
@@ -149,8 +149,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/cut_pufferfish.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0221"
             ]
@@ -158,8 +158,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/poison_pufferfish.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0222"
             ]
@@ -167,8 +167,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/avocado.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0230"
             ]
@@ -176,8 +176,8 @@
         {
             "type": "bitmap",
             "file": "kitchen_burnout:item/ingredient/avocado_slice.png",
-            "ascent": 10,
-            "height": 12,
+            "ascent": 9,
+            "height": 10,
             "chars": [
                 "\u0231"
             ]
