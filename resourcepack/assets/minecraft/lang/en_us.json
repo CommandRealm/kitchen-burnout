@@ -82,9 +82,36 @@
     "sidebar.header.kitchen": "Kitchen:",
     "sidebar.header.order": "Order:",
     "sidebar.header.recipe": "Recipe:",
-    "sidebar.order.subtitle_prefix": "with",
+    "sidebar.order.subtitle_prefix": " with",
     
     "bossbar.header.orders": "ORDERS",
+
+    "orders.request.customer": "Customer",
+    "orders.request.ingredients": "INGREDIENTS",
+    "orders.request.subtitle.separator": " & ",
+
+    "orders.request.prefix.1": "May I please have the",
+    "orders.request.prefix.2": "I'd like the",
+    "orders.request.prefix.3": "I want the",
+    "orders.request.prefix.4": "Please give me the",
+    "orders.request.prefix.5": "Can I get the",
+    "orders.request.prefix.6": "Give me the",
+    "orders.request.prefix.7": "I want to try the",
+    "orders.request.prefix.8": "I would like the",
+    "orders.request.prefix.9": "I would love the",
+    "orders.request.prefix.10": "I think I'll get the",
+
+    "orders.request.suffix.1": " please?",
+    "orders.request.suffix.2": ", thanks!",
+    "orders.request.suffix.3": ", if you don't mind.",
+    "orders.request.suffix.4": ", if you please.",
+    "orders.request.suffix.5": ", if you would be so kind.",
+    "orders.request.suffix.6": ", whatever it takes!",
+    "orders.request.suffix.7": "!",
+    "orders.request.suffix.8": ", if it's available.",
+    "orders.request.suffix.9": ".",
+    "orders.request.suffix.10": ", ASAP!",
+
 
     "error.station.prep.not_needed": "Held ingredient is not needed for the current recipe.",
     "error.station.prep.cannot_remove": "Can't swap: held ingredient is not needed for the current recipe."

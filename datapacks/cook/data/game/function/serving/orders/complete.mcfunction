@@ -10,3 +10,7 @@ scoreboard players set @s prep_index -1
 
 # Get new recipe
 function game:serving/get_new_random
+
+# Announce the new recipe
+execute store result storage game:serving/orders request int 1 run random value 1..10
+function game:serving/orders/announce with storage game:serving/orders
