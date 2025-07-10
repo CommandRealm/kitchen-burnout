@@ -15,11 +15,11 @@ execute if score $burger_type recipe matches 0 if score $cheese recipe matches 0
 execute if score $burger_type recipe matches 0 if score $cheese recipe matches 1.. run \
     function game:serving/recipes/add_to_title_multiple {id:"hamburger.cheese"}
 execute if score $burger_type recipe matches 1 if score $cheese recipe matches 0 run \
-    function game:serving/recipes/add_to_title_multiple {id:"smashed_hamburger"}
+    function game:serving/recipes/add_to_title_multiple {id:"smash_burger"}
 execute if score $burger_type recipe matches 1 if score $cheese recipe matches 1.. run \
-    function game:serving/recipes/add_to_title_multiple {id:"smashed_hamburger.cheese"}
+    function game:serving/recipes/add_to_title_multiple {id:"smash_burger.cheese"}
 execute if score $burger_type recipe matches 0 run function game:serving/recipes/add_ingredient {id:"hamburger", list:1}
-execute if score $burger_type recipe matches 1 run function game:serving/recipes/add_ingredient {id:"smashed_hamburger", list:1}
+execute if score $burger_type recipe matches 1 run function game:serving/recipes/add_ingredient {id:"smash_burger", list:1}
 
 # Toppings
 execute store result score $lettuce_leaf recipe run random value 0..1
