@@ -1,5 +1,5 @@
 # Called by a prep station ingredient that should be removed from the station.
-#> Takes in the index of the ingredient to remove.
+#> Takes in the index of the ingredient to remove and its id.
 
 # Decrement the index of the prep station
 execute align xyz positioned ~ -64 ~ run \
@@ -22,6 +22,13 @@ $execute align xyz positioned ~ -64 ~ run \
 $execute align xyz positioned ~ -64 ~ run \
     data remove entity @n[type=interaction,tag=prep_station,dx=0,dy=384,dz=0] \
     data.formatted_ingredients[$(index)]
+
+# Mark the ingredient as removed in the sidebar ingredient list
+$execute align xyz positioned ~ -64 ~ run data modify storage game:stations/prep removed_ingredient \
+    set from entity @n[type=interaction,tag=prep_station,dx=0,dy=384,dz=0] data.ingredient_indices.$(ingredient)
+$data modify storage game:stations/prep removed_ingredient.id set value "$(ingredient)"
+execute align xyz positioned ~ -64 ~ as @n[type=interaction,tag=prep_station,dx=0,dy=384,dz=0] run \
+    function game:stations/prep/ingredient/mark_removed with storage game:stations/prep removed_ingredient
 
 
 # Refresh the ingredient positioning

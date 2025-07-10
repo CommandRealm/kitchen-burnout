@@ -1,8 +1,6 @@
 # Player state
 scoreboard objectives add has_left minecraft.custom:minecraft.leave_game
-
 scoreboard objectives add held_item dummy
-
 scoreboard objectives add slot dummy
 scoreboard objectives add slot_old dummy
 scoreboard objectives add click_length dummy
@@ -75,7 +73,7 @@ scoreboard objectives add prep_index dummy
 scoreboard objectives add floating_text dummy
 scoreboard objectives add fish_count dummy
 
-
+# Kitchen Specific
 scoreboard objectives add tnt_launchpad dummy
 scoreboard objectives add warp_fish dummy
 scoreboard objectives add arrow_cycle dummy
@@ -100,17 +98,17 @@ scoreboard objectives add freeze_rot_x dummy
 scoreboard objectives add freeze_rot_y dummy
 
 # TODO: Ingredient specific teams
-#function general:ingredient_teams
-scoreboard objectives add sidebar_disp dummy ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" \U0001F525","color":"red"}]
-scoreboard objectives add sidebar_disp_1 dummy ["",{"text":"\U0001F525 ","color":"gold"},{"translate":"The Spoons","color":"blue","bold":true},{"text":" \U0001F525","color":"gold"}]
-scoreboard objectives add sidebar_disp_2 dummy ["",{"text":"\U0001F525 ","color":"gold"},{"translate":"The Forks","color":"red","bold":true},{"text":" \U0001F525","color":"gold"}]
 
 scoreboard objectives add random dummy
 
 # Serving
 scoreboard objectives add serving dummy
-scoreboard objectives add recipe_cooldown dummy
-scoreboard objectives add recipe_timer dummy
+scoreboard objectives add order_cooldown dummy
+scoreboard objectives add order_timer dummy
+scoreboard objectives add recipe dummy
+scoreboard objectives add sidebar dummy [{"text":"\U0001F525 ","color":"red","font":"uniform"},{"translate":"title.kitchen","color":"gray","bold":true}," ",{"translate":"title.burnout","color":"gold","bold":true},{"text":" 2","color":"dark_red","bold":true},{"text":" \U0001F525","color":"red"}]
+scoreboard objectives modify sidebar numberformat styled {"font":"kitchen_burnout:recipe_completion"}
+scoreboard objectives modify sidebar displayautoupdate true
 
 # Recipe Ingredient Teams
 team add recipe_missing

@@ -1,0 +1,40 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "kitchen_burnout:item/recipe_completion/x.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kitchen_burnout:item/recipe_completion/check.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kitchen_burnout:item/recipe_completion/half.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kitchen_burnout:item/recipe_completion/blank.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "9"
+            ]
+        }
+    ]
+}

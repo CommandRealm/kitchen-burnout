@@ -3,7 +3,7 @@ setblock ~ ~ ~ glass
 data merge entity @s {width:1.001f,height:1.001f,response:true}
 tag @s add ingredient_box
 tag @s add reset_boxes
-tag @s add die_between_games
+tag @s add reset_between_games
 tag @s add interactable
 
 # Spinning item
