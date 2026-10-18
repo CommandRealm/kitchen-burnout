@@ -106,7 +106,7 @@ scoreboard objectives add serving dummy
 scoreboard objectives add order_cooldown dummy
 scoreboard objectives add order_timer dummy
 scoreboard objectives add recipe dummy
-scoreboard objectives add sidebar dummy [{"text":"\U0001F525 ","color":"red"},{"translate":"title.kitchen","color":"#FFFDEB",font:"kitchen_burnout:order_bold"}," ",{"translate":"title.burnout","color":"gold",font:"kitchen_burnout:order_bold"},{"text":" 2","color":"dark_red",font:"kitchen_burnout:order_bold"},{"text":" \U0001F525","color":"red"}]
+scoreboard objectives add sidebar dummy [{"text":"\U0001F525 ","color":"red"},{"translate":"title.kitchen","color":"#FFFDEB",font:"kb2:order_bold"}," ",{"translate":"title.burnout","color":"gold",font:"kb2:order_bold"},{"text":" 2","color":"dark_red",font:"kb2:order_bold"},{"text":" \U0001F525","color":"red"}]
 scoreboard objectives modify sidebar displayautoupdate true
 
 # Recipe Ingredient Teams

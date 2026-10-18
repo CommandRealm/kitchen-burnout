@@ -19,17 +19,17 @@ execute if score $sound bell_sound matches 9 run playsound block.beacon.deactiva
 
 # Epics
 execute if score $sound bell_sound matches 10 run playsound entity.goat.screaming.prepare_ram master @a ~ ~ ~ 1 1
-execute if score $sound bell_sound matches 11 run playsound kitchen_burnout:station.bell.wubwubwubwub master @a ~ ~ ~ 1 1
+execute if score $sound bell_sound matches 11 run playsound kb2:station.bell.wubwubwubwub master @a ~ ~ ~ 1 1
 execute if score $sound bell_sound matches 12 run playsound entity.evoker.prepare_wololo master @a ~ ~ ~ 1 1
 ## \/\/\/ CUSTOM SOUNDS \/\/\/
-execute if score $sound bell_sound matches 13 run playsound kitchen_burnout:station.bell.weeeeee master @a ~ ~ ~ .25 1
-execute if score $sound bell_sound matches 14 run playsound kitchen_burnout:station.bell.oof master @a ~ ~ ~ 1 1
-execute if score $sound bell_sound matches 15 run playsound kitchen_burnout:station.bell.melon master @a ~ ~ ~ 0.75 0.95
+execute if score $sound bell_sound matches 13 run playsound kb2:station.bell.weeeeee master @a ~ ~ ~ .25 1
+execute if score $sound bell_sound matches 14 run playsound kb2:station.bell.oof master @a ~ ~ ~ 1 1
+execute if score $sound bell_sound matches 15 run playsound kb2:station.bell.melon master @a ~ ~ ~ 0.75 0.95
 
 # Legendary
-execute if score $sound bell_sound matches 16 run playsound kitchen_burnout:station.bell.mail master @a ~ ~ ~ 1 1
-execute if score $sound bell_sound matches 17 run playsound kitchen_burnout:station.bell.wilhelm master @a ~ ~ ~ .25 1
-execute if score $sound bell_sound matches 18 run playsound kitchen_burnout:station.bell.cc master @a ~ ~ ~ 1 1
+execute if score $sound bell_sound matches 16 run playsound kb2:station.bell.mail master @a ~ ~ ~ 1 1
+execute if score $sound bell_sound matches 17 run playsound kb2:station.bell.wilhelm master @a ~ ~ ~ .25 1
+execute if score $sound bell_sound matches 18 run playsound kb2:station.bell.cc master @a ~ ~ ~ 1 1
 
 # Advancement Unlock
-execute if score $sound bell_sound matches 19 run playsound kitchen_burnout:station.bell.regs master @a ~ ~ ~ .025 1
+execute if score $sound bell_sound matches 19 run playsound kb2:station.bell.regs master @a ~ ~ ~ .025 1

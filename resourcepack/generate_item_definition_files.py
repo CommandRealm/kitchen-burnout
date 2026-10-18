@@ -1,9 +1,10 @@
 import os
 import json
 
+
 def create_json_files():
-    source_dir = './assets/kitchen_burnout/models/item/ingredient/'
-    target_dir = './assets/kitchen_burnout/items/ingredient/'
+    source_dir = './assets/kb2/models/item/ingredient/'
+    target_dir = './assets/kb2/items/ingredient/'
 
     # Ensure the target directory exists
     os.makedirs(target_dir, exist_ok=True)
@@ -11,7 +12,6 @@ def create_json_files():
     # Iterate through all files in the source directory
     for filename in os.listdir(source_dir):
         if filename.endswith('.json'):
-            source_path = os.path.join(source_dir, filename)
             target_path = os.path.join(target_dir, filename)
 
             # Skip if the target file already exists
@@ -26,7 +26,7 @@ def create_json_files():
             json_content = {
                 "model": {
                     "type": "minecraft:model",
-                    "model": f"kitchen_burnout:item/ingredient/{name_without_extension}"
+                    "model": f"kb2:item/ingredient/{name_without_extension}"
                 }
             }
 
@@ -35,6 +35,7 @@ def create_json_files():
                 json.dump(json_content, target_file, indent=4)
 
             print(f"Created: {target_path}")
+
 
 if __name__ == "__main__":
     create_json_files()
