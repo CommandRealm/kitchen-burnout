@@ -9,10 +9,17 @@ scoreboard players remove $prepared serving 1
 # ⨉
 $execute if score $prepared serving matches 0 run scoreboard players set $$(index) sidebar 0
 # ½
-$execute if score $prepared serving matches 1.. if score $prepared serving < $needed serving run scoreboard players set $$(index) sidebar 2
+$execute if score $prepared serving matches 1.. if score $prepared serving < $needed serving run scoreboard players set $$(index) sidebar 1
 # ✓
-$execute if score $prepared serving >= $needed serving run scoreboard players set $$(index) sidebar 1
+$execute if score $prepared serving >= $needed serving run scoreboard players set $$(index) sidebar -2
 
 # Save the current count prepared
 execute store result storage game:stations/prep removed_ingredient.prepared int 1 run scoreboard players get $prepared serving
 $data modify entity @s data.ingredient_indices.$(id) set from storage game:stations/prep removed_ingredient
+
+# Update the sidebar line with strikethrough if the ingredient is prepared
+$execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index), done:false}
+$execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line {index:$(index),done:true}
+
+# TODO: Split this into separate storages or change the reference in add_ingredient to use the prep station's data instead of the storage for the numbers
+#$data modify storage game:serving/recipe list_indices.$(id) set from entity @s data.ingredient_indices.$(id)

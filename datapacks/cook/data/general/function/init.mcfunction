@@ -106,8 +106,7 @@ scoreboard objectives add serving dummy
 scoreboard objectives add order_cooldown dummy
 scoreboard objectives add order_timer dummy
 scoreboard objectives add recipe dummy
-scoreboard objectives add sidebar dummy [{"text":"\U0001F525 ","color":"red","font":"uniform"},{"translate":"title.kitchen","color":"gray","bold":true}," ",{"translate":"title.burnout","color":"gold","bold":true},{"text":" 2","color":"dark_red","bold":true},{"text":" \U0001F525","color":"red"}]
-scoreboard objectives modify sidebar numberformat styled {"font":"kitchen_burnout:recipe_completion"}
+scoreboard objectives add sidebar dummy [{"text":"\U0001F525 ","color":"red"},{"translate":"title.kitchen","color":"#FFFDEB",font:"kitchen_burnout:order_bold"}," ",{"translate":"title.burnout","color":"gold",font:"kitchen_burnout:order_bold"},{"text":" 2","color":"dark_red",font:"kitchen_burnout:order_bold"},{"text":" \U0001F525","color":"red"}]
 scoreboard objectives modify sidebar displayautoupdate true
 
 # Recipe Ingredient Teams
@@ -208,7 +207,7 @@ gamerule universal_anger false
 
 # Lobby bossbar
 bossbar remove minecraft:lobby
-bossbar add minecraft:lobby ["",{"text":"\U0001F525 \u1992","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \U0001F525","color":"red"}]
+bossbar add minecraft:lobby ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"#FFFDEB","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \U0001F525","color":"red"}]
 bossbar set minecraft:lobby style progress
 bossbar set minecraft:lobby color white
 bossbar set minecraft:lobby max 1
