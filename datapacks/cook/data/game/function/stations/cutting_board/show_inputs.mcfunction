@@ -11,6 +11,6 @@ data modify entity @s data.current_input set from storage game:stations/cut text
 
 # Apply the text
 execute align xyz run data modify entity @n[type=text_display,tag=cutting_board,dx=0,dy=1,dz=0] text set value [ \
-    {storage:"game:stations/cut",nbt:"text.completed","color":"blue"}, \
-    {storage:"game:stations/cut",nbt:"text.current","color":"green",underlined:true}, \
-    {storage:"game:stations/cut",nbt:"text.remaining","color":"gray"}]
+    {storage:"game:stations/cut",nbt:"text.completed","color":"blue",interpret:true}, \
+    {storage:"game:stations/cut",nbt:"text.current","color":"green",underlined:true,interpret:true}, \
+    {storage:"game:stations/cut",nbt:"text.remaining","color":"gray",interpret:true}]

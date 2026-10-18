@@ -181,33 +181,34 @@ team modify no_collision collisionRule never
 team modify no_collision color gray
 
 # Gamerules
-gamerule maxCommandChainLength 20000000
-gamerule commandBlockOutput false
-gamerule doDaylightCycle false
-gamerule doFireTick false
-gamerule doInsomnia false
-gamerule doLimitedCrafting true
-gamerule doMobLoot false
-gamerule doMobSpawning false
-gamerule doTileDrops false
-gamerule doWeatherCycle false
-gamerule drowningDamage false
-gamerule fallDamage false
-gamerule fireDamage false
-gamerule keepInventory true
-gamerule mobGriefing false
-gamerule naturalRegeneration false
-gamerule randomTickSpeed 0
-gamerule disablePlayerMovementCheck true
+gamerule max_command_sequence_length 20000000
+gamerule command_block_output false
+gamerule advance_time false
+gamerule fire_spread_radius_around_player 0
+gamerule spawn_phantoms false
+gamerule limited_crafting true
+gamerule mob_drops false
+gamerule entity_drops false
+gamerule spawn_mobs false
+gamerule block_drops false
+gamerule advance_weather false
+gamerule drowning_damage false
+gamerule fall_damage false
+gamerule fire_damage false
+gamerule keep_inventory true
+gamerule mob_griefing false
+gamerule natural_health_regeneration false
+gamerule random_tick_speed 0
+gamerule player_movement_check false
 # gamerule reducedDebugInfo true
 # gamerule sendCommandFeedback false
-gamerule showDeathMessages false
-gamerule spectatorsGenerateChunks false
-gamerule universalAnger false
+gamerule show_death_messages false
+gamerule spectators_generate_chunks false
+gamerule universal_anger false
 
 # Lobby bossbar
 bossbar remove minecraft:lobby
-bossbar add minecraft:lobby ["",{"text":"\U0001F525 ","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \U0001F525","color":"red"}]
+bossbar add minecraft:lobby ["",{"text":"\U0001F525 \u1992","color":"red"},{"translate":"Kitchen ","color":"gray","bold":true},{"translate":"BURNOUT","color":"gold","bold":true},{"text":" - ","obfuscated":false,"color":"gray"},{"text":"By the ","obfuscated":false,"color":"white"},{"text":"Command ","obfuscated":false,"bold":true,"color":"aqua"},{"text":"Realm ","obfuscated":false,"bold":true,"color":"dark_aqua"},{"text": "Team","obfuscated":false,"color":"white"},{"text":" \U0001F525","color":"red"}]
 bossbar set minecraft:lobby style progress
 bossbar set minecraft:lobby color white
 bossbar set minecraft:lobby max 1
@@ -216,6 +217,10 @@ bossbar set minecraft:lobby players @a[tag=in_lobby]
 bossbar set minecraft:lobby visible true
 
 title @a times 0 25 5
+
+#data modify storage a a set value 1_000_000l
+#data modify entity @n Health set value 0_5.02_5f
+#summon armor_stand ~ ~ ~ {Pose:{Head:[0_1.1__1f,0f,0f]},Motion:[1_0.2_3e+02_0d,1.0d,1.0d]}
 
 # TODO: Tutorial setup
 #function lobby:tutorial/setup
