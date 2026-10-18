@@ -11,8 +11,8 @@ $execute if score $1 number matches $(list) if score $count recipe matches 2.. \
     store result storage game:serving/recipe count int 1 run scoreboard players operation $count recipe > $1 number
 $execute if score $1 number matches $(list) if score $count recipe matches 2.. run \
     data modify storage game:serving/recipe ingredients_list append value [ \
-        {entity:"@n[tag=prep_station]", nbt:"data.ingredient_indices.$(id).prepared", color:"yellow", plain:true}, \
-        "/",{entity:"@n[tag=prep_station]", nbt:"data.ingredient_indices.$(id).needed", color:"yellow", plain:true}," ",{translate:"ingredient.$(id)"}]
+        {entity:"@n[tag=prep_station]", nbt:"data.ingredient_indices.$(id).prepared", plain:true}, \
+        "/",{entity:"@n[tag=prep_station]", nbt:"data.ingredient_indices.$(id).needed", plain:true}," ",{translate:"ingredient.$(id)"}]
 
 # Store the index of the ingredient in the ingredient list
 $execute if score $1 number matches $(list) store result storage game:serving/recipe list_indices.$(id).index int 1 run scoreboard players add $list_index recipe 1
