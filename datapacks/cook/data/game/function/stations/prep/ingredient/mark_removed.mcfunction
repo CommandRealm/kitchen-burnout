@@ -20,6 +20,3 @@ $data modify entity @s data.ingredient_indices.$(id) set from storage game:stati
 # Update the sidebar line with strikethrough if the ingredient is prepared
 $execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index), done:false}
 $execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line {index:$(index),done:true}
-
-# TODO: Split this into separate storages or change the reference in add_ingredient to use the prep station's data instead of the storage for the numbers
-#$data modify storage game:serving/recipe list_indices.$(id) set from entity @s data.ingredient_indices.$(id)
