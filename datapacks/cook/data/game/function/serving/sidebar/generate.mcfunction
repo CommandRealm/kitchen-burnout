@@ -27,21 +27,21 @@ scoreboard players display name $-3 sidebar [{translate:"sidebar.header.order",c
     " ",{storage:"game:serving/recipe", nbt:"title[]", source:"storage", interpret:true, separator:" ",font:"kb2:order"}]
 # Order subtitle
 execute if data storage game:serving/recipe subtitle[0] run scoreboard players display name $-2 sidebar \
-    [" ",{translate:"sidebar.order.subtitle_prefix",color:"green",font:"kb2:order_bold"}," ", \
-    {storage:"game:serving/recipe", nbt:"subtitle[]", source:"storage", interpret:true, separator:{text:", ",font:"uniform"},font:"kb2:order"}]
+    [" "," ",{translate:"sidebar.order.subtitle_prefix",color:"green",font:"kb2:order"}," ", \
+    {storage:"game:serving/recipe", nbt:"subtitle[]", source:"storage", interpret:true, separator:{text:", ",font:"kb2:order"},font:"kb2:order"}]
 execute unless data storage game:serving/recipe subtitle[0] run scoreboard players reset $-2 sidebar
 
 # Recipe
-scoreboard players display name $-1 sidebar [{text:"————————————",font:"kb2:order_bold",color:"white",bold:true}]
+scoreboard players display name $-1 sidebar [{text:"————————————",font:"kb2:order_bold",color:"gray",bold:true}]
 #scoreboard players display name $-1 sidebar [{"translate":"sidebar.header.recipe","color":"green","font":"kb2:order"}]
-execute if data storage game:serving/recipe ingredients_list[0] run function game:serving/sidebar/update_line {index:0,done:false}
-execute if data storage game:serving/recipe ingredients_list[1] run function game:serving/sidebar/update_line {index:1,done:false}
-execute if data storage game:serving/recipe ingredients_list[2] run function game:serving/sidebar/update_line {index:2,done:false}
-execute if data storage game:serving/recipe ingredients_list[3] run function game:serving/sidebar/update_line {index:3,done:false}
-execute if data storage game:serving/recipe ingredients_list[4] run function game:serving/sidebar/update_line {index:4,done:false}
-execute if data storage game:serving/recipe ingredients_list[5] run function game:serving/sidebar/update_line {index:5,done:false}
-execute if data storage game:serving/recipe ingredients_list[6] run function game:serving/sidebar/update_line {index:6,done:false}
-execute if data storage game:serving/recipe ingredients_list[7] run function game:serving/sidebar/update_line {index:7,done:false}
-execute if data storage game:serving/recipe ingredients_list[8] run function game:serving/sidebar/update_line {index:8,done:false}
-execute if data storage game:serving/recipe ingredients_list[9] run function game:serving/sidebar/update_line {index:9,done:false}
-execute if data storage game:serving/recipe ingredients_list[10] run function game:serving/sidebar/update_line {index:10,done:false}
+execute if data storage game:serving/recipe ingredients_list[0] run function game:serving/sidebar/update_line {index:0, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[1] run function game:serving/sidebar/update_line {index:1, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[2] run function game:serving/sidebar/update_line {index:2, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[3] run function game:serving/sidebar/update_line {index:3, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[4] run function game:serving/sidebar/update_line {index:4, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[5] run function game:serving/sidebar/update_line {index:5, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[6] run function game:serving/sidebar/update_line {index:6, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[7] run function game:serving/sidebar/update_line {index:7, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[8] run function game:serving/sidebar/update_line {index:8, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[9] run function game:serving/sidebar/update_line {index:9, done:false, add:""}
+execute if data storage game:serving/recipe ingredients_list[10] run function game:serving/sidebar/update_line {index:10, done:false, add:""}

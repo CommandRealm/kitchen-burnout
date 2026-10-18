@@ -18,6 +18,6 @@ execute store result storage game:stations/prep prepared_ingredient.prepared int
 $data modify entity @s data.ingredient_indices.$(id) set from storage game:stations/prep prepared_ingredient
 
 # Update the sidebar line with strikethrough if the ingredient is prepared
-$execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index), done:false}
-$execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line {index:$(index), done:true}
+$execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index), done:false, add: ""}
+$execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line {index:$(index), done:true, add: "\uF001\uF000\uF002"}
 
