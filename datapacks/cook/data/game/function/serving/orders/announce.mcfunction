@@ -9,4 +9,4 @@ tellraw @a[distance=..500] [{text:"-",color:"white"},{text:"=",color:"gray"}, \
     {text:"-",color:"white"},{text:" ✯ ",color:"gold"}, \
     {translate:"orders.request.ingredients",color:"green"},{text:" ✯ ",color:"gold"}, \
     {text:"-",color:"white"},{text:"=",color:"gray"},{text:"-\n",color:"white"}, \
-    {"entity":"@s",nbt:"data.ingredients_list[]",color:"yellow",interpret:true, separator:", "}]
+    {"entity":"@s",nbt:"data.chat_ingredients_list[]",color:"yellow",interpret:true, separator:", "}]

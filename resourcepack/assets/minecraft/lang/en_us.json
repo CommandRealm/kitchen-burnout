@@ -89,7 +89,7 @@
     "sidebar.header.kitchen": "Kitchen:",
     "sidebar.header.order": "Up:",
     "sidebar.header.recipe": "Recipe:",
-    "sidebar.order.subtitle_prefix": "with",
+    "sidebar.order.subtitle_prefix": " with",
     
     "bossbar.header.orders": "Orders",
 

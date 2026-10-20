@@ -1,9 +1,11 @@
 # Temp (probably) function called by a prep station to get a new random recipe.
 data modify storage game:serving/recipe ingredients set value []
 data modify storage game:serving/recipe ingredients_list set value []
+data modify storage game:serving/recipe chat_ingredients_list set value []
 data modify storage game:serving/recipe title set value []
-data modify storage game:serving/recipe subtitle set value {}
+data remove storage game:serving/recipe subtitle
 data modify storage game:serving/recipe icons set value []
+data modify storage game:serving/recipe bossbar_icons set value []
 data modify storage game:serving/recipe list_indices set value {}
 scoreboard players set $list_index recipe -1
 scoreboard players set $count recipe 0
@@ -19,10 +21,12 @@ data modify entity @s data.recipe_title set from storage game:serving/recipe tit
 data modify entity @s data.recipe_subtitle set value {}
 data modify entity @s data.recipe_subtitle set from storage game:serving/recipe subtitle
 data modify entity @s data.ingredients_list set from storage game:serving/recipe ingredients_list
+data modify entity @s data.chat_ingredients_list set from storage game:serving/recipe chat_ingredients_list
 data modify entity @s data.recipe_icons set from storage game:serving/recipe icons
+data modify entity @s data.bossbar_icons set from storage game:serving/recipe bossbar_icons
 
 # Update the sidebar with the new recipe
 function game:serving/sidebar/generate
 
 # Update our bossbar
-function game:serving/create_bossbars
+function game:serving/bossbar/create_bossbars

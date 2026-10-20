@@ -191,8 +191,8 @@
         {
             "type": "bitmap",
             "file": "kb2:item/recipe_completion/checkmark.png",
-            "ascent": 4,
-            "height": 8,
+            "ascent": 10,
+            "height": 11,
             "chars": [
                 "\uF000"
             ]
@@ -200,10 +200,10 @@
         {
             "type": "space",
             "advances": {
-                " ": 8,
-                "\uF001": -7,
-                "\uF002": -2,
-                "\uF003": -300
+                "+": 8,
+                "-": -9,
+                "_": -3,
+                ".": 1
             }
         },
         {

@@ -21,15 +21,15 @@ scoreboard players reset $10 sidebar
 
 # Kitchen
 scoreboard players display name $-4 sidebar [{translate:"sidebar.header.kitchen",color:"gray",font:"kb2:order_bold",shadow_color:-13816531}," ", \
-    {translate:"kitchen.tutorial",font:"kb2:order",color:"green",shadow_color:-16695794}]
+    {translate:"kitchen.tutorial",font:"kb2:order",color:"dark_aqua",shadow_color:-16695794}]
 # Order Title
 scoreboard players display name $-3 sidebar [{translate:"sidebar.header.order",color:"gray",font:"kb2:order_bold",shadow_color:-13816531}, \
-    " ",{storage:"game:serving/recipe", nbt:"title[]", source:"storage", interpret:true, separator:" ",font:"kb2:order",shadow_color:-12307199}]
+    " ",{storage:"game:serving/recipe", nbt:"title[]", source:"storage", interpret:true, separator:" ",font:"kb2:order",color:"gold",shadow_color:-12307199}]
 # Order subtitle
-execute if data storage game:serving/recipe subtitle[0] run scoreboard players display name $-2 sidebar \
-    [" "," ",{translate:"sidebar.order.subtitle_prefix",color:"gray",font:"kb2:order",shadow_color:-13816531}," ", \
-    {storage:"game:serving/recipe", nbt:"subtitle[]", source:"storage", interpret:true, separator:{text:", ",font:"kb2:order"},font:"kb2:order",shadow_color:-12307199}]
-execute unless data storage game:serving/recipe subtitle[0] run scoreboard players reset $-2 sidebar
+execute if data storage game:serving/recipe subtitle run scoreboard players display name $-2 sidebar \
+    [{storage:"game:serving/recipe", nbt:"subtitle", source:"storage", interpret:true, \
+    separator:{text:", ",font:"kb2:order"},font:"kb2:order",shadow_color:-12307199}]
+execute unless data storage game:serving/recipe subtitle run scoreboard players reset $-2 sidebar
 
 # Recipe
 scoreboard players display name $-1 sidebar [{text:"· · · · · · · · · · · · · · · · · ·",font:"kb2:order",color:"#FFFDEB",bold:true}]

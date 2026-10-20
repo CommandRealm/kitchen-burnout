@@ -15,17 +15,17 @@ execute store result storage game:stations/prep removed_ingredient.required int 
 ## Update the bossbar with the current order icons
 # Still need more of this ingredient
 $execute if score $required serving matches 2.. run \
-    data modify entity @s data.recipe_icons[$(index)].extra[1].text set string \
+    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set string \
         storage game:stations/prep removed_ingredient.required
 # Only one more of this ingredient needed
 $execute if score $required serving matches 1 run \
-    data modify entity @s data.recipe_icons[$(index)].extra[1].text set value "+."
+    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set value "+."
 
 # No more needed for this ingredient (cute little checkmark)
 $execute if score $required serving matches ..0 run \
-    data modify entity @s data.recipe_icons[$(index)].extra[1].text set value "0"
+    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set value "0"
 
-function game:serving/update_order_bossbar
+function game:serving/bossbar/update_order_bossbar
 
 ## Update the sidebar with the current order icons
 # ⨉
