@@ -1,6 +1,6 @@
 # Take to spawn
 tp @s -11.0 68 46.0 -148 -18
-spawnpoint @s -11 68 46 -148
+spawnpoint @s -11 68 46 -148 -18
 tag @s add in_lobby
 
 # Remove tags

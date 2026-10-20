@@ -1,6 +1,13 @@
 {
   "pack": {
-    "pack_format": 80,
+    "min_format": [
+      121,
+      1
+    ],
+    "max_format": [
+      121,
+      1
+    ],
     "description": "Kitchen Burnout Data Pack"
   },
   "filter": {

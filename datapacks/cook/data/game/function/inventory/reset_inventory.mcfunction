@@ -18,7 +18,7 @@ clear @s ender_eye
 
 # Holding a knife
 item replace entity @s[tag=!holding_knife] weapon.mainhand with air
-item replace entity @s[tag=holding_knife] weapon.mainhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate":"tool.knife"},item_model="minecraft:iron_sword"]
+item replace entity @s[tag=holding_knife] weapon.mainhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate":"tool.knife"},item_model="kb2:tool/knife/default"]
 
 # Changes the player's currently held item to the specified item.
 # 0 - Nothing
