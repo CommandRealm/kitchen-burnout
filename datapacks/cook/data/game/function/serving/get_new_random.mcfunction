@@ -29,4 +29,4 @@ data modify entity @s data.bossbar_icons set from storage game:serving/recipe bo
 function game:serving/sidebar/generate
 
 # Update our bossbar
-function game:serving/bossbar/create_bossbars
+#function game:serving/bossbar/create_bossbars

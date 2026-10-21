@@ -1,8 +1,10 @@
-# Takes in the cooking start point (start), transform_point, and the timer category (type)
+# Takes in the cooking start point (start), transform_point, and the timer category (type) and whether the ingredient is flippable
 # Called by a stovetop that has just had a cookable ingredient placed on it
 tag @s add cooking
+$execute if score $1 number matches $(flippable) run tag @s add flippable
 tag @s remove hamburger_timer
 tag @s remove beef_taco_timer
+tag @s remove caramelized_onion_timer
 tag @s remove scorched_food_timer
 $scoreboard players set @s station_timer $(start)
 $scoreboard players set @s station $(transform_point)

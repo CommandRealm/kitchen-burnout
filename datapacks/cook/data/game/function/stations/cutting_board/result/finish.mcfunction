@@ -13,6 +13,8 @@ data modify storage game:stations/cut/finish input set from entity @s data.ingre
 # CUTTING RESULTS
 execute if data storage game:stations/cut/finish {input:"tomato"} run data modify storage game:stations/cut/finish id set value "tomato_slice"
 execute if data storage game:stations/cut/finish {input:"lettuce_head"} run data modify storage game:stations/cut/finish id set value "lettuce_leaf"
+execute if data storage game:stations/cut/finish {input:"onion"} run data modify storage game:stations/cut/finish id set value "sliced_onion"
+execute if data storage game:stations/cut/finish {input:"sliced_onion"} run data modify storage game:stations/cut/finish id set value "diced_onion"
 
 execute if data storage game:stations/cut/finish {input:"avocado"} run data modify storage game:stations/cut/finish id set value "avocado_slice"
 execute if data storage game:stations/cut/finish {input:"pufferfish"} run data modify storage game:stations/cut/finish id set value "cut_pufferfish"

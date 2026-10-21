@@ -12,6 +12,9 @@ execute if data storage game:stations/stove {input:"raw_hamburger"} run data mer
 execute if data storage game:stations/stove {input:"half_cooked_hamburger"} run data merge storage game:stations/stove {id:"hamburger",start:300,transform_point:500}
 execute if data storage game:stations/stove {input:"hamburger"} run data merge storage game:stations/stove {id:"burnt_hamburger",start:500,transform_point:800}
 
+execute if data storage game:stations/stove {input:"sliced_onion"} run data merge storage game:stations/stove {id:"caramelized_onion",start:200,transform_point:350}
+execute if data storage game:stations/stove {input:"diced_onion"} run data merge storage game:stations/stove {id:"caramelized_onion",start:250,transform_point:350}
+
 execute if data storage game:stations/stove {input:"raw_beef"} run data merge storage game:stations/stove {id:"beef_taco",start:200,transform_point:400}
 
 # Already burnt food

@@ -11,6 +11,7 @@ title @s title ""
 # Sneak/Jump to exit cutting mode
 execute as @s[predicate=game:inputs/sneak] run return run function game:stations/cutting_board/mode/exit
 execute as @s[predicate=game:inputs/jump] run return run function game:stations/cutting_board/mode/exit
+execute unless entity @n[type=item_display,tag=cutting_board,distance=..6] run return run function game:stations/cutting_board/mode/exit
 
 # Make sure that only newly pressed inputs are processed
 execute as @s[tag=cut_forward,predicate=!game:inputs/forward] run tag @s remove cut_forward

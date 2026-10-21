@@ -13,6 +13,7 @@ data modify storage game:stations/take id set from entity @s data.ingredient
 
 # If we have an ingredient and the player does too, take their ingredient and then give them ours
 tag @s remove cooking
+tag @s remove flippable
 tag @s remove hamburger_timer
 tag @s remove beef_taco_timer
 tag @s remove scorched_food_timer

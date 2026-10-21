@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific/player": {
+            "looking_at": {
+                "entity_type": "interaction",
+                "nbt": "{Tags:[\"stovetop\",\"flippable\"]}"
+            }
+        }
+    }
+}

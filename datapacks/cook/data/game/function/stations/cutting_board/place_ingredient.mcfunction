@@ -9,6 +9,8 @@ data modify storage game:stations/cut/place input set from entity @s data.ingred
 # CUTTING INPUT PATTERNS
 execute if data storage game:stations/cut/place {input:"tomato"} run function game:stations/cutting_board/cutting/enable {inputs:"↓→↓→↓→", length:6}
 execute if data storage game:stations/cut/place {input:"lettuce_head"} run function game:stations/cutting_board/cutting/enable {inputs:"↓↓→→↓↓", length:6}
+execute if data storage game:stations/cut/place {input:"onion"} run function game:stations/cutting_board/cutting/enable {inputs:"↓→↓↓→↓", length:6}
+execute if data storage game:stations/cut/place {input:"sliced_onion"} run function game:stations/cutting_board/cutting/enable {inputs:"↓→→↓→→", length:6}
 
 execute if data storage game:stations/cut/place {input:"avocado"} run function game:stations/cutting_board/cutting/enable {inputs:"↓↓→→↑↑", length:6}
 execute if data storage game:stations/cut/place {input:"pufferfish"} run function game:stations/cutting_board/cutting/enable {inputs:"↓→→→→↑", length:6}

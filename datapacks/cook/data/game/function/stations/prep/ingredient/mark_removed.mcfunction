@@ -25,7 +25,7 @@ $execute if score $required serving matches 1 run \
 $execute if score $required serving matches ..0 run \
     data modify entity @s data.bossbar_icons[$(index)].extra[1].text set value "0"
 
-function game:serving/bossbar/update_order_bossbar
+#function game:serving/bossbar/update_order_bossbar
 
 ## Update the sidebar with the current order icons
 # ⨉

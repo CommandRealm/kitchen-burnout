@@ -4,3 +4,6 @@ scoreboard players operation @s cutting_id = $transfer cutting_id
 
 # Stop the player from moving
 attribute @s movement_speed modifier add game:cutting_mode -1.0 add_multiplied_total
+
+# If the player is somehow starting a cut while not holding a knife (another entity in line of sight or something), make sure they are holding a knife
+execute as @s[tag=!holding_knife] run function game:inventory/tools/knife/start_holding

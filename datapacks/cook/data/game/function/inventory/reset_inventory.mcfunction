@@ -17,8 +17,9 @@ scoreboard players add @s slot 1
 clear @s ender_eye
 
 # Holding a knife
-item replace entity @s[tag=!holding_knife] weapon.mainhand with air
+item replace entity @s[tag=!holding_knife,tag=!holding_spatula] weapon.mainhand with air
 item replace entity @s[tag=holding_knife] weapon.mainhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate":"tool.knife"},item_model="kb2:tool/knife/default"]
+item replace entity @s[tag=holding_spatula] weapon.mainhand with ender_eye[tooltip_display={hide_tooltip:true},item_name={"translate":"tool.spatula"},item_model="kb2:tool/spatula"]
 
 # Changes the player's currently held item to the specified item.
 # 0 - Nothing

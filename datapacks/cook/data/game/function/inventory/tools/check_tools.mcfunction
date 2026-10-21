@@ -4,8 +4,12 @@
 # TODO: Check for a spatula when near a cooking burger 
 
 # Check for a knife near a cutting board with something cuttable on it
-execute as @s[tag=!holding_knife,predicate=game:looking_at/cutting_board] run return run function game:inventory/tools/start_holding_knife
-execute as @s[tag=holding_knife,predicate=!game:looking_at/cutting_board] run return run function game:inventory/tools/stop_holding_knife
+execute as @s[tag=!holding_knife,predicate=game:looking_at/cutting_board] run return run function game:inventory/tools/knife/start_holding
+execute as @s[tag=holding_knife,predicate=!game:looking_at/cutting_board,tag=!cutting_mode] run return run function game:inventory/tools/knife/stop_holding
+
+# Check for a spatula near a cutting board with something flippable on it
+execute as @s[tag=!holding_spatula,predicate=game:looking_at/stovetop] run return run function game:inventory/tools/spatula/start_holding
+execute as @s[tag=holding_spatula,predicate=!game:looking_at/stovetop] run return run function game:inventory/tools/spatula/stop_holding
 
 # Check for fishing nets near a fish
 

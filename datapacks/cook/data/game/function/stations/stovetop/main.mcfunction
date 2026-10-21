@@ -7,7 +7,6 @@ execute if score $cooking_effects station_timer matches 0 run playsound minecraf
 # Particles
 execute if score $cooking_effects station_timer matches 0 run particle smoke ~ ~ ~ 0.05 0.1 0.05 0.025 1
 
-
 # Checking if we reached the transform point.
 scoreboard players add @s station_timer 1
 execute if score @s station_timer >= @s station run function game:stations/stovetop/cook/transform
