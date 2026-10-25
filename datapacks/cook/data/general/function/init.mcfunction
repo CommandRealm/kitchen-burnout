@@ -146,22 +146,22 @@ team modify srart color white
 team modify lead color white
 team modify manager color white
 team modify unlock color white
-team modify unlock prefix {"translate":"[SPORK] ","color":"light_purple"}
-team modify test prefix {"translate":"(Tester) ","color":"white"}
-team modify translate prefix [{"translate":"(Translator)","color":"#fc58aa"},{"text":" "}]
-team modify help prefix {"translate":"[Helper] ","color":"gray"}
-team modify bld prefix {"translate":"{Builder} ","color":"blue"}
-team modify prg prefix {"translate":"{Programmer} ","color":"red"}
-team modify srbld prefix {"translate":"{Sr. Builder} ","color":"dark_blue"}
-team modify srprg prefix {"translate":"{Sr. Programmer} ","color":"dark_red"}
-team modify art prefix {"translate":"{Artist} ","color":"green"}
-team modify srart prefix {"translate":"{Sr. Artist} ","color":"dark_green"}
-team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"translate":"Project Lead","bold":false},{"text":"} ","bold":true}]
-team modify manager prefix {"translate":"{Manager} ","color":"yellow"}
+team modify unlock prefix {translate:"[SPORK] ",color:"light_purple"}
+team modify test prefix {translate:"(Tester) ",color:"white"}
+team modify translate prefix [{translate:"(Translator)",color:"#fc58aa"},{text:" "}]
+team modify help prefix {translate:"[Helper] ",color:"gray"}
+team modify bld prefix {translate:"{Builder} ",color:"blue"}
+team modify prg prefix {translate:"{Programmer} ",color:"red"}
+team modify srbld prefix {translate:"{Sr. Builder} ",color:"dark_blue"}
+team modify srprg prefix {translate:"{Sr. Programmer} ",color:"dark_red"}
+team modify art prefix {translate:"{Artist} ",color:"green"}
+team modify srart prefix {translate:"{Sr. Artist} ",color:"dark_green"}
+team modify lead prefix [{text:"{",color:"dark_purple",bold:true},{translate:"Project Lead",bold:false},{text:"} ",bold:true}]
+team modify manager prefix {translate:"{Manager} ",color:"yellow"}
 
 team add cr
 team modify cr color white
-team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
+team modify cr prefix [{text:"{",color:"white",bold:true},{text:"C",color:"aqua",bold:true},{text:"R",color:"dark_aqua",bold:true},{text:"} ",color:"white",bold:true}]
 
 team modify unlock collisionRule never
 team modify lobby collisionRule never
@@ -207,12 +207,12 @@ gamerule universal_anger false
 
 # Lobby bossbar
 bossbar remove minecraft:lobby
-bossbar add minecraft:lobby ["",{"text":"\U0001F525 ","color":"red",shadow_color:-13828096}, \
-    {"translate":"title.kitchen","color":"#FFFDEB",font:"kb2:title",shadow_color:-11777219},{text:" ",font:"kb2:title"}, \
-    {"translate":"title.burnout","color":"gold",font:"kb2:title",shadow_color:-12311039},{"text":" 2","color":"#de4811",font:"kb2:title",shadow_color:-13828096}, \
-    {"text":" - ","color":"gray"},{"text":"By the ","color":"white"}, \
-    {"text":"Command ","bold":true,"color":"aqua"},{"text":"Realm ","bold":true,"color":"dark_aqua"}, \
-    {"text": "Team","color":"white"},{"text":" \U0001F525","color":"red",shadow_color:-13828096}]
+bossbar add minecraft:lobby ["",{text:"\U0001F525 ",color:"red",shadow_color:-13828096}, \
+    {translate:"title.kitchen",color:"#FFFDEB",font:"kb2:title",shadow_color:-11777219},{text:" ",font:"kb2:title"}, \
+    {translate:"title.burnout",color:"gold",font:"kb2:title",shadow_color:-12311039},{text:" 2",color:"#de4811",font:"kb2:title",shadow_color:-13828096}, \
+    {text:" – ",color:"gray",font:"kb2:order_bold"},{text:"By the ",color:"white",font:"kb2:order"}, \
+    {text:"Command ",color:"aqua",font:"kb2:order_bold"},{text:"Realm ",color:"dark_aqua",font:"kb2:order_bold"}, \
+    {text: "Team",color:"white",font:"kb2:order"},{text:" \U0001F525",color:"red",shadow_color:-13828096}]
 bossbar set minecraft:lobby style progress
 bossbar set minecraft:lobby color white
 bossbar set minecraft:lobby max 1
