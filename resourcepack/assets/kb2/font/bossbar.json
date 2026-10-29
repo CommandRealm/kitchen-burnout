@@ -248,6 +248,15 @@
             ]
         },
         {
+            "type": "bitmap",
+            "file": "kb2:item/recipe_completion/ingredient_bg.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": [
+                "O"
+            ]
+        },
+        {
             "type": "space",
             "advances": {
                 "-": -16,

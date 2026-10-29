@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "kb2:sigmar.ttf",
+            "shift": [0, 3],
+            "size": 16,
+            "oversample": 2.0
+        }
+    ]
+}

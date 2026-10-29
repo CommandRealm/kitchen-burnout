@@ -2,10 +2,10 @@
     "providers": [
         {
             "type": "ttf",
-            "file": "kb2:nunito-black.ttf",
+            "file": "kb2:sigmar.ttf",
             "shift": [0, 0],
-            "size": 10,
-            "oversample": 20
+            "size": 11,
+            "oversample": 2.0
         }
     ]
 }

@@ -106,7 +106,7 @@ scoreboard objectives add serving dummy
 scoreboard objectives add order_cooldown dummy
 scoreboard objectives add order_timer dummy
 scoreboard objectives add recipe dummy
-scoreboard objectives add sidebar dummy [{translate:"sidebar.header.title",color:"#FFFDEB",font:"kb2:order_extra_bold",underlined:true}]
+scoreboard objectives add sidebar dummy [{translate:"sidebar.header.title",color:"#FFFDEB",font:"kb2:handwritten",underlined:true}]
 scoreboard objectives modify sidebar displayautoupdate true
 
 # Recipe Ingredient Teams
@@ -207,12 +207,16 @@ gamerule universal_anger false
 
 # Lobby bossbar
 bossbar remove minecraft:lobby
-bossbar add minecraft:lobby ["",{text:"\U0001F525 ",color:"red",shadow_color:-13828096}, \
+#bossbar add minecraft:lobby ["",{text:"\U0001F525 ",color:"red",shadow_color:-13828096}, \
     {translate:"title.kitchen",color:"#FFFDEB",font:"kb2:title",shadow_color:-11777219},{text:" ",font:"kb2:title"}, \
-    {translate:"title.burnout",color:"gold",font:"kb2:title",shadow_color:-12311039},{text:" 2",color:"#de4811",font:"kb2:title",shadow_color:-13828096}, \
-    {text:" – ",color:"gray",font:"kb2:order_bold"},{text:"By the ",color:"white",font:"kb2:order"}, \
-    {text:"Command ",color:"aqua",font:"kb2:order_bold"},{text:"Realm ",color:"dark_aqua",font:"kb2:order_bold"}, \
-    {text: "Team",color:"white",font:"kb2:order"},{text:" \U0001F525",color:"red",shadow_color:-13828096}]
+    {translate:"title.burnout",color:"gold",font:"kb2:title",shadow_color:-12311039},{text:" 2",color:"#de4811",font:"kb2:title_2",shadow_color:-13828096}, \
+    {text:" emdash ",color:"gray",font:"kb2:ui"},{text:"By the ",color:"white",font:"kb2:ui"}, \
+    {text:"Command ",color:"aqua",font:"kb2:ui"},{text:"Realm ",color:"dark_aqua",font:"kb2:ui"}, \
+    {text: "Team",color:"white",font:"kb2:ui"},{text:" \U0001F525",color:"red",shadow_color:-13828096}]
+bossbar add minecraft:lobby ["",{translate:"title.kitchen",color:"#FFFDEB",font:"kb2:title",shadow_color:-11777219},{text:" ",font:"kb2:title"}, \
+    {translate:"title.burnout",color:"gold",font:"kb2:title",shadow_color:-12311039},{text:" 2",color:"#de4811",font:"kb2:title_2",shadow_color:-13828096}, \
+    {text:" by ",color:"gray",font:"kb2:title"}, \
+    {text:"Command ",color:"aqua",font:"kb2:title"},{text:"Realm ",color:"dark_aqua",font:"kb2:title"}]
 bossbar set minecraft:lobby style progress
 bossbar set minecraft:lobby color white
 bossbar set minecraft:lobby max 1
