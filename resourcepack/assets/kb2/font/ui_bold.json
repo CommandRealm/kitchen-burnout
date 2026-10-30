@@ -5,7 +5,7 @@
             "file": "kb2:segoeuib.ttf",
             "shift": [0, -0.5],
             "size": 8.5,
-            "oversample": 2.0
+            "oversample": 4.0
         }
     ]
 }

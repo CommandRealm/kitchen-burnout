@@ -1,5 +1,6 @@
 # Called by a stovetop that has been right clicked on by a player to take, place, or swap an ingredient
 
+# FIXME: Right clicking on two consecutive stoves while having an ingredient at first lets you start cooking nothing
 # Check if the player is currently holding an ingredient
 scoreboard players set $holding_ingredient station 0
 execute on target if score @s held_item matches 1.. run scoreboard players set $holding_ingredient station 1

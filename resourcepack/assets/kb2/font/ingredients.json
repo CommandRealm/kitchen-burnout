@@ -183,37 +183,17 @@
             ]
         },
 
-
-
-
-
-
-        {
-            "type": "bitmap",
-            "file": "kb2:item/recipe_completion/checkmark.png",
-            "ascent": 10,
-            "height": 11,
-            "chars": [
-                "\uF000"
-            ]
-        },
         {
             "type": "space",
             "advances": {
                 "+": 8,
+                " ": 4,
+                "^": 0,
+                "v": 0,
                 "-": -9,
                 "_": -3,
                 ".": 1
             }
-        },
-        {
-            "type": "bitmap",
-            "file": "kb2:item/recipe_completion/order_background.png",
-            "ascent": 10,
-            "height": 10,
-            "chars": [
-                "\uF00F"
-            ]
         }
     ]
 }

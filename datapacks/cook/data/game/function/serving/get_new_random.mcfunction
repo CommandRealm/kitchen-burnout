@@ -26,7 +26,7 @@ data modify entity @s data.recipe_icons set from storage game:serving/recipe ico
 data modify entity @s data.bossbar_icons set from storage game:serving/recipe bossbar_icons
 
 # Update the sidebar with the new recipe
-function game:serving/sidebar/generate
+#function game:serving/sidebar/generate
 
 # Update our bossbar
 function game:serving/bossbar/create_bossbars

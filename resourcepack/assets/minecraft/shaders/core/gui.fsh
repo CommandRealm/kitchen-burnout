@@ -31,15 +31,14 @@ void main() {
     }
     fragColor = color * ColorModulator;
 
-    if(is_sidebar_header_bg(fragColor)){
-        // Gradient left to right from green to transparent black
-        fragColor = vec4(0.0, 0.0, 0.0, 0.4) + vec4(75.0/255.0, 231.0/255.0, 101.0/255.0, 1.0) * (1.0 - (gl_FragCoord.x / 256.0));
-    }
-
-    if(is_sidebar_bg(fragColor)){
-        // The top of this area should be black and gradient to rgb(255, 243, 217)
-		//fragColor = vec4(1.0, 0.9529411764705882, 0.8509803921568627, 1.0);
-        discard;
-	}
+    //if(is_sidebar_header_bg(fragColor)){
+    //    // Gradient left to right from green to transparent black
+    //    fragColor = vec4(1.0, 0.9529411764705882, 0.8509803921568627, 1.0);
+    //}
+//
+    //if(is_sidebar_bg(fragColor)){
+    //    // The top of this area should be black and gradient to rgb(255, 243, 217)
+	//	fragColor = vec4(1.0, 0.9529411764705882, 0.8509803921568627, 1.0);
+	//}
 
 }

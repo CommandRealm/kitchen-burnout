@@ -15,30 +15,36 @@ execute store result storage game:stations/prep removed_ingredient.required int 
 ## Update the bossbar with the current order icons
 # Still need more of this ingredient
 $execute if score $required serving matches 2.. run \
-    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set string \
-        storage game:stations/prep removed_ingredient.required
+    data modify entity @s data.bossbar_icons[$(index)].extra[1] set value [{storage: "game:stations/prep", nbt: "removed_ingredient.required", plain: true}, \
+    {text:"..m_,"}]
 # Only one more of this ingredient needed
 $execute if score $required serving matches 1 run \
-    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set value "+."
+    data modify entity @s data.bossbar_icons[$(index)].extra[1] set value {text:"+...m_,"}
 
 # No more needed for this ingredient (cute little checkmark)
 $execute if score $required serving matches ..0 run \
-    data modify entity @s data.bossbar_icons[$(index)].extra[1].text set value "0"
+    data modify entity @s data.bossbar_icons[$(index)].extra[1] set value {text:"0..m_,"}
 
-#function game:serving/bossbar/update_order_bossbar
+# Update the icon color
+$execute if score $required serving matches 1.. run \
+    data modify entity @s data.bossbar_icons[$(index)].color set value "white"
+$execute if score $required serving matches ..0 run \
+    data modify entity @s data.bossbar_icons[$(index)].color set value "gray"
+
+function game:serving/bossbar/update_order_bossbar
 
 ## Update the sidebar with the current order icons
 # ⨉
-$execute if score $prepared serving matches 0 run scoreboard players set $$(index) sidebar 0
+#$execute if score $prepared serving matches 0 run scoreboard players set $$(index) sidebar 0
 # ½
-$execute if score $prepared serving matches 1.. if score $prepared serving < $needed serving run scoreboard players set $$(index) sidebar 1
+#$execute if score $prepared serving matches 1.. if score $prepared serving < $needed serving run scoreboard players set $$(index) sidebar 1
 # ✓
-$execute if score $prepared serving >= $needed serving run scoreboard players set $$(index) sidebar -2
+#$execute if score $prepared serving >= $needed serving run scoreboard players set $$(index) sidebar -2
 
 # Save the current count prepared
 execute store result storage game:stations/prep removed_ingredient.prepared int 1 run scoreboard players get $prepared serving
 $data modify entity @s data.ingredient_indices.$(id) set from storage game:stations/prep removed_ingredient
 
 # Update the sidebar line with strikethrough if the ingredient is prepared
-$execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index)}
-$execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line_done {index:$(index)}
+#$execute if score $prepared serving < $needed serving run function game:serving/sidebar/update_line {index:$(index)}
+#$execute if score $prepared serving >= $needed serving run function game:serving/sidebar/update_line_done {index:$(index)}
